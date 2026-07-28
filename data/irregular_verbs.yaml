@@ -1,0 +1,1282 @@
+version: 1
+description: Compact database of common German irregular and mixed verbs. Prefixed compounds can inherit the base verb's forms
+  in the application.
+count: 164
+verbs:
+  backen:
+    preterite_ich: buk
+    participle: gebacken
+    auxiliary: haben
+    konjunktiv_ii_ich: büke
+    present_du: bäckst
+    present_er: bäckt
+    imperative_du: back
+    note: 'Also common: backte; du backst.'
+  befehlen:
+    preterite_ich: befahl
+    participle: befohlen
+    auxiliary: haben
+    konjunktiv_ii_ich: beföhle
+    present_du: befiehlst
+    present_er: befiehlt
+    imperative_du: befiehl
+  beginnen:
+    preterite_ich: begann
+    participle: begonnen
+    auxiliary: haben
+    konjunktiv_ii_ich: begänne
+    imperative_du: beginn
+  beißen:
+    preterite_ich: biss
+    participle: gebissen
+    auxiliary: haben
+    konjunktiv_ii_ich: bisse
+    imperative_du: beiß
+  bergen:
+    preterite_ich: barg
+    participle: geborgen
+    auxiliary: haben
+    konjunktiv_ii_ich: bärge
+    present_du: birgst
+    present_er: birgt
+    imperative_du: birg
+  bersten:
+    preterite_ich: barst
+    participle: geborsten
+    auxiliary: sein
+    konjunktiv_ii_ich: bärste
+    present_du: birst
+    present_er: birst
+    imperative_du: birst
+  biegen:
+    preterite_ich: bog
+    participle: gebogen
+    auxiliary: haben
+    konjunktiv_ii_ich: böge
+    imperative_du: bieg
+  bieten:
+    preterite_ich: bot
+    participle: geboten
+    auxiliary: haben
+    konjunktiv_ii_ich: böte
+    imperative_du: biet
+  binden:
+    preterite_ich: band
+    participle: gebunden
+    auxiliary: haben
+    konjunktiv_ii_ich: bände
+    imperative_du: bind
+  bitten:
+    preterite_ich: bat
+    participle: gebeten
+    auxiliary: haben
+    konjunktiv_ii_ich: bäte
+    imperative_du: bitte
+  blasen:
+    preterite_ich: blies
+    participle: geblasen
+    auxiliary: haben
+    konjunktiv_ii_ich: bliese
+    present_du: bläst
+    present_er: bläst
+    imperative_du: blas
+  bleiben:
+    preterite_ich: blieb
+    participle: geblieben
+    auxiliary: sein
+    konjunktiv_ii_ich: bliebe
+    imperative_du: bleib
+  braten:
+    preterite_ich: briet
+    participle: gebraten
+    auxiliary: haben
+    konjunktiv_ii_ich: briete
+    present_du: brätst
+    present_er: brät
+    imperative_du: brat
+  brechen:
+    preterite_ich: brach
+    participle: gebrochen
+    auxiliary: haben
+    konjunktiv_ii_ich: bräche
+    present_du: brichst
+    present_er: bricht
+    imperative_du: brich
+  brennen:
+    preterite_ich: brannte
+    participle: gebrannt
+    auxiliary: haben
+    konjunktiv_ii_ich: brennte
+    imperative_du: brenn
+  bringen:
+    preterite_ich: brachte
+    participle: gebracht
+    auxiliary: haben
+    konjunktiv_ii_ich: brächte
+    imperative_du: bring
+  denken:
+    preterite_ich: dachte
+    participle: gedacht
+    auxiliary: haben
+    konjunktiv_ii_ich: dächte
+    imperative_du: denk
+  dreschen:
+    preterite_ich: drosch
+    participle: gedroschen
+    auxiliary: haben
+    konjunktiv_ii_ich: drösche
+    present_du: drischst
+    present_er: drischt
+    imperative_du: drisch
+  dringen:
+    preterite_ich: drang
+    participle: gedrungen
+    auxiliary: haben
+    konjunktiv_ii_ich: dränge
+    imperative_du: dring
+  dürfen:
+    present:
+    - darf
+    - darfst
+    - darf
+    - dürfen
+    - dürft
+    - dürfen
+    preterite_ich: durfte
+    participle: gedurft
+    konjunktiv_ii_ich: dürfte
+    imperative_du: dürfe
+    note: Imperative forms are rare and are usually replaced by another construction.
+  empfehlen:
+    preterite_ich: empfahl
+    participle: empfohlen
+    auxiliary: haben
+    konjunktiv_ii_ich: empföhle
+    present_du: empfiehlst
+    present_er: empfiehlt
+    imperative_du: empfiehl
+  erlöschen:
+    preterite_ich: erlosch
+    participle: erloschen
+    auxiliary: sein
+    konjunktiv_ii_ich: erlösche
+    imperative_du: erlisch
+  erschrecken:
+    preterite_ich: erschrak
+    participle: erschrocken
+    auxiliary: sein
+    konjunktiv_ii_ich: erschräke
+    present_du: erschrickst
+    present_er: erschrickt
+    imperative_du: erschrick
+    note: Intransitive strong verb; transitive erschrecken is normally weak.
+  essen:
+    preterite_ich: aß
+    participle: gegessen
+    auxiliary: haben
+    konjunktiv_ii_ich: äße
+    present_du: isst
+    present_er: isst
+    imperative_du: iss
+  fahren:
+    preterite_ich: fuhr
+    participle: gefahren
+    auxiliary: sein
+    konjunktiv_ii_ich: führe
+    present_du: fährst
+    present_er: fährt
+    imperative_du: fahr
+    note: Can also use haben when a vehicle is driven.
+  fallen:
+    preterite_ich: fiel
+    participle: gefallen
+    auxiliary: sein
+    konjunktiv_ii_ich: fiele
+    present_du: fällst
+    present_er: fällt
+    imperative_du: fall
+  fangen:
+    preterite_ich: fing
+    participle: gefangen
+    auxiliary: haben
+    konjunktiv_ii_ich: finge
+    present_du: fängst
+    present_er: fängt
+    imperative_du: fang
+  fechten:
+    preterite_ich: focht
+    participle: gefochten
+    auxiliary: haben
+    konjunktiv_ii_ich: föchte
+    present_du: fichtst
+    present_er: ficht
+    imperative_du: ficht
+  finden:
+    preterite_ich: fand
+    participle: gefunden
+    auxiliary: haben
+    konjunktiv_ii_ich: fände
+    imperative_du: find
+  flechten:
+    preterite_ich: flocht
+    participle: geflochten
+    auxiliary: haben
+    konjunktiv_ii_ich: flöchte
+    present_du: flichtst
+    present_er: flicht
+    imperative_du: flicht
+  fliegen:
+    preterite_ich: flog
+    participle: geflogen
+    auxiliary: sein
+    konjunktiv_ii_ich: flöge
+    imperative_du: flieg
+    note: Can use haben in some transitive/aviation contexts.
+  fliehen:
+    preterite_ich: floh
+    participle: geflohen
+    auxiliary: sein
+    konjunktiv_ii_ich: flöhe
+    imperative_du: flieh
+  fließen:
+    preterite_ich: floss
+    participle: geflossen
+    auxiliary: sein
+    konjunktiv_ii_ich: flösse
+    imperative_du: fließ
+  fressen:
+    preterite_ich: fraß
+    participle: gefressen
+    auxiliary: haben
+    konjunktiv_ii_ich: fräße
+    present_du: frisst
+    present_er: frisst
+    imperative_du: friss
+  frieren:
+    preterite_ich: fror
+    participle: gefroren
+    auxiliary: haben
+    konjunktiv_ii_ich: fröre
+    imperative_du: frier
+  geben:
+    preterite_ich: gab
+    participle: gegeben
+    auxiliary: haben
+    konjunktiv_ii_ich: gäbe
+    present_du: gibst
+    present_er: gibt
+    imperative_du: gib
+  gebären:
+    preterite_ich: gebar
+    participle: geboren
+    auxiliary: haben
+    konjunktiv_ii_ich: gebäre
+    present_du: gebierst
+    present_er: gebiert
+    imperative_du: gebier
+  gedeihen:
+    preterite_ich: gedieh
+    participle: gediehen
+    auxiliary: sein
+    konjunktiv_ii_ich: gediehe
+    imperative_du: gedeih
+  gehen:
+    preterite_ich: ging
+    participle: gegangen
+    auxiliary: sein
+    konjunktiv_ii_ich: ginge
+    imperative_du: geh
+  gelingen:
+    preterite_ich: gelang
+    participle: gelungen
+    auxiliary: sein
+    konjunktiv_ii_ich: gelänge
+    imperative_du: geling
+    note: 'Usually impersonal: es gelingt.'
+  gelten:
+    preterite_ich: galt
+    participle: gegolten
+    auxiliary: haben
+    konjunktiv_ii_ich: gölte
+    present_du: giltst
+    present_er: gilt
+    imperative_du: gilt
+  genesen:
+    preterite_ich: genas
+    participle: genesen
+    auxiliary: sein
+    konjunktiv_ii_ich: genäse
+    imperative_du: genes
+  genießen:
+    preterite_ich: genoss
+    participle: genossen
+    auxiliary: haben
+    konjunktiv_ii_ich: genösse
+    imperative_du: genieß
+  geschehen:
+    preterite_ich: geschah
+    participle: geschehen
+    auxiliary: sein
+    konjunktiv_ii_ich: geschähe
+    present_du: geschiehst
+    present_er: geschieht
+    imperative_du: geschieh
+  gewinnen:
+    preterite_ich: gewann
+    participle: gewonnen
+    auxiliary: haben
+    konjunktiv_ii_ich: gewänne
+    imperative_du: gewinn
+  gießen:
+    preterite_ich: goss
+    participle: gegossen
+    auxiliary: haben
+    konjunktiv_ii_ich: gösse
+    imperative_du: gieß
+  gleichen:
+    preterite_ich: glich
+    participle: geglichen
+    auxiliary: haben
+    konjunktiv_ii_ich: gliche
+    imperative_du: gleich
+  gleiten:
+    preterite_ich: glitt
+    participle: geglitten
+    auxiliary: sein
+    konjunktiv_ii_ich: glitte
+    imperative_du: gleit
+  glimmen:
+    preterite_ich: glomm
+    participle: geglommen
+    auxiliary: haben
+    konjunktiv_ii_ich: glömme
+    imperative_du: glimm
+    note: Also weak forms occur.
+  graben:
+    preterite_ich: grub
+    participle: gegraben
+    auxiliary: haben
+    konjunktiv_ii_ich: grübe
+    present_du: gräbst
+    present_er: gräbt
+    imperative_du: grab
+  greifen:
+    preterite_ich: griff
+    participle: gegriffen
+    auxiliary: haben
+    konjunktiv_ii_ich: griffe
+    imperative_du: greif
+  gären:
+    preterite_ich: gor
+    participle: gegoren
+    auxiliary: haben
+    konjunktiv_ii_ich: göre
+    imperative_du: gär
+    note: Also weak forms are used.
+  haben:
+    present:
+    - habe
+    - hast
+    - hat
+    - haben
+    - habt
+    - haben
+    preterite:
+    - hatte
+    - hattest
+    - hatte
+    - hatten
+    - hattet
+    - hatten
+    participle: gehabt
+    konjunktiv_ii_ich: hätte
+    imperative_du: hab
+    imperative_ihr: habt
+  halten:
+    preterite_ich: hielt
+    participle: gehalten
+    auxiliary: haben
+    konjunktiv_ii_ich: hielte
+    present_du: hältst
+    present_er: hält
+    imperative_du: halt
+  hauen:
+    preterite_ich: hieb
+    participle: gehauen
+    auxiliary: haben
+    konjunktiv_ii_ich: hiebe
+    imperative_du: hau
+    note: Also weak preterite haute.
+  heben:
+    preterite_ich: hob
+    participle: gehoben
+    auxiliary: haben
+    konjunktiv_ii_ich: höbe
+    imperative_du: heb
+  heißen:
+    preterite_ich: hieß
+    participle: geheißen
+    auxiliary: haben
+    konjunktiv_ii_ich: hieße
+    imperative_du: heiß
+  helfen:
+    preterite_ich: half
+    participle: geholfen
+    auxiliary: haben
+    konjunktiv_ii_ich: hülfe
+    present_du: hilfst
+    present_er: hilft
+    imperative_du: hilf
+  hängen:
+    preterite_ich: hing
+    participle: gehangen
+    auxiliary: haben
+    konjunktiv_ii_ich: hinge
+    imperative_du: häng
+    note: 'Intransitive strong verb; transitive hängen is weak: hängte, gehängt.'
+  kennen:
+    preterite_ich: kannte
+    participle: gekannt
+    auxiliary: haben
+    konjunktiv_ii_ich: kennte
+    imperative_du: kenn
+  klingen:
+    preterite_ich: klang
+    participle: geklungen
+    auxiliary: haben
+    konjunktiv_ii_ich: klänge
+    imperative_du: kling
+  kneifen:
+    preterite_ich: kniff
+    participle: gekniffen
+    auxiliary: haben
+    konjunktiv_ii_ich: kniffe
+    imperative_du: kneif
+  kommen:
+    preterite_ich: kam
+    participle: gekommen
+    auxiliary: sein
+    konjunktiv_ii_ich: käme
+    imperative_du: komm
+  kriechen:
+    preterite_ich: kroch
+    participle: gekrochen
+    auxiliary: sein
+    konjunktiv_ii_ich: kröche
+    imperative_du: kriech
+  können:
+    present:
+    - kann
+    - kannst
+    - kann
+    - können
+    - könnt
+    - können
+    preterite_ich: konnte
+    participle: gekonnt
+    konjunktiv_ii_ich: könnte
+    imperative_du: könne
+    note: Imperative forms are rare and are usually replaced by another construction.
+  laden:
+    preterite_ich: lud
+    participle: geladen
+    auxiliary: haben
+    konjunktiv_ii_ich: lüde
+    present_du: lädst
+    present_er: lädt
+    imperative_du: lade
+  lassen:
+    preterite_ich: ließ
+    participle: gelassen
+    auxiliary: haben
+    konjunktiv_ii_ich: ließe
+    present_du: lässt
+    present_er: lässt
+    imperative_du: lass
+  laufen:
+    preterite_ich: lief
+    participle: gelaufen
+    auxiliary: sein
+    konjunktiv_ii_ich: liefe
+    present_du: läufst
+    present_er: läuft
+    imperative_du: lauf
+  leiden:
+    preterite_ich: litt
+    participle: gelitten
+    auxiliary: haben
+    konjunktiv_ii_ich: litte
+    imperative_du: leid
+  leihen:
+    preterite_ich: lieh
+    participle: geliehen
+    auxiliary: haben
+    konjunktiv_ii_ich: liehe
+    imperative_du: leih
+  lesen:
+    preterite_ich: las
+    participle: gelesen
+    auxiliary: haben
+    konjunktiv_ii_ich: läse
+    present_du: liest
+    present_er: liest
+    imperative_du: lies
+  liegen:
+    preterite_ich: lag
+    participle: gelegen
+    auxiliary: haben
+    konjunktiv_ii_ich: läge
+    imperative_du: lieg
+  lügen:
+    preterite_ich: log
+    participle: gelogen
+    auxiliary: haben
+    konjunktiv_ii_ich: löge
+    imperative_du: lüg
+  mahlen:
+    preterite_ich: mahlte
+    participle: gemahlen
+    auxiliary: haben
+    konjunktiv_ii_ich: mahlte
+    imperative_du: mahl
+    note: Participle is irregular; preterite is weak.
+  meiden:
+    preterite_ich: mied
+    participle: gemieden
+    auxiliary: haben
+    konjunktiv_ii_ich: miede
+    imperative_du: meid
+  melken:
+    preterite_ich: molk
+    participle: gemolken
+    auxiliary: haben
+    konjunktiv_ii_ich: mölke
+    present_du: melkst
+    present_er: melkt
+    imperative_du: melk
+    note: Weak forms are also common.
+  messen:
+    preterite_ich: maß
+    participle: gemessen
+    auxiliary: haben
+    konjunktiv_ii_ich: mäße
+    present_du: misst
+    present_er: misst
+    imperative_du: miss
+  mögen:
+    present:
+    - mag
+    - magst
+    - mag
+    - mögen
+    - mögt
+    - mögen
+    preterite_ich: mochte
+    participle: gemocht
+    konjunktiv_ii_ich: möchte
+    imperative_du: möge
+    note: Imperative forms are rare and are usually replaced by another construction.
+  müssen:
+    present:
+    - muss
+    - musst
+    - muss
+    - müssen
+    - müsst
+    - müssen
+    preterite_ich: musste
+    participle: gemusst
+    konjunktiv_ii_ich: müsste
+    imperative_du: müsse
+    note: Imperative forms are rare and are usually replaced by another construction.
+  nehmen:
+    preterite_ich: nahm
+    participle: genommen
+    auxiliary: haben
+    konjunktiv_ii_ich: nähme
+    imperative_du: nimm
+    present:
+    - nehme
+    - nimmst
+    - nimmt
+    - nehmen
+    - nehmt
+    - nehmen
+  nennen:
+    preterite_ich: nannte
+    participle: genannt
+    auxiliary: haben
+    konjunktiv_ii_ich: nennte
+    imperative_du: nenn
+  pfeifen:
+    preterite_ich: pfiff
+    participle: gepfiffen
+    auxiliary: haben
+    konjunktiv_ii_ich: pfiffe
+    imperative_du: pfeif
+  preisen:
+    preterite_ich: pries
+    participle: gepriesen
+    auxiliary: haben
+    konjunktiv_ii_ich: priese
+    imperative_du: preis
+  quellen:
+    preterite_ich: quoll
+    participle: gequollen
+    auxiliary: sein
+    konjunktiv_ii_ich: quölle
+    present_du: quillst
+    present_er: quillt
+    imperative_du: quill
+  raten:
+    preterite_ich: riet
+    participle: geraten
+    auxiliary: haben
+    konjunktiv_ii_ich: riete
+    present_du: rätst
+    present_er: rät
+    imperative_du: rat
+  reiben:
+    preterite_ich: rieb
+    participle: gerieben
+    auxiliary: haben
+    konjunktiv_ii_ich: riebe
+    imperative_du: reib
+  reiten:
+    preterite_ich: ritt
+    participle: geritten
+    auxiliary: sein
+    konjunktiv_ii_ich: ritte
+    imperative_du: reit
+    note: Can use haben with a direct object.
+  reißen:
+    preterite_ich: riss
+    participle: gerissen
+    auxiliary: haben
+    konjunktiv_ii_ich: risse
+    imperative_du: reiß
+  rennen:
+    preterite_ich: rannte
+    participle: gerannt
+    auxiliary: sein
+    konjunktiv_ii_ich: rennte
+    imperative_du: renn
+  riechen:
+    preterite_ich: roch
+    participle: gerochen
+    auxiliary: haben
+    konjunktiv_ii_ich: röche
+    imperative_du: riech
+  ringen:
+    preterite_ich: rang
+    participle: gerungen
+    auxiliary: haben
+    konjunktiv_ii_ich: ränge
+    imperative_du: ring
+  rinnen:
+    preterite_ich: rann
+    participle: geronnen
+    auxiliary: sein
+    konjunktiv_ii_ich: ränne
+    imperative_du: rinn
+  rufen:
+    preterite_ich: rief
+    participle: gerufen
+    auxiliary: haben
+    konjunktiv_ii_ich: riefe
+    imperative_du: ruf
+  saufen:
+    preterite_ich: soff
+    participle: gesoffen
+    auxiliary: haben
+    konjunktiv_ii_ich: söffe
+    present_du: säufst
+    present_er: säuft
+    imperative_du: sauf
+  saugen:
+    preterite_ich: sog
+    participle: gesogen
+    auxiliary: haben
+    konjunktiv_ii_ich: söge
+    imperative_du: saug
+    note: Also weak forms are used.
+  schaffen:
+    preterite_ich: schuf
+    participle: geschaffen
+    auxiliary: haben
+    konjunktiv_ii_ich: schüfe
+    imperative_du: schaff
+    note: Strong when meaning create; weak schaffte/geschafft when meaning manage.
+  scheiden:
+    preterite_ich: schied
+    participle: geschieden
+    auxiliary: haben
+    konjunktiv_ii_ich: schiede
+    imperative_du: scheid
+    note: Auxiliary can be sein in intransitive uses.
+  scheinen:
+    preterite_ich: schien
+    participle: geschienen
+    auxiliary: haben
+    konjunktiv_ii_ich: schiene
+    imperative_du: schein
+  schelten:
+    preterite_ich: schalt
+    participle: gescholten
+    auxiliary: haben
+    konjunktiv_ii_ich: schölte
+    present_du: schiltst
+    present_er: schilt
+    imperative_du: schilt
+  scheren:
+    preterite_ich: schor
+    participle: geschoren
+    auxiliary: haben
+    konjunktiv_ii_ich: schöre
+    imperative_du: scher
+  schieben:
+    preterite_ich: schob
+    participle: geschoben
+    auxiliary: haben
+    konjunktiv_ii_ich: schöbe
+    imperative_du: schieb
+  schießen:
+    preterite_ich: schoss
+    participle: geschossen
+    auxiliary: haben
+    konjunktiv_ii_ich: schösse
+    imperative_du: schieß
+    note: Can use sein for movement/change-of-position meanings.
+  schlafen:
+    preterite_ich: schlief
+    participle: geschlafen
+    auxiliary: haben
+    konjunktiv_ii_ich: schliefe
+    present_du: schläfst
+    present_er: schläft
+    imperative_du: schlaf
+  schlagen:
+    preterite_ich: schlug
+    participle: geschlagen
+    auxiliary: haben
+    konjunktiv_ii_ich: schlüge
+    present_du: schlägst
+    present_er: schlägt
+    imperative_du: schlag
+  schleichen:
+    preterite_ich: schlich
+    participle: geschlichen
+    auxiliary: sein
+    konjunktiv_ii_ich: schliche
+    imperative_du: schleich
+  schleifen:
+    preterite_ich: schliff
+    participle: geschliffen
+    auxiliary: haben
+    konjunktiv_ii_ich: schliffe
+    imperative_du: schleif
+    note: Weak forms also exist with another meaning.
+  schließen:
+    preterite_ich: schloss
+    participle: geschlossen
+    auxiliary: haben
+    konjunktiv_ii_ich: schlösse
+    imperative_du: schließ
+  schlingen:
+    preterite_ich: schlang
+    participle: geschlungen
+    auxiliary: haben
+    konjunktiv_ii_ich: schlänge
+    imperative_du: schling
+  schmeißen:
+    preterite_ich: schmiss
+    participle: geschmissen
+    auxiliary: haben
+    konjunktiv_ii_ich: schmisse
+    imperative_du: schmeiß
+  schmelzen:
+    preterite_ich: schmolz
+    participle: geschmolzen
+    auxiliary: sein
+    konjunktiv_ii_ich: schmölze
+    present_du: schmilzt
+    present_er: schmilzt
+    imperative_du: schmilz
+    note: Transitive use normally takes haben.
+  schneiden:
+    preterite_ich: schnitt
+    participle: geschnitten
+    auxiliary: haben
+    konjunktiv_ii_ich: schnitte
+    imperative_du: schneid
+  schreiben:
+    preterite_ich: schrieb
+    participle: geschrieben
+    auxiliary: haben
+    konjunktiv_ii_ich: schriebe
+    imperative_du: schreib
+  schreien:
+    preterite_ich: schrie
+    participle: geschrien
+    auxiliary: haben
+    konjunktiv_ii_ich: schriee
+    imperative_du: schrei
+  schreiten:
+    preterite_ich: schritt
+    participle: geschritten
+    auxiliary: sein
+    konjunktiv_ii_ich: schritte
+    imperative_du: schreit
+  schweigen:
+    preterite_ich: schwieg
+    participle: geschwiegen
+    auxiliary: haben
+    konjunktiv_ii_ich: schwiege
+    imperative_du: schweig
+  schwellen:
+    preterite_ich: schwoll
+    participle: geschwollen
+    auxiliary: sein
+    konjunktiv_ii_ich: schwölle
+    present_du: schwillst
+    present_er: schwillt
+    imperative_du: schwill
+  schwimmen:
+    preterite_ich: schwamm
+    participle: geschwommen
+    auxiliary: sein
+    konjunktiv_ii_ich: schwämme
+    imperative_du: schwimm
+    note: Haben is also possible in some varieties/contexts.
+  schwinden:
+    preterite_ich: schwand
+    participle: geschwunden
+    auxiliary: sein
+    konjunktiv_ii_ich: schwände
+    imperative_du: schwind
+  schwingen:
+    preterite_ich: schwang
+    participle: geschwungen
+    auxiliary: haben
+    konjunktiv_ii_ich: schwänge
+    imperative_du: schwing
+  schwören:
+    preterite_ich: schwor
+    participle: geschworen
+    auxiliary: haben
+    konjunktiv_ii_ich: schwüre
+    imperative_du: schwör
+  sehen:
+    preterite_ich: sah
+    participle: gesehen
+    auxiliary: haben
+    konjunktiv_ii_ich: sähe
+    present_du: siehst
+    present_er: sieht
+    imperative_du: sieh
+  sein:
+    present:
+    - bin
+    - bist
+    - ist
+    - sind
+    - seid
+    - sind
+    preterite:
+    - war
+    - warst
+    - war
+    - waren
+    - wart
+    - waren
+    participle: gewesen
+    auxiliary: sein
+    konjunktiv_i:
+    - sei
+    - seiest
+    - sei
+    - seien
+    - seiet
+    - seien
+    konjunktiv_ii:
+    - wäre
+    - wärest
+    - wäre
+    - wären
+    - wäret
+    - wären
+    imperative_du: sei
+    imperative_ihr: seid
+  senden:
+    preterite_ich: sandte
+    participle: gesandt
+    auxiliary: haben
+    konjunktiv_ii_ich: sendete
+    imperative_du: sende
+    note: Weak forms sendete/gesendet are also common.
+  singen:
+    preterite_ich: sang
+    participle: gesungen
+    auxiliary: haben
+    konjunktiv_ii_ich: sänge
+    imperative_du: sing
+  sinken:
+    preterite_ich: sank
+    participle: gesunken
+    auxiliary: sein
+    konjunktiv_ii_ich: sänke
+    imperative_du: sink
+  sinnen:
+    preterite_ich: sann
+    participle: gesonnen
+    auxiliary: haben
+    konjunktiv_ii_ich: sänne
+    imperative_du: sinn
+  sitzen:
+    preterite_ich: saß
+    participle: gesessen
+    auxiliary: haben
+    konjunktiv_ii_ich: säße
+    imperative_du: sitz
+  sollen:
+    present:
+    - soll
+    - sollst
+    - soll
+    - sollen
+    - sollt
+    - sollen
+    preterite_ich: sollte
+    participle: gesollt
+    konjunktiv_ii_ich: sollte
+    imperative_du: solle
+    note: Imperative forms are rare and are usually replaced by another construction.
+  sprechen:
+    preterite_ich: sprach
+    participle: gesprochen
+    auxiliary: haben
+    konjunktiv_ii_ich: spräche
+    present_du: sprichst
+    present_er: spricht
+    imperative_du: sprich
+  springen:
+    preterite_ich: sprang
+    participle: gesprungen
+    auxiliary: sein
+    konjunktiv_ii_ich: spränge
+    imperative_du: spring
+  stechen:
+    preterite_ich: stach
+    participle: gestochen
+    auxiliary: haben
+    konjunktiv_ii_ich: stäche
+    present_du: stichst
+    present_er: sticht
+    imperative_du: stich
+  stehen:
+    preterite_ich: stand
+    participle: gestanden
+    auxiliary: haben
+    konjunktiv_ii_ich: stünde
+    imperative_du: steh
+  stehlen:
+    preterite_ich: stahl
+    participle: gestohlen
+    auxiliary: haben
+    konjunktiv_ii_ich: stähle
+    present_du: stiehlst
+    present_er: stiehlt
+    imperative_du: stiehl
+  steigen:
+    preterite_ich: stieg
+    participle: gestiegen
+    auxiliary: sein
+    konjunktiv_ii_ich: stiege
+    imperative_du: steig
+  sterben:
+    preterite_ich: starb
+    participle: gestorben
+    auxiliary: sein
+    konjunktiv_ii_ich: stürbe
+    present_du: stirbst
+    present_er: stirbt
+    imperative_du: stirb
+  stinken:
+    preterite_ich: stank
+    participle: gestunken
+    auxiliary: haben
+    konjunktiv_ii_ich: stänke
+    imperative_du: stink
+  stoßen:
+    preterite_ich: stieß
+    participle: gestoßen
+    auxiliary: haben
+    konjunktiv_ii_ich: stieße
+    present_du: stößt
+    present_er: stößt
+    imperative_du: stoß
+  streichen:
+    preterite_ich: strich
+    participle: gestrichen
+    auxiliary: haben
+    konjunktiv_ii_ich: striche
+    imperative_du: streich
+  streiten:
+    preterite_ich: stritt
+    participle: gestritten
+    auxiliary: haben
+    konjunktiv_ii_ich: stritte
+    imperative_du: streit
+  tragen:
+    preterite_ich: trug
+    participle: getragen
+    auxiliary: haben
+    konjunktiv_ii_ich: trüge
+    present_du: trägst
+    present_er: trägt
+    imperative_du: trag
+  treffen:
+    preterite_ich: traf
+    participle: getroffen
+    auxiliary: haben
+    konjunktiv_ii_ich: träfe
+    present_du: triffst
+    present_er: trifft
+    imperative_du: triff
+  treiben:
+    preterite_ich: trieb
+    participle: getrieben
+    auxiliary: haben
+    konjunktiv_ii_ich: triebe
+    imperative_du: treib
+  treten:
+    preterite_ich: trat
+    participle: getreten
+    auxiliary: sein
+    konjunktiv_ii_ich: träte
+    present_du: trittst
+    present_er: tritt
+    imperative_du: tritt
+    note: Can use haben with a direct object.
+  trinken:
+    preterite_ich: trank
+    participle: getrunken
+    auxiliary: haben
+    konjunktiv_ii_ich: tränke
+    imperative_du: trink
+  tun:
+    present:
+    - tue
+    - tust
+    - tut
+    - tun
+    - tut
+    - tun
+    preterite_ich: tat
+    participle: getan
+    konjunktiv_ii_ich: täte
+    imperative_du: tu
+    imperative_ihr: tut
+  verderben:
+    preterite_ich: verdarb
+    participle: verdorben
+    auxiliary: sein
+    konjunktiv_ii_ich: verdürbe
+    present_du: verdirbst
+    present_er: verdirbt
+    imperative_du: verdirb
+    note: Transitive use normally takes haben.
+  vergessen:
+    preterite_ich: vergaß
+    participle: vergessen
+    auxiliary: haben
+    konjunktiv_ii_ich: vergäße
+    present_du: vergisst
+    present_er: vergisst
+    imperative_du: vergiss
+  verlieren:
+    preterite_ich: verlor
+    participle: verloren
+    auxiliary: haben
+    konjunktiv_ii_ich: verlöre
+    imperative_du: verlier
+  wachsen:
+    preterite_ich: wuchs
+    participle: gewachsen
+    auxiliary: sein
+    konjunktiv_ii_ich: wüchse
+    present_du: wächst
+    present_er: wächst
+    imperative_du: wachs
+  waschen:
+    preterite_ich: wusch
+    participle: gewaschen
+    auxiliary: haben
+    konjunktiv_ii_ich: wüsche
+    present_du: wäschst
+    present_er: wäscht
+    imperative_du: wasch
+  weben:
+    preterite_ich: wob
+    participle: gewoben
+    auxiliary: haben
+    konjunktiv_ii_ich: wöbe
+    imperative_du: web
+    note: Also weak forms occur.
+  weichen:
+    preterite_ich: wich
+    participle: gewichen
+    auxiliary: sein
+    konjunktiv_ii_ich: wiche
+    imperative_du: weich
+  weisen:
+    preterite_ich: wies
+    participle: gewiesen
+    auxiliary: haben
+    konjunktiv_ii_ich: wiese
+    imperative_du: weis
+  wenden:
+    preterite_ich: wandte
+    participle: gewandt
+    auxiliary: haben
+    konjunktiv_ii_ich: wendete
+    imperative_du: wende
+    note: Weak forms wendete/gewendet are also common.
+  werben:
+    preterite_ich: warb
+    participle: geworben
+    auxiliary: haben
+    konjunktiv_ii_ich: würbe
+    present_du: wirbst
+    present_er: wirbt
+    imperative_du: wirb
+  werden:
+    present:
+    - werde
+    - wirst
+    - wird
+    - werden
+    - werdet
+    - werden
+    preterite:
+    - wurde
+    - wurdest
+    - wurde
+    - wurden
+    - wurdet
+    - wurden
+    participle: geworden
+    auxiliary: sein
+    konjunktiv_i:
+    - werde
+    - werdest
+    - werde
+    - werden
+    - werdet
+    - werden
+    konjunktiv_ii:
+    - würde
+    - würdest
+    - würde
+    - würden
+    - würdet
+    - würden
+    imperative_du: werde
+    imperative_ihr: werdet
+  werfen:
+    preterite_ich: warf
+    participle: geworfen
+    auxiliary: haben
+    konjunktiv_ii_ich: würfe
+    present_du: wirfst
+    present_er: wirft
+    imperative_du: wirf
+  wiegen:
+    preterite_ich: wog
+    participle: gewogen
+    auxiliary: haben
+    konjunktiv_ii_ich: wöge
+    imperative_du: wieg
+    note: Strong when meaning weigh; weak when meaning rock/cradle.
+  winden:
+    preterite_ich: wand
+    participle: gewunden
+    auxiliary: haben
+    konjunktiv_ii_ich: wände
+    imperative_du: wind
+  wissen:
+    present:
+    - weiß
+    - weißt
+    - weiß
+    - wissen
+    - wisst
+    - wissen
+    preterite_ich: wusste
+    participle: gewusst
+    konjunktiv_ii_ich: wüsste
+    imperative_du: wisse
+  wollen:
+    present:
+    - will
+    - willst
+    - will
+    - wollen
+    - wollt
+    - wollen
+    preterite_ich: wollte
+    participle: gewollt
+    konjunktiv_ii_ich: wollte
+    imperative_du: wolle
+    note: Imperative forms are rare and are usually replaced by another construction.
+  wringen:
+    preterite_ich: wrang
+    participle: gewrungen
+    auxiliary: haben
+    konjunktiv_ii_ich: wränge
+    imperative_du: wring
+  ziehen:
+    preterite_ich: zog
+    participle: gezogen
+    auxiliary: haben
+    konjunktiv_ii_ich: zöge
+    imperative_du: zieh
+    note: Can use sein in intransitive movement uses.
+  zwingen:
+    preterite_ich: zwang
+    participle: gezwungen
+    auxiliary: haben
+    konjunktiv_ii_ich: zwänge
+    imperative_du: zwing
+auxiliary_overrides:
+  abfahren: sein
+  abreisen: sein
+  ankommen: sein
+  aufstehen: sein
+  aussteigen: sein
+  begegnen: sein
+  bekommen: haben
+  einfahren: sein
+  einschlafen: sein
+  einsteigen: sein
+  entstehen: sein
+  explodieren: sein
+  folgen: sein
+  fortfahren: sein
+  heimgehen: sein
+  klettern: sein
+  landen: sein
+  losfahren: sein
+  marschieren: sein
+  mitkommen: sein
+  passieren: sein
+  reisen: sein
+  starten: sein
+  umziehen: sein
+  wandern: sein
+  wegfahren: sein
+  weggehen: sein
+  weiterfahren: sein
+  weitergehen: sein
+  zurückkehren: sein
+  zurückkommen: sein

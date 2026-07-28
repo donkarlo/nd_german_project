@@ -1,0 +1,32 @@
+"General explanation": |
+  Your task is to build a searchable and expandable dictionary GUI with python with QT and LINUX  that uses the absolute path to woertschatz.txt that I give in the python file such that it has an editbox in which I can enter some parts of the word for which I look for the meaning and in the lower area it shows the list of the entries with their description.  In front of this editbox an add button should exist such that when I click on it, it opens a new dialog in which I can paste a new entry with all it descrioption so that it adds itself at the end of  woertschatz.txt
+
+"database":
+  - As in general explaination I have written the database is in woertschatz.txt and each entry is seprated from the next with a blank line
+setting file:
+  - it should be a yaml file
+  - it should include a variable to include the full path to woertschatz.txt
+  - it should include a variable that determines the number of matching results whenever the search text is updated
+"GUI":
+  - The application window must be formed of a search edit box in front of which an add buttom.
+  - Down to the edit box and the add buttom there must be a scrollable large textarea in which I see the first
+
+"The rules you should follow while searching for the meaning are":
+  - search for the entries such that as I type the name it shows matching words from four criteria. 1. german word, english word 3. penglish word 4. persian word
+  - you must search such that as I type the first 20 matching words appear in the window below th search box
+  - searching must not only start from the beginning of the word but it should try to find the best matching words even if I misspell the words
+  - speed yis very important. dont use fancy things that reduce searching
+
+"Rules to add a new entry":
+  - Add an entry only if it does not exist according to the word spelling and its roll
+
+"pronouncation":
+  - In the word meaning section, add a small button in front of each word, for example with a speaker icon. When I click on it, it should connect to an API that provides high-quality German pronunciation and play the correct, natural pronunciation of that word.
+
+  - This feature must not have any impact on the speed of the application when searching for word meanings. The application should interact with the web only after the button is clicked, and then play the correct and natural pronunciation of the selected German word.
+
+"next upgrade":
+  - add edit buttom at end of each entry
+
+
+

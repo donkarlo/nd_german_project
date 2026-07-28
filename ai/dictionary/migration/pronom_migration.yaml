@@ -1,0 +1,33 @@
+# nur für Adjektiv Tab
+personalpronomen_migration:
+  problem:
+    beschreibung: "
+    In der Tabelle der Personalpronomen werden „sie“ im Singular feminin
+    und „sie“ im Plural nicht eindeutig unterschieden.
+
+    Dadurch wird für beide Einträge im Dativ fälschlicherweise „ihr“ angezeigt.
+    Für „sie“ im Plural muss die Dativform „ihnen“ verwendet werden."
+
+    korrekte_formen:
+      - pronomen: "sie"
+        typ: "3. Person Singular"
+        genus: "feminin"
+        kasus: "Dativ"
+        form: "ihr"
+
+      - pronomen: "sie"
+        typ: "3. Person Plural"
+        kasus: "Dativ"
+        form: "ihnen"
+
+      - pronomen: "Sie"
+        typ: "Höflichkeitsform"
+        kasus: "Dativ"
+        form: "Ihnen"
+
+    migrationsanforderungen:
+      - "Zwischen „sie“ im Singular feminin, „sie“ im Plural und der Höflichkeitsform „Sie“ unterscheiden."
+      - "Für „sie“ im Plural im Dativ die Form „ihnen“ verwenden."
+      - "Für die Höflichkeitsform „Sie“ im Dativ die Form „Ihnen“ verwenden."
+      - "In der Benutzeroberfläche Numerus und gegebenenfalls Genus anzeigen."
+      - "Im Personenfilter separate Optionen für „sie (Singular, feminin)“, „sie (Plural)“ und „Sie (Höflichkeitsform)“ anbieten."
