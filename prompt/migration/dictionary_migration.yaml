@@ -1,0 +1,47 @@
+# It contains what is needed for to migrate from previous database to current one.
+you can not add to similar words with tottal different meanings: "you can not add to similar words with tottal different meanings"
+
+pronouncation:
+  - solving the pronouncation problem,  currently it goes as far as adjekti- comparative. It must go until [ sigh where
+
+
+searching:
+  criteria: "The searching must do the filtering according to Persian, English and Penglish alphabets"
+  result:
+    number: "the result is already modifiable in the setting file"
+Adding new entries:
+  - I must eb allowed to to enter two similar entries wwhich have different meanings
+GUI:
+  style: ""
+  bottom menu of each entry:
+    - the verb entries next to edit and delet must have conjugation link that takes the user to the conjugation tab while having the clicked verb already in search for conjugation and shows already the conjugation for the given verb
+    - for adjectives the must be a buttom next to edit and delete that take us to adjectiv tab and show me all kasus for that adjektiv
+    - for pronouns there should be a button next to edit and delet that takes us to kasus tab for pronouns with having all teh kasus for that pronoun selected
+
+database_miggration:
+  entry_format:
+    meaning:
+      - there must be three indepenedent lines for searching, one for english, the next for persian and the last for pinglish
+      - verb:
+          instructions: adding different compositions for different propositions or usages (for example with which different positions it comes and how each meanings change)
+          verb:
+            - example: |
+                hinzufügen:
+                persian: اضافه کردن
+                english: to add
+                penglish: ezafeh kardan
+                pronouncation: [ˈhɪnʦuˌfyːɡn̩]
+                grammatische Rolle: verb
+                kasus: Akkusative
+                Verwendung: etwas (Akk.) zu etwas (Dat.) hinzufügen
+                Bedeutung: etwas zusätzlich zu etwas anderem geben oder ergänzen.
+                Synonyme: ergänzen, beigeben, dazugeben
+                ex: Ich füge Milch zum Kaffee hinzu: I add milk to the coffee.
+                ex: Kannst du Zucker hinzufügen: Can you add sugar?
+                Präsens: ich füge hinzu
+                Präteritum: ich fügte hinzu
+                Perfekt: ich habe hinzugefügt
+                Futur I: ich werde hinzufügen
+                Konjunktiv II: ich fügte hinzu / ich würde hinzufügen
+                Konjunktiv I: ich füge hinzu
+                Imperativ: du: Füg hinzu! / Füge hinzu! ihr: Fügt hinzu!

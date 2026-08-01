@@ -3,6 +3,7 @@
 
 "database":
   - As in general explaination I have written the database is in woertschatz.txt and each entry is seprated from the next with a blank line
+
 setting file:
   - it should be a yaml file
   - it should include a variable to include the full path to woertschatz.txt
@@ -10,6 +11,7 @@ setting file:
 "GUI":
   - The application window must be formed of a search edit box in front of which an add buttom.
   - Down to the edit box and the add buttom there must be a scrollable large textarea in which I see the first
+
 
 "The rules you should follow while searching for the meaning are":
   - search for the entries such that as I type the name it shows matching words from four criteria. 1. german word, english word 3. penglish word 4. persian word

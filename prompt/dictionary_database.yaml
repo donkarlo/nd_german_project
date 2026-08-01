@@ -4,7 +4,7 @@
     each new entry starts after a blank line and it follows a pattern similar to the following and you should use these examples as templates to generate the meaning for me when I ask for the meaning of a word. Even if I ask in persion or penglish or english or german youmust always follow the examples. 
       
       noun:
-          - example:
+          example:
               die Entscheidung [ɛntˈʃaɪ̯dʊŋ]: decision
               Bedeutung: Auswahl zwischen mehreren Möglichkeiten nach Überlegung. Ergebnis eines Entscheidungsprozesses.
               Genitiv: der Entscheidung
@@ -15,20 +15,13 @@
               ex: Die Entscheidung war schwierig: The decision was difficult.
       
         verb:
-          - example:
+          example:
               hinzufügen [ˈhɪnʦuˌfyːɡn̩]: to add
               Verwendung: etwas (Akk.) zu etwas (Dat.) hinzufügen
               Bedeutung: etwas zusätzlich zu etwas anderem geben oder ergänzen.
               Synonyme: ergänzen, beigeben, dazugeben
               ex: Ich füge Milch zum Kaffee hinzu: I add milk to the coffee.
               ex: Kannst du Zucker hinzufügen: Can you add sugar?
-              Präsens: ich füge hinzu
-              Präteritum: ich fügte hinzu
-              Perfekt: ich habe hinzugefügt
-              Futur I: ich werde hinzufügen
-              Konjunktiv II: ich fügte hinzu / ich würde hinzufügen
-              Konjunktiv I: ich füge hinzu
-              Imperativ: du: Füg hinzu! / Füge hinzu! ihr: Fügt hinzu!
         adverb:
           example:
             oft [ɔft] (Adverb, nicht steigerbar): often; frequently
@@ -65,3 +58,5 @@
             Gebrauch: bezeichnet eine unbestimmte Person
             ex: Jemand wartet vor der Tür: Someone is waiting at the door.
             ex: Ich habe jemandem geholfen: I helped someone.
+          partikel:
+            example:

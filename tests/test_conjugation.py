@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class ConjugationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.database = IrregularVerbDatabase.from_file(ROOT / "irregular_verbs.yaml")
+        cls.database = IrregularVerbDatabase.from_file(ROOT / "data" / "irregular_verbs.yaml")
         cls.conjugator = GermanConjugator(cls.database)
 
     def card(self, result, section: str, tense: str) -> list[str]:
