@@ -51,7 +51,23 @@ from conjugation_core import (
     normalize_verb,
 )
 from dictionary_core import DictionaryEntry, DictionaryIndex, DuplicateEntryError, parse_entry
-from grammar_core import (ADJECTIVE_ENDINGS, ARTICLES, CASES, GENDERS, PERSONAL, PERSONS, POSSESSIVE_STEMS, PRONOUN_DECLENSIONS, REFLEXIVE, decline_adjective, possessive_form)
+from grammar_core import (
+    ADJECTIVE_AUTO,
+    ADJECTIVE_ENDINGS,
+    ARTICLES,
+    CASES,
+    GENDERS,
+    PERSONAL,
+    PERSONS,
+    POSSESSIVE_STEMS,
+    PRONOUN_DECLENSIONS,
+    REFLEXIVE,
+    decline_adjective,
+    detect_adjective_declension,
+    load_irregular_adjective_stems,
+    possessive_article_form,
+    possessive_pronoun_form,
+)
 from pronunciation_core import (
     PronunciationDownloadError,
     build_pronunciation_url,
@@ -61,8 +77,9 @@ from pronunciation_core import (
 
 APP_DIR = Path(__file__).resolve().parent
 DEFAULT_SETTINGS = {
-    "database_path": "/absolute/path/to/woerterbuch.txt",
-    "irregular_verbs_path": str(APP_DIR / "irregular_verbs.yaml"),
+    "database_path": str(APP_DIR / "data" / "woerterbuch.txt"),
+    "irregular_verbs_path": str(APP_DIR / "data" / "irregular_verbs.yaml"),
+    "irregular_adjectives_path": str(APP_DIR / "data" / "irregular_adjectives.yaml"),
     "max_results": 20,
     "fuzzy_threshold": 58,
     "search_debounce_ms": 80,
@@ -159,7 +176,7 @@ class AddEntryDialog(QDialog):
         parent: QWidget | None = None,
         *,
         initial_text: str = "",
-        window_title: str = "Add dictionary entry",
+        window_title: str = "Add app entry",
     ) -> None:
         super().__init__(parent)
         self.setWindowTitle(window_title)
@@ -230,6 +247,17 @@ class DictionaryWindow(QMainWindow):
         self.irregular_verbs_path = resolve_configured_path(
             settings["irregular_verbs_path"], settings_path
         )
+        self.irregular_adjectives_path = resolve_configured_path(
+            settings["irregular_adjectives_path"], settings_path
+        )
+        try:
+            self.irregular_adjective_stems = load_irregular_adjective_stems(
+                self.irregular_adjectives_path
+            )
+            self.irregular_adjective_error: str | None = None
+        except (FileNotFoundError, OSError, UnicodeError, ValueError, yaml.YAMLError) as exc:
+            self.irregular_adjective_stems = {}
+            self.irregular_adjective_error = str(exc)
         self.index: DictionaryIndex | None = None
         self.conjugation_database: IrregularVerbDatabase | None = None
         self.conjugator: GermanConjugator | None = None
@@ -291,7 +319,7 @@ class DictionaryWindow(QMainWindow):
         self.search_box.setFocus()
 
     def _build_dictionary_tab(self) -> QWidget:
-        # This is the original dictionary interface and behavior, placed unchanged inside its own tab.
+        # This is the original app interface and behavior, placed unchanged inside its own tab.
         tab = QWidget(self)
         outer = QVBoxLayout(tab)
         outer.setSizeConstraint(QLayout.SizeConstraint.SetNoConstraint)
@@ -305,7 +333,7 @@ class DictionaryWindow(QMainWindow):
         top.addWidget(self.search_box, 1)
 
         self.add_button = QPushButton("Add", tab)
-        self.add_button.setAccessibleName("Add dictionary entry")
+        self.add_button.setAccessibleName("Add app entry")
         top.addWidget(self.add_button)
         outer.addLayout(top)
 
@@ -430,7 +458,7 @@ class DictionaryWindow(QMainWindow):
         outer = QVBoxLayout(tab)
         top = QHBoxLayout()
         pronoun_types = [
-            "Personalpronomen", "Possessivpronomen / Possessivartikel",
+            "Personalpronomen", "Possessivartikel", "Possessivpronomen",
             "Reflexivpronomen", *PRONOUN_DECLENSIONS.keys()
         ]
         self.pronoun_type = self._make_combo(pronoun_types, tab)
@@ -462,7 +490,7 @@ class DictionaryWindow(QMainWindow):
     def _render_pronoun(self) -> None:
         selected_type = self.pronoun_type.currentText()
         all_types = [
-            "Personalpronomen", "Possessivpronomen / Possessivartikel",
+            "Personalpronomen", "Possessivartikel", "Possessivpronomen",
             "Reflexivpronomen", *PRONOUN_DECLENSIONS.keys()
         ]
         types = all_types if selected_type == "Alle" else [selected_type]
@@ -472,7 +500,7 @@ class DictionaryWindow(QMainWindow):
         genders = self._selected(self.pronoun_gender, GENDERS)
 
         show_person = selected_type in ("Alle", "Personalpronomen", "Reflexivpronomen")
-        show_owner = selected_type in ("Alle", "Possessivpronomen / Possessivartikel")
+        show_owner = selected_type == "Alle" or selected_type.startswith("Possessiv")
         show_gender = selected_type == "Alle" or selected_type.startswith("Possessiv") or selected_type in PRONOUN_DECLENSIONS
         self.pronoun_person.setVisible(show_person)
         self.pronoun_labels["Person:"].setVisible(show_person)
@@ -496,11 +524,16 @@ class DictionaryWindow(QMainWindow):
                     for person in persons:
                         rows.append([case, person, REFLEXIVE[case][PERSONS.index(person)]])
                 headers = ["Kasus", "Person", "Form"]
-            elif typ == "Possessivpronomen / Possessivartikel":
+            elif typ in ("Possessivartikel", "Possessivpronomen"):
+                form_builder = (
+                    possessive_article_form
+                    if typ == "Possessivartikel"
+                    else possessive_pronoun_form
+                )
                 for owner in owners:
                     for case in cases:
                         for gender in genders:
-                            rows.append([owner, case, gender, possessive_form(owner, case, gender)])
+                            rows.append([owner, case, gender, form_builder(owner, case, gender)])
                 headers = ["Besitzer/Subjekt", "Kasus", "Genus/Numerus des Bezugsworts", "Form"]
             else:
                 for case in cases:
@@ -521,11 +554,18 @@ class DictionaryWindow(QMainWindow):
         self.adj_search = QLineEdit(tab)
         self.adj_search.setClearButtonEnabled(True)
         self.adj_search.setPlaceholderText("Optionales Adjektiv, z. B. gut, hoch, dunkel …")
-        self.adj_type = self._make_combo(ADJECTIVE_ENDINGS.keys(), tab)
+        self.adj_determiner = QLineEdit(tab)
+        self.adj_determiner.setClearButtonEnabled(True)
+        self.adj_determiner.setPlaceholderText("z. B. der, ein, mein; leer = ohne Artikel")
+        self.adj_type = QComboBox(tab)
+        self.adj_type.addItem(ADJECTIVE_AUTO)
+        self.adj_type.addItems(list(ADJECTIVE_ENDINGS.keys()))
+        self.adj_type.addItem("Alle")
         self.adj_case = self._make_combo(CASES, tab)
         self.adj_gender = self._make_combo(GENDERS, tab)
-        for label, widget in (("Adjektiv:", self.adj_search), ("Deklination:", self.adj_type),
-                              ("Kasus:", self.adj_case), ("Genus/Numerus:", self.adj_gender)):
+        for label, widget in (("Adjektiv:", self.adj_search), ("Begleiter/Artikel:", self.adj_determiner),
+                              ("Deklination:", self.adj_type), ("Kasus:", self.adj_case),
+                              ("Genus/Numerus:", self.adj_gender)):
             top.addWidget(QLabel(label))
             top.addWidget(widget)
         outer.addLayout(top)
@@ -533,6 +573,7 @@ class DictionaryWindow(QMainWindow):
         self.adj_results.setFont(QFont("Sans Serif", 10))
         outer.addWidget(self.adj_results, 1)
         self.adj_search.textChanged.connect(self._render_adjective)
+        self.adj_determiner.textChanged.connect(self._render_adjective)
         for combo in (self.adj_type, self.adj_case, self.adj_gender):
             combo.currentTextChanged.connect(self._render_adjective)
         self._render_adjective()
@@ -540,7 +581,19 @@ class DictionaryWindow(QMainWindow):
 
     def _render_adjective(self) -> None:
         adjective = self.adj_search.text().strip()
-        declensions = self._selected(self.adj_type, ADJECTIVE_ENDINGS.keys())
+        determiner = self.adj_determiner.text().strip()
+        selected_declension = self.adj_type.currentText()
+
+        if selected_declension == ADJECTIVE_AUTO:
+            detected, detection_note = detect_adjective_declension(determiner)
+            declensions = [detected] if detected else list(ADJECTIVE_ENDINGS.keys())
+        elif selected_declension == "Alle":
+            declensions = list(ADJECTIVE_ENDINGS.keys())
+            detection_note = "Manuelle Auswahl: alle drei Deklinationsarten."
+        else:
+            declensions = [selected_declension]
+            detection_note = "Manuelle Auswahl; der Begleiter wird nicht automatisch ausgewertet."
+
         cases = self._selected(self.adj_case, CASES)
         genders = self._selected(self.adj_gender, GENDERS)
         rows: list[list[str]] = []
@@ -548,14 +601,36 @@ class DictionaryWindow(QMainWindow):
             for case in cases:
                 row = [declension, case]
                 for gender in genders:
-                    form, ending = decline_adjective(adjective, declension, case, gender)
+                    form, ending = decline_adjective(
+                        adjective,
+                        declension,
+                        case,
+                        gender,
+                        self.irregular_adjective_stems,
+                    )
                     row.append(form if adjective else "-" + ending)
                 rows.append(row)
         headers = ["Deklination", "Kasus", *genders]
         title = f"Adjektivdeklination: {html.escape(adjective)}" if adjective else "Adjektivendungen"
-        note = "Ohne eingegebenes Adjektiv werden nur die Endungen gezeigt."
+        if self.irregular_adjective_error:
+            stem_note = (
+                " Die Datei für unregelmäßige Adjektivstämme konnte nicht geladen werden: "
+                + self.irregular_adjective_error
+            )
+        else:
+            stem_note = (
+                f" {len(self.irregular_adjective_stems)} besondere Adjektivstämme aus "
+                f"{self.irregular_adjectives_path.name} geladen."
+            )
+        note = (
+            "Ein Adjektiv ist nicht von sich aus stark, schwach oder gemischt; "
+            "die Deklinationsart hängt vom Begleiter ab. "
+            + detection_note
+            + stem_note
+            + " Ohne eingegebenes Adjektiv werden nur die Endungen gezeigt."
+        )
         self.adj_results.setHtml(
-            self.GRAMMAR_CSS + f"<h2>{title}</h2><p class='hint'>{note}</p>" + self._table(headers, rows)
+            self.GRAMMAR_CSS + f"<h2>{title}</h2><p class='hint'>{html.escape(note)}</p>" + self._table(headers, rows)
         )
 
     def _focus_current_search(self) -> None:
@@ -566,7 +641,7 @@ class DictionaryWindow(QMainWindow):
             self.search_box.setFocus()
             self.search_box.selectAll()
 
-    # ------------------------ Original dictionary behavior ------------------------
+    # ------------------------ Original app behavior ------------------------
     def _load_database(self) -> None:
         try:
             self.index = DictionaryIndex.from_file(self.database_path)
@@ -575,7 +650,7 @@ class DictionaryWindow(QMainWindow):
             return
         except (OSError, UnicodeError, ValueError) as exc:
             self.index = None
-            self.results.setPlainText(f"Could not load the dictionary database:\n{exc}")
+            self.results.setPlainText(f"Could not load the app database:\n{exc}")
             self.status.setText("Database unavailable")
             QMessageBox.critical(self, "Database error", str(exc))
             return
@@ -604,7 +679,7 @@ class DictionaryWindow(QMainWindow):
             return
         chosen, _ = QFileDialog.getOpenFileName(
             self,
-            "Select dictionary database",
+            "Select app database",
             str(Path.home()),
             "Text files (*.txt);;All files (*)",
         )
@@ -832,7 +907,7 @@ class DictionaryWindow(QMainWindow):
 
     def open_add_dialog(self) -> None:
         if self.index is None:
-            QMessageBox.warning(self, "Database unavailable", "Load a dictionary database first.")
+            QMessageBox.warning(self, "Database unavailable", "Load a app database first.")
             return
         dialog = AddEntryDialog(self)
         if dialog.exec() != QDialog.Accepted:
@@ -856,18 +931,18 @@ class DictionaryWindow(QMainWindow):
         QMessageBox.information(
             self,
             "Entry added",
-            f'Added “{added.headword}” ({added.role}) to the dictionary.',
+            f'Added “{added.headword}” ({added.role}) to the app.',
         )
 
     def open_edit_dialog(self, entry_index: int) -> None:
         if self.index is None or not 0 <= entry_index < len(self.index.entries):
-            QMessageBox.warning(self, "Entry unavailable", "This dictionary entry no longer exists.")
+            QMessageBox.warning(self, "Entry unavailable", "This app entry no longer exists.")
             return
         original = self.index.entries[entry_index]
         dialog = AddEntryDialog(
             self,
             initial_text=original.raw,
-            window_title=f"Edit dictionary entry: {original.headword}",
+            window_title=f"Edit app entry: {original.headword}",
         )
         if dialog.exec() != QDialog.Accepted:
             return
@@ -891,12 +966,12 @@ class DictionaryWindow(QMainWindow):
 
     def delete_dictionary_entry(self, entry_index: int) -> None:
         if self.index is None or not 0 <= entry_index < len(self.index.entries):
-            QMessageBox.warning(self, "Entry unavailable", "This dictionary entry no longer exists.")
+            QMessageBox.warning(self, "Entry unavailable", "This app entry no longer exists.")
             return
         entry = self.index.entries[entry_index]
         answer = QMessageBox.question(
             self,
-            "Delete dictionary entry",
+            "Delete app entry",
             f'Delete “{entry.headword}” ({entry.role}) permanently?',
             QMessageBox.Yes | QMessageBox.No,
             QMessageBox.No,
@@ -1085,7 +1160,7 @@ class DictionaryWindow(QMainWindow):
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Search a dictionary and conjugate German verbs.")
+    parser = argparse.ArgumentParser(description="Search a app and conjugate German verbs.")
     parser.add_argument(
         "--settings",
         type=Path,

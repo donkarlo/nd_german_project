@@ -169,7 +169,7 @@ def detect_role(first_line: str, headword: str) -> str:
 def parse_entry(raw: str) -> DictionaryEntry:
     # Be tolerant of BOMs, accidental separator lines, comments, or other
     # harmless formatting at the beginning of an entry.  A single unusual
-    # entry must never prevent the whole dictionary from opening.
+    # entry must never prevent the whole app from opening.
     cleaned = raw.replace("\ufeff", "").strip()
     if not cleaned:
         raise ValueError("The entry is empty.")

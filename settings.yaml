@@ -1,5 +1,6 @@
-database_path: /home/donkarlo/Dropbox/repo/nd_deutsch_learning_project/src/app/data/woerterbuch.txt
-irregular_verbs_path: /home/donkarlo/Dropbox/repo/nd_deutsch_learning_project/src/app/data/irregular_verbs.yaml
+database_path: data/woerterbuch.txt
+irregular_verbs_path: data/irregular_verbs.yaml
+irregular_adjectives_path: data/irregular_adjectives.yaml
 max_results: 20
 fuzzy_threshold: 58
 search_debounce_ms: 80

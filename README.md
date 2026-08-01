@@ -26,7 +26,7 @@ The original dictionary search/add interface remains in the **Dictionary** tab. 
 
 - Searches irregular verbs with fast autocomplete and typo-tolerant suggestions.
 - Generates regular verbs directly with built-in German conjugation rules.
-- Loads irregular and mixed verbs from `irregular_verbs.yaml`.
+- Loads irregular and mixed verbs from the bundled `data/irregular_verbs.yaml`.
 - The bundled database contains 164 common irregular/mixed base verbs and auxiliary overrides.
 - Common prefixed compounds can inherit the base verb automatically, for example:
   - `aufstehen` from `stehen`
@@ -50,6 +50,14 @@ The original dictionary search/add interface remains in the **Dictionary** tab. 
   `durchlesen`.
 - Corrects Partizip II/Partizip I edge cases such as `übernachtet`, `seiend`,
   `tuend` and `antuend`.
+
+
+### Pronoun and adjective fixes
+
+- The Pronomen tab distinguishes `sie (Singular, feminin)`, `sie (Plural)`, and `Sie (Höflichkeitsform)`, so Dativ forms such as `ihr`, `ihnen`, and `Ihnen` are no longer mixed up.
+- Possessivartikel and standalone Possessivpronomen are shown as separate paradigms.
+- Demonstrative `der/die/das` now uses pronoun forms such as Dativ plural `denen` and Genitiv `dessen/deren`.
+- The Adjektivendungen tab can automatically choose strong, weak, or mixed declension from an entered determiner/article. Unknown determiners show all three paradigms instead of guessing.
 
 ## Install and run on Linux
 
@@ -123,4 +131,4 @@ python -m unittest discover -s tests -v
 The application now contains three additional tabs:
 - **Artikel**: filters article type, case, and gender/number.
 - **Pronomen**: filters personal, reflexive, demonstrative, relative, interrogative, and possessive forms. Possessive forms distinguish the owner/person from the gender/number and case of the referenced noun.
-- **Adjektivendungen**: generates strong, weak, and mixed adjective forms from an adjective search field plus case and gender/number filters. Orthographically special stems are documented in `irregular_adjectives.yaml`.
+- **Adjektivendungen**: generates strong, weak, and mixed adjective forms from an adjective search field plus case and gender/number filters. Orthographically special stems are loaded at runtime from the YAML file configured by `irregular_adjectives_path` (by default `data/irregular_adjectives.yaml`).

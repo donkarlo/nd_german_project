@@ -47,7 +47,7 @@ class DictionaryCoreTests(unittest.TestCase):
 
     def test_duplicate_prevention_and_append(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "dictionary.txt"
+            path = Path(tmp) / "app.txt"
             path.write_text(SAMPLE, encoding="utf-8")
             index = DictionaryIndex.from_file(path)
             with self.assertRaises(DuplicateEntryError):
