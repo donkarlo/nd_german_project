@@ -9,11 +9,14 @@ searching:
   criteria: "The searching must do the filtering according to Persian, English and Penglish alphabets"
   result:
     number: "the result is already modifiable in the setting file"
+    words:
+      - when I search for notwendig, firt it shows die Notewendigkeit and then notwendig itself
     verb:
       - if I give a conjugated verb instead of infinitive then you must include the infinitive for that verb in the search reasults
     bugs to be solved:
       - I looked for "leisen" which is a form of "leise" but it didnt find teh word "leise"
       - when i searched for fleich, hackfleich or other german or english or persian or penglish words that have the word fleich in them didnt show up
+
 Adding new entries:
   - I must be allowed to to enter two similar entries wwhich have different meanings
 GUI:
@@ -25,7 +28,10 @@ GUI:
     - for adjectives the must be a buttom next to edit and delete that take us to adjectiv tab and show me all kasus for that adjektiv
     - for pronouns there should be a button next to edit and delet that takes us to kasus tab for pronouns with having all teh kasus for that pronoun selected
 
-database_miggration:
+database_migration:
+  todo:
+    - writing multiple applications for for example intessieren für va intressiren an
+    - adding the different meaning in a new sub entry for the same word
   entry:
     addition:
       cases to avoid stopping addition:
@@ -40,22 +46,25 @@ database_miggration:
               - Penglisch bedutungen
             examples:
               hinzufügen:
-                persian:
-                  - اضافه کردن
-                english:
-                  - to add
-                penglish:
-                  - ezafeh kardan
-                german: etwas zusätzlich zu etwas anderem geben oder ergänzen.
-                usage: etwas (Akk.) zu etwas (Dat.) hinzufügen
-                pronouncation: [ ˈhɪnʦuˌfyːɡn̩ ]
                 grammatic role: verb
-                case: Akkusative
-                synonyme: ergänzen, beigeben, dazugeben
-                ex:
-                  Ich füge Milch zum Kaffee hinzu: I add milk to the coffee.
-                  Kannst du Zucker hinzufügen: Can you add sugar?
-            example:
+                pronouncation: [ ˈhɪnʦuˌfyːɡn̩ ]
+                application:
+                  etwas (Akk.) zu etwas (Dat.) hinzufügen:
+                    persian:
+                      - اضافه کردن
+                      - افزودن
+                    english:
+                      - to add
+                    penglish:
+                      - ezafeh kardan
+                      - afzoodan
+                    german: etwas zusätzlich zu etwas anderem geben oder ergänzen.
+                    synonyme: ergänzen, beigeben, dazugeben
+                    example:
+                      Ich füge Milch zum Kaffee hinzu: I add milk to the coffee.
+                      Kannst du Zucker hinzufügen: Can you add sugar?
+
+            adjectiv:
               wichtig [ˈvɪçtɪç] (Adjektiv, Komparativ:wichtiger, Superlativ:
                 am wichtigsten): important
               persian: مهم
@@ -63,7 +72,7 @@ database_miggration:
               penglish: mohem
               german: von großer Bedeutung; wesentlich für etwas.
               synonyme: bedeutend, wesentlich
-              ex:
+              example:
                 Das ist eine wichtige Entscheidung: That is an important decision.
                 Dieses Problem ist wichtiger als das andere: This problem is more important than the other one.
                 Gesundheit ist am wichtigsten: Health is the most important.
@@ -81,10 +90,20 @@ database_miggration:
 
                 Bedeutung: viele Male; in regelmäßigen Abständen wiederkehrend.
                 Synonyme: häufig, regelmäßig
-                ex:
+                example:
                   Ich gehe oft ins Fitnessstudio: I often go to the gym.
                   Oft denke ich an die Vergangenheit: Often I think about the past.
-            noun: null
+            noun:
+              der Student [ʃtuˈdɛnt]:
+                english: student
+                deutsch: männliche Person, die an einer Universität oder Hochschule studiert.
+                feminin: die Studentin
+                genitiv: des Studenten
+                plural: die Studenten/die Studentinnen
+                Synonyme: Studierender, Hochschüler
+                example:
+                  Er ist Student an der Universität Wien: He is a student at the University of Vienna.
+                  Seine Schwester ist Studentin: His sister is a student.
             conjunktion: null
             partikel: null
 
