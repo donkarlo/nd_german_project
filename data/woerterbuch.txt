@@ -31426,3 +31426,23 @@ Attributiv und adverbial verwendbar
 ex: Ich gehe den Ablauf gedanklich noch einmal durch: I go through the process once again in my mind.
 ex: Sie war gedanklich schon beim nächsten Problem: Mentally, she was already thinking about the next problem.
 ex: Ich habe die Reise gedanklich schon geplant: I have already planned the trip in my mind.
+
+ungern [ˈʊnɡɛʁn] (Adverb, nicht steigerbar): reluctantly; not gladly; unwillingly
+Bedeutung: mit wenig Freude oder Widerwillen; man macht etwas, obwohl man es nicht gern macht.
+Synonyme: widerwillig, unwillig, nur ungern
+ex: Ich gehe ungern früh ins Bett: I don't like going to bed early.
+ex: Sie spricht ungern über ihre Probleme: She is reluctant to talk about her problems.
+
+anschirren [ˈanʃɪʁən] (trennbar, transitiv): to harness; to hitch up
+Verwendung: ein Tier (Akk.) anschirren
+Bedeutung: einem Zugtier, besonders einem Pferd, ein Geschirr anlegen, damit es einen Wagen, Schlitten oder Ähnliches ziehen kann.
+Synonyme: anspannen, aufzäumen
+ex: Der Bauer schirrt die Pferde an: The farmer harnesses the horses.
+ex: Wir müssen die Pferde vor der Fahrt anschirren: We have to harness the horses before the journey.
+Präsens: ich schirre an
+Präteritum: ich schirrte an
+Perfekt: ich habe angeschirrt
+Futur I: ich werde anschirren
+Konjunktiv II: ich schirrte an / ich würde anschirren
+Konjunktiv I: ich schirre an
+Imperativ: du: Schirr an! ihr: Schirrt an!
