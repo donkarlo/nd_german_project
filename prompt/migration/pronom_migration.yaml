@@ -1,2 +1,4 @@
 # nur für Adjektiv Tab
 personalpronomen_migration: null
+missing:
+  - variants of jede is missing

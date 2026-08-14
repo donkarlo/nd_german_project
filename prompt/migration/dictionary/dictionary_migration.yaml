@@ -19,6 +19,33 @@ searching:
 
 Adding new entries:
   - I must be allowed to to enter two similar entries wwhich have different meanings
+  - for example these words can not be entered individually: |
+      der Stamm [ʃtam]: stem; root
+      Bedeutung: der unveränderliche Grundteil eines Wortes, an den Endungen oder andere Wortteile angefügt werden können.
+      Genitiv: des Stammes
+      Plural: die Stämme
+      Kollokation: der Stamm eines Wortes
+      Synonyme: Wortstamm, Grundform
+      ex: „lern-“ ist der Stamm des Verbs „lernen“: “lern-” is the stem of the verb “lernen”.
+      ex: An den Stamm werden verschiedene Endungen angefügt: Different endings are added to the stem.
+
+      der Stamm [ʃtam]: trunk
+      Bedeutung: der dicke, feste Hauptteil eines Baumes zwischen den Wurzeln und den Ästen.
+      Genitiv: des Stammes
+      Plural: die Stämme
+      Kollokation: der Stamm eines Baumes
+      Synonyme: Baumstamm
+      ex: Der Stamm dieses Baumes ist sehr dick: The trunk of this tree is very thick.
+      ex: Er sitzt auf einem alten Baumstamm: He is sitting on an old tree trunk.
+
+      der Stamm [ʃtam]: tribe
+      Bedeutung: eine traditionelle Gruppe von Menschen mit gemeinsamer Herkunft, Kultur oder Sprache.
+      Genitiv: des Stammes
+      Plural: die Stämme
+      Kollokation: einem Stamm angehören
+      Synonyme: Volksgruppe, Gemeinschaft
+      ex: Dieser Stamm lebt seit Jahrhunderten in dieser Region: This tribe has lived in this region for centuries.
+      ex: Die verschiedenen Stämme sprechen unterschiedliche Sprachen: The different tribes speak different languages.
 GUI:
   style:
     examples:
@@ -104,6 +131,25 @@ database_migration:
                 example:
                   Er ist Student an der Universität Wien: He is a student at the University of Vienna.
                   Seine Schwester ist Studentin: His sister is a student.
+              die Bank [baŋk]: bank
+                Bedeutung: ein Unternehmen, das Geld verwaltet, Kredite vergibt und andere Finanzdienstleistungen anbietet.
+                Genitiv: der Bank
+                Plural: die Banken
+                Kollokation: Geld bei der Bank einzahlen
+                Synonyme: Kreditinstitut, Geldinstitut
+                ex:
+                  Ich muss heute zur Bank gehen: I have to go to the bank today.
+                  Die Bank hat meinen Kredit genehmigt: The bank approved my loan.
+
+              die Bank [baŋk]: bench
+                Bedeutung: eine lange Sitzgelegenheit für mehrere Personen, oft aus Holz oder Metall.
+                Genitiv: der Bank
+                Plural: die Bänke
+                Kollokation: auf einer Bank sitzen
+                Synonyme: Sitzbank, Parkbank
+                ex:
+                  Wir sitzen auf einer Bank im Park: We are sitting on a bench in the park.
+                  Neben dem Eingang steht eine Bank: There is a bench next to the entrance.
             conjunktion: null
             partikel: null
 
