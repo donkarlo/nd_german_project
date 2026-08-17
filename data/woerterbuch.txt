@@ -1371,8 +1371,6 @@ Futur I: ich werde kurieren
 Konjunktiv II: ich kurierte / ich würde kurieren
 Konjunktiv I: ich kuriere
 
-willingness mishe chi ?
-
 die Bereitschaft [bəˈʁaɪ̯tʃaft]: willingness; readiness
 Bedeutung: innere Haltung, etwas tun zu wollen; das Einverstanden- oder Bereitsein für eine Handlung.
 Genitiv: der Bereitschaft
@@ -4232,9 +4230,14 @@ der Beutel: bag
 
 nicken: to nod
 
-der Link (pl. die Links): link
-ex: Bitte klicken Sie auf den folgenden Link: Please click on the following link
-ex: Ich schicke dir den Link per E-Mail: I’ll send you the link by email
+der Link [lɪŋk] (Nomen, maskulin): link; hyperlink
+Bedeutung: eine anklickbare Verbindung zu einer anderen Webseite, Datei oder Stelle in einem Dokument.
+Genitiv: des Links
+Plural: die Links
+Kollokation: auf einen Link klicken
+Synonyme: Verknüpfung, Hyperlink
+ex: Ich schicke dir den Link per E-Mail: I will send you the link by email.
+ex: Klicken Sie auf diesen Link: Click on this link.
 
 die URL (pl. die URLs): URL
 ex: Gib bitte die URL in den Browser ein: Please enter the URL into the browser
@@ -6149,7 +6152,20 @@ ex: Auf dem Tisch liegt ein Zettel: There is a note on the table.
 
 erfolgreich: successful
 
-reizen (jdn./etw.Akk ~): to irritate
+reizen [ˈʁaɪ̯t͡sn̩] (transitiv): to irritate; to stimulate; to tempt; to appeal to
+Verwendung: jemanden/etwas (Akk.) reizen
+Bedeutung: jemanden körperlich oder emotional irritieren; etwas anregen; bei jemandem Interesse oder Lust auf etwas hervorrufen.
+Synonyme: irritieren, anregen, verlocken
+ex: Der Rauch reizt meine Augen: The smoke irritates my eyes.
+ex: Diese Herausforderung reizt mich: This challenge appeals to me.
+ex: Es reizt mich, etwas Neues auszuprobieren: I am tempted to try something new.
+Präsens: ich reize
+Präteritum: ich reizte
+Perfekt: ich habe gereizt
+Futur I: ich werde reizen
+Konjunktiv II: ich reizte / ich würde reizen
+Konjunktiv I: ich reize
+Imperativ: du: Reiz! / Reize! ihr: Reizt!
 
 die Herausforderung [hɛˈʁaʊ̯sˌfɔʁdəʁʊŋ]: challenge
 Bedeutung: eine schwierige Aufgabe oder Situation, die Anstrengung, Mut oder Können verlangt.
@@ -10340,10 +10356,6 @@ ex: Der Sekretär arbeitet im Büro des Chefs: The secretary works in the boss�
 
 die Teekanne (pl. die Teekannen): teapot ex: Die Teekanne steht auf dem Tisch: The teapot is on the table. ex: Ich mache Tee mit einer Teekanne: I make tea with a teapot.
 
-die Seite (pl. die Seiten): side
-ex: Die rechte Seite des Buches ist leer: The right side of the book is empty
-ex: Er sitzt auf der anderen Seite des Tisches: He sits on the other side of the table
-
 das Sein: being
 
 das Geheimnis: secret
@@ -12489,8 +12501,6 @@ nichts mit etwas zu tun haben: to have nothing to do with something
 Synonyme: nicht zusammenhängen mit, nichts damit zu tun haben
 ex: Das hat nichts mit mir zu tun: That has nothing to do with me.
 ex: Sein Problem hat nichts mit der Arbeit zu tun: His problem has nothing to do with the work.
-
-die Seite: page
 
 sichAkk aufwärmen: to warm up
 
@@ -16357,8 +16367,6 @@ der Igel: eagle
 
 der Östen: east
 
-der Shatten: shade
-
 beständiger: stable
 
 die Tabelle [taˈbɛlə]: table
@@ -16717,15 +16725,19 @@ Futur I: ich werde Geld ausgeben
 Konjunktiv II: ich gäbe Geld aus / ich würde Geld ausgeben
 Konjunktiv I: ich gebe Geld aus
 
-Rad fahren: to cycle / to ride a bicycle
-ex: Ich fahre jeden Tag mit dem Rad: I cycle every day
-ex: Er fährt mit dem Fahrrad zur Arbeit: He cycles to work
+Rad fahren [ˈʁaːt ˌfaːʁən]: to ride a bike; to cycle
+Verwendung: Rad fahren
+Bedeutung: sich mit einem Fahrrad fortbewegen.
+Synonyme: Fahrrad fahren, mit dem Fahrrad fahren
+ex: Ich fahre jeden Tag Rad: I ride a bike every day.
+ex: Am Wochenende fahren wir zusammen Rad: We go cycling together on the weekend.
 Präsens: ich fahre Rad
 Präteritum: ich fuhr Rad
 Perfekt: ich bin Rad gefahren
 Futur I: ich werde Rad fahren
-Konjunktiv II: ich würde Rad fahren
+Konjunktiv II: ich führe Rad / ich würde Rad fahren
 Konjunktiv I: ich fahre Rad
+Imperativ: du: Fahr Rad! ihr: Fahrt Rad!
 
 denken [ˈdɛŋkn̩] (an + Akk./über + Akk.) unregelmäßig, transitiv/intransitiv: to think
 ex: Ich denke an dich: I think of you.
@@ -23811,10 +23823,6 @@ Kollokation: einen Fehler machen
 Synonyme: Irrtum, Versehen, Mangel
 ex: Ich habe einen Fehler gemacht: I made a mistake.
 ex: Dieser Satz hat viele Fehler: This sentence has many errors.
-
-Mir hat die deutsche Sprache gefallen: I liked the German language
-ex: Mir hat die deutsche Sprache schon immer gefallen: I have always liked the German language.
-ex: Nach dem Kurs hat mir die deutsche Sprache noch mehr gefallen: After the course I liked the German language even more.
 
 Mir hat die deutsche Sprache gefallen: I liked the German language
 ex: Mir hat die deutsche Sprache schon immer gefallen: I have always liked the German language.
@@ -31446,3 +31454,587 @@ Futur I: ich werde anschirren
 Konjunktiv II: ich schirrte an / ich würde anschirren
 Konjunktiv I: ich schirre an
 Imperativ: du: Schirr an! ihr: Schirrt an!
+
+engagiert [ɑ̃ɡaˈʒiːɐ̯t] (Adjektiv, Komparativ: engagierter, Superlativ: am engagiertesten): committed; dedicated; actively involved
+Bedeutung: mit großem Einsatz und starkem persönlichem Interesse für eine Aufgabe oder Sache tätig.
+Synonyme: aktiv, tatkräftig, einsatzbereit
+Attributiv und prädikativ verwendbar
+ex: Sie ist eine sehr engagierte Mitarbeiterin: She is a very dedicated employee.
+ex: Er engagiert sich sehr für den Umweltschutz: He is very committed to environmental protection.
+ex: Sie ist engagierter als ihre Kollegen: She is more dedicated than her colleagues.
+
+Du hast recht. Ich habe die Aussprache versehentlich weggelassen. Hier sind beide Einträge vollständig im gleichen Format:
+Fahrrad fahren [ˈfaːɐ̯ʁaːt ˌfaːʁən]: to ride a bicycle; to cycle
+Verwendung: Fahrrad fahren
+Bedeutung: sich mit einem Fahrrad fortbewegen.
+Synonyme: Rad fahren, mit dem Fahrrad fahren
+ex: Ich fahre jeden Tag Fahrrad: I ride a bicycle every day.
+ex: Am Wochenende fahren wir im Park Fahrrad: We cycle in the park on the weekend.
+Präsens: ich fahre Fahrrad
+Präteritum: ich fuhr Fahrrad
+Perfekt: ich bin Fahrrad gefahren
+Futur I: ich werde Fahrrad fahren
+Konjunktiv II: ich führe Fahrrad / ich würde Fahrrad fahren
+Konjunktiv I: ich fahre Fahrrad
+Imperativ: du: Fahr Fahrrad! ihr: Fahrt Fahrrad!
+
+strecken [ˈʃtʁɛkn̩] (transitiv): to stretch; to extend
+Verwendung: etwas (Akk.) strecken
+Bedeutung: einen Körperteil oder einen Gegenstand gerade machen oder in die Länge ausdehnen.
+Synonyme: ausstrecken, dehnen, verlängern
+ex: Ich strecke meine Arme nach oben: I stretch my arms upward.
+ex: Er streckt die Beine aus: He stretches out his legs.
+Präsens: ich strecke
+Präteritum: ich streckte
+Perfekt: ich habe gestreckt
+Futur I: ich werde strecken
+Konjunktiv II: ich streckte / ich würde strecken
+Konjunktiv I: ich strecke
+Imperativ: du: Streck! / Strecke! ihr: Streckt!
+
+sich strecken [zɪç ˈʃtʁɛkn̩] (reflexiv): to stretch oneself; to stretch
+Verwendung: sich (Akk.) strecken
+Bedeutung: den eigenen Körper oder Körperteile ausdehnen oder lang machen, oft nach dem Aufstehen oder langem Sitzen.
+Synonyme: sich dehnen, sich ausstrecken, sich lang machen
+ex: Ich strecke mich nach dem Aufstehen: I stretch after getting up.
+ex: Sie streckt sich, um das obere Regal zu erreichen: She stretches to reach the top shelf.
+Präsens: ich strecke mich
+Präteritum: ich streckte mich
+Perfekt: ich habe mich gestreckt
+Futur I: ich werde mich strecken
+Konjunktiv II: ich streckte mich / ich würde mich strecken
+Konjunktiv I: ich strecke mich
+Imperativ: du: Streck dich! / Strecke dich! ihr: Streckt euch!
+
+weiden [ˈvaɪ̯dn̩] (transitiv und intransitiv): to graze; to pasture
+Verwendung: Tiere (Akk.) weiden / Tiere weiden auf einer Wiese
+Bedeutung: Tiere auf einer Wiese Gras fressen lassen; auch: als Tier Gras auf einer Weide fressen.
+Synonyme: grasen, auf die Weide bringen, hüten
+ex: Der Bauer weidet seine Kühe auf der Wiese: The farmer grazes his cows in the meadow.
+ex: Die Schafe weiden auf dem Feld: The sheep are grazing in the field.
+Präsens: ich weide
+Präteritum: ich weidete
+Perfekt: ich habe geweidet
+Futur I: ich werde weiden
+Konjunktiv II: ich weidete / ich würde weiden
+Konjunktiv I: ich weide
+Imperativ: du: Weide! ihr: Weidet!
+
+verweisen [fɛɐ̯ˈvaɪ̯zn̩] (untrennbar, intransitiv): to refer; to point
+Verwendung: auf jemanden / etwas (Akk.) verweisen
+Bedeutung: auf eine Person, Information oder Quelle aufmerksam machen und zeigen, wo weitere Informationen zu finden sind.
+Synonyme: hinweisen, Bezug nehmen, aufmerksam machen
+ex: Der Autor verweist auf eine frühere Studie: The author refers to an earlier study.
+ex: Ich möchte auf diesen Abschnitt verweisen: I would like to refer to this section.
+Präsens: ich verweise
+Präteritum: ich verwies
+Perfekt: ich habe verwiesen
+Futur I: ich werde verweisen
+Konjunktiv II: ich verwiese / ich würde verweisen
+Konjunktiv I: ich verweise
+Imperativ: du: Verweis! ihr: Verweist!
+
+der Gegenstand [ˈɡeːɡn̩ˌʃtant]: subject; topic; matter
+Bedeutung: etwas, worüber gesprochen, geschrieben, geforscht oder nachgedacht wird.
+Genitiv: des Gegenstandes / Gegenstands
+Plural: die Gegenstände
+Kollokation: Gegenstand einer Diskussion sein
+Synonyme: Thema, Inhalt, Sache
+ex: Dieses Problem ist Gegenstand unserer Diskussion: This problem is the subject of our discussion.
+ex: Die Sprache ist Gegenstand seiner Forschung: Language is the subject of his research.
+
+lassen [ˈlasn̩] (transitiv, unregelmäßig): to let; to allow; to leave; to have something done
+Verwendung: jemanden (Akk.) etwas tun lassen / etwas irgendwo lassen / etwas machen lassen
+Bedeutung: erlauben, dass jemand etwas tut; etwas an einem Ort zurücklassen; veranlassen, dass jemand etwas für einen macht.
+Synonyme: erlauben, zurücklassen, veranlassen
+ex: Ich lasse ihn gehen: I let him go.
+ex: Ich lasse mein Auto reparieren: I have my car repaired.
+Präsens: ich lasse
+Präteritum: ich ließ
+Perfekt: ich habe gelassen
+Futur I: ich werde lassen
+Konjunktiv II: ich ließe / ich würde lassen
+Konjunktiv I: ich lasse
+Imperativ: du: Lass! ihr: Lasst!
+
+jedenfalls [ˈjeːdn̩ˌfals] (Adverb, nicht steigerbar): anyway; in any case; at any rate
+Bedeutung: unabhängig von anderen Umständen; auf jeden Fall; verwendet, um eine Aussage trotz Unsicherheit oder eines Gegensatzes als sicher oder wichtig darzustellen.
+Synonyme: auf jeden Fall, zumindest, ohnehin
+ex: Ich werde jedenfalls morgen kommen: I will come tomorrow anyway.
+ex: Jedenfalls müssen wir eine Entscheidung treffen: In any case, we have to make a decision.
+
+gestellt [ɡəˈʃtɛlt] (Partizip II von „stellen“): posed; asked
+Bedeutung: verwendet, wenn eine Frage, Aufgabe oder Forderung formuliert und an jemanden gerichtet wurde.
+Synonyme: gefragt, formuliert, vorgebracht
+ex: Die Frage wurde gestern gestellt: The question was asked yesterday.
+ex: Er hat mir eine schwierige Frage gestellt: He asked me a difficult question.
+
+der Abschluss [ˈapʃlʊs]: completion; graduation; degree
+Bedeutung: das erfolgreiche Beenden von etwas; auch eine Qualifikation, die man nach einer Ausbildung, Schule oder einem Studium erhält.
+Genitiv: des Abschlusses
+Plural: die Abschlüsse
+Kollokation: einen Abschluss machen
+Synonyme: Beendigung, Ende, Qualifikation
+ex: Ich habe meinen Abschluss an der Universität gemacht: I completed my degree at the university.
+ex: Für diese Stelle braucht man einen Hochschulabschluss: You need a university degree for this position.
+
+der Dienstvertrag [ˈdiːnstfɛɐ̯ˌtʁaːk]: employment contract; service contract
+Bedeutung: ein Vertrag, der die Rechte und Pflichten zwischen einem Arbeitgeber und einem Arbeitnehmer regelt.
+Genitiv: des Dienstvertrags / des Dienstvertrages
+Plural: die Dienstverträge
+Kollokation: einen Dienstvertrag abschließen
+Synonyme: Arbeitsvertrag, Anstellungsvertrag
+ex: Ich habe einen neuen Dienstvertrag unterschrieben: I signed a new employment contract.
+ex: Die Bedingungen stehen in den Dienstverträgen: The conditions are stated in the employment contracts.
+Form: „Dienstverträgen“ = Dativ Plural von „der Dienstvertrag“.
+
+üblich [ˈyːplɪç] (Adjektiv, Komparativ: üblicher, Superlativ: am üblichsten): usual; customary; common
+Bedeutung: so, wie es normalerweise gemacht wird oder häufig vorkommt.
+Synonyme: gewöhnlich, normal, gebräuchlich
+Attributiv und prädikativ verwendbar
+ex: Das ist in Österreich üblich: That is customary in Austria.
+ex: Die übliche Arbeitszeit beträgt acht Stunden: The usual working time is eight hours.
+ex: Diese Methode ist üblicher als die andere: This method is more common than the other one.
+
+die Erleichterung [ɛɐ̯ˈlaɪ̯çtəʁʊŋ]: relief; easing
+Bedeutung: das Gefühl, dass Sorge, Angst oder Belastung geringer geworden ist; auch das Leichtermachen einer Situation oder Aufgabe.
+Genitiv: der Erleichterung
+Plural: die Erleichterungen
+Kollokation: eine große Erleichterung sein
+Synonyme: Entlastung, Beruhigung, Vereinfachung
+ex: Es war eine große Erleichterung, die Prüfung bestanden zu haben: It was a great relief to have passed the exam.
+ex: Die neue Regelung bringt einige Erleichterungen: The new regulation brings some easements.
+
+die Gestaltung [ɡəˈʃtaltʊŋ]: design; shaping; arrangement
+Bedeutung: die Art und Weise, wie etwas geplant, geformt oder aufgebaut wird.
+Genitiv: der Gestaltung
+Plural: die Gestaltungen
+Kollokation: die Gestaltung eines Projekts
+Synonyme: Design, Formgebung, Ausarbeitung
+ex: Die Gestaltung der Webseite ist sehr übersichtlich: The design of the website is very clear.
+ex: Bei der Gestaltung des Vertrags müssen viele Details beachtet werden: Many details must be considered when drafting the contract.
+
+energisch [eˈnɛʁɡɪʃ] (Adjektiv, Komparativ: energischer, Superlativ: am energischsten): energetic; vigorous; forceful
+Bedeutung: mit viel Energie, Entschlossenheit und Aktivität handelnd.
+Synonyme: tatkräftig, entschlossen, kraftvoll
+Attributiv und prädikativ verwendbar
+ex: Sie ist eine sehr energische Person: She is a very energetic person.
+ex: Er arbeitet energisch an seinem Projekt: He works energetically on his project.
+ex: Heute fühle ich mich energischer als gestern: Today I feel more energetic than yesterday.
+
+das Kinn [kɪn]: chin
+Bedeutung: der untere Teil des Gesichts unter dem Mund.
+Genitiv: des Kinns
+Plural: die Kinne
+Kollokation: das Kinn heben
+Synonyme: Unterkieferbereich
+ex: Er hat ein kleines Kinn: He has a small chin.
+ex: Sie stützt ihr Kinn auf die Hand: She rests her chin on her hand.
+
+mürrisch [ˈmʏʁɪʃ] (Adjektiv, Komparativ: mürrischer, Superlativ: am mürrischsten): grumpy; bad-tempered; ill-tempered
+Bedeutung: oft schlecht gelaunt, unfreundlich und leicht verärgert.
+Synonyme: schlecht gelaunt, griesgrämig, verdrießlich
+Attributiv und prädikativ verwendbar
+ex: Er ist heute sehr mürrisch: He is very grumpy today.
+ex: Mein Nachbar ist ein mürrischer Mann: My neighbor is a bad-tempered man.
+ex: Er wird immer mürrischer: He is becoming more and more bad-tempered.
+
+die Mürrischkeit [ˈmʏʁɪçkaɪ̯t]: grumpiness; bad temper
+Bedeutung: die Eigenschaft, oft schlecht gelaunt, unfreundlich oder leicht verärgert zu sein.
+Genitiv: der Mürrischkeit
+Plural: selten; die Mürrischkeiten
+Kollokation: seine Mürrischkeit zeigen
+Synonyme: schlechte Laune, Griesgrämigkeit, Unfreundlichkeit
+ex: Seine Mürrischkeit macht die Zusammenarbeit schwierig: His grumpiness makes working together difficult.
+ex: Ich verstehe ihre ständige Mürrischkeit nicht: I don't understand her constant bad temper.
+
+sich mürrisch verhalten: to behave grumpily; to act bad-tempered
+Bedeutung: sich unfreundlich, gereizt oder schlecht gelaunt gegenüber anderen verhalten.
+Synonyme: schlecht gelaunt reagieren, gereizt reagieren
+ex: Warum verhältst du dich heute so mürrisch?: Why are you behaving so grumpily today?
+ex: Er hat sich den ganzen Morgen mürrisch verhalten: He behaved grumpily all morning.
+
+der Reis [ʁaɪ̯s]: rice
+Bedeutung: kleine essbare Körner einer Getreidepflanze, die gekocht als Nahrungsmittel gegessen werden.
+Genitiv: des Reises
+Plural: die Reise (selten; meist nicht im Plural verwendet)
+Kollokation: Reis kochen
+Synonyme: Reiskörner
+ex: Ich esse gern Reis mit Gemüse: I like eating rice with vegetables.
+ex: Der Reis ist schon fertig: The rice is already ready.
+
+das Subjekt [ˈzʊpjɛkt]: subject
+Bedeutung: Satzglied, das bezeichnet, wer oder was etwas tut oder über wen bzw. was etwas ausgesagt wird.
+Genitiv: des Subjekts
+Plural: die Subjekte
+Kollokation: das Subjekt eines Satzes
+Synonyme: Satzgegenstand
+ex: „Der Mann“ ist das Subjekt des Satzes: “The man” is the subject of the sentence.
+ex: Das Subjekt steht im Nominativ: The subject is in the nominative case.
+
+die Extraktion [ɛkstʁakˈtsi̯oːn]: extraction
+Bedeutung: Vorgang, bei dem etwas aus einem größeren Zusammenhang, Stoff oder Datensatz herausgenommen oder gewonnen wird.
+Genitiv: der Extraktion
+Plural: die Extraktionen
+Kollokation: die Extraktion von Daten
+Synonyme: Entnahme, Gewinnung, Herauslösung
+ex: Die Extraktion der Daten dauert einige Minuten: The extraction of the data takes a few minutes.
+ex: Die Extraktion eines Stoffes erfolgt mit einem Lösungsmittel: The extraction of a substance is carried out with a solvent.
+
+inklusiv [ɪnkluˈziːf] (Adjektiv, Komparativ: inklusiver, Superlativ: am inklusivsten): inclusive
+Bedeutung: alle Menschen oder Gruppen einbeziehend; niemanden ausschließend.
+Synonyme: einbeziehend, umfassend, integrativ
+Attributiv und prädikativ verwendbar
+ex: Die Schule verfolgt ein inklusives Bildungskonzept: The school follows an inclusive educational concept.
+ex: Unsere Gesellschaft sollte inklusiver werden: Our society should become more inclusive.
+ex: Dieses Angebot ist sehr inklusiv: This offer is very inclusive.
+
+je nach: depending on; according to
+Bedeutung: drückt aus, dass etwas von einer bestimmten Bedingung, Situation oder Person abhängt.
+Synonyme: abhängig von, entsprechend
+ex: Je nach Wetter gehen wir spazieren oder bleiben zu Hause: Depending on the weather, we go for a walk or stay at home.
+ex: Die Preise sind je nach Saison unterschiedlich: The prices vary depending on the season.
+ex: Je nach Person kann die Antwort anders sein: Depending on the person, the answer can be different.
+
+das Framework [ˈfʁeɪ̯mwɜːɐ̯k]: framework
+Bedeutung: grundlegende Struktur aus Bibliotheken, Werkzeugen und Regeln, auf deren Basis Software entwickelt wird.
+Genitiv: des Frameworks
+Plural: die Frameworks
+Kollokation: ein Software-Framework verwenden
+Synonyme: Rahmenwerk, Entwicklungsrahmen
+ex: Django ist ein Framework für die Webentwicklung: Django is a framework for web development.
+ex: Wir entwickeln die Anwendung mit einem modernen Framework: We develop the application using a modern framework.
+
+der Betreff [bəˈtʁɛf]: subject; subject line
+Bedeutung: kurze Angabe des Themas oder Anlasses eines Briefes oder einer E-Mail.
+Genitiv: des Betreffs
+Plural: die Betreffe
+Kollokation: einen Betreff angeben
+Synonyme: Betreffzeile, Thema, Gegenstand
+ex: Bitte geben Sie einen Betreff für die E-Mail an: Please provide a subject for the email.
+ex: Im Betreff steht die Bewerbungsnummer: The application number is in the subject line.
+
+die Ziege [ˈtsiːɡə]: goat
+Bedeutung: mittelgroßes Nutztier mit Hörnern, das häufig wegen seiner Milch, seines Fleisches oder seiner Wolle gehalten wird.
+Genitiv: der Ziege
+Plural: die Ziegen
+Kollokation: Ziegen halten
+Synonyme: Geiß
+ex: Auf dem Bauernhof leben mehrere Ziegen: Several goats live on the farm.
+ex: Die Ziege gibt Milch: The goat gives milk.
+
+stampfen [ˈʃtampfən] (intransitiv / transitiv): to stomp; to pound
+Verwendung: mit schweren Schritten auftreten; etwas durch kräftiges Drücken oder Schlagen zerkleinern
+Bedeutung: kräftig und schwer mit den Füßen auftreten oder etwas durch wiederholtes kräftiges Drücken bearbeiten.
+Synonyme: trampeln, treten, zerdrücken
+ex: Er stampft wütend mit dem Fuß auf den Boden: He stomps his foot angrily on the ground.
+ex: Sie stampft die Kartoffeln zu Püree: She mashes the potatoes into purée.
+Präsens: ich stampfe
+Präteritum: ich stampfte
+Perfekt: ich habe gestampft
+Futur I: ich werde stampfen
+Konjunktiv II: ich stampfte / ich würde stampfen
+Konjunktiv I: ich stampfe
+Imperativ: du: Stampf! / Stampfe! ihr: Stampft!
+
+rutschen [ˈʁʊt͡ʃn̩] (intransitiv): to slide; to slip
+Verwendung: auf etwas (Dat.) rutschen / von etwas (Dat.) rutschen
+Bedeutung: sich gleitend über eine Oberfläche bewegen; unbeabsichtigt den Halt verlieren und sich dadurch bewegen.
+Synonyme: gleiten, ausrutschen, abrutschen
+ex: Das Kind rutscht auf dem Eis: The child slides on the ice.
+ex: Das Buch ist vom Tisch gerutscht: The book slid off the table.
+Präsens: ich rutsche
+Präteritum: ich rutschte
+Perfekt: ich bin gerutscht
+Futur I: ich werde rutschen
+Konjunktiv II: ich rutschte / ich würde rutschen
+Konjunktiv I: ich rutsche
+Imperativ: du: Rutsch! ihr: Rutscht!
+
+die Kohle [ˈkoːlə]: coal
+Bedeutung: schwarzer oder brauner fossiler Brennstoff, der aus Pflanzenresten entstanden ist und zur Energiegewinnung verbrannt werden kann.
+Genitiv: der Kohle
+Plural: die Kohlen
+Kollokation: Kohle abbauen; Kohle verbrennen
+Synonyme: Brennstoff, Steinkohle, Braunkohle
+ex: Früher wurde viel Kohle zum Heizen verwendet: In the past, a lot of coal was used for heating.
+ex: In dieser Region wird Kohle abgebaut: Coal is mined in this region.
+
+jemanden mitnehmen, um etwas zu tun: to take somebody with oneself to do something
+Bedeutung: eine Person dazu bringen oder einladen, mit einem an einen Ort zu gehen oder zu fahren, damit man dort etwas gemeinsam macht.
+Synonyme: jemanden begleiten lassen, jemanden dabeihaben
+ex: Ich nehme meinen Freund mit, um einkaufen zu gehen: I take my friend with me to go shopping.
+ex: Sie nimmt ihre Tochter mit, um den Arzt zu besuchen: She takes her daughter with her to visit the doctor.
+
+das Wellenbild: wave image; wave pattern
+Bedeutung: eine Darstellung oder ein Bild, das die Form oder Ausbreitung von Wellen zeigt.
+Synonyme: Wellenmuster, Wellendarstellung
+ex: Das Wellenbild zeigt die Bewegung des Wassers: The wave image shows the movement of the water.
+ex: Auf dem Bildschirm sieht man ein Wellenbild: A wave pattern can be seen on the screen.
+
+die Mischung [ˈmɪʃʊŋ]: mixture; mix
+Bedeutung: etwas, das entsteht, wenn verschiedene Stoffe, Dinge oder Elemente miteinander vermischt werden.
+Genitiv: der Mischung
+Plural: die Mischungen
+Kollokation: eine Mischung aus etwas
+Synonyme: Mix, Gemisch, Kombination
+ex: Diese Mischung besteht aus Wasser und Öl: This mixture consists of water and oil.
+ex: Das Getränk ist eine Mischung aus Kaffee und Milch: The drink is a mixture of coffee and milk.
+
+sortieren [zɔʁˈtiːʁən] (nicht trennbar, transitiv): to sort; to arrange; to classify
+Verwendung: etwas (Akk.) sortieren
+Bedeutung: Dinge nach bestimmten Merkmalen, Gruppen oder einer Reihenfolge ordnen.
+Synonyme: ordnen, einordnen, gliedern
+ex: Ich sortiere die Dokumente nach Datum: I sort the documents by date.
+ex: Sie sortiert die Kleidung nach Farben: She sorts the clothes by color.
+Präsens: ich sortiere
+Präteritum: ich sortierte
+Perfekt: ich habe sortiert
+Futur I: ich werde sortieren
+Konjunktiv II: ich sortierte / ich würde sortieren
+Konjunktiv I: ich sortiere
+Imperativ: du: Sortiere! ihr: Sortiert!
+
+die Gewinnung [ɡəˈvɪnʊŋ]: extraction; acquisition; obtaining
+Bedeutung: das Gewinnen oder Erlangen von etwas; je nach Kontext auch das Herauslösen oder Produzieren eines Stoffes.
+Genitiv: der Gewinnung
+Plural: die Gewinnungen
+Kollokation: die Gewinnung von Rohstoffen; die Gewinnung von Kunden
+Synonyme: Erlangung, Beschaffung, Förderung
+ex: Die Gewinnung von Erdöl ist technisch aufwendig: The extraction of crude oil is technically complex.
+ex: Die Gewinnung neuer Kunden ist für das Unternehmen wichtig: Acquiring new customers is important for the company.
+
+die Seite [ˈzaɪ̯tə]: side; page
+Bedeutung: eine Fläche, Richtung oder Position von etwas; außerdem eine einzelne Fläche eines Blattes, Buches, Dokuments oder einer Website.
+Genitiv: der Seite
+Plural: die Seiten
+Kollokation: auf der linken Seite; eine Seite lesen; auf Seite fünf
+Synonyme: Fläche, Richtung, Buchseite
+ex: Auf der rechten Seite steht ein großes Haus: There is a large house on the right side.
+ex: Ich lese jeden Tag zehn Seiten: I read ten pages every day.
+ex: Die Information steht auf Seite fünf: The information is on page five.
+
+der Abfall [ˈapˌfal]: waste; garbage; drop; decline
+Bedeutung: nicht mehr benötigtes Material, das weggeworfen wird; außerdem eine Verringerung oder ein Rückgang von etwas.
+Genitiv: des Abfalls
+Plural: die Abfälle
+Kollokation: Abfall entsorgen; gefährlicher Abfall; ein Abfall der Temperatur
+Synonyme: Müll, Reststoff, Rückgang
+ex: Der Abfall muss richtig getrennt werden: The waste must be properly separated.
+ex: In der Nacht gab es einen starken Abfall der Temperatur: There was a sharp drop in temperature during the night.
+
+das Getreide [ɡəˈtʁaɪ̯də]: grain; cereal
+Bedeutung: Sammelbegriff für Pflanzen wie Weizen, Reis, Gerste, Roggen oder Hafer, die wegen ihrer Körner angebaut werden; auch die geernteten Körner selbst. ([Duden][1])
+Genitiv: des Getreides
+Plural: meist ohne Plural
+Kollokation: Getreide anbauen; Getreide ernten; Getreide lagern
+Synonyme: Korn, Zerealien
+ex: Auf diesem Feld wird Getreide angebaut: Grain is grown in this field.
+ex: Das Getreide ist schon reif: The grain is already ripe.
+
+verbrennen [fɛɐ̯ˈbʁɛnən] (nicht trennbar, transitiv/intransitiv): to burn; to burn up
+Verwendung: etwas (Akk.) verbrennen / etwas verbrennt
+Bedeutung: etwas durch Feuer zerstören; durch Feuer zerstört oder vollständig aufgebraucht werden.
+Synonyme: abbrennen, einäschern, verfeuern
+ex: Ich verbrenne das alte Holz: I burn the old wood.
+ex: Das Holz verbrennt schnell: The wood burns quickly.
+Präsens: ich verbrenne
+Präteritum: ich verbrannte
+Perfekt: ich habe etwas verbrannt / etwas ist verbrannt
+Futur I: ich werde verbrennen
+Konjunktiv II: ich verbrannte / ich würde verbrennen
+Konjunktiv I: ich verbrenne
+Imperativ: du: Verbrenn! / Verbrenne! ihr: Verbrennt!
+
+aufbrauchen [ˈaʊ̯fˌbʁaʊ̯xən] (trennbar, transitiv): to use up; to consume completely; to exhaust
+Verwendung: etwas (Akk.) aufbrauchen
+Bedeutung: etwas vollständig benutzen oder verbrauchen, sodass nichts mehr davon übrig bleibt.
+Synonyme: verbrauchen, aufzehren, erschöpfen
+ex: Wir müssen zuerst die alten Vorräte aufbrauchen: We must use up the old supplies first.
+ex: Ich habe das ganze Benzin aufgebraucht: I used up all the gasoline.
+Präsens: ich brauche auf
+Präteritum: ich brauchte auf
+Perfekt: ich habe aufgebraucht
+Futur I: ich werde aufbrauchen
+Konjunktiv II: ich brauchte auf / ich würde aufbrauchen
+Konjunktiv I: ich brauche auf
+Imperativ: du: Brauch auf! ihr: Braucht auf!
+
+erzeugen [ɛɐ̯ˈt͡sɔɪ̯ɡn̩] (nicht trennbar, transitiv): to produce; to generate; to create
+Verwendung: etwas (Akk.) erzeugen
+Bedeutung: etwas herstellen, hervorbringen oder entstehen lassen; besonders Energie, Wärme, Strom, Produkte oder eine bestimmte Wirkung.
+Synonyme: produzieren, herstellen, hervorbringen
+ex: Die Solaranlage erzeugt Strom: The solar system generates electricity.
+ex: Diese Maschine erzeugt viel Wärme: This machine produces a lot of heat.
+Präsens: ich erzeuge
+Präteritum: ich erzeugte
+Perfekt: ich habe erzeugt
+Futur I: ich werde erzeugen
+Konjunktiv II: ich erzeugte / ich würde erzeugen
+Konjunktiv I: ich erzeuge
+Imperativ: du: Erzeug! / Erzeuge! ihr: Erzeugt!
+
+antreiben [ˈantʁaɪ̯bn̩] (trennbar, transitiv): to drive; to propel; to motivate
+Verwendung: jemanden/etwas (Akk.) antreiben / jemanden zu etwas (Dat.) antreiben
+Bedeutung: jemanden dazu bringen, schneller oder aktiver zu handeln; etwas in Bewegung setzen oder mit Energie versorgen.
+Synonyme: motivieren, anspornen, bewegen
+ex: Der Trainer treibt die Spieler zu mehr Leistung an: The coach motivates the players to perform better.
+ex: Der Motor treibt die Maschine an: The motor drives the machine.
+Präsens: ich treibe an
+Präteritum: ich trieb an
+Perfekt: ich habe angetrieben
+Futur I: ich werde antreiben
+Konjunktiv II: ich triebe an / ich würde antreiben
+Konjunktiv I: ich treibe an
+Imperativ: du: Treib an! ihr: Treibt an!
+
+Geld für etwas ausgeben: to spend money on something
+Bedeutung: Geld verwenden, um etwas zu kaufen oder zu bezahlen.
+Synonyme: Geld für etwas verwenden, Geld in etwas investieren
+ex: Ich gebe viel Geld für Bücher aus: I spend a lot of money on books.
+ex: Sie gibt nicht viel Geld für Kleidung aus: She does not spend much money on clothes.
+
+jemanden über etwas informieren: to inform somebody about something
+Verwendung: jemanden (Akk.) über etwas (Akk.) informieren
+ex: Ich informiere Sie über die Änderungen: I inform you about the changes.
+ex: Bitte informieren Sie mich über den Termin: Please inform me about the appointment.
+
+jemandem etwas mitteilen: to inform somebody of something; to tell somebody something
+Verwendung: jemandem (Dat.) etwas (Akk.) mitteilen
+ex: Ich teile Ihnen die Entscheidung mit: I inform you of the decision.
+ex: Bitte teilen Sie mir das Ergebnis mit: Please inform me of the result.
+
+sich im Spiegel spiegeln: to be reflected in the mirror
+ex: Ihr Gesicht spiegelt sich im Spiegel: Her face is reflected in the mirror.
+ex: Ich sehe, wie sich sein Bild im Spiegel spiegelt: I see his image reflected in the mirror.
+
+sich dehnen: to stretch; to become stretched
+ex: Der Stoff dehnt sich: The fabric stretches.
+ex: Das Gummi hat sich gedehnt: The rubber has stretched.
+
+Fäden ziehen: to stretch into strings; to become stringy
+ex: Der geschmolzene Käse zieht Fäden: The melted cheese stretches into strings.
+ex: Der Käse zieht beim Essen lange Fäden: The cheese stretches into long strings while eating.
+
+konvex [kɔnˈvɛks] (Adjektiv, nicht steigerbar): convex; curved outward
+Bedeutung: nach außen gewölbt; eine Oberfläche oder Form, die sich nach außen wölbt.
+Synonyme: nach außen gewölbt, gewölbt
+Attributiv und prädikativ verwendbar
+ex: Diese Linse ist konvex: This lens is convex.
+ex: Der Spiegel hat eine konvexe Oberfläche: The mirror has a convex surface.
+
+die Falte [ˈfaltə]: wrinkle; crease
+Bedeutung: eine sichtbare Linie oder Vertiefung in der Haut, in Stoff oder in einem anderen Material.
+Genitiv: der Falte
+Plural: die Falten
+Kollokation: Falten bekommen
+Synonyme: Runzel, Knitterfalte
+ex: Sie hat einige Falten im Gesicht: She has some wrinkles on her face.
+ex: Das Hemd hat viele Falten: The shirt has many creases.
+
+anstatt: rather than; instead of
+ex: Ich bleibe zu Hause, anstatt auszugehen: I stay at home rather than going out.
+ex: Er fährt mit dem Zug, anstatt das Auto zu nehmen: He travels by train rather than taking the car.
+
+statt: rather than; instead of
+ex: Statt zu arbeiten, schaut er fern: Rather than working, he watches TV.
+ex: Ich nehme Wasser statt Cola: I take water rather than cola.
+
+ungewaschen [ˈʊnɡəˌvaʃn̩] (Adjektiv, nicht steigerbar): unwashed
+Bedeutung: nicht gewaschen oder beim Waschen nicht sauber geworden.
+Synonyme: nicht gewaschen, schmutzig
+Attributiv und prädikativ verwendbar
+ex: An der Tasse ist noch eine ungewaschene Stelle: There is still an unwashed spot on the cup.
+ex: Dieser Teil der Tasse ist noch ungewaschen: This part of the cup is still unwashed.
+
+jawohl [jaˈvoːl] (Interjektion / Antwortpartikel): yes; certainly; yes, sir
+Bedeutung: starke oder nachdrückliche Zustimmung; wird auch als gehorsame Bestätigung eines Befehls verwendet.
+Synonyme: ja, gewiss, selbstverständlich
+ex: „Haben Sie verstanden?“ – „Jawohl!“: “Have you understood?” – “Yes!”
+ex: „Machen Sie das sofort!“ – „Jawohl!“: “Do it immediately!” – “Yes, sir!”
+Hinweis: Für **Interjektion / Antwortpartikel** gibt es in deinen bisherigen Wörterbuch-Instruktionen noch keine Vorlage. Du solltest diesen Worttyp hinzufügen.
+
+kurz davor sein, fertig zu sein: to be about to be finished
+ex: Das Projekt ist kurz davor, fertig zu sein: The project is about to be finished.
+ex: Die Arbeit ist kurz davor, fertig zu sein: The work is about to be finished.
+
+fast fertig sein: to be almost finished
+ex: Das Projekt ist fast fertig: The project is almost finished.
+ex: Der Bericht ist fast fertig: The report is almost finished.
+
+der Herausgeber [ˈhɛʁaʊ̯sˌɡeːbɐ]: publisher; editor
+Bedeutung: eine Person oder Organisation, die für die Veröffentlichung einer Zeitung, Zeitschrift, Sammlung oder Publikation verantwortlich ist.
+Genitiv: des Herausgebers
+Plural: die Herausgeber
+Kollokation: Herausgeber einer Zeitschrift
+Synonyme: Editor, Veröffentlicher
+ex: Er ist der Herausgeber dieser Zeitschrift: He is the publisher of this magazine.
+ex: Der Herausgeber hat den Artikel veröffentlicht: The publisher published the article.
+
+der Verleger [fɛɐ̯ˈleːɡɐ]: publisher
+Bedeutung: eine Person, die Bücher, Zeitungen, Zeitschriften oder andere Werke durch einen Verlag veröffentlicht.
+Genitiv: des Verlegers
+Plural: die Verleger
+Kollokation: als Verleger arbeiten
+Synonyme: Herausgeber, Verlagsinhaber
+ex: Der Verleger veröffentlicht mehrere Zeitschriften: The publisher publishes several magazines.
+ex: Der Autor suchte einen Verleger für seine Geschichte: The author looked for a publisher for his stor
+
+auf etwas Spaß machen: not standard German for “to make fun of something”
+Bedeutung: Wenn du „to make fun of something/someone“ meinst, sagt man auf Deutsch sich über etwas/jemanden lustig machen. Spaß machen bedeutet dagegen „to be fun / to be enjoyable“.
+Synonyme: sich über etwas lustig machen, etwas verspotten, etwas lächerlich machen
+ex: Er macht sich über meinen Akzent lustig: He makes fun of my accent.
+ex: Sie machen sich über seine Kleidung lustig: They make fun of his clothes.
+ex: Deutschlernen macht mir Spaß: Learning German is fun.
+
+klingen nach + Dativ: to sound like; to seem like
+Bedeutung: den Eindruck erwecken, dass etwas auf eine bestimmte Weise ist; aufgrund dessen, was man hört oder erfährt, an etwas erinnern.
+Synonyme: sich anhören wie, wirken wie
+ex: Das klingt nach einer guten Idee: That sounds like a good idea.
+ex: Das klingt nach einem großen Problem: That sounds like a big problem.
+ex: Es klingt nach Regen: It sounds like rain.
+
+heftiger Regen: heavy rain
+Bedeutung: sehr starker, intensiver Regen.
+Synonyme: starker Regen, kräftiger Regen
+ex: Heute Nacht gab es heftigen Regen: There was heavy rain last night.
+ex: Wegen des heftigen Regens konnten wir nicht weiterfahren: Because of the heavy rain, we could not continue driving.
+
+starker Regen: heavy rain
+Bedeutung: Regen, der sehr intensiv und in großer Menge fällt.
+Synonyme: heftiger Regen, starker Niederschlag
+ex: Wegen des starken Regens bleiben wir zu Hause: Because of the heavy rain, we are staying at home.
+ex: Der starke Regen hat die Straßen überflutet: The heavy rain flooded the streets.
+
+frei [fraɪ̯] (Adverb): freely
+Bedeutung: ohne Einschränkung, Zwang oder Behinderung.
+Synonyme: ungehindert, uneingeschränkt, ungezwungen
+ex: Jeder darf seine Meinung frei äußern: Everyone may express their opinion freely.
+ex: Du kannst dich hier frei bewegen: You can move around freely here.
+
+fröhlich [ˈfʁøːlɪç] (Adverb): joyfully; cheerfully
+Bedeutung: auf eine glückliche, heitere und freudige Weise.
+Synonyme: freudig, heiter, vergnügt
+ex: Die Kinder liefen fröhlich nach Hause: The children ran home joyfully.
+ex: Sie begrüßte uns fröhlich: She greeted us joyfully.
+
+**bei so einem Regen**: in such rain; in rain like this
+Bedeutung: wenn es auf diese Weise bzw. so stark regnet. 
+Synonyme: bei solchem Regen, bei diesem starken Regen
+ex: Bei so einem Regen möchte ich nicht rausgehen: I don't want to go outside in such rain.
+ex: Man kann bei so einem Regen kaum Auto fahren: You can hardly drive in such rain.
+
+Campingzubehör: camping accessories; camping gear
+Bedeutung: Gegenstände und Ausrüstung, die man beim Campen zusätzlich braucht.
+Synonyme: Campingausrüstung, Campingbedarf
+ex: Wir haben neues Campingzubehör gekauft: We bought new camping accessories.
+ex: Dieses Geschäft verkauft Campingzubehör: This store sells camping accessories.
+
+die Warnung [ˈvaʁnʊŋ]: warning
+Bedeutung: Hinweis auf eine mögliche Gefahr, ein Problem oder eine unangenehme Folge.
+Genitiv: der Warnung
+Plural: die Warnungen
+Kollokation: eine Warnung aussprechen
+Synonyme: Hinweis, Mahnung, Alarm
+ex: Die Polizei gab eine Warnung heraus: The police issued a warning.
+ex: Er ignorierte die Warnung: He ignored the warning.

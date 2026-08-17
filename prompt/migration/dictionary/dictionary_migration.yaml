@@ -4,6 +4,9 @@ you can not add to similar words with tottal different meanings: "you can not ad
 pronouncation:
   - solving the pronouncation problem,  currently it goes as far as adjekti- comparative. It must go until [ sigh where
 
+gui:
+  - must have a back and forward buttom to go the previous and next search in history
+
 
 searching:
   criteria: "The searching must do the filtering according to Persian, English and Penglish alphabets"
@@ -16,6 +19,8 @@ searching:
     bugs to be solved:
       - I looked for "leisen" which is a form of "leise" but it didnt find teh word "leise"
       - when i searched for fleich, hackfleich or other german or english or persian or penglish words that have the word fleich in them didnt show up
+      - When I searched for hat, even though Hut was in the entries, i couldnt see it the in the first reasults. maybe you should care about priotrizing the whole matching words to show them first
+      - When I search for english word "sun" I couldnet see the result for example I didnt see Sonne ebventhough it existed in teh entries
 
 Adding new entries:
   - I must be allowed to to enter two similar entries wwhich have different meanings
