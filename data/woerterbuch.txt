@@ -11427,8 +11427,6 @@ Paddeln: to paddel
 
 das Paddel: paddle, paroo
 
-die Einzige: the onlz one
-
 das Boot [boːt] (-es, -e): boat
 Bedeutung: kleines Wasserfahrzeug zum Transport auf dem Wasser.
 Genitiv: des Bootes
@@ -15020,9 +15018,23 @@ Synonyme: Registrierung, Einschreibung
 ex: Die Anmeldung für den Kurs ist einfach: The registration for the course is easy.
 ex: Ich habe die Anmeldung online gemacht: I did the registration online.
 
-der Bleistift: pencil
+der Bleistift [ˈblaɪ̯ʃtɪft]: pencil
+Bedeutung: ein Schreib- oder Zeichengerät mit einer Mine, meistens aus Graphit.
+Genitiv: des Bleistiftes / des Bleistifts
+Plural: die Bleistifte
+Kollokation: mit einem Bleistift schreiben
+Synonyme: Zeichenstift, Graphitstift
+ex: Ich schreibe mit einem Bleistift: I write with a pencil.
+ex: Kannst du mir einen Bleistift geben?: Can you give me a pencil?
 
-der Stift: pen
+der Stift [ʃtɪft]: pen
+Bedeutung: ein Gegenstand zum Schreiben oder Zeichnen.
+Genitiv: des Stiftes / des Stifts
+Plural: die Stifte
+Kollokation: mit einem Stift schreiben
+Synonyme: Schreibstift, Kugelschreiber
+ex: Ich schreibe mit einem Stift: I write with a pen.
+ex: Hast du einen Stift für mich?: Do you have a pen for me?
 
 nötigen [ˈnøːtɪɡn̩] (transitiv): to compel; to force
 Verwendung: jemanden (Akk.) zu etwas (Dat.) nötigen; jemanden dazu nötigen, etwas zu tun
@@ -20242,8 +20254,19 @@ ex: Wir müssen in dieser Situation ruhig bleiben: We have to stay calm in this 
 
 die Übersetzung: translation
 
-übersetzen: translate
-Sie hat mehrere Bestseller ins Deutsche übersetzt.:She translated several bestsellers into German.
+übersetzen [ˈyːbɐˌzɛt͡sn̩] (untrennbar, transitiv): to translate
+Verwendung: etwas (Akk.) aus einer Sprache in eine andere Sprache übersetzen
+Bedeutung: den Inhalt eines Textes oder einer Äußerung in einer anderen Sprache wiedergeben.
+Synonyme: übertragen, wiedergeben
+ex: Ich übersetze den Text aus dem Deutschen ins Englische: I translate the text from German into English.
+ex: Kannst du diesen Satz ins Deutsche übersetzen: Can you translate this sentence into German?
+Präsens: ich übersetze
+Präteritum: ich übersetzte
+Perfekt: ich habe übersetzt
+Futur I: ich werde übersetzen
+Konjunktiv II: ich übersetzte / ich würde übersetzen
+Konjunktiv I: ich übersetze
+Imperativ: du: Übersetz! / Übersetze! ihr: Übersetzt!
 
 bereitstellen [bəˈʁaɪ̯tˌʃtɛlən] (Akk.) trennbar, transitiv: to provide; to make available
 Bedeutung: etwas geben oder verfügbar machen, damit andere es benutzen können.
@@ -20633,8 +20656,6 @@ Bedeutung: genau und nicht allgemein; auf eine bestimmte Sache bezogen.
 Synonyme: genau, spezifisch, ausdrücklich
 ex: Kannst du das konkret erklären: Can you explain that concretely?
 ex: Konkret bedeutet das, dass wir morgen anfangen: Concretely, that means that we start tomorrow.
-
-das Ziel: aim, objective
 
 wozu: for what
 
@@ -21964,7 +21985,19 @@ Futur I: ich werde einsteigen
 Konjunktiv II: ich stiege ein / ich würde einsteigen
 Konjunktiv I: ich steige ein
 
-sich anziehen: to put on cloths
+sich anziehen [zɪç ˈanˌtsiːən] (trennbar, reflexiv): to get dressed; to dress oneself
+Verwendung: sich (Akk.) anziehen
+Bedeutung: Kleidung an den eigenen Körper anlegen.
+Synonyme: sich kleiden, sich bekleiden
+ex: Ich ziehe mich jeden Morgen schnell an: I get dressed quickly every morning.
+ex: Er zieht sich für die Arbeit an: He gets dressed for work.
+Präsens: ich ziehe mich an
+Präteritum: ich zog mich an
+Perfekt: ich habe mich angezogen
+Futur I: ich werde mich anziehen
+Konjunktiv II: ich zöge mich an / ich würde mich anziehen
+Konjunktiv I: ich ziehe mich an
+Imperativ: du: Zieh dich an! ihr: Zieht euch an!
 
 aufstehen [ˈaʊ̯fˌʃteːən] (trennbar, intransitiv): to get up; to stand up
 Bedeutung: sich vom Liegen oder Sitzen erheben; das Bett verlassen.
@@ -32038,3 +32071,365 @@ Kollokation: eine Warnung aussprechen
 Synonyme: Hinweis, Mahnung, Alarm
 ex: Die Polizei gab eine Warnung heraus: The police issued a warning.
 ex: Er ignorierte die Warnung: He ignored the warning.
+
+die Kombination [kɔmbinaˈt͡si̯oːn]: combination
+Bedeutung: Verbindung oder Zusammenstellung von mehreren Dingen, Elementen oder Möglichkeiten.
+Genitiv: der Kombination
+Plural: die Kombinationen
+Kollokation: eine Kombination aus etwas
+Synonyme: Verbindung, Zusammenstellung, Mischung
+ex: Diese Kombination schmeckt sehr gut: This combination tastes very good.
+ex: Es ist eine Kombination aus Arbeit und Freizeit: It is a combination of work and leisure.
+
+krähen [ˈkʁɛːən] (intransitiv): to crow
+Bedeutung: den typischen lauten Ruf eines Hahns oder ähnlichen Vogels machen.
+Synonyme: rufen, schreien
+ex: Der Hahn kräht jeden Morgen: The rooster crows every morning.
+ex: Die Hähne krähen schon früh: The roosters crow early.
+Präsens: ich krähe
+Präteritum: ich krähte
+Perfekt: ich habe gekräht
+Futur I: ich werde krähen
+Konjunktiv II: ich krähte / ich würde krähen
+Konjunktiv I: ich krähe
+Imperativ: du: Kräh! / Krähe! ihr: Kräht!
+
+das Vorbild [ˈfoːɐ̯ˌbɪlt]: role model; model; example
+Bedeutung: eine Person oder Sache, die als gutes Beispiel dient und die man nachahmen möchte.
+Genitiv: des Vorbilds
+Plural: die Vorbilder
+Kollokation: ein Vorbild für jemanden sein
+Synonyme: Beispiel, Leitbild, Muster
+ex: Mein Vater ist ein Vorbild für mich: My father is a role model for me.
+ex: Sie dient vielen jungen Menschen als Vorbild: She serves as a role model for many young people.
+
+jemandem etwas finden: to find something for someone
+Bedeutung: etwas suchen und erfolgreich finden, damit eine andere Person es bekommen oder benutzen kann.
+Synonyme: etwas für jemanden suchen und finden, etwas ausfindig machen
+ex: Ich finde dir ein gutes Restaurant: I’ll find you a good restaurant.
+ex: Kannst du mir eine günstige Wohnung finden: Can you find me an inexpensive apartment?
+
+der Abhang [ˈapˌhaŋ]: slope; hillside; incline
+Bedeutung: eine schräg nach unten verlaufende Fläche, besonders an einem Berg oder Hügel.
+Genitiv: des Abhangs
+Plural: die Abhänge
+Kollokation: einen steilen Abhang hinuntergehen
+Synonyme: Hang, Böschung, Gefälle
+ex: Der Weg führt an einem steilen Abhang entlang: The path runs along a steep slope.
+ex: Das Haus steht direkt am Abhang: The house stands directly on the hillside.
+
+das Motivationsschreiben [motivaˈt͡si̯oːnsˌʃʁaɪ̯bn̩]: motivation letter; letter of motivation
+Bedeutung: ein Schreiben, in dem man erklärt, warum man sich für eine Stelle, ein Studium, ein Stipendium oder Ähnliches bewirbt und warum man dafür geeignet und motiviert ist.
+Genitiv: des Motivationsschreibens
+Plural: die Motivationsschreiben
+Kollokation: ein Motivationsschreiben verfassen
+Synonyme: Bewerbungsschreiben, Motivationsbrief
+ex: Für die Bewerbung muss ich ein Motivationsschreiben verfassen: I have to write a motivation letter for the application.
+ex: Ich habe mein Motivationsschreiben zusammen mit meinem Lebenslauf geschickt: I sent my motivation letter together with my CV.
+
+beglaubigt [bəˈɡlaʊ̯bɪçt] (Adjektiv): certified; authenticated; legalized
+Bedeutung: offiziell bestätigt, dass ein Dokument oder eine Kopie echt bzw. gültig ist.
+Synonyme: bestätigt, amtlich bestätigt, legalisiert
+ex: Ich habe mein beglaubigtes Masterzeugnis bei der österreichischen Botschaft in Teheran eingereicht: I submitted my legalized master’s certificate at the Austrian Embassy in Tehran.
+ex: Das Dokument muss von der Botschaft beglaubigt werden: The document must be authenticated by the embassy.
+
+das Werturteil [ˈveːɐ̯tʔʊɐ̯taɪ̯l]: value judgment
+Bedeutung: eine Beurteilung, bei der etwas nach persönlichen, moralischen oder gesellschaftlichen Werten als gut, schlecht, richtig oder falsch bewertet wird.
+Genitiv: des Werturteils
+Plural: die Werturteile
+Kollokation: ein Werturteil abgeben
+Synonyme: Bewertung, Beurteilung, Einschätzung
+ex: Diese Aussage ist ein Werturteil: This statement is a value judgment.
+ex: Wissenschaftliche Analysen sollten nicht nur auf Werturteilen beruhen: Scientific analyses should not be based only on value judgments.
+
+der Anschluss [ˈanˌʃlʊs]: connection; link; Anschluss
+Bedeutung: eine Verbindung zu etwas anderem; je nach Kontext auch eine Verkehrsverbindung, ein technischer Anschluss oder das unmittelbare Folgen auf etwas.
+Genitiv: des Anschlusses
+Plural: die Anschlüsse
+Kollokation: einen Anschluss haben; den Anschluss verpassen
+Synonyme: Verbindung, Anbindung, Kontakt
+ex: Ich habe in Wien Anschluss an einen anderen Zug: I have a connecting train in Vienna.
+ex: Der Computer hat mehrere Anschlüsse: The computer has several ports/connections.
+
+zeitnah [ˈtsaɪ̯tˌnaː] (Adjektiv/Adverb, nicht steigerbar): promptly; in a timely manner; soon
+Bedeutung: innerhalb kurzer Zeit; ohne große Verzögerung; möglichst bald.
+Synonyme: bald, kurzfristig, unverzüglich
+ex: Wir werden Ihre Anfrage zeitnah bearbeiten: We will process your request promptly.
+ex: Bitte schicken Sie mir die Unterlagen zeitnah: Please send me the documents in a timely manner.
+
+und so: and so; and therefore; and things like that
+Bedeutung: Je nach Kontext kann „und so“ eine Folge ausdrücken („und deshalb / und dadurch“) oder allgemein ähnliche Dinge zusammenfassen („und Ähnliches“).
+Synonyme: und deshalb, und dadurch, und Ähnliches
+ex: Er hatte kein Geld, und so musste er zu Hause bleiben: He had no money, and so he had to stay at home.
+ex: Wir haben über Arbeit, Studium und so gesprochen: We talked about work, studies, and things like that.
+
+umfassen [ʊmˈfasn̩] (untrennbar, transitiv): to include; to comprise; to encompass
+Verwendung: etwas (Akk.) umfassen
+Bedeutung: aus mehreren Teilen bestehen oder mehrere Dinge, Personen oder Bereiche einschließen.
+Synonyme: beinhalten, einschließen, enthalten
+ex: Der Kurs umfasst zehn Kapitel: The course comprises ten chapters.
+ex: Das Angebot umfasst auch kostenlose Beratung: The offer also includes free consultation.
+Präsens: ich umfasse
+Präteritum: ich umfasste
+Perfekt: ich habe umfasst
+Futur I: ich werde umfassen
+Konjunktiv II: ich umfasste / ich würde umfassen
+Konjunktiv I: ich umfasse
+Imperativ: du: Umfasse! ihr: Umfasst!
+
+entwerfen [ɛntˈvɛʁfn̩] (untrennbar, transitiv): to design; to draft; to devise
+Verwendung: etwas (Akk.) entwerfen
+Bedeutung: etwas gedanklich planen und einen ersten Plan, ein Konzept oder einen Entwurf dafür erstellen.
+Synonyme: planen, konzipieren, ausarbeiten
+ex: Du entwirfst einen neuen Plan: You design a new plan.
+ex: Sie entwirft ein neues Gebäude: She designs a new building.
+Präsens: ich entwerfe
+Präteritum: ich entwarf
+Perfekt: ich habe entworfen
+Futur I: ich werde entwerfen
+Konjunktiv II: ich entwürfe / ich würde entwerfen
+Konjunktiv I: ich entwerfe
+Imperativ: du: Entwirf! ihr: Entwerft!
+
+abnutzen [ˈapˌnʊt͡sn̩] (trennbar, transitiv/reflexiv): to wear down; to wear out
+Verwendung: etwas (Akk.) abnutzen; sich abnutzen
+Bedeutung: durch häufigen Gebrauch oder Reibung allmählich beschädigt, dünner oder weniger brauchbar machen bzw. werden.
+Synonyme: verschleißen, abreiben, verbrauchen
+ex: Die Reifen nutzen sich schnell ab: The tires wear down quickly.
+ex: Häufiger Gebrauch nutzt das Material ab: Frequent use wears the material down.
+Präsens: ich nutze ab
+Präteritum: ich nutzte ab
+Perfekt: ich habe abgenutzt
+Futur I: ich werde abnutzen
+Konjunktiv II: ich nutzte ab / ich würde abnutzen
+Konjunktiv I: ich nutze ab
+Imperativ: du: Nutz ab! / Nutze ab! ihr: Nutzt ab!
+
+inner [ˈɪnɐ] (Adjektiv): inner; internal; interior
+Bedeutung: im Inneren gelegen; nicht außen; auch auf Gedanken, Gefühle oder persönliche Vorgänge bezogen.
+Synonyme: innerlich, intern, innenliegend
+ex: Die inneren Organe sind lebenswichtig: The internal organs are vital.
+ex: Sie spürte eine innere Unruhe: She felt an inner restlessness.
+
+versteckt [fɛɐ̯ˈʃtɛkt] (Adjektiv): hidden; concealed
+Bedeutung: so gelegen oder platziert, dass man es nicht oder nur schwer sehen oder finden kann.
+Synonyme: verborgen, verdeckt, geheim
+ex: Der Schlüssel ist hinter dem Schrank versteckt: The key is hidden behind the cupboard.
+ex: Im Text gibt es eine versteckte Bedeutung: There is a hidden meaning in the text.
+
+verschleißen [fɛɐ̯ˈʃlaɪ̯sn̩] (untrennbar, transitiv/intransitiv): to wear out; to wear down
+Verwendung: etwas (Akk.) verschleißen; etwas verschleißt
+Bedeutung: durch häufigen Gebrauch, Reibung oder Belastung allmählich beschädigen oder unbrauchbar werden.
+Synonyme: abnutzen, abreiben, verbrauchen
+ex: Die Maschine verschleißt die Teile sehr schnell: The machine wears the parts out very quickly.
+ex: Die Reifen sind stark verschlissen: The tires are badly worn.
+Präsens: ich verschleiße
+Präteritum: ich verschliss
+Perfekt: ich habe verschlissen
+Futur I: ich werde verschleißen
+Konjunktiv II: ich verschlisse / ich würde verschleißen
+Konjunktiv I: ich verschleiße
+Imperativ: du: Verschleiß! / Verschleiße! ihr: Verschleißt!
+
+ach, wenn doch: oh, if only; I wish
+Bedeutung: stärker emotionaler Ausdruck eines Wunsches oder Bedauerns.
+Synonyme: ach, wenn nur; hätte ich doch
+ex: Ach, wenn doch alles einfacher wäre: Oh, if only everything were easier.
+ex: Ach, wenn ich doch dort sein könnte: I wish I could be there.
+
+abgeschieden [ˈapɡəˌʃiːdn̩] (Adjektiv): secluded; remote
+Bedeutung: weit entfernt von anderen Menschen oder belebten Orten; ruhig und isoliert gelegen.
+Synonyme: abgelegen, einsam, zurückgezogen
+ex: Das Haus liegt sehr abgeschieden: The house is very secluded.
+ex: Wir haben einen abgeschiedenen Platz im Wald gefunden: We found a secluded place in the forest.
+
+der Kompromiss [kɔmpʁoˈmɪs]: compromise
+Bedeutung: eine Einigung, bei der beide Seiten auf einen Teil ihrer Forderungen verzichten.
+Genitiv: des Kompromisses
+Plural: die Kompromisse
+Kollokation: einen Kompromiss finden / einen Kompromiss schließen
+Synonyme: Einigung, Ausgleich, Zwischenlösung
+ex: Wir müssen einen Kompromiss finden: We have to find a compromise.
+ex: Beide Seiten haben einen Kompromiss geschlossen: Both sides reached a compromise.
+
+der Leitfaden: guide; guideline
+Bedeutung: eine schriftliche Hilfe oder Orientierung, die erklärt, wie man bei einem Thema oder einer Aufgabe vorgehen soll.
+Genitiv: des Leitfadens
+Plural: die Leitfäden
+Kollokation: einen Leitfaden erstellen / einem Leitfaden folgen
+Synonyme: Ratgeber, Orientierungshilfe, Anleitung
+ex: Dieser Leitfaden erklärt den Bewerbungsprozess: This guide explains the application process.
+ex: Bitte folgen Sie dem Leitfaden: Please follow the guide.
+
+das Handbuch: manual; handbook
+Bedeutung: ein Buch oder Dokument mit ausführlichen Informationen und Anweisungen zur Benutzung eines Geräts, Programms oder Systems.
+Genitiv: des Handbuchs
+Plural: die Handbücher
+Kollokation: im Handbuch nachlesen
+Synonyme: Manual, Benutzerhandbuch, Bedienungsanleitung
+ex: Die Informationen stehen im Handbuch: The information is in the manual.
+ex: Lies zuerst das Handbuch: Read the manual first.
+
+die Anleitung: instructions; guide; manual
+Bedeutung: eine Erklärung, die Schritt für Schritt zeigt, wie man etwas macht oder benutzt.
+Genitiv: der Anleitung
+Plural: die Anleitungen
+Kollokation: einer Anleitung folgen
+Synonyme: Gebrauchsanweisung, Bedienungsanleitung, Leitfaden
+ex: Folge bitte der Anleitung: Please follow the instructions.
+ex: Die Anleitung erklärt die Installation: The guide explains the installation.
+
+gewiss [ɡəˈvɪs] (Adjektiv, Komparativ: gewisser, Superlativ: am gewissesten): certain; sure
+Bedeutung: bestimmt, aber nicht genau bezeichnet; auch: sicher oder zweifellos.
+Synonyme: bestimmt, sicher, eindeutig
+Attributiv und prädikativ verwendbar
+ex: Das ist nur in einem gewissen Rahmen möglich: That is only possible within certain limits.
+ex: Ich bin mir dessen gewiss: I am certain of that.
+ex: Ein gewisser Mann hat nach dir gefragt: A certain man asked for you.
+
+ansonsten [ˈanˌzɔnstn̩] (Adverb): otherwise; apart from that; besides
+Bedeutung: wenn das nicht der Fall ist; abgesehen davon; in anderer Hinsicht.
+Synonyme: sonst, andernfalls, im Übrigen
+ex: Beeil dich, ansonsten verpassen wir den Zug: Hurry up, otherwise we will miss the train.
+ex: Das Essen war gut, ansonsten war der Abend ruhig: The food was good; apart from that, the evening was quiet.
+
+die Aussicht [ˈaʊ̯sˌzɪçt]: view; prospect; outlook
+Bedeutung: das, was man von einem bestimmten Ort aus sehen kann; auch eine Möglichkeit oder Chance, dass etwas in der Zukunft geschieht.
+Genitiv: der Aussicht
+Plural: die Aussichten
+Kollokation: eine schöne Aussicht haben; gute Aussichten haben
+Synonyme: Ausblick, Perspektive, Chance
+ex: Vom Berg hat man eine wunderschöne Aussicht: From the mountain, you have a beautiful view.
+ex: Die Aussichten auf eine neue Stelle sind gut: The prospects of getting a new job are good.
+
+geschmückt [ɡəˈʃmʏkt] (Adjektiv): decorated; adorned
+Bedeutung: mit Schmuck, Dekorationen oder anderen schönen Dingen versehen.
+Synonyme: dekoriert, verziert, geschmückt
+ex: Der geschmückte Weihnachtsbaum steht im Wohnzimmer: The decorated Christmas tree is in the living room.
+ex: Die Straße ist mit Blumen geschmückt: The street is decorated with flowers.
+
+dekorieren [dekoˈʁiːʁən] (untrennbar, transitiv): to decorate
+Verwendung: etwas (Akk.) dekorieren
+Bedeutung: etwas mit Schmuck oder dekorativen Elementen schöner gestalten.
+Synonyme: schmücken, verzieren, ausschmücken
+ex: Wir dekorieren das Zimmer für die Party: We decorate the room for the party.
+ex: Sie dekoriert den Tisch mit Blumen: She decorates the table with flowers.
+Präsens: ich dekoriere
+Präteritum: ich dekorierte
+Perfekt: ich habe dekoriert
+Futur I: ich werde dekorieren
+Konjunktiv II: ich dekorierte / ich würde dekorieren
+Konjunktiv I: ich dekoriere
+Imperativ: du: Dekorier! / Dekoriere! ihr: Dekoriert!
+
+schmücken [ˈʃmʏkn̩] (transitiv, reflexiv möglich): to decorate; to adorn
+Verwendung: etwas (Akk.) schmücken; sich mit etwas schmücken
+Bedeutung: etwas mit schönen oder dekorativen Dingen versehen; auch sich selbst mit Schmuck oder besonderen Dingen ausstatten.
+Synonyme: dekorieren, verzieren, ausschmücken
+ex: Wir schmücken den Weihnachtsbaum mit Lichtern: We decorate the Christmas tree with lights.
+ex: Sie schmückt sich mit einer schönen Kette: She adorns herself with a beautiful necklace.
+Präsens: ich schmücke
+Präteritum: ich schmückte
+Perfekt: ich habe geschmückt
+Futur I: ich werde schmücken
+Konjunktiv II: ich schmückte / ich würde schmücken
+Konjunktiv I: ich schmücke
+Imperativ: du: Schmück! / Schmücke! ihr: Schmückt!
+
+sich entsinnen [ɛntˈzɪnən] (untrennbar, reflexiv): to remember; to recall
+Verwendung: sich einer Sache (Gen.) entsinnen; sich an etwas (Akk.) entsinnen
+Bedeutung: sich etwas wieder ins Gedächtnis rufen; sich an etwas erinnern.
+Synonyme: sich erinnern, sich besinnen, sich zurückerinnern
+ex: Ich kann mich nicht mehr an seinen Namen entsinnen: I can no longer remember his name.
+ex: Sie entsann sich des Gesprächs: She remembered the conversation.
+Präsens: ich entsinne mich
+Präteritum: ich entsann mich
+Perfekt: ich habe mich entsonnen
+Futur I: ich werde mich entsinnen
+Konjunktiv II: ich entsänne mich / ich würde mich entsinnen
+Konjunktiv I: ich entsinne mich
+Imperativ: du: Entsinn dich! ihr: Entsinnt euch! ([Duden][1])
+
+das Ausmaß [ˈaʊ̯sˌmaːs]: extent; scale; magnitude
+Bedeutung: die Größe, Stärke oder Reichweite von etwas.
+Genitiv: des Ausmaßes
+Plural: die Ausmaße
+Kollokation: das Ausmaß eines Problems; große Ausmaße annehmen
+Synonyme: Umfang, Größe, Dimension
+ex: Das Ausmaß des Schadens ist noch nicht bekannt: The extent of the damage is not yet known.
+ex: Das Problem hat große Ausmaße angenommen: The problem has reached a large scale.
+
+prächtig [ˈpʁɛçtɪç] (Adjektiv, Komparativ: prächtiger, Superlativ: am prächtigsten): magnificent; splendid; grand
+Bedeutung: sehr schön, eindrucksvoll und von großer Wirkung; oft luxuriös oder besonders feierlich.
+Synonyme: prachtvoll, majestätisch, herrlich
+ex: Das Gebäude sieht prächtig aus: The building looks magnificent.
+ex: Sie feierten in einem prächtigen Saal: They celebrated in a splendid hall.
+
+die Fragestellung: wording of the question; question formulation
+Bedeutung: die genaue Form, in der eine Frage formuliert oder gestellt wird.
+Synonyme: Frageformulierung, Formulierung der Frage
+ex: Ich habe die Fragestellung nicht verstanden: I did not understand the wording of the question.
+ex: Lies die Fragestellung noch einmal genau: Read the question carefully again.
+
+betreffen [bəˈtʁɛfn̩] (untrennbar, transitiv): to concern; to affect; to relate to
+Verwendung: jemanden/etwas (Akk.) betreffen
+Bedeutung: für jemanden oder etwas gelten; sich auf jemanden oder etwas beziehen; jemanden oder etwas angehen.
+Synonyme: angehen, sich beziehen auf, betreffen
+ex: Diese Regel betrifft alle Studenten: This rule concerns all students.
+ex: Das Problem betrifft mich nicht direkt: The problem does not affect me directly.
+Präsens: ich betreffe
+Präteritum: ich betraf
+Perfekt: ich habe betroffen
+Futur I: ich werde betreffen
+Konjunktiv II: ich beträfe / ich würde betreffen
+Konjunktiv I: ich betreffe
+Imperativ: du: Betriff! ihr: Betrefft!
+
+entstehen [ɛntˈʃteːən] (starkes Verb, intransitiv): to arise; to emerge; to originate; to come into being
+Verwendung: etwas entsteht
+Bedeutung: neu entstehen oder sich entwickeln; anfangen zu existieren.
+Synonyme: sich entwickeln, sich bilden, hervorgehen
+ex: Durch das Gespräch ist eine neue Idee entstanden: A new idea emerged through the conversation.
+ex: Das Problem ist gestern entstanden: The problem arose yesterday.
+Präsens: ich entstehe
+Präteritum: ich entstand
+Perfekt: ich bin entstanden
+Futur I: ich werde entstehen
+Konjunktiv II: ich entstünde / ich würde entstehen
+Konjunktiv I: ich entstehe
+Imperativ: normalerweise nicht gebraucht
+**entstanden** = Partizip II von **entstehen**: arisen; emerged; originated
+
+entstanden (Partizip II von entstehen): originated; emerged; came into being
+Bedeutung: in diesem Kontext bedeutet es, dass eine Idee neu gebildet oder entwickelt wurde.
+Synonyme: entwickelt, gebildet, hervorgegangen
+ex: Entstanden ist die Idee während des Gesprächs: The idea emerged during the conversation.
+ex: So ist die Idee entstanden: This is how the idea came into being.
+
+versorgen [fɛɐ̯ˈzɔʁɡn̩] (transitiv): to supply; to provide for; to take care of
+Verwendung: jemanden/etwas (Akk.) mit etwas (Dat.) versorgen
+Bedeutung: jemandem oder etwas das geben, was benötigt wird; sich um jemanden kümmern und notwendige Dinge bereitstellen.
+Synonyme: beliefern, betreuen, bereitstellen
+ex: Die Stadt versorgt die Einwohner mit Wasser: The city supplies the residents with water.
+ex: Sie versorgt ihre Kinder gut: She takes good care of her children.
+Präsens: ich versorge
+Präteritum: ich versorgte
+Perfekt: ich habe versorgt
+Futur I: ich werde versorgen
+Konjunktiv II: ich versorgte / ich würde versorgen
+Konjunktiv I: ich versorge
+Imperativ: du: Versorge! ihr: Versorgt!
+
+leisten [ˈlaɪ̯stn̩] (transitiv): to perform; to accomplish; to provide; to afford
+Verwendung: etwas (Akk.) leisten / sich etwas (Akk.) leisten
+Bedeutung: eine Arbeit oder Leistung erbringen; etwas bereitstellen; bei „sich etwas leisten“: genug Geld oder Möglichkeiten für etwas haben.
+Synonyme: erbringen, vollbringen, schaffen
+ex: Er leistet gute Arbeit: He does good work.
+ex: Ich kann mir dieses Auto nicht leisten: I cannot afford this car.
+Präsens: ich leiste
+Präteritum: ich leistete
+Perfekt: ich habe geleistet
+Futur I: ich werde leisten
+Konjunktiv II: ich leistete / ich würde leisten
+Konjunktiv I: ich leiste
+Imperativ: du: Leiste! ihr: Leistet!
