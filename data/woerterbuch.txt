@@ -5454,8 +5454,6 @@ die lüke: gap
 
 erfolglos: unsuccessful
 
-verschlossen: locked
-
 egoistisch: selfish
 
 stabil: stable
@@ -6883,12 +6881,6 @@ Bedeutung: zusätzlich zu etwas anderem; ein weiterer Punkt kommt hinzu.
 Synonyme: zusätzlich, ferner, darüber hinaus
 ex: Ich habe keine Zeit, außerdem bin ich müde: I have no time; besides, I am tired.
 ex: Das Auto ist teuer, außerdem verbraucht es viel Benzin: The car is expensive; moreover, it uses a lot of petrol.
-
-zusätzlich [ˈt͡suːˌzɛt͡slɪç] (Adverb): additionally; in addition
-Bedeutung: außerdem; noch dazu; über das Vorhandene hinaus.
-Synonyme: außerdem, ferner, obendrein
-ex: Zusätzlich brauche ich deine Telefonnummer: Additionally, I need your phone number.
-ex: Wir müssen zusätzlich die Kosten prüfen: In addition, we must check the costs.
 
 drücken: to press
 
@@ -15098,8 +15090,6 @@ setzen: to set, to put
 
 zufällig: accidentially
 
-Bescheid geben: to inform
-
 geben [ˈɡeːbən] (Dat. + Akk.) unregelmäßig, trennbar im Perfekt mit haben: to give
 ex: Ich gebe dir(DAT) die Ergebnisse(AKK): I give you the results.
 ex: Er gibt dem Professor die Resultate: He gives the professor the results.
@@ -16920,7 +16910,12 @@ der Schmutz (pl: — ): dirt
 ex: Der Schmutz liegt überall auf dem Boden.: The dirt is lying all over the floor.
 ex: Ich muss den Schmutz wegputzen.: I have to clean up the dirt.
 
-die Verwandten: relatives
+verwandt [fɛɐ̯ˈvant] (Adjektiv, Komparativ: verwandter, Superlativ: am verwandtesten): related; akin
+Bedeutung: durch familiäre Beziehungen miteinander verbunden; auch: in bestimmten Merkmalen ähnlich oder miteinander verbunden.
+Synonyme: angehörig, ähnlich, verbunden
+Attributiv und prädikativ verwendbar
+ex: Wir sind miteinander verwandt: We are related to each other.
+ex: Deutsch und Englisch sind miteinander verwandt: German and English are related to each other.
 
 zirkulieren [tsɪʁkuˈliːʁən] (intransitiv): to circulate
 Bedeutung: sich im Kreis oder innerhalb eines Systems bewegen; von einer Person oder einem Ort zum anderen weitergegeben werden.
@@ -20807,7 +20802,14 @@ Synonyme: Regisseur, Filmemacher
 ex: Der Filmregisseur arbeitet mit den Schauspielern: The movie director works with the actors.
 ex: Sie möchte später Filmregisseurin werden: She wants to become a movie director later.
 
-der Bewohner: resident,inhabitant
+der Bewohner [bəˈvoːnɐ]: resident; inhabitant; occupant
+Bedeutung: Person, die in einem bestimmten Haus, Gebäude, Ort oder Gebiet lebt.
+Genitiv: des Bewohners
+Plural: die Bewohner
+Kollokation: Bewohner eines Hauses
+Synonyme: Einwohner, Anwohner, Ortsbewohner
+ex: Die Bewohner des Hauses kennen sich gut: The residents of the house know each other well.
+ex: Viele Bewohner beschwerten sich über den Lärm: Many residents complained about the noise.
 
 das Laufband: treadmill
 
@@ -24112,9 +24114,6 @@ Kollokation: einen Termin in der Ordination haben
 Synonyme: Arztpraxis, Praxis, Behandlungsraum
 ex: Ich habe morgen einen Termin in der Ordination: I have an appointment at the doctor’s office tomorrow.
 ex: Die Ordination ist heute geschlossen: The doctor’s office is closed today.
-
-sich (AKK) erinnern: remeber
-Meine Großmutter erinnert sich oft an ihre Kindheit.
 
 die Karte: map
 
@@ -29933,8 +29932,6 @@ Attributiv verwendbar
 ex: Wir brauchen zusätzliche Informationen: We need additional information.
 ex: Dafür entstehen zusätzliche Kosten: This causes additional costs.
 
-**„zusätzliche“** ist die deklinierte Form von **„zusätzlich“**.
-
 der / die Selbstständige [ˈzɛlpstʃtɛndɪɡə]: self-employed person; freelancer
 Bedeutung: eine Person, die nicht als Arbeitnehmer für einen Arbeitgeber arbeitet, sondern beruflich auf eigene Rechnung tätig ist.
 Genitiv: des Selbstständigen / der Selbstständigen
@@ -32433,3 +32430,201 @@ Futur I: ich werde leisten
 Konjunktiv II: ich leistete / ich würde leisten
 Konjunktiv I: ich leiste
 Imperativ: du: Leiste! ihr: Leistet!
+
+der Antrieb [ˈanˌtʁiːp]: drive; propulsion; motivation
+Bedeutung: 1. Kraft oder Mechanismus, der etwas in Bewegung setzt. 2. innere Motivation oder Energie, etwas zu tun.
+Genitiv: des Antriebs
+Plural: die Antriebe
+Kollokation: elektrischer Antrieb; innerer Antrieb
+Synonyme: Motivation, Beweggrund, Antriebskraft
+ex: Der Motor dient als Antrieb für die Maschine: The motor serves as the drive for the machine.
+ex: Ihm fehlt der Antrieb, etwas zu verändern: He lacks the motivation to change something.
+
+die Weiterleitung [ˈvaɪ̯tɐˌlaɪ̯tʊŋ]: forwarding; redirection; transfer
+Bedeutung: das Weiterleiten von etwas an eine andere Person, Stelle oder ein anderes Ziel, z. B. einer E-Mail, eines Anrufs oder einer Information.
+Genitiv: der Weiterleitung
+Plural: die Weiterleitungen
+Kollokation: automatische Weiterleitung; eine Weiterleitung einrichten
+Synonyme: Übermittlung, Umleitung, Weitergabe
+ex: Ich habe eine Weiterleitung für meine E-Mails eingerichtet: I set up forwarding for my emails.
+ex: Die Weiterleitung des Anrufs hat funktioniert: The call forwarding worked.
+
+die Verwandtschaft [fɛɐ̯ˈvantʃaft]: kinship; relatives; family relations
+Bedeutung: 1. Beziehung zwischen Personen, die zur gleichen Familie gehören. 2. Gesamtheit der Verwandten einer Person.
+Genitiv: der Verwandtschaft
+Plural: die Verwandtschaften
+Kollokation: mit jemandem verwandt sein; zur Verwandtschaft gehören
+Synonyme: Verwandte, Familie, Angehörige
+ex: Zwischen den beiden Familien besteht eine enge Verwandtschaft: There is a close kinship between the two families.
+ex: Die ganze Verwandtschaft kam zur Hochzeit: All the relatives came to the wedding.
+
+das Feld [fɛlt]: field; area; domain
+Bedeutung: 1. ein Stück Land, das landwirtschaftlich genutzt wird. 2. ein bestimmter Bereich oder ein Fachgebiet. 3. ein Bereich in einem Formular oder einer Tabelle, in den Informationen eingetragen werden.
+Genitiv: des Feldes
+Plural: die Felder
+Kollokation: auf dem Feld arbeiten; ein Feld ausfüllen; ein breites Feld
+Synonyme: Acker, Bereich, Gebiet
+ex: Die Bauern arbeiten auf den Feldern: The farmers work in the fields.
+ex: Bitte füllen Sie alle Felder im Formular aus: Please fill in all the fields in the form.
+
+überein [yːbɐˈʔaɪ̯n] (Verbpartikel, besonders in übereinstimmen und übereinkommen): in agreement; in accordance
+Bedeutung: gleich oder miteinander im Einklang sein; dieselbe Meinung, Bedeutung oder Eigenschaft haben.
+Synonyme: im Einklang, einig, gleich
+ex: Unsere Meinungen stimmen überein: Our opinions are in agreement.
+ex: Die Angaben stimmen mit den Daten überein: The information corresponds with the data.
+Hinweis: „Verbpartikel“ ist als Wortart noch nicht in deinen Wörterbuch-Instruktionen definiert. Du solltest sie hinzufügen.
+
+ausstrecken [ˈaʊ̯sˌʃtʁɛkn̩] (trennbar, transitiv): to stretch out; to extend
+Verwendung: etwas (Akk.) ausstrecken / die Hand nach etwas (Dat.) ausstrecken
+Bedeutung: einen Körperteil lang nach vorne oder in eine bestimmte Richtung bewegen.
+Synonyme: strecken, hinausstrecken, entgegenstrecken
+ex: Er streckt die Hand aus, um das Glas zu nehmen: He stretches out his hand to take the glass.
+ex: Sie streckte die Hand nach dem Schlüssel aus: She stretched out her hand toward the key.
+Präsens: ich strecke aus
+Präteritum: ich streckte aus
+Perfekt: ich habe ausgestreckt
+Futur I: ich werde ausstrecken
+Konjunktiv II: ich streckte aus / ich würde ausstrecken
+Konjunktiv I: ich strecke aus
+Imperativ: du: Streck aus! / Strecke aus! ihr: Streckt aus!
+
+die halbe Miete (Redewendung): half the battle; a major step toward success
+Bedeutung: Ein wichtiger Teil einer Aufgabe ist bereits geschafft; dadurch wird der Rest deutlich leichter.
+Synonyme: ein großer Schritt, ein wichtiger Anfang, schon viel geschafft
+ex: Wenn du regelmäßig lernst, ist das schon die halbe Miete: If you study regularly, that is already half the battle.
+ex: Eine gute Vorbereitung ist die halbe Miete: Good preparation is half the battle.
+
+fröhlich [ˈfrøːlɪç] (Adjektiv, Komparativ: fröhlicher, Superlativ: am fröhlichsten): cheerful; happy; joyful
+Bedeutung: gute Laune und Freude zeigend.
+Synonyme: heiter, gut gelaunt, munter
+Attributiv und prädikativ verwendbar
+ex: Sie ist heute sehr fröhlich: She is very cheerful today.
+ex: Die Kinder spielen fröhlich im Garten: The children are playing happily in the garden.
+
+munter [ˈmʊntɐ] (Adjektiv, Komparativ: munterer, Superlativ: am muntersten): lively; cheerful; energetic
+Bedeutung: lebhaft, wach und voller Energie.
+Synonyme: lebhaft, aufgeweckt, fröhlich
+Attributiv und prädikativ verwendbar
+ex: Trotz des frühen Morgens ist er schon ganz munter: Despite the early morning, he is already quite lively.
+ex: Sie wirkt heute besonders munter: She seems especially cheerful and energetic today.
+
+hinauswachsen [hɪˈnaʊ̯sˌvaksn̩] (trennbar, intransitiv): to outgrow; to grow beyond
+Verwendung: aus etwas (Dat.) hinauswachsen
+Bedeutung: durch Wachstum oder Entwicklung für etwas zu groß werden; sich über einen bisherigen Zustand oder eine Grenze hinausentwickeln.
+Synonyme: entwachsen, sich weiterentwickeln, über etwas hinausgehen
+ex: Das Kind ist aus seinen alten Kleidern hinausgewachsen: The child has outgrown its old clothes.
+ex: Sie ist aus dieser Rolle längst hinausgewachsen: She has long since outgrown this role.
+Präsens: ich wachse hinaus
+Präteritum: ich wuchs hinaus
+Perfekt: ich bin hinausgewachsen
+Futur I: ich werde hinauswachsen
+Konjunktiv II: ich wüchse hinaus / ich würde hinauswachsen
+Konjunktiv I: ich wachse hinaus
+Imperativ: du: Wachs hinaus! ihr: Wachst hinaus
+
+der Trick [trɪk]: trick; clever method; gimmick
+Bedeutung: eine geschickte Methode oder ein besonderer Kunstgriff, mit dem man etwas leichter erreicht oder jemanden täuscht.
+Genitiv: des Tricks
+Plural: die Tricks
+Kollokation: einen Trick anwenden
+Synonyme: Kunstgriff, Kniff, Täuschung
+ex: Mit diesem Trick kann man die Aufgabe schneller lösen: With this trick, you can solve the task faster.
+ex: Der Zauberer zeigte uns einen interessanten Trick: The magician showed us an interesting trick.
+
+die Vergesslichkeit [fɛɐ̯ˈɡɛslɪçkaɪ̯t]: forgetfulness
+Bedeutung: die Neigung, Dinge häufig oder leicht zu vergessen.
+Genitiv: der Vergesslichkeit
+Plural: kein Plural
+Kollokation: unter Vergesslichkeit leiden
+Synonyme: Zerstreutheit, Gedächtnisschwäche
+ex: Seine Vergesslichkeit macht ihm manchmal Probleme: His forgetfulness sometimes causes him problems.
+ex: Mit zunehmendem Alter kann die Vergesslichkeit stärker werden: Forgetfulness can become stronger with increasing age.
+
+das Vergessen [fɛɐ̯ˈɡɛsn̩]: forgetting
+Bedeutung: der Vorgang, bei dem man sich an etwas nicht mehr erinnert.
+Genitiv: des Vergessens
+Plural: kein Plural
+Kollokation: etwas dem Vergessen überlassen
+Synonyme: Nicht-Erinnern, Verdrängen
+ex: Das Vergessen dieses Termins war mein Fehler: Forgetting this appointment was my mistake.
+ex: Manche Erinnerungen geraten langsam ins Vergessen: Some memories are slowly being forgotten.
+
+verbinden mit (Verb + Präposition, transitiv): to connect something with something; to associate something with something
+Verwendung: etwas (Akk.) mit etwas (Dat.) verbinden
+Bedeutung: zwei Dinge miteinander in Beziehung oder Kontakt bringen; etwas gedanklich mit etwas anderem in Zusammenhang bringen.
+Synonyme: verknüpfen mit, in Verbindung bringen mit, assoziieren mit
+ex: Ich verbinde den Computer mit dem Drucker: I connect the computer to the printer.
+ex: Viele Menschen verbinden Erfolg mit Geld: Many people associate success with money.
+Präsens: ich verbinde mit
+Präteritum: ich verband mit
+Perfekt: ich habe mit etwas verbunden
+Futur I: ich werde mit etwas verbinden
+Konjunktiv II: ich verbände mit / ich würde mit etwas verbinden
+Konjunktiv I: ich verbinde mit
+Imperativ: du: Verbinde mit! ihr: Verbindet mit!
+
+bescheiden [bəˈʃaɪ̯dn̩] (Adjektiv, Komparativ: bescheidener, Superlativ: am bescheidensten): modest; humble; unassuming
+Bedeutung: nicht übermäßig anspruchsvoll; die eigenen Fähigkeiten oder Erfolge nicht übertrieben hervorhebend.
+Synonyme: anspruchslos, genügsam, zurückhaltend
+Attributiv und prädikativ verwendbar
+ex: Er ist ein sehr bescheidener Mensch: He is a very modest person.
+ex: Trotz seines Erfolgs ist sie bescheiden geblieben: Despite her success, she has remained humble.
+
+gelassen [ɡəˈlasn̩] (Adjektiv, Komparativ: gelassener, Superlativ: am gelassensten): calm; composed; relaxed
+Bedeutung: ruhig und beherrscht bleibend, besonders in schwierigen oder stressigen Situationen.
+Synonyme: ruhig, ausgeglichen, gefasst
+Attributiv und prädikativ verwendbar
+ex: Er bleibt auch in schwierigen Situationen gelassen: He remains calm even in difficult situations.
+ex: Heute bin ich viel gelassener als früher: Today I am much more relaxed than before.
+
+picken [ˈpɪkn̩] (transitiv/intransitiv): to peck; to pick at
+Verwendung: etwas (Akk.) picken; nach etwas (Dat.) picken
+Bedeutung: besonders von Vögeln: mit dem Schnabel wiederholt auf etwas schlagen oder kleine Stücke davon aufnehmen.
+Synonyme: hacken, schnappen, mit dem Schnabel aufnehmen
+ex: Die Hühner picken Körner vom Boden: The chickens peck grains from the ground.
+ex: Der Vogel pickt nach dem Brot: The bird pecks at the bread.
+Präsens: ich picke
+Präteritum: ich pickte
+Perfekt: ich habe gepickt
+Futur I: ich werde picken
+Konjunktiv II: ich pickte / ich würde picken
+Konjunktiv I: ich picke
+Imperativ: du: Pick! / Picke! ihr: Pickt!
+
+die Gemeinde [ɡəˈmaɪ̯ndə]: municipality; community; local authority
+Bedeutung: kleinste politische und administrative Einheit eines Staates; auch die Gemeinschaft der Menschen, die in einem bestimmten Ort lebt.
+Genitiv: der Gemeinde
+Plural: die Gemeinden
+Kollokation: in einer Gemeinde leben
+Synonyme: Kommune, Ortschaft, Gemeinschaft
+ex: Die Gemeinde baut eine neue Schule: The municipality is building a new school.
+ex: Unsere Gemeinde hat etwa 5.000 Einwohner: Our municipality has about 5,000 inhabitants.
+
+genauso [ɡəˈnaʊ̯zoː] (Adverb): exactly like that; just as; in the same way
+Bedeutung: auf genau dieselbe Art und Weise; in gleichem Maß oder gleicher Weise.
+Synonyme: ebenso, gleichermaßen, auf dieselbe Weise
+ex: Ich würde es genauso machen: I would do it exactly the same way.
+ex: Sie denkt genauso wie ich: She thinks just like me.
+
+der Einwohner [ˈaɪ̯nˌvoːnɐ]: inhabitant; resident
+Bedeutung: Person, die dauerhaft oder für längere Zeit an einem bestimmten Ort, in einer Stadt oder in einem Land lebt.
+Genitiv: des Einwohners
+Plural: die Einwohner
+Kollokation: Einwohner einer Stadt
+Synonyme: Bewohner, Ortsbewohner, Ansässiger
+ex: Die Stadt hat etwa 100.000 Einwohner: The city has about 100,000 inhabitants.
+ex: Viele Einwohner fahren täglich mit dem Bus zur Arbeit: Many residents travel to work by bus every day.
+
+Feldheim (Eigenname): Feldheim
+Bedeutung: Feldheim ist ein Ortsteil der Stadt Treuenbrietzen im Bundesland Brandenburg in Deutschland. Der Ort ist besonders dafür bekannt, seinen Strom und seine Wärme weitgehend aus erneuerbaren Energien selbst zu erzeugen. ([Energiequelle - Energiewende machen wir][1])
+ex: Feldheim ist für erneuerbare Energien bekannt: Feldheim is known for renewable energy.
+ex: Viele Besucher kommen nach Feldheim: Many visitors come to Feldheim.
+
+der Studiengang [ˈʃtuːdi̯ənˌɡaŋ]: degree program; course of study
+Bedeutung: ein bestimmtes Studienfach oder eine organisierte akademische Ausbildung an einer Universität oder Hochschule.
+Genitiv: des Studiengangs
+Plural: die Studiengänge
+Kollokation: einen Studiengang wählen
+Synonyme: Studienfach, Studienprogramm, Ausbildungsgang
+ex: Sie studiert in einem internationalen Studiengang: She studies in an international degree program.
+ex: Dieser Studiengang dauert sechs Semester: This degree program lasts six semesters.
