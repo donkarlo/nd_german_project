@@ -10881,8 +10881,6 @@ die Höhle: cave
 
 die Alien: alien
 
-doch: yet
-
 über: above, beyond
 
 die Kaskade: cascade
@@ -22204,15 +22202,6 @@ Synonyme: Favorit, Lieblingsperson
 ex: Dieses Buch ist mein Liebling: This book is my favorite.
 ex: Sie ist der Liebling der Klasse: She is the favorite of the class.
 
-die Landschaft [ˈlantʃaft]: landscape; scenery
-Bedeutung: sichtbarer Teil einer Gegend in der Natur; das Aussehen von Bergen, Feldern, Wäldern oder anderen Naturansichten.
-Genitiv: der Landschaft
-Plural: die Landschaften
-Kollokation: eine schöne Landschaft
-Synonyme: Naturansicht, Panorama, Szenerie
-ex: Die Landschaft in Österreich ist sehr schön: The scenery in Austria is very beautiful.
-ex: Wir haben vom Zug aus eine wunderbare Landschaft gesehen: We saw wonderful scenery from the train.
-
 die rosige Zukunft [ˈʁoːzɪɡə ˈtsuːkʊnft] (-, -¨e): bright future; promising future
 Genitiv: der rosigen Zukunft
 Plural: die rosigen Zukünfte (selten)
@@ -24185,8 +24174,6 @@ klettern: climb
 
 steigen: bala keshidan, sich aufwärts-, in die Höhe bewegen; hochsteigen
 der Nebel steigt
-
-der Kellner, die Kellnerin: waiter/ waitress
 
 die Flasche -n: bottle, flask
 
@@ -32628,3 +32615,156 @@ Kollokation: einen Studiengang wählen
 Synonyme: Studienfach, Studienprogramm, Ausbildungsgang
 ex: Sie studiert in einem internationalen Studiengang: She studies in an international degree program.
 ex: Dieser Studiengang dauert sechs Semester: This degree program lasts six semesters.
+
+keineswegs [ˈkaɪ̯nəsˌveːks] (Adverb, nicht steigerbar): by no means; not at all; in no way
+Bedeutung: überhaupt nicht; auf keinen Fall; drückt eine starke Verneinung aus.
+Synonyme: überhaupt nicht, auf keinen Fall, keinesfalls
+ex: Das ist keineswegs sicher: That is by no means certain.
+ex: Ich bin keineswegs gegen diese Idee: I am not at all against this idea.
+
+die Begleitung [bəˈɡlaɪ̯tʊŋ]: accompaniment; company; escort
+Bedeutung: das Mitgehen oder Mitfahren mit einer Person; auch eine Person, die jemanden begleitet.
+Genitiv: der Begleitung
+Plural: die Begleitungen
+Kollokation: in Begleitung von jemandem
+Synonyme: Gesellschaft, Begleitperson, Eskorte
+ex: Sie kam in Begleitung ihrer Freundin: She came accompanied by her friend.
+ex: Kinder dürfen nur in Begleitung eines Erwachsenen eintreten: Children may enter only when accompanied by an adult.
+
+der Vorbefund [ˈfoːɐ̯bəˌfʊnt]: previous finding; prior medical finding; preliminary finding
+Bedeutung: ein bereits früher erhobener Befund, besonders in der Medizin, der für eine aktuelle Untersuchung oder Diagnose berücksichtigt wird.
+Genitiv: des Vorbefunds
+Plural: die Vorbefunde
+Kollokation: Vorbefunde berücksichtigen
+Synonyme: früherer Befund, Voruntersuchungsergebnis, medizinischer Vorbefund
+ex: Der Arzt prüft die Vorbefunde des Patienten: The doctor reviews the patient’s previous findings.
+ex: Bitte bringen Sie alle Vorbefunde zur Untersuchung mit: Please bring all previous medical findings to the examination.
+
+etwaig [ˈɛtvaɪ̯ç] (Adjektiv, meist attributiv): possible; potential; any
+Bedeutung: möglicherweise vorhanden oder auftretend; eventuell bestehend.
+Synonyme: möglich, eventuell, gegebenenfalls
+Attributiv verwendbar
+ex: Etwaige Änderungen werden später bekannt gegeben: Any possible changes will be announced later.
+ex: Bitte informieren Sie uns über etwaige Probleme: Please inform us about any potential problems.
+ex: Etwaige Kosten müssen selbst bezahlt werden: Any possible costs must be paid by yourself.
+
+das Wachsen [ˈvaksn̩]: growing
+Bedeutung: der Vorgang des Wachsens; die allmähliche Zunahme an Größe, Menge oder Entwicklung.
+Genitiv: des Wachsens
+Plural: kein Plural
+Kollokation: das Wachsen einer Pflanze
+Synonyme: Wachstum, Zunahme, Entwicklung
+ex: Das Wachsen der Pflanzen braucht Zeit: The growing of the plants takes time.
+ex: Das Wachsen der Bevölkerung verändert die Stadt: The growing of the population changes the city.
+
+der Kellner [ˈkɛlnɐ]: waiter
+Bedeutung: ein Mann, der in einem Restaurant oder Café Gäste bedient und Bestellungen aufnimmt.
+Genitiv: des Kellners
+Plural: die Kellner
+Kollokation: den Kellner rufen
+Synonyme: Servicekraft, Bedienung
+ex: Der Kellner bringt uns die Speisekarte: The waiter brings us the menu.
+ex: Ich habe den Kellner nach der Rechnung gefragt: I asked the waiter for the bill.
+
+übernachten [yːbɐˈnaxtn̩] (untrennbar, intransitiv): to stay overnight; to spend the night
+Verwendung: irgendwo übernachten
+Bedeutung: die Nacht an einem bestimmten Ort verbringen und dort schlafen.
+Synonyme: die Nacht verbringen, nächtigen, schlafen
+ex: Wir übernachten heute in einem Hotel: We are staying overnight in a hotel today.
+ex: Ich habe bei einem Freund übernachtet: I stayed overnight at a friend's place.
+Präsens: ich übernachte
+Präteritum: ich übernachtete
+Perfekt: ich habe übernachtet
+Futur I: ich werde übernachten
+Konjunktiv II: ich übernachtete / ich würde übernachten
+Konjunktiv I: ich übernachte
+Imperativ: du: Übernachte! ihr: Übernachtet!
+
+der Aufenthalt [ˈaʊ̯fn̩tˌhalt]: stay; residence
+Bedeutung: die Zeit, die jemand an einem bestimmten Ort verbringt.
+Genitiv: des Aufenthalts
+Plural: die Aufenthalte
+Kollokation: einen Aufenthalt planen
+Synonyme: Verbleib, Aufenthaltzeit
+ex: Unser Aufenthalt in Berlin dauerte drei Tage: Our stay in Berlin lasted three days.
+ex: Ich wünsche Ihnen einen angenehmen Aufenthalt: I wish you a pleasant stay.
+
+verbrechen [fɛɐ̯ˈbʁɛçn̩] (untrennbar, transitiv, selten): to commit; to perpetrate
+Verwendung: etwas (Akk.) verbrechen
+Bedeutung: eine schwere schlechte oder strafbare Tat begehen.
+Synonyme: begehen, verüben
+ex: Sie verbrachen schwere Taten: They committed serious crimes.
+ex: Was haben sie verbrochen?: What have they done / committed?
+Präsens: ich verbreche
+Präteritum: ich verbrach
+Perfekt: ich habe verbrochen
+Futur I: ich werde verbrechen
+Konjunktiv II: ich verbräche / ich würde verbrechen
+Konjunktiv I: ich verbreche
+Imperativ: du: Verbrich! ihr: Verbrecht
+
+der/die Verwandte [fɛɐ̯ˈvantə]: relative
+Bedeutung: eine Person aus der eigenen Familie oder Verwandtschaft.
+Genitiv: des Verwandten / der Verwandten
+Plural: die Verwandten
+Kollokation: Verwandte besuchen
+Synonyme: Familienangehöriger, Angehöriger
+ex: Ich besuche meine Verwandten am Wochenende: I visit my relatives at the weekend.
+ex: Viele meiner Verwandten leben im Ausland: Many of my relatives live abroad.
+
+der Taro [ˈtaːʁo]: cocoyam; taro
+Bedeutung: eine tropische Nutzpflanze mit stärkehaltigen, essbaren Knollen; auch die essbare Knolle dieser Pflanze.
+Genitiv: des Taros
+Plural: die Taros
+Kollokation: Taro kochen
+Synonyme: Wasserbrotwurzel, Taro-Wurzel
+ex: In vielen tropischen Ländern wird Taro als Nahrungsmittel verwendet: In many tropical countries, cocoyam is used as food.
+ex: Die Taro-Knollen werden vor dem Essen gekocht: The cocoyam tubers are cooked before eating.
+
+weiterverbreiten [ˈvaɪ̯tɐfɛɐ̯ˌbʁaɪ̯tn̩] (trennbar, transitiv): to spread further; to disseminate; to pass on
+Verwendung: etwas (Akk.) weiterverbreiten
+Bedeutung: Informationen, Nachrichten, Inhalte oder Ähnliches an weitere Personen weitergeben und dadurch ihre Verbreitung vergrößern.
+Synonyme: weitergeben, verbreiten, übermitteln
+ex: Bitte verbreite diese falsche Nachricht nicht weiter: Please do not spread this false news further.
+ex: Die Informationen wurden im Internet schnell weiterverbreitet: The information was quickly disseminated on the internet.
+Präsens: ich verbreite weiter
+Präteritum: ich verbreitete weiter
+Perfekt: ich habe weiterverbreitet
+Futur I: ich werde weiterverbreiten
+Konjunktiv II: ich verbreitete weiter / ich würde weiterverbreiten
+Konjunktiv I: ich verbreite weiter
+Imperativ: du: Verbreite weiter! ihr: Verbreitet weiter!
+
+sich lassen + Infinitiv: can be; can be done; to be possible to
+Bedeutung: Die Konstruktion „sich lassen + Infinitiv“ drückt aus, dass etwas möglich oder machbar ist. Sie hat oft eine ähnliche Bedeutung wie „können + Passiv“.
+Synonyme: möglich sein, können + Passiv
+ex: Das Problem lässt sich lösen: The problem can be solved.
+ex: Dieses Buch lässt sich leicht lesen: This book can be read easily.
+ex: Die Tür lässt sich nicht öffnen: The door cannot be opened.
+Gebrauch: Subjekt + lässt/lassen + sich + Infinitiv
+Vergleich: Das Problem lässt sich lösen = Das Problem kann gelöst werden.
+
+handgezimmert [ˈhantɡəˌtsɪmɐt] (Adjektiv, nicht üblich steigerbar): hand-built; handcrafted
+Bedeutung: von Hand, besonders aus Holz, gebaut oder gezimmert.
+Synonyme: handgefertigt, handgebaut, handwerklich gefertigt
+Attributiv und prädikativ verwendbar
+ex: Wir saßen an einem handgezimmerten Holztisch: We sat at a hand-built wooden table.
+ex: Die handgezimmerte Hütte steht im Wald: The hand-built hut stands in the forest.
+**handgezimmerte** ist eine deklinierte Form von **handgezimmert**.
+
+die Holzbank [ˈhɔlt͡sˌbaŋk]: wooden bench
+Bedeutung: eine Bank, die aus Holz gemacht ist.
+Genitiv: der Holzbank
+Plural: die Holzbänke
+Kollokation: auf einer Holzbank sitzen
+Synonyme: Bank aus Holz, Sitzbank
+ex: Wir sitzen auf einer Holzbank im Park: We are sitting on a wooden bench in the park.
+ex: Vor dem Haus steht eine alte Holzbank: An old wooden bench stands in front of the house.
+
+beige [beːʒ] (Adjektiv, nicht steigerbar): beige
+Bedeutung: von einer hellen, gelblich-braunen Farbe.
+Synonyme: sandfarben, cremefarben, hellbraun
+Attributiv und prädikativ verwendbar
+ex: Sie trägt eine beige Jacke: She is wearing a beige jacket.
+ex: Das Sofa ist beige: The sofa is beige.
+ex: Ich habe ein beiges Hemd gekauft: I bought a beige shirt.
