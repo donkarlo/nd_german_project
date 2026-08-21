@@ -7,20 +7,37 @@ from urllib.parse import quote
 import app_base as base
 import dictionary_core
 import language_enrichment as enrichment
-import language_patch_v4 as patch
+import language_patch_v3 as patch
 
 FIELD_RE = re.compile(r"^([^:]{1,48}):\s*(.*)$")
-PERSIAN_QUERY_RE = re.compile(r"[\u0600-\u06ff]")
 ORIGINAL_INDEX_SEARCH = dictionary_core.DictionaryIndex.search
 ORIGINAL_WINDOW_INIT_FACTORY = base.window_init
 
 
-def _exact_only_search(self, normalized_query: str, limit: int):
+def fast_index_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
+    """Avoid expensive fuzzy matching while the user is entering the first characters."""
+    normalized_query = dictionary_core.normalize_text(query)
+    if not normalized_query:
+        return [
+            dictionary_core.SearchResult(entry, 0.0)
+            for entry in self.entries[:limit]
+        ]
+
+    compact_length = len(normalized_query.replace(" ", ""))
+    if compact_length >= 3:
+        return ORIGINAL_INDEX_SEARCH(
+            self,
+            query,
+            limit=limit,
+            fuzzy_threshold=fuzzy_threshold,
+        )
+
     scored = []
     for entry in self.entries:
         score = self._exact_score(entry, normalized_query)
         if score:
             scored.append(dictionary_core.SearchResult(entry, score))
+
     scored.sort(
         key=lambda result: (
             -result.score,
@@ -29,29 +46,6 @@ def _exact_only_search(self, normalized_query: str, limit: int):
         )
     )
     return scored[:limit]
-
-
-def fast_index_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
-    """Keep interactive Persian/short searches cheap; reserve fuzzy matching for longer Latin queries."""
-    normalized_query = dictionary_core.normalize_text(query)
-    if not normalized_query:
-        return [dictionary_core.SearchResult(entry, 0.0) for entry in self.entries[:limit]]
-
-    compact_length = len(normalized_query.replace(" ", ""))
-    if PERSIAN_QUERY_RE.search(query):
-        if compact_length < 3:
-            limit = min(limit, 8)
-        return _exact_only_search(self, normalized_query, limit)
-
-    if compact_length < 3:
-        return _exact_only_search(self, normalized_query, min(limit, 12))
-
-    return ORIGINAL_INDEX_SEARCH(
-        self,
-        query,
-        limit=limit,
-        fuzzy_threshold=fuzzy_threshold,
-    )
 
 
 def _detail_line(line: str) -> str:
@@ -118,7 +112,11 @@ def render_results(self, entries) -> None:
     for entry in entries:
         word = patch.clean_german_word(entry.first_line) or entry.headword.strip()
         raw_values = patch.language_values(entry.raw)
-        patch.prioritize(entry.raw)
+        if any(
+            enrichment.is_missing(raw_values[label])
+            for label in enrichment.LANGUAGE_LABELS
+        ):
+            patch.prioritize(entry.raw)
         values = {
             key: value if not enrichment.is_missing(value) else "-"
             for key, value in raw_values.items()
@@ -134,7 +132,7 @@ def render_results(self, entries) -> None:
                 f"<a class='speaker' href='speak:{quote(word, safe='')}' "
                 "title='German pronunciation'>&#128266;</a>"
             )
-        speaker_gap = "&nbsp;&nbsp;&nbsp;" if speaker else ""
+        speaker_gap = "&nbsp;&nbsp;" if speaker else ""
 
         meanings = (
             f"<div class='meaning-box'><span class='field-label'>English:</span> "
@@ -213,9 +211,12 @@ def idle_window_init(original_init):
 
     def init(self, settings_path, settings) -> None:
         wrapped_init(self, settings_path, settings)
-        self.search_timer.setInterval(max(220, int(settings.get("search_debounce_ms", 80))))
-        self.search_box.editingFinished.connect(lambda: refresh_generated(self, force=True))
-        self.search_box.returnPressed.connect(lambda: refresh_generated(self, force=True))
+        self.search_box.editingFinished.connect(
+            lambda: refresh_generated(self, force=True)
+        )
+        self.search_box.returnPressed.connect(
+            lambda: refresh_generated(self, force=True)
+        )
 
     return init
 
