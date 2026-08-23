@@ -2,20 +2,17 @@ from __future__ import annotations
 
 import html
 import re
-from pathlib import Path
-from urllib.parse import quote, unquote
+from urllib.parse import quote
 
 import app_base as base
 import dictionary_core
 import language_enrichment as enrichment
 import language_patch_v4 as patch
-import noun_core
 
 FIELD_RE = re.compile(r"^([^:]{1,48}):\s*(.*)$")
 PERSIAN_QUERY_RE = re.compile(r"[\u0600-\u06ff]")
 ORIGINAL_INDEX_SEARCH = dictionary_core.DictionaryIndex.search
 ORIGINAL_WINDOW_INIT_FACTORY = base.window_init
-ORIGINAL_LINK_HANDLER_FACTORY = base.link_handler
 
 
 def _exact_only_search(self, normalized_query: str, limit: int):
@@ -165,8 +162,6 @@ def render_results(self, entries) -> None:
             links.append(_action("conjugate", encoded, "&#8635;", "Conjugate"))
         if role == "adjective":
             links.append(_action("adjective", encoded, "&#9398;", "Endungen"))
-        if role == "noun":
-            links.append(_action("noun", encoded, "&#9419;", "Endungen"))
 
         index = positions.get(id(entry), -1)
         if index >= 0:
@@ -194,144 +189,6 @@ def render_results(self, entries) -> None:
     self.results.verticalScrollBar().setValue(0)
 
 
-def _find_noun_entry(window, text: str):
-    if not window.index:
-        return None
-    base_word, _ = noun_core.noun_and_gender(text)
-    normalized = dictionary_core.normalize_text(base_word)
-    if not normalized:
-        return None
-    for entry in window.index.entries:
-        if entry.lexeme_norm == normalized and enrichment.infer_role(entry) == "noun":
-            return entry
-    return None
-
-
-def _noun_table_html(result: dict[str, object]) -> str:
-    rows = result["rows"]
-    body = []
-    for row in rows:
-        body.append(
-            "<tr>"
-            f"<td><b>{html.escape(row['case'])}</b></td>"
-            f"<td class='form'>{html.escape(row['singular'])}</td>"
-            f"<td>{html.escape(row['singular_ending'])}</td>"
-            f"<td class='form'>{html.escape(row['plural'])}</td>"
-            f"<td>{html.escape(row['plural_ending'])}</td>"
-            "</tr>"
-        )
-    note = str(result.get("note", "") or "")
-    note_html = f"<p class='hint'><b>Hinweis:</b> {html.escape(note)}</p>" if note else ""
-    source = html.escape(str(result.get("source", "")))
-    return (
-        base.legacy.DictionaryWindow.GRAMMAR_CSS
-        + "<style>.form{font-size:12pt;font-weight:700}.source{color:#667;margin-top:8px}</style>"
-        + f"<h2>{html.escape(str(result['base']))} — {html.escape(str(result['gender']))}</h2>"
-        + "<p class='hint'>Die Tabelle zeigt die Nomenformen mit bestimmtem Artikel. "
-          "Dictionary-Angaben für Genitiv/Plural werden bevorzugt; danach gelten Regeln und Sonderfälle.</p>"
-        + "<table><thead><tr><th>Kasus</th><th>Singular</th><th>Nomenendung</th>"
-          "<th>Plural</th><th>Pluraländerung</th></tr></thead><tbody>"
-        + "".join(body)
-        + "</tbody></table>"
-        + note_html
-        + f"<p class='source'><b>Quelle der Form:</b> {source}</p>"
-    )
-
-
-def _render_noun(window) -> None:
-    text = window.noun_search.text().strip()
-    if not text:
-        window.noun_results.setHtml(
-            window.GRAMMAR_CSS
-            + "<p class='hint'>Nomen eingeben, z. B. <b>der Hund</b>, <b>die Gelegenheit</b>, "
-              "<b>das Herz</b> oder im Dictionary auf <b>Endungen</b> klicken.</p>"
-        )
-        window.noun_status.setText("")
-        return
-
-    entry = _find_noun_entry(window, text)
-    raw = entry.raw if entry is not None else ""
-    result = noun_core.decline_noun(
-        text,
-        raw=raw,
-        irregular_nouns=getattr(window, "irregular_nouns", {}),
-    )
-    window.noun_results.setHtml(_noun_table_html(result))
-    if getattr(window, "irregular_noun_error", None):
-        window.noun_status.setText(f"Irregular noun DB error: {window.irregular_noun_error}")
-    elif entry is None:
-        window.noun_status.setText(
-            "Kein exakter Dictionary-Eintrag gefunden; Regel/Exception-DB verwendet."
-        )
-    else:
-        window.noun_status.setText("Dictionary-Eintrag gefunden.")
-
-
-def _install_noun_tab(window, settings_path: Path, settings: dict) -> None:
-    if hasattr(window, "noun_tab"):
-        return
-
-    configured = settings.get(
-        "irregular_nouns_path",
-        str(Path(__file__).resolve().parent / "data" / "irregular_nouns.yaml"),
-    )
-    window.irregular_nouns_path = base.legacy.resolve_configured_path(configured, settings_path)
-    try:
-        window.irregular_nouns = noun_core.load_irregular_nouns(window.irregular_nouns_path)
-        window.irregular_noun_error = None
-    except (FileNotFoundError, OSError, UnicodeError, ValueError) as exc:
-        window.irregular_nouns = {}
-        window.irregular_noun_error = str(exc)
-
-    tab = base.legacy.QWidget(window)
-    outer = base.legacy.QVBoxLayout(tab)
-    top = base.legacy.QHBoxLayout()
-
-    window.noun_search = base.legacy.QLineEdit(tab)
-    window.noun_search.setClearButtonEnabled(True)
-    window.noun_search.setPlaceholderText(
-        "Nomen, z. B. der Hund, die Gelegenheit, das Herz, der Name …"
-    )
-    window.noun_search.setAccessibleName("Noun endings search")
-    top.addWidget(window.noun_search, 1)
-    outer.addLayout(top)
-
-    window.noun_results = base.legacy.QTextBrowser(tab)
-    window.noun_results.setOpenExternalLinks(False)
-    window.noun_results.setReadOnly(True)
-    window.noun_results.setFont(base.legacy.QFont("Sans Serif", 10))
-    window.noun_results.setMinimumWidth(0)
-    outer.addWidget(window.noun_results, 1)
-
-    window.noun_status = base.legacy.QLabel(tab)
-    window.noun_status.setTextInteractionFlags(base.legacy.Qt.TextSelectableByMouse)
-    outer.addWidget(window.noun_status)
-
-    window.noun_tab = tab
-    window.tabs.addTab(tab, "Nomenendungen")
-    window.noun_search.returnPressed.connect(lambda: _render_noun(window))
-    _render_noun(window)
-
-
-def noun_aware_link_handler(original):
-    wrapped = ORIGINAL_LINK_HANDLER_FACTORY(original)
-
-    def handler(self, url) -> None:
-        if url.scheme() == "noun":
-            word = unquote(url.toString().split(":", 1)[-1]).strip()
-            if word and hasattr(self, "noun_tab"):
-                index = self.tabs.indexOf(self.noun_tab)
-                if index >= 0:
-                    self.tabs.setCurrentIndex(index)
-                self.noun_search.setText(word)
-                self.noun_search.setFocus()
-                _render_noun(self)
-            return
-        wrapped(self, url)
-
-    return handler
-
-
 def refresh_generated(window, force: bool = False) -> None:
     revision = getattr(window, "_meaning_generation_revision", 0)
     if revision == getattr(window, "_meaning_generation_seen_revision", 0):
@@ -356,7 +213,6 @@ def idle_window_init(original_init):
 
     def init(self, settings_path, settings) -> None:
         wrapped_init(self, settings_path, settings)
-        _install_noun_tab(self, settings_path, settings)
         self.search_timer.setInterval(max(220, int(settings.get("search_debounce_ms", 80))))
         self.search_box.editingFinished.connect(lambda: refresh_generated(self, force=True))
         self.search_box.returnPressed.connect(lambda: refresh_generated(self, force=True))
@@ -369,7 +225,6 @@ def main() -> int:
     base.generate_missing_meanings = patch.generate_missing_meanings
     base.refresh_generated = refresh_generated
     base.render_results = render_results
-    base.link_handler = noun_aware_link_handler
     base.window_init = idle_window_init
     return base.main()
 

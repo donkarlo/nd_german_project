@@ -1,0 +1,200 @@
+Name:
+  gender: Maskulin
+  nominative_singular: Name
+  accusative_singular: Namen
+  dative_singular: Namen
+  genitive_singular: Namens
+  plural: Namen
+  dative_plural: Namen
+  note: "Gemischte Deklination: Akk./Dat. -n, Gen. -ns."
+Herz:
+  gender: Neutrum
+  nominative_singular: Herz
+  accusative_singular: Herz
+  dative_singular: Herzen
+  genitive_singular: Herzens
+  plural: Herzen
+  dative_plural: Herzen
+  note: Sonderparadigma des Substantivs Herz.
+Herr:
+  gender: Maskulin
+  nominative_singular: Herr
+  accusative_singular: Herrn
+  dative_singular: Herrn
+  genitive_singular: Herrn
+  plural: Herren
+  dative_plural: Herren
+  note: Unregelmaessige n-Deklination.
+Mensch:
+  gender: Maskulin
+  accusative_singular: Menschen
+  dative_singular: Menschen
+  genitive_singular: Menschen
+  plural: Menschen
+  dative_plural: Menschen
+  note: n-Deklination.
+Student:
+  gender: Maskulin
+  accusative_singular: Studenten
+  dative_singular: Studenten
+  genitive_singular: Studenten
+  plural: Studenten
+  dative_plural: Studenten
+  note: n-Deklination.
+Junge:
+  gender: Maskulin
+  accusative_singular: Jungen
+  dative_singular: Jungen
+  genitive_singular: Jungen
+  plural: Jungen
+  dative_plural: Jungen
+  note: n-Deklination.
+Kunde:
+  gender: Maskulin
+  accusative_singular: Kunden
+  dative_singular: Kunden
+  genitive_singular: Kunden
+  plural: Kunden
+  dative_plural: Kunden
+  note: n-Deklination.
+Kollege:
+  gender: Maskulin
+  accusative_singular: Kollegen
+  dative_singular: Kollegen
+  genitive_singular: Kollegen
+  plural: Kollegen
+  dative_plural: Kollegen
+  note: n-Deklination.
+Experte:
+  gender: Maskulin
+  accusative_singular: Experten
+  dative_singular: Experten
+  genitive_singular: Experten
+  plural: Experten
+  dative_plural: Experten
+  note: n-Deklination.
+Baer:
+  gender: Maskulin
+  accusative_singular: Baeren
+  dative_singular: Baeren
+  genitive_singular: Baeren
+  plural: Baeren
+  dative_plural: Baeren
+  note: n-Deklination.
+Hase:
+  gender: Maskulin
+  accusative_singular: Hasen
+  dative_singular: Hasen
+  genitive_singular: Hasen
+  plural: Hasen
+  dative_plural: Hasen
+  note: n-Deklination.
+Loewe:
+  gender: Maskulin
+  accusative_singular: Loewen
+  dative_singular: Loewen
+  genitive_singular: Loewen
+  plural: Loewen
+  dative_plural: Loewen
+  note: n-Deklination.
+Affe:
+  gender: Maskulin
+  accusative_singular: Affen
+  dative_singular: Affen
+  genitive_singular: Affen
+  plural: Affen
+  dative_plural: Affen
+  note: n-Deklination.
+Rabe:
+  gender: Maskulin
+  accusative_singular: Raben
+  dative_singular: Raben
+  genitive_singular: Raben
+  plural: Raben
+  dative_plural: Raben
+  note: n-Deklination.
+Zeuge:
+  gender: Maskulin
+  accusative_singular: Zeugen
+  dative_singular: Zeugen
+  genitive_singular: Zeugen
+  plural: Zeugen
+  dative_plural: Zeugen
+  note: n-Deklination.
+Bote:
+  gender: Maskulin
+  accusative_singular: Boten
+  dative_singular: Boten
+  genitive_singular: Boten
+  plural: Boten
+  dative_plural: Boten
+  note: n-Deklination.
+Bauer:
+  gender: Maskulin
+  accusative_singular: Bauern
+  dative_singular: Bauern
+  genitive_singular: Bauern
+  plural: Bauern
+  dative_plural: Bauern
+  note: Sonderfall der schwachen Deklination.
+Nachbar:
+  gender: Maskulin
+  accusative_singular: Nachbarn
+  dative_singular: Nachbarn
+  genitive_singular: Nachbarn
+  plural: Nachbarn
+  dative_plural: Nachbarn
+  note: Schwache Nebenform als Lernparadigma.
+Held:
+  gender: Maskulin
+  accusative_singular: Helden
+  dative_singular: Helden
+  genitive_singular: Helden
+  plural: Helden
+  dative_plural: Helden
+  note: n-Deklination.
+Prinz:
+  gender: Maskulin
+  accusative_singular: Prinzen
+  dative_singular: Prinzen
+  genitive_singular: Prinzen
+  plural: Prinzen
+  dative_plural: Prinzen
+  note: n-Deklination.
+Buchstabe:
+  gender: Maskulin
+  accusative_singular: Buchstaben
+  dative_singular: Buchstaben
+  genitive_singular: Buchstabens
+  plural: Buchstaben
+  dative_plural: Buchstaben
+  note: "Gemischte Deklination: Genitiv auf -ns."
+Gedanke:
+  gender: Maskulin
+  accusative_singular: Gedanken
+  dative_singular: Gedanken
+  genitive_singular: Gedankens
+  plural: Gedanken
+  dative_plural: Gedanken
+  note: "Gemischte Deklination: Genitiv auf -ns."
+Glaube:
+  gender: Maskulin
+  accusative_singular: Glauben
+  dative_singular: Glauben
+  genitive_singular: Glaubens
+  plural: kein Plural
+  note: Gemischte Deklination; gewoehnlich kein regulaerer Plural.
+Friede:
+  gender: Maskulin
+  accusative_singular: Frieden
+  dative_singular: Frieden
+  genitive_singular: Friedens
+  plural: kein Plural
+  note: Gemischte Deklination; gewoehnlich ohne Plural.
+Wille:
+  gender: Maskulin
+  accusative_singular: Willen
+  dative_singular: Willen
+  genitive_singular: Willens
+  plural: kein Plural
+  note: Gemischte Deklination; gewoehnlich ohne Plural.

@@ -4257,10 +4257,17 @@ English: public transportation
 Persian: حمل و نقل عمومی
 Penglish: hamel ve naghal amomi
 
-das Verkehrsmittel: mean of transportation
-English: mean of transportation
-Persian: وسیله حمل و نقل
-Penglish: vasileh hamel ve naghal
+das Verkehrsmittel [fɛɐ̯ˈkeːɐ̯sˌmɪtl̩]: means of transport; mode of transportation
+English: means of transport; mode of transportation
+Persian: وسیلهٔ نقلیه
+Penglish: vasile-ye naghliye
+Bedeutung: ein Mittel, mit dem Personen oder Güter von einem Ort zu einem anderen transportiert werden.
+Genitiv: des Verkehrsmittels
+Plural: die Verkehrsmittel
+Kollokation: öffentliche Verkehrsmittel benutzen
+Synonyme: Transportmittel, Beförderungsmittel
+ex: Der Bus ist ein öffentliches Verkehrsmittel: The bus is a form of public transport.
+ex: Viele Menschen benutzen täglich öffentliche Verkehrsmittel: Many people use public transport every day.
 
 begründen (etw.Akk ~): to justify
 English: to justify
@@ -6390,18 +6397,6 @@ English: communicative
 Persian: ارتباطی
 Penglish: ertabati
 
-die Reinigung [ʁaɪ̯nɪɡʊŋ]: cleaning
-English: cleaning
-Persian: تمیز کردن
-Penglish: tamiz kardan
-Bedeutung: das Saubermachen von etwas; Entfernung von Schmutz oder Unreinheiten.
-Genitiv: der Reinigung
-Plural: die Reinigungen
-Kollokation: die Reinigung der Wohnung
-Synonyme: Säuberung, Saubermachen
-ex: Die Reinigung der Küche dauert lange: The cleaning of the kitchen takes a long time.
-ex: Ich mache heute die Reinigung: I do the cleaning today.
-
 der Schaden [ˈʃaːdn̩]: damage; harm
 English: damage; harm
 Persian: آسیب؛ آسیب
@@ -6450,18 +6445,6 @@ die häufige Redewendung: common expression
 Bedeutung: ein Ausdruck oder Satz, den Menschen oft benutzen.
 Synonyme: üblicher Ausdruck, gängige Formulierung
 ex: „Wie geht es dir?“ ist eine häufige Redewendung: “How are you?” is a common expression.
-
-die Reinigung [ʁaɪ̯nɪɡʊŋ]: cleaning
-English: cleaning
-Persian: تمیز کردن
-Penglish: tamiz kardan
-Bedeutung: das Saubermachen von etwas; Entfernung von Schmutz oder Unreinheiten.
-Genitiv: der Reinigung
-Plural: die Reinigungen
-Kollokation: die Reinigung der Wohnung
-Synonyme: Säuberung, Saubermachen
-ex: Die Reinigung der Küche dauert lange: The cleaning of the kitchen takes a long time.
-ex: Ich mache heute die Reinigung: I do the cleaning today.
 
 die Hose [ˈhoːzə]: pants; trousers
 English: pants; trousers
@@ -10061,7 +10044,7 @@ Penglish: khaz
 reich [ʁaɪ̯ç] (Adjektiv, Komparativ: reicher, Superlativ: am reichsten): rich; wealthy
 English: rich; wealthy
 Persian: ثروتمند؛ ثروتمند
-Penglish: serotmand; serotmand
+Penglish: servatmand
 Synonyme: wohlhabend, vermögend
 Attributiv und prädikativ verwendbar
 ex: Er ist ein reicher Mann: He is a rich man.
@@ -14088,15 +14071,6 @@ Synonyme: Bedeutung, Preis, Wichtigkeit
 ex: Der Wert des Autos ist hoch: The value of the car is high.
 ex: Ich kenne den Wert dieses Hauses nicht: I do not know the value of this house.
 ex: Er legt viel Wert auf Ehrlichkeit: He values honesty a lot.
-
-wert [veːɐ̯t] (Adjektiv): worth
-English: worth
-Persian: ارزش
-Penglish: arzesh
-Bedeutung: einen bestimmten Wert habend.
-Synonyme: kostbar, wertvoll
-ex: Das ist viel Geld wert: That is worth a lot of money.
-ex: Dieses Fahrrad ist 500 Euro wert: This bicycle is worth 500 euros.
 
 die Kante [ˈkantə]: edge
 English: edge
@@ -22992,10 +22966,17 @@ English: to separate
 Persian: جدا کردن
 Penglish: jeda kardan
 
-die Mültrennung:joda ssazi ashga
-English: joda ssazi ashga
-Persian: جودا سسازی عشقا
-Penglish: Juda Sasazi Eshga
+die Mülltrennung [ˈmʏlˌtʁɛnʊŋ]: waste separation; waste sorting
+English: waste separation; waste sorting
+Persian: تفکیک زباله
+Penglish: tafkik-e zobaleh
+Bedeutung: das Sortieren von Abfällen nach verschiedenen Arten, zum Beispiel Papier, Glas, Plastik, Biomüll und Restmüll.
+Genitiv: der Mülltrennung
+Plural: kein Plural
+Kollokation: Müll richtig trennen
+Synonyme: Abfalltrennung, Müllsortierung
+ex: Mülltrennung ist wichtig für den Umweltschutz: Waste separation is important for environmental protection.
+ex: In Österreich gibt es klare Regeln für die Mülltrennung: In Austria, there are clear rules for waste sorting.
 
 der Kommentar: commentkommen [ˈkɔmən] (unregelmäßig, intransitiv): to come
 English: commentkommen [ˈkɔmən] (unregelmäßig, intransitiv): to come
@@ -24735,10 +24716,15 @@ English: cleanness
 Persian: پاکیزگی
 Penglish: pakizegi
 
-sauber: clean
-English: clean
-Persian: تمیز کردن
-Penglish: tamiz kardan
+sauber [ˈzaʊ̯bɐ] (Adjektiv, Komparativ: sauberer, Superlativ: am saubersten): clean; tidy
+English: clean; tidy
+Persian: تمیز؛ پاکیزه
+Penglish: tamiz; pakizeh
+Bedeutung: frei von Schmutz oder Verunreinigungen; ordentlich und gepflegt.
+Synonyme: rein, gepflegt, ordentlich
+ex: Die Küche ist sehr sauber: The kitchen is very clean.
+ex: Bitte halte dein Zimmer sauber: Please keep your room clean.
+ex: Dieses Bad ist sauberer als das andere: This bathroom is cleaner than the other one.
 
 rülpsen [ˈʁʏlpsn̩] (intransitiv): to burp; to belch
 English: to burp; to belch
@@ -46138,3 +46124,726 @@ Bedeutung: zeigt an, auf welches Thema oder welchen Gegenstand sich eine Aussage
 Gebrauch: besonders häufig in schriftlicher und formeller Sprache; „bezüglich“ wird normalerweise mit Genitiv verwendet.
 ex: Ich habe eine Frage bzgl. des Termins: I have a question regarding the appointment.
 ex: Bzgl. Ihrer Anfrage melden wir uns morgen: Regarding your inquiry, we will contact you tomorrow.
+
+die Erwägung [ɛɐ̯ˈvɛːɡʊŋ]: consideration
+English: consideration
+Persian: بررسی؛ ملاحظه؛ در نظر گرفتن
+Penglish: barrasi; molahezeh; dar nazar gereftan
+Bedeutung: gedankliche Prüfung einer Möglichkeit, bevor man eine Entscheidung trifft.
+Genitiv: der Erwägung
+Plural: die Erwägungen
+Kollokation: etwas in Erwägung ziehen
+Synonyme: Überlegung, Betrachtung, Abwägung
+ex: Wir ziehen einen Umzug in Erwägung: We are considering moving.
+ex: Nach sorgfältiger Erwägung lehnte sie den Vorschlag ab: After careful consideration, she rejected the proposal.
+
+die Vollständigkeit [ˈfɔlʃtɛndɪçkaɪ̯t]: completeness
+English: completeness
+Persian: کامل بودن؛ جامع بودن
+Penglish: kamel boodan; jame boodan
+Bedeutung: Zustand, bei dem alle notwendigen oder erwarteten Teile vorhanden sind und nichts fehlt.
+Genitiv: der Vollständigkeit
+Plural: kein Plural
+Kollokation: auf Vollständigkeit prüfen
+Synonyme: Ganzheit, Lückenlosigkeit
+ex: Bitte prüfen Sie die Unterlagen auf Vollständigkeit: Please check the documents for completeness.
+ex: Die Vollständigkeit der Angaben ist wichtig: The completeness of the information is important.
+
+das Mädchen [ˈmɛːtçən]: girl
+English: girl
+Persian: دختر
+Penglish: dokhtar
+Bedeutung: weibliches Kind oder junge weibliche Person.
+Genitiv: des Mädchens
+Plural: die Mädchen
+Kollokation: ein junges Mädchen
+Synonyme: junge Frau, Kind
+ex: Das Mädchen spielt im Garten: The girl is playing in the garden.
+ex: Ich kenne das Mädchen aus der Schule: I know the girl from school.
+
+es gemütlich angehen lassen: to take it easy; to take things easy
+English: to take it easy; to take things easy
+Persian: آرام و بدون عجله پیش رفتن؛ به خود سخت نگرفتن
+Penglish: aram va bedoone ajaleh pish raftan; be khod sakht nagereftan
+Bedeutung: etwas ohne Hektik, Stress oder übermäßige Anstrengung tun.
+Synonyme: es ruhig angehen lassen, sich keinen Stress machen
+ex: Heute lasse ich es gemütlich angehen: I'm taking it easy today.
+ex: Am Wochenende wollen wir es gemütlich angehen lassen: We want to take it easy at the weekend.
+
+einbeziehen [ˈaɪ̯n bəˌtsiːən] (trennbares Verb, Akk., transitiv): to include; to involve; to take into account
+English: to include; to involve; to take into account
+Persian: در نظر گرفتن؛ شامل کردن؛ دخیل کردن
+Penglish: dar nazar gereftan; shamel kardan; dakhil kardan
+Verwendung: jemanden/etwas (Akk.) in etwas (Akk.) einbeziehen
+Bedeutung: jemanden oder etwas als Teil einer Sache berücksichtigen, beteiligen oder mitberücksichtigen.
+Synonyme: berücksichtigen, beteiligen, einschließen
+ex: Wir müssen alle Kosten in die Berechnung einbeziehen: We have to include all costs in the calculation.
+ex: Sie bezieht ihre Kollegen in die Entscheidung ein: She involves her colleagues in the decision.
+Präsens: ich beziehe ein
+Präteritum: ich bezog ein
+Perfekt: ich habe einbezogen
+Futur I: ich werde einbeziehen
+Konjunktiv II: ich würde einbeziehen
+Konjunktiv I: ich beziehe ein
+Form: „einbeziehe“ = 1. Person Singular Präsens oder Konjunktiv I von „einbeziehen“.
+
+die Berechnung [bəˈʁɛçnʊŋ]: calculation; computation
+English: calculation; computation
+Persian: محاسبه
+Penglish: mohasebeh
+Bedeutung: das Ermitteln eines Ergebnisses mithilfe von Zahlen, Formeln oder bestimmten Angaben.
+Genitiv: der Berechnung
+Plural: die Berechnungen
+Kollokation: eine Berechnung durchführen
+Synonyme: Kalkulation, Rechnung
+ex: Die Berechnung der Kosten dauert einige Minuten: The calculation of the costs takes a few minutes.
+ex: Seine Berechnung war korrekt: His calculation was correct.
+
+mitdenken [ˈmɪtˌdɛŋkn̩] (trennbares Verb, intransitiv): to think along; to think proactively
+English: to think along; to think proactively
+Persian: همراه با دیگران فکر کردن؛ فعالانه فکر کردن و مشارکت ذهنی داشتن
+Penglish: hamrah ba digaran fekr kardan; faalaneh fekr kardan va mosharekat-e zehni dashtan
+Bedeutung: bei einer Sache aktiv geistig mitarbeiten, Zusammenhänge selbst erkennen und eigene Überlegungen einbringen.
+Synonyme: mitüberlegen, nachdenken, sich Gedanken machen
+ex: Im Unterricht sollen die Schüler aktiv mitdenken: The students should actively think along in class.
+ex: Du musst bei diesem Projekt selbstständig mitdenken: You have to think proactively on this project.
+Präsens: ich denke mit
+Präteritum: ich dachte mit
+Perfekt: ich habe mitgedacht
+Futur I: ich werde mitdenken
+Konjunktiv II: ich würde mitdenken
+Konjunktiv I: ich denke mit
+
+momentan [momenˈtaːn] (Adverb): currently; at the moment; presently
+English: currently; at the moment; presently
+Persian: در حال حاضر؛ فعلاً
+Penglish: dar hale hazer; felan
+Bedeutung: zu diesem Zeitpunkt; gerade jetzt oder in der gegenwärtigen Situation.
+Synonyme: derzeit, gegenwärtig, zurzeit
+ex: Ich habe momentan viel zu tun: I currently have a lot to do.
+ex: Momentan wohne ich in Wien: At the moment, I live in Vienna.
+
+etwas auf dem Herzen haben: to have something on one's mind; to have something one wants to talk about
+English: to have something on one's mind; to have something one wants to talk about
+Persian: چیزی در دل داشتن؛ چیزی برای گفتن یا مطرح کردن داشتن
+Penglish: chizi dar del dashtan; chizi baraye goftan ya matrah kardan dashtan
+Bedeutung: ein Anliegen, Problem oder einen Gedanken haben, über den man sprechen möchte.
+Gebrauch: feste Redewendung mit „auf dem Herzen“; nicht „auf die Herz“.
+Synonyme: ein Anliegen haben, etwas loswerden wollen
+ex: Ich habe etwas auf dem Herzen und möchte mit dir darüber sprechen: I have something on my mind and would like to talk to you about it.
+ex: Hast du etwas auf dem Herzen: Is something on your mind?
+
+früher + Präteritum: used to
+English: used to
+Persian: قبلاً؛ در گذشته عادت داشتن کاری را انجام دادن
+Penglish: ghablan; dar gozashte adat dashtan kari ra anjam dadan
+Bedeutung: beschreibt eine Handlung oder einen Zustand, der in der Vergangenheit regelmäßig oder dauerhaft war, heute aber nicht mehr so ist.
+Gebrauch: Im Deutschen gibt es normalerweise keine direkte Konstruktion wie englisch „used to“. Meist verwendet man „früher“ zusammen mit dem Präteritum oder Perfekt.
+Synonyme: damals, früher immer
+ex: Früher ging ich jeden Tag zu Fuß zur Schule: I used to walk to school every day.
+ex: Früher spielte ich viel Fußball: I used to play a lot of football.
+Dein Satz: Als ich jung war, ging ich zur Schule: I used to go to school when I was young.
+
+der Lautsprecher [ˈlaʊ̯tˌʃpʁɛçɐ]: loudspeaker; speaker
+English: loudspeaker; speaker
+Persian: بلندگو
+Penglish: bolandgoo
+Bedeutung: Gerät, das elektrische Signale in hörbaren Schall umwandelt und Musik, Sprache oder andere Töne wiedergibt.
+Genitiv: des Lautsprechers
+Plural: die Lautsprecher
+Kollokation: einen Lautsprecher anschließen
+Synonyme: Box, Lautsprecherbox
+ex: Der Lautsprecher ist sehr laut: The loudspeaker is very loud.
+ex: Ich habe neue Lautsprecher für meinen Computer gekauft: I bought new speakers for my computer.
+
+jemandem/etwas den Rücken kehren: to turn one’s back on someone/something
+English: to turn one’s back on someone/something
+Persian: به کسی/چیزی پشت کردن؛ از کسی/چیزی روی برگرداندن
+Penglish: be kasi/chizi posht kardan; az kasi/chizi roo bargardan
+Bedeutung: sich körperlich von jemandem oder etwas wegdrehen; übertragen auch: jemanden oder etwas verlassen oder ablehnen.
+Synonyme: sich abwenden, sich wegdrehen
+ex: Er kehrte mir den Rücken: He turned his back on me.
+ex: Sie hat ihrer alten Lebensweise den Rücken gekehrt: She turned her back on her old way of life.
+
+sich von jemandem/etwas abwenden: to turn away from someone/something
+English: to turn away from someone/something
+Persian: از کسی/چیزی روی برگرداندن
+Penglish: az kasi/chizi roo bargardan
+Bedeutung: sich körperlich oder im übertragenen Sinn von jemandem oder etwas entfernen und ihm keine Aufmerksamkeit mehr schenken.
+Synonyme: sich wegdrehen, den Rücken kehren
+ex: Er wandte sich vom Fenster ab: He turned away from the window.
+ex: Sie wandte sich von ihm ab: She turned away from him.
+
+kehren [ˈkeːʁən] (Verb, transitiv): to turn
+English: to turn
+Persian: برگرداندن؛ چرخاندن
+Penglish: bargardan; charkhandan
+Verwendung: besonders in festen Wendungen wie „jemandem/etwas den Rücken kehren“
+Bedeutung: etwas in eine andere Richtung wenden; heute in dieser Bedeutung besonders in festen Ausdrücken verwendet.
+Synonyme: wenden, drehen
+ex: Er kehrte mir den Rücken: He turned his back on me.
+ex: Sie hat ihrer Vergangenheit den Rücken gekehrt: She turned her back on her past.
+Präsens: ich kehre
+Präteritum: ich kehrte
+Perfekt: ich habe gekehrt
+Futur I: ich werde kehren
+Konjunktiv II: ich würde kehren
+Konjunktiv I: ich kehre
+
+die Zeitverschwendung [ˈtsaɪ̯t fɛɐ̯ˌʃvɛndʊŋ]: waste of time
+English: waste of time
+Persian: اتلاف وقت؛ هدر دادن وقت
+Penglish: etlafe vaght; hadar dadane vaght
+Bedeutung: unnötiger oder nutzloser Verbrauch von Zeit.
+Genitiv: der Zeitverschwendung
+Plural: die Zeitverschwendungen
+Kollokation: reine Zeitverschwendung sein
+Synonyme: Zeitvergeudung
+ex: Das ist reine Zeitverschwendung: That is a complete waste of time.
+ex: Ich halte diese Diskussion für Zeitverschwendung: I consider this discussion a waste of time.
+
+die Verschwendung [fɛɐ̯ˈʃvɛndʊŋ]: waste; wastage
+English: waste; wastage
+Persian: اتلاف؛ هدررفت
+Penglish: etlaf; hadarraft
+Bedeutung: unnötiger oder übermäßiger Verbrauch von Zeit, Geld, Energie, Material oder anderen Ressourcen.
+Genitiv: der Verschwendung
+Plural: die Verschwendungen
+Kollokation: Verschwendung von Zeit/Geld/Energie
+Synonyme: Vergeudung, unnötiger Verbrauch
+ex: Das ist eine Verschwendung von Geld: That is a waste of money.
+ex: Wir müssen die Verschwendung von Energie reduzieren: We must reduce the waste of energy.
+
+die Verbundenheit [fɛɐ̯ˈbʊndn̩haɪ̯t]: connectedness; bond; sense of connection
+English: connectedness; bond; sense of connection
+Persian: احساس پیوند؛ صمیمیت؛ وابستگی عاطفی
+Penglish: ehsase peyvand; samimiyat; vabastegi-ye atefi
+Bedeutung: das Gefühl einer engen inneren, emotionalen oder sozialen Verbindung mit einer Person, Gruppe, einem Ort oder einer Sache.
+Genitiv: der Verbundenheit
+Plural: kein Plural
+Kollokation: Verbundenheit mit jemandem/etwas empfinden
+Synonyme: Zusammengehörigkeit, Nähe, Bindung
+ex: Sie empfindet eine starke Verbundenheit mit ihrer Familie: She feels a strong bond with her family.
+ex: Zwischen den beiden besteht eine tiefe Verbundenheit: There is a deep connection between the two of them.
+
+dorthin [ˈdɔʁtˌhɪn] (Pronominaladverb / Lokaladverb): there; to there
+English: there; to there
+Persian: به آنجا
+Penglish: be anja
+Bedeutung: bezeichnet eine Bewegung oder Richtung zu einem bereits genannten oder entfernten Ort.
+Synonyme: dahin, an diesen Ort
+ex: Ich fahre morgen dorthin: I am going there tomorrow.
+ex: Wie komme ich dorthin: How do I get there?
+
+hin [hɪn] (Lokaladverb / Richtungsadverb): there; toward there; away
+English: there; toward there; away
+Persian: به آنجا؛ به سویی دور از گوینده
+Penglish: be anja; be sooyi door az gooyande
+Bedeutung: bezeichnet eine Richtung oder Bewegung vom Standort des Sprechers weg zu einem anderen Ort.
+Gebrauch: „hin“ beantwortet die Frage „wohin?“ und steht im Gegensatz zu „her“, das eine Bewegung zum Sprecher hin bezeichnet.
+Synonyme: dorthin, dahin
+ex: Wo gehst du hin: Where are you going?
+ex: Geh hin und frag ihn selbst: Go there and ask him yourself.
+
+trotzdem lieber: nevertheless prefer; still rather
+English: nevertheless prefer; still rather
+Persian: با این حال ترجیح دادن؛ با وجود این باز هم بیشتر ترجیح دادن
+Penglish: ba in hal tarjih dadan; ba vojood-e in baz ham bishtar tarjih dadan
+Bedeutung: „trotzdem“ zeigt einen Gegensatz zu einer vorher genannten Tatsache. „lieber“ ist der Komparativ von „gern“ und bedeutet, dass man eine Möglichkeit einer anderen vorzieht.
+Gebrauch: „lieber“ steht hier beim Verb und bedeutet nicht „more lovingly“, sondern „preferably / rather“.
+ex: Viele Menschen wissen, dass Busse umweltfreundlicher sind, trotzdem fahren sie lieber mit dem Auto: Many people know that buses are more environmentally friendly, but they still prefer to travel by car.
+ex: Es regnet, trotzdem gehe ich lieber zu Fuß: It is raining; nevertheless, I prefer to walk.
+
+für [fyːɐ̯] (Präposition + Akkusativ): for
+English: for
+Persian: برای؛ موافقِ
+Penglish: baraye; movafegh-e
+Bedeutung: bezeichnet Unterstützung, Zustimmung, Zweck oder einen Empfänger.
+Gebrauch: in „für und gegen“ bedeutet „für“ = „in favor of / in support of“.
+Synonyme: zugunsten von
+ex: Ich bin für diesen Vorschlag: I am for this proposal.
+ex: Wir sprechen über die Argumente für und gegen das Auto: We are talking about the arguments for and against the car.
+
+die Socke [ˈzɔkə]: sock
+English: sock
+Persian: جوراب
+Penglish: joorab
+Bedeutung: ein Kleidungsstück, das den Fuß und meist einen Teil des Unterschenkels bedeckt.
+Genitiv: der Socke
+Plural: die Socken
+Kollokation: Socken anziehen
+Synonyme: Strumpf
+ex: Ich ziehe meine Socken an: I put on my socks.
+ex: Diese Socken sind sehr warm: These socks are very warm.
+
+die Raute [ˈʁaʊ̯tə]: rhombus; diamond shape
+English: rhombus; diamond shape
+Persian: لوزی
+Penglish: lozi
+Bedeutung: eine geometrische Figur mit vier gleich langen Seiten; im Alltag auch eine rautenförmige Form oder ein rautenförmiges Zeichen.
+Genitiv: der Raute
+Plural: die Rauten
+Kollokation: eine Raute zeichnen
+Synonyme: Rhombus, Rautenform
+ex: Auf dem Stoff sind viele Rauten zu sehen: Many diamond shapes can be seen on the fabric.
+ex: Zeichne eine Raute in die Mitte des Blattes: Draw a rhombus in the middle of the sheet.
+
+verzieren [fɛɐ̯ˈtsiːʁən] (Verb, transitiv): to decorate; to ornament; to embellish
+English: to decorate; to ornament; to embellish
+Persian: تزئین کردن؛ آراستن
+Penglish: taz'in kardan; arastan
+Verwendung: etwas (Akk.) mit etwas (Dat.) verzieren
+Bedeutung: etwas durch zusätzliche dekorative Elemente schöner oder auffälliger gestalten.
+Synonyme: schmücken, dekorieren, ausschmücken
+ex: Sie verziert den Kuchen mit Früchten: She decorates the cake with fruit.
+ex: Die Wände wurden mit Bildern verziert: The walls were decorated with pictures.
+Präsens: ich verziere
+Präteritum: ich verzierte
+Perfekt: ich habe verziert
+Futur I: ich werde verzieren
+Konjunktiv II: ich würde verzieren
+Konjunktiv I: ich verziere
+Form: „verzierten“ ist eine flektierte Form von „verzieren“, zum Beispiel Präteritum Plural „sie verzierten“ oder eine Adjektivform wie „mit verzierten Socken“.
+
+der Pantoffel [panˈtɔfl̩]: slipper
+English: slipper
+Persian: دمپایی
+Penglish: dompaei
+Bedeutung: leichter, meist hinten offener Schuh, der besonders zu Hause getragen wird.
+Genitiv: des Pantoffels
+Plural: die Pantoffeln
+Kollokation: Pantoffeln tragen
+Synonyme: Hausschuh, Schlappen
+ex: Zu Hause trage ich immer Pantoffeln: I always wear slippers at home.
+ex: Seine Pantoffeln stehen neben dem Bett: His slippers are next to the bed.
+
+mittlerweile [ˈmɪtl̩ˌvaɪ̯lə] (Adverb, nicht steigerbar): by now; meanwhile; in the meantime
+English: by now; meanwhile; in the meantime
+Persian: تا حالا؛ در این فاصله؛ اکنون دیگر
+Penglish: ta hala; dar in faseleh; aknoon digar
+Bedeutung: bezeichnet eine Veränderung oder Entwicklung, die im Laufe der Zeit bis zum gegenwärtigen Zeitpunkt eingetreten ist.
+Synonyme: inzwischen, unterdessen, heute
+ex: Mittlerweile spreche ich viel besser Deutsch: By now, I speak German much better.
+ex: Er hat mittlerweile eine neue Arbeit gefunden: In the meantime, he has found a new job.
+
+der Kasus [ˈkaːzʊs]: grammatical case; case
+English: grammatical case; case
+Persian: حالت دستوری؛ حالت اسم
+Penglish: halat-e dastoori; halat-e esm
+Bedeutung: grammatische Form, die zeigt, welche Funktion ein Nomen, Pronomen, Artikel oder Adjektiv im Satz hat.
+Genitiv: des Kasus
+Plural: die Kasus
+Kollokation: in einem bestimmten Kasus stehen
+Synonyme: Fall, grammatischer Fall
+ex: „Dem Mann“ steht im Dativ: “Dem Mann” is in the dative case.
+ex: Im Deutschen gibt es vier Kasus: German has four grammatical cases.
+
+die Rundfahrt [ˈʁʊntˌfaːɐ̯t]: tour; round trip; sightseeing tour
+English: tour; round trip; sightseeing tour
+Persian: گردش؛ گشت؛ تور گردشی
+Penglish: gardesh; gasht; toor-e gardeshi
+Bedeutung: eine Fahrt, bei der man mehrere Orte besucht und oft zum Ausgangspunkt zurückkehrt.
+Genitiv: der Rundfahrt
+Plural: die Rundfahrten
+Kollokation: eine Rundfahrt machen
+Synonyme: Tour, Besichtigungsfahrt, Rundreise
+ex: Wir machen eine Rundfahrt durch die Stadt: We are taking a sightseeing tour through the city.
+ex: Die Rundfahrt dauert zwei Stunden: The tour lasts two hours.
+
+das Städtchen [ˈʃtɛːtçən]: small town; little town
+English: small town; little town
+Persian: شهر کوچک؛ شهرک
+Penglish: shahr-e koochak; shahrak
+Bedeutung: Verkleinerungsform von „Stadt“; bezeichnet eine kleine Stadt, oft mit einer freundlichen oder idyllischen Nebenbedeutung.
+Genitiv: des Städtchens
+Plural: die Städtchen
+Kollokation: ein kleines Städtchen
+Synonyme: Kleinstadt, kleines Stadtchen
+ex: Wir wohnen in einem ruhigen Städtchen: We live in a quiet little town.
+ex: Das Städtchen liegt direkt am See: The small town is located right by the lake.
+
+der Teilnehmer [ˈtaɪ̯lˌneːmɐ]: participant; attendee
+English: participant; attendee
+Persian: شرکت‌کننده
+Penglish: sherkat-konandeh
+Bedeutung: eine Person, die an einer Veranstaltung, einem Kurs, Wettbewerb, Treffen oder einer anderen Aktivität teilnimmt.
+Genitiv: des Teilnehmers
+Plural: die Teilnehmer
+Kollokation: Teilnehmer an einem Kurs
+Synonyme: Beteiligter, Mitwirkender
+ex: An dem Kurs nehmen zwanzig Teilnehmer teil: Twenty participants are taking part in the course.
+ex: Alle Teilnehmer müssen sich vorher anmelden: All participants must register beforehand.
+
+kühn [kyːn] (Adjektiv, Komparativ: kühner, Superlativ: am kühnsten): bold; daring; audacious
+English: bold; daring; audacious
+Persian: جسور؛ دلیر؛ بی‌باک
+Penglish: jasoor; dalir; bi-bak
+Bedeutung: mutig und bereit, ein Risiko einzugehen; manchmal auch ungewöhnlich oder gewagt.
+Synonyme: mutig, wagemutig, verwegen
+Attributiv und prädikativ verwendbar
+ex: Das war eine kühne Entscheidung: That was a bold decision.
+ex: Sein Plan ist kühner als meiner: His plan is bolder than mine.
+ex: Diese Idee ist am kühnsten: This idea is the most daring.
+Form: „Kühne“ ist eine deklinierte Form von „kühn“, zum Beispiel „eine kühne Idee“ oder „der kühne Mann“.
+
+unwahrscheinlich [ˈʊnvaːɐ̯ʃaɪ̯nlɪç] (Adjektiv, Komparativ: unwahrscheinlicher, Superlativ: am unwahrscheinlichsten): improbable; unlikely
+English: improbable; unlikely
+Persian: بعید؛ غیرمحتمل
+Penglish: baeid; gheyr-e mohtamal
+Bedeutung: mit geringer Wahrscheinlichkeit eintretend oder zutreffend.
+Synonyme: unwahrscheinlich, wenig wahrscheinlich, fraglich
+Attributiv und prädikativ verwendbar
+ex: Es ist unwahrscheinlich, dass er heute kommt: It is unlikely that he will come today.
+ex: Dieses Ergebnis ist noch unwahrscheinlicher: This result is even more improbable.
+ex: Dieses Szenario ist am unwahrscheinlichsten: This scenario is the least likely.
+
+einen Versuch wert sein: to be worth a try; to be worth trying
+English: to be worth a try; to be worth trying
+Persian: ارزش امتحان کردن داشتن
+Penglish: arzesh-e emtehan kardan dashtan
+Bedeutung: so interessant, sinnvoll oder vielversprechend sein, dass es sich lohnt, etwas auszuprobieren.
+Synonyme: einen Versuch lohnen, einen Versuch verdienen
+ex: Diese Methode ist einen Versuch wert: This method is worth a try.
+ex: Das neue Restaurant ist auf jeden Fall einen Versuch wert: The new restaurant is definitely worth trying.
+
+das Inserat [ɪnzəˈʁaːt]: advertisement; classified ad
+English: advertisement; classified ad
+Persian: آگهی
+Penglish: agahi
+Bedeutung: eine veröffentlichte Anzeige, mit der etwas angeboten, gesucht oder bekannt gemacht wird.
+Genitiv: des Inserats
+Plural: die Inserate
+Kollokation: ein Inserat aufgeben
+Synonyme: Anzeige, Annonce
+ex: Ich habe das Inserat im Internet gesehen: I saw the advertisement on the internet.
+ex: Sie hat ein Inserat für ihre Wohnung aufgegeben: She placed an ad for her apartment.
+
+der Betracht [bəˈtraxt] (Substantiv, maskulin, veraltet; heute fast nur in festen Wendungen): consideration
+English: consideration
+Persian: ملاحظه؛ در نظر گرفتن
+Penglish: molahezeh; dar nazar gereftan
+Bedeutung: das Berücksichtigen oder Erwägen einer Person, Sache oder Möglichkeit; im modernen Deutsch fast nur noch in festen Wendungen gebraucht.
+Plural: kein Plural
+Kollokation: etwas in Betracht ziehen
+Synonyme: Erwägung, Berücksichtigung
+ex: Wir müssen auch diese Möglichkeit in Betracht ziehen: We also have to consider this possibility.
+ex: Diese Lösung kommt nicht in Betracht: This solution is out of the question. ([duden.de][1])
+
+[1]: https://www.duden.de/rechtschreibung/Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung, Bedeutung, Definition, Herkunft | Duden"
+
+zweifelsfrei [ˈtsvaɪ̯fl̩sˌfʁaɪ̯] (Adjektiv / Adverb, nicht steigerbar): beyond doubt; unequivocal; undoubtedly
+English: beyond doubt; unequivocal; undoubtedly
+Persian: بدون شک؛ قطعی؛ مسلم
+Penglish: bedoone shak; ghati; mosallam
+Bedeutung: so klar oder sicher, dass kein vernünftiger Zweifel daran besteht.
+Synonyme: eindeutig, unzweifelhaft, zweifellos
+ex: Seine Schuld ist zweifelsfrei bewiesen: His guilt has been proven beyond doubt.
+ex: Das ist zweifelsfrei die beste Lösung: That is undoubtedly the best solution.
+
+reiflich [ˈʁaɪ̯flɪç] (Adjektiv / Adverb): careful; thorough; mature
+English: careful; thorough; mature
+Persian: سنجیده؛ عمیق و با دقت
+Penglish: sanjideh; amigh va ba deghat
+Bedeutung: gründlich und sorgfältig durchdacht, besonders bevor man eine wichtige Entscheidung trifft.
+Kollokation: nach reiflicher Überlegung
+Synonyme: gründlich, sorgfältig, wohlüberlegt
+ex: Nach reiflicher Überlegung habe ich mich dagegen entschieden: After careful consideration, I decided against it.
+ex: Wir sollten die Sache reiflich überlegen: We should consider the matter carefully.
+Form: „reiflicher“ ist eine deklinierte Form von „reiflich“, zum Beispiel in „nach reiflicher Überlegung“.
+
+zusätzlich [ˈtsuːˌzɛʦlɪç] (Adjektiv / Adverb): additional; extra; additionally
+English: additional; extra; additionally
+Persian: اضافی؛ بیشتر؛ علاوه بر این
+Penglish: ezafi; bishtar; alaveh bar in
+Bedeutung: zu etwas bereits Vorhandenem hinzukommend; über das bisher Genannte hinaus.
+Synonyme: extra, ergänzend, weiter
+Attributiv und adverbial verwendbar
+ex: Wir brauchen zusätzliche Informationen: We need additional information.
+ex: Zusätzlich müssen wir die Kosten berücksichtigen: Additionally, we have to consider the costs.
+Form: „zusätzliche“ ist eine deklinierte Form von „zusätzlich“, zum Beispiel „zusätzliche Kosten“, „eine zusätzliche Frage“ oder „zusätzliche Informationen“.
+
+die Agentur [aɡɛnˈtuːɐ̯]: agency
+English: agency
+Persian: آژانس؛ مؤسسه؛ دفتر خدماتی
+Penglish: azhans; moasseseh; daftar-e khadamati
+Bedeutung: ein Unternehmen oder eine Organisation, die bestimmte Dienstleistungen vermittelt oder anbietet.
+Genitiv: der Agentur
+Plural: die Agenturen
+Kollokation: bei einer Agentur arbeiten
+Synonyme: Vermittlungsstelle, Büro, Dienstleistungsunternehmen
+ex: Sie arbeitet bei einer Werbeagentur: She works at an advertising agency.
+ex: Die Agentur vermittelt Wohnungen an Studenten: The agency arranges apartments for students.
+
+begeistert [bəˈɡaɪ̯stɐt] (Adjektiv): enthusiastic; excited; delighted
+English: enthusiastic; excited; delighted
+Persian: مشتاق؛ هیجان‌زده؛ به‌وجدآمده
+Penglish: moshtagh; heyajan-zadeh; be-vajd-amadeh
+Bedeutung: sehr interessiert, erfreut oder voller Enthusiasmus für jemanden oder etwas.
+Synonyme: enthusiastisch, fasziniert, erfreut
+ex: Ich bin von dieser Idee begeistert: I am enthusiastic about this idea.
+ex: Sie ist begeistert von ihrer neuen Arbeit: She is delighted with her new job.
+
+die Trennung [ˈtʁɛnʊŋ]: separation; split; breakup
+English: separation; split; breakup
+Persian: جدایی؛ تفکیک؛ قطع رابطه
+Penglish: jodaei; tafkik; ghate rabeteh
+Bedeutung: das Auseinandergehen oder Getrenntwerden von Personen, Dingen oder Bereichen; bei Beziehungen auch das Ende einer Partnerschaft.
+Genitiv: der Trennung
+Plural: die Trennungen
+Kollokation: die Trennung von jemandem/etwas
+Synonyme: Abtrennung, Teilung, Scheidung
+ex: Die Trennung von seiner Familie war schwer für ihn: The separation from his family was difficult for him.
+ex: Nach der Trennung blieben sie Freunde: After the breakup, they remained friends.
+
+husten [ˈhuːstn̩] (Verb, intransitiv): to cough
+English: to cough
+Persian: سرفه کردن
+Penglish: sorfeh kardan
+Bedeutung: plötzlich und hörbar Luft aus der Lunge ausstoßen, meist weil die Atemwege gereizt sind.
+Synonyme: abhusten
+ex: Ich muss ständig husten: I have to cough constantly.
+ex: Er hustet wegen der Erkältung: He is coughing because of the cold.
+Präsens: ich huste
+Präteritum: ich hustete
+Perfekt: ich habe gehustet
+Futur I: ich werde husten
+Konjunktiv II: ich würde husten
+Konjunktiv I: ich huste
+
+die Lebenseinstellung [ˈleːbn̩sʔaɪ̯nˌʃtɛlʊŋ]: outlook on life; attitude toward life
+English: outlook on life; attitude toward life
+Persian: نگرش به زندگی؛ دیدگاه نسبت به زندگی
+Penglish: negaresh be zendegi; didgah nesbat be zendegi
+Bedeutung: grundlegende Art und Weise, wie jemand das Leben betrachtet, bewertet und mit ihm umgeht.
+Genitiv: der Lebenseinstellung
+Plural: die Lebenseinstellungen
+Kollokation: eine positive Lebenseinstellung haben
+Synonyme: Lebensauffassung, Lebenshaltung, Weltanschauung
+ex: Sie hat eine sehr positive Lebenseinstellung: She has a very positive outlook on life.
+ex: Seine Lebenseinstellung hat sich im Laufe der Jahre verändert: His attitude toward life has changed over the years.
+
+ausbremsen [ˈaʊ̯sˌbʁɛmsn̩] (Akk., trennbar, transitiv): to slow down; to hold back; to hinder
+English: to slow down; to hold back; to hinder
+Persian: جلوی کسی یا چیزی را گرفتن؛ مانع پیشرفت شدن؛ سرعت را کم کردن
+Penglish: jeloye kasi ya chizi ra gereftan; mane-e pishraft shodan; sorat ra kam kardan
+Verwendung: jemanden/etwas (Akk.) ausbremsen
+Bedeutung: jemanden oder etwas daran hindern, sich schnell weiterzuentwickeln oder voranzukommen; ursprünglich durch Bremsen langsamer werden lassen.
+Synonyme: behindern, bremsen, hemmen
+ex: Die hohen Kosten bremsen das Projekt aus: The high costs are slowing down the project.
+ex: Niemand soll ihn bei seiner Arbeit ausbremsen: No one should hold him back in his work.
+Präsens: ich bremse aus
+Präteritum: ich bremste aus
+Perfekt: ich habe ausgebremst
+Futur I: ich werde ausbremsen
+Konjunktiv II: ich würde ausbremsen
+Konjunktiv I: ich bremse aus
+
+ein Nickerchen machen: to nap; to take a nap
+English: to nap; to take a nap
+Persian: چرت زدن؛ خواب کوتاهی کردن
+Penglish: chort zadan; khabe kootahi kardan
+Bedeutung: für kurze Zeit schlafen, normalerweise während des Tages.
+Synonyme: ein Schläfchen machen, kurz schlafen
+ex: Ich möchte eine halbe Stunde ein Nickerchen machen: I want to take a nap for half an hour.
+ex: Er hat am Nachmittag ein Nickerchen gemacht: He took a nap in the afternoon.
+
+besteuern [bəˈʃtɔɪ̯ɐn] (Akk., transitiv): to tax; to impose a tax on
+English: to tax; to impose a tax on
+Persian: از کسی مالیات گرفتن؛ بر کسی مالیات بستن
+Penglish: az kasi maliat gereftan; bar kasi maliat bastan
+Verwendung: jemanden/etwas (Akk.) besteuern
+Bedeutung: von einer Person, einem Unternehmen, einem Einkommen oder einem Vermögen aufgrund gesetzlicher Regelungen Steuern verlangen.
+Synonyme: mit Steuern belegen, steuerlich belasten
+ex: Der Staat besteuert hohe Einkommen stärker: The state taxes high incomes more heavily.
+ex: Unternehmen werden auf ihre Gewinne besteuert: Companies are taxed on their profits.
+Präsens: ich besteuere
+Präteritum: ich besteuerte
+Perfekt: ich habe besteuert
+Futur I: ich werde besteuern
+Konjunktiv II: ich würde besteuern
+Konjunktiv I: ich besteuere
+
+jemandem Erfahrung vermitteln: to give someone experience; to make someone more experienced
+English: to give someone experience; to make someone more experienced
+Persian: به کسی تجربه دادن؛ کسی را باتجربه‌تر کردن
+Penglish: be kasi tajrobe dadan; kasi ra ba-tajrobe-tar kardan
+Bedeutung: dazu beitragen, dass jemand durch Wissen oder praktische Tätigkeit mehr Erfahrung bekommt.
+Verwendung: jemandem (Dat.) Erfahrung vermitteln
+Synonyme: jemanden Erfahrung sammeln lassen, jemanden schulen
+ex: Diese Arbeit kann jungen Menschen viel Erfahrung vermitteln: This work can give young people a lot of experience.
+ex: Praktische Übungen vermitteln den Teilnehmern wertvolle Erfahrung: Practical exercises give the participants valuable experience.
+
+überflüssig [ˈyːbɐˌflʏsɪç] (Adjektiv, Komparativ: überflüssiger, Superlativ: am überflüssigsten): unnecessary; superfluous; redundant
+English: unnecessary; superfluous; redundant
+Persian: اضافی؛ غیرضروری؛ زائد
+Penglish: ezafi; gheyr-e zaroori; zaed
+Bedeutung: nicht notwendig oder nicht gebraucht; mehr vorhanden, als nötig ist.
+Synonyme: unnötig, entbehrlich, redundant
+Attributiv und prädikativ verwendbar
+ex: Diese Erklärung ist überflüssig: This explanation is unnecessary.
+ex: Wir sollten überflüssige Ausgaben vermeiden: We should avoid unnecessary expenses.
+ex: Dieser zusätzliche Schritt ist völlig überflüssig: This additional step is completely unnecessary.
+
+knien [ˈkniːən] (Verb, intransitiv): to kneel; to be kneeling
+English: to kneel; to be kneeling
+Persian: زانو زدن؛ زانو زده بودن
+Penglish: zanoo zadan; zanoo zadeh boodan
+Bedeutung: sich auf einem oder beiden Knien befinden oder sich auf die Knie begeben.
+Synonyme: niederknien, auf den Knien sein
+ex: Er kniet vor dem Bett: He is kneeling in front of the bed.
+ex: Sie kniete auf dem Boden: She knelt on the floor.
+Präsens: ich knie
+Präteritum: ich kniete
+Perfekt: ich habe gekniet
+Futur I: ich werde knien
+Konjunktiv II: ich würde knien
+Konjunktiv I: ich knie
+
+limettengrün [liˈmɛtn̩ˌɡʁyːn] (Adjektiv, nicht steigerbar): lime green
+English: lime green
+Persian: سبز لیمویی
+Penglish: sabz-e limooyi
+Bedeutung: von einer hellen, kräftigen grünen Farbe, die an die Schale einer Limette erinnert.
+Synonyme: hellgrün, gelbgrün
+Attributiv und prädikativ verwendbar
+ex: Sie trägt ein limettengrünes Kleid: She is wearing a lime-green dress.
+ex: Die Wände sind limettengrün: The walls are lime green.
+
+die Zehe [ˈʦeːə]: toe
+English: toe
+Persian: انگشت پا
+Penglish: angosht-e pa
+Bedeutung: einer der beweglichen Teile am vorderen Ende des Fußes.
+Genitiv: der Zehe
+Plural: die Zehen
+Kollokation: sich den Zeh stoßen
+Synonyme: Fußzehe
+ex: Ich habe mir die Zehe gestoßen: I stubbed my toe.
+ex: Meine Zehen sind kalt: My toes are cold.
+
+der Spazierstock [ʃpaˈʦiːɐ̯ˌʃtɔk]: walking stick; cane
+English: walking stick; cane
+Persian: عصای پیاده‌روی؛ عصا
+Penglish: asaye piyade-ravi; asa
+Bedeutung: Stock, auf den man sich beim Gehen stützen kann, besonders beim Spazierengehen oder wenn das Gehen schwerfällt.
+Genitiv: des Spazierstocks
+Plural: die Spazierstöcke
+Kollokation: sich auf einen Spazierstock stützen
+Synonyme: Gehstock, Stock
+ex: Der alte Mann geht mit einem Spazierstock: The old man walks with a walking stick.
+ex: Er stützt sich beim Gehen auf seinen Spazierstock: He supports himself on his walking stick while walking.
+
+das Eisen [ˈaɪ̯zn̩]: iron
+English: iron
+Persian: آهن
+Penglish: ahan
+Bedeutung: chemisches Element und Metall, das häufig für Werkzeuge, Maschinen, Gebäude und viele andere Gegenstände verwendet wird.
+Genitiv: des Eisens
+Plural: kein Plural
+Kollokation: aus Eisen bestehen
+Synonyme: Metall, Fe
+ex: Die Brücke besteht aus Eisen: The bridge is made of iron.
+ex: Eisen ist ein wichtiges Metall in der Industrie: Iron is an important metal in industry.
+
+der Hauch [haʊ̯x]: breath; whiff; hint; touch
+English: breath; whiff; hint; touch
+Persian: نفسِ ملایم؛ بوی بسیار کم؛ رگه یا نشانه‌ای اندک از چیزی
+Penglish: nafas-e molayem; booye besyar kam; rageh ya neshane-i اندak az chizi
+Bedeutung: sehr schwache Luftbewegung oder ein kaum wahrnehmbarer Geruch; bildlich auch eine sehr geringe Spur oder Andeutung von etwas.
+Genitiv: des Hauchs
+Plural: die Hauche
+Kollokation: ein Hauch von etwas
+Synonyme: Spur, Anflug, Andeutung
+ex: Ein Hauch von Parfüm lag in der Luft: A whiff of perfume was in the air.
+ex: Das Kleid hat einen Hauch von Grün: The dress has a touch of green.
+
+der Rost [ʁɔst]: rust
+English: rust
+Persian: زنگ؛ زنگ‌زدگی
+Penglish: zang; zang-zadegi
+Bedeutung: rötlich-braune Schicht, die sich durch Oxidation besonders auf Eisen oder Stahl bildet.
+Genitiv: des Rostes
+Plural: kein Plural
+Kollokation: Rost entfernen
+Synonyme: Korrosion, Rostschicht
+ex: Das alte Fahrrad ist mit Rost bedeckt: The old bicycle is covered with rust.
+ex: Auf dem Metall hat sich Rost gebildet: Rust has formed on the metal.
+
+jahrelang [ˈjaːʁəˌlaŋ] (Adjektiv, nicht steigerbar): lasting for years; years-long
+English: lasting for years; years-long
+Persian: چندین‌ساله؛ سال‌ها طول‌کشیده
+Penglish: chand-sâleh; sal-ha tool-keshideh
+Bedeutung: über mehrere Jahre hinweg dauernd oder bestehend.
+Synonyme: langjährig, mehrjährig
+Attributiv und prädikativ verwendbar
+ex: Nach jahrelanger Arbeit war das Projekt endlich fertig: After years of work, the project was finally finished.
+ex: Sie litt unter jahrelangem Stress: She suffered from years of stress.
+
+die Sonneneinstrahlung [ˈzɔnənˌʔaɪ̯nʃtʁaːlʊŋ]: solar radiation; sunlight exposure
+English: solar radiation; sunlight exposure
+Persian: تابش خورشید؛ تابش نور خورشید
+Penglish: tabesh-e khorshid; tabesh-e noor-e khorshid
+Bedeutung: Strahlung der Sonne, die auf eine Fläche, einen Ort oder einen Gegenstand trifft.
+Genitiv: der Sonneneinstrahlung
+Plural: die Sonneneinstrahlungen
+Kollokation: starke Sonneneinstrahlung
+Synonyme: Sonnenstrahlung, Sonnenlicht
+ex: Starke Sonneneinstrahlung kann die Haut schädigen: Strong sunlight exposure can damage the skin.
+ex: Die Sonneneinstrahlung ist im Sommer besonders intensiv: Solar radiation is particularly intense in summer.
+
+die Brechstange [ˈbʁɛçˌʃtaŋə]: crowbar; pry bar
+English: crowbar; pry bar
+Persian: دیلم؛ اهرم فلزی
+Penglish: deylam; ahrom-e felezi
+Bedeutung: lange, feste Metallstange, mit der man etwas mit großer Hebelkraft aufbrechen, anheben oder auseinanderdrücken kann.
+Genitiv: der Brechstange
+Plural: die Brechstangen
+Kollokation: etwas mit einer Brechstange aufbrechen
+Synonyme: Brecheisen, Hebeleisen
+ex: Die Tür wurde mit einer Brechstange aufgebrochen: The door was forced open with a crowbar.
+ex: Er hob den schweren Stein mit einer Brechstange an: He lifted the heavy stone with a pry bar.
+
+die Einzigartige [ˈaɪ̯nˌʦɪːkˌʔaːɐ̯tɪɡə] (substantiviertes Adjektiv, feminin): the unique one; the one and only
+English: the unique one; the one and only
+Persian: یگانه؛ بی‌همتا
+Penglish: yeganeh; bi-hamta
+Bedeutung: eine weibliche Person oder Sache, die einzigartig ist oder mit keiner anderen vergleichbar ist.
+Synonyme: die Einmalige, die Unvergleichliche
+ex: Sie ist die Einzigartige in meinem Leben: She is the one and only in my life.
+ex: Dieses Werk gilt als das Einzigartige seiner Art: This work is considered unique of its kind.
+
+das Hauptquartier [ˈhaʊ̯ptkvaʁˌtiːɐ̯]: headquarters; head office
+English: headquarters; head office
+Persian: مقر اصلی؛ ستاد مرکزی
+Penglish: maghar-e asli; setad-e markazi
+Bedeutung: zentraler Ort, von dem aus eine Organisation, ein Unternehmen, eine militärische Einheit oder eine andere Institution geleitet wird.
+Genitiv: des Hauptquartiers
+Plural: die Hauptquartiere
+Kollokation: das Hauptquartier einer Organisation
+Synonyme: Zentrale, Hauptsitz, Kommandozentrale
+ex: Das Hauptquartier der Firma befindet sich in Wien: The company's headquarters is located in Vienna.
+ex: Die Organisation verlegte ihr Hauptquartier in eine andere Stadt: The organization moved its headquarters to another city.
+
+das Heer [heːɐ̯]: army; armed forces
+English: army; armed forces
+Persian: ارتش؛ نیروی زمینی
+Penglish: artesh; nirooye zamini
+Bedeutung: große organisierte militärische Streitkraft; besonders der Teil der Streitkräfte, der hauptsächlich an Land kämpft.
+Genitiv: des Heeres
+Plural: die Heere
+Kollokation: ein Heer aufstellen
+Synonyme: Armee, Streitmacht, Landstreitkräfte
+ex: Das Heer verteidigte die Grenze: The army defended the border.
+ex: Das Land verfügt über ein großes Heer: The country has a large army.
+
+die Beurteilung [bəˈʔuːɐ̯taɪ̯lʊŋ]: assessment; evaluation; judgment
+English: assessment; evaluation; judgment
+Persian: ارزیابی؛ قضاوت
+Penglish: arzyabi; ghazavat
+Bedeutung: Einschätzung oder Bewertung einer Person, Leistung, Situation oder Sache nach bestimmten Kriterien.
+Genitiv: der Beurteilung
+Plural: die Beurteilungen
+Kollokation: eine Beurteilung abgeben
+Synonyme: Bewertung, Einschätzung, Begutachtung
+ex: Die Beurteilung meiner Arbeit war positiv: The assessment of my work was positive.
+ex: Wir warten noch auf die Beurteilung des Antrags: We are still waiting for the evaluation of the application.
