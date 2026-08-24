@@ -4913,21 +4913,6 @@ Synonyme: der Reihe nach, hintereinander, einer nach dem anderen
 ex: Die Schüler betreten nacheinander den Raum: The students enter the room one after another.
 ex: Wir sprechen nacheinander: We speak one after another.
 
-der Anwalt [ˈanvalt] (-(e)s, Anwälte): lawyer
-English: lawyer
-Persian: وکیل
-Penglish: vakil
-Bedeutung: Person, die andere rechtlich berät und vor Gericht vertritt.
-Genitiv: des Anwalts
-Plural: die Anwälte
-Feminin: die Anwältin
-Genitiv (Feminin): der Anwältin
-Plural (Feminin): die Anwältinnen
-Kollokation: einen Anwalt beauftragen
-Synonyme: Jurist, Rechtsvertreter
-ex: Ich habe einen Anwalt kontaktiert: I contacted a lawyer.
-ex: Der Anwalt vertritt seinen Kunden vor Gericht: The lawyer represents his client in court.
-
 das Gesetz [ɡəˈzɛts]: law
 English: law
 Persian: قانون
@@ -9989,10 +9974,17 @@ Konjunktiv II: ich erbte / ich würde erben
 Konjunktiv I: ich erbe
 imperativ: du: Erb! / Erbe! ihr: Erbt!
 
-der Mantel: coat
-English: coat
-Persian: کت
-Penglish: kat
+der Mantel [ˈmantl̩]: coat; overcoat
+English: coat; overcoat
+Persian: پالتو؛ کت بلند
+Penglish: palto; kote boland
+Bedeutung: ein längeres Kleidungsstück mit Ärmeln, das über anderer Kleidung getragen wird und meist vor Kälte, Wind oder Regen schützt.
+Genitiv: des Mantels
+Plural: die Mäntel
+Kollokation: einen Mantel anziehen
+Synonyme: Überzieher, Wintermantel
+ex: Zieh deinen Mantel an, draußen ist es kalt: Put on your coat, it is cold outside.
+ex: Sie trägt einen langen schwarzen Mantel: She is wearing a long black coat.
 
 der Handschuh: glove
 English: glove
@@ -23447,7 +23439,7 @@ Persian: طوطی
 Penglish: tuti
 
 angenehm [ˈanɡəˌneːm] (Adjektiv, Komparativ: angenehmer, Superlativ: am angenehmsten): pleasant; enjoyable
-English: pleasant; enjoyable
+English: pleasant; enjoyable; khoshayand
 Persian: دلپذیر؛ لذت بخش
 Penglish: delpazir; lezat bakhsh
 Bedeutung: etwas, das gut ist und ein gutes Gefühl macht; nicht unangenehm.
@@ -26136,13 +26128,6 @@ ex: Die Behandlung war erfolgreich: The treatment was successful.
 ex: Er bekommt eine neue Behandlung: He is receiving a new treatment.
 ex: Die Behandlung dieses Problems ist schwierig: The handling of this problem is difficult.
 
-die Strafe (pl. die Strafen): punishment; penalty
-English: punishment; penalty
-Persian: مجازات؛ پنالتی
-Penglish: mojazat; penalti
-ex: Die Strafe für dieses Verbrechen ist sehr hoch: The punishment for this crime is very severe
-ex: Er bekam eine Strafe, weil er zu schnell gefahren ist: He received a penalty because he drove too fast
-
 die Ergebnisse geben (Dat. + Akk.): to give the results (to someone)
 English: to give the results (to someone)
 Persian: دادن نتایج (به کسی)
@@ -26416,7 +26401,7 @@ ex: Dieser Prozess hat einen festen Zyklus: This process has a fixed cycle.
 
 das Muster [ˈmʊstɐ] (-s, -): pattern; sample; model
 English: pattern; sample; model
-Persian: الگوی؛ نمونه؛ مدل
+Persian: الگو؛ نمونه؛ مدل
 Penglish: algoye; nemoneh; madel
 Bedeutung: wiederholte Form oder Struktur; Beispiel, nach dem etwas gemacht wird; Probe oder Vorlage.
 Genitiv: des Musters
@@ -30261,10 +30246,21 @@ Synonyme: Wunde, Blessur, Schaden
 ex: Nach dem Sturz hatte er eine Verletzung am Bein: After the fall, he had an injury on his leg.
 ex: Wegen der Verletzung konnte sie nicht arbeiten: Because of the injury, she could not work.
 
-messen: to measure
+messen [ˈmɛsn̩] (Akk., transitiv, unregelmäßig): to measure
 English: to measure
-Persian: برای اندازه گیری
-Penglish: baraye andazeh giri
+Persian: اندازه گرفتن؛ اندازه‌گیری کردن
+Penglish: andaze gereftan; andazegiri kardan
+Verwendung: etwas (Akk.) messen
+Bedeutung: die Größe, Länge, Breite, Höhe, Temperatur oder einen anderen messbaren Wert von etwas bestimmen.
+Synonyme: ausmessen, bestimmen, vermessen
+ex: Ich messe die Länge des Tisches: I measure the length of the table.
+ex: Der Arzt misst meinen Blutdruck: The doctor measures my blood pressure.
+Präsens: ich messe
+Präteritum: ich maß
+Perfekt: ich habe gemessen
+Futur I: ich werde messen
+Konjunktiv II: ich würde messen
+Konjunktiv I: ich messe
 
 verschreiben: prescribe
 English: prescribe
@@ -34267,17 +34263,20 @@ Futur I: ich werde losschießen
 Konjunktiv II: ich schösse los / ich würde losschießen
 Konjunktiv I: ich schieße los
 
-kennen [ˈkɛnən] (jdn./etw.): to know (a person / place / thing)
-English: to know (a person / place / thing)
-Persian: دانستن (یک شخص / مکان / چیز)
-Penglish: danstan (yek shkhs / makan / chiz)
-ex: Ich kenne ihn: I know him.
-ex: Kennst du Wien?: Do you know Vienna?
+kennen [ˈkɛnən] (Akk., transitiv, unregelmäßig): to know; to be familiar with
+English: to know; to be familiar with
+Persian: شناختن؛ آشنا بودن با
+Penglish: shenakhtan; ashna boodan ba
+Verwendung: jemanden/etwas (Akk.) kennen
+Bedeutung: mit einer Person, Sache, einem Ort oder einem Sachverhalt vertraut sein oder darüber Wissen haben.
+Synonyme: vertraut sein mit, wissen von
+ex: Ich kenne diesen Mann: I know this man.
+ex: Kennst du Wien gut: Do you know Vienna well?
 Präsens: ich kenne
 Präteritum: ich kannte
 Perfekt: ich habe gekannt
 Futur I: ich werde kennen
-Konjunktiv II: ich kennte
+Konjunktiv II: ich würde kennen
 Konjunktiv I: ich kenne
 
 das Kino: cinema
@@ -46847,3 +46846,289 @@ Kollokation: eine Beurteilung abgeben
 Synonyme: Bewertung, Einschätzung, Begutachtung
 ex: Die Beurteilung meiner Arbeit war positiv: The assessment of my work was positive.
 ex: Wir warten noch auf die Beurteilung des Antrags: We are still waiting for the evaluation of the application.
+
+die Oberseite [ˈoːbɐˌzaɪ̯tə]: upside; upper side; top
+English: upside; upper side; top
+Persian: روی چیزی؛ سمت بالا
+Penglish: rooye chizi; samte bala
+Bedeutung: die obere Seite oder Fläche eines Gegenstandes.
+Genitiv: der Oberseite
+Plural: die Oberseiten
+Synonyme: obere Seite, obere Fläche
+ex: Die Oberseite des Tisches ist aus Holz: The top of the table is made of wood.
+ex: Leg das Papier mit der Oberseite nach oben: Put the paper with the upper side facing up.
+
+bis zu einem gewissen Grad: to some extent; to a certain degree
+English: to some extent; to a certain degree
+Persian: تا حدی؛ تا اندازه‌ای
+Penglish: ta haddi; ta andazeh-i
+Bedeutung: nicht vollständig, sondern nur in einem bestimmten begrenzten Maß.
+Synonyme: teilweise, in gewissem Maße, bis zu einem gewissen Maß
+ex: Ich stimme dir bis zu einem gewissen Grad zu: I agree with you to some extent.
+ex: Das Problem lässt sich bis zu einem gewissen Grad lösen: The problem can be solved to some extent.
+
+im Grunde: basically; essentially; fundamentally
+English: basically; essentially; fundamentally
+Persian: در اصل؛ اساساً؛ در واقع
+Penglish: dar asl; asasan; dar vaghe
+Bedeutung: wenn man nur das Wesentliche betrachtet; im Kern oder grundsätzlich.
+Synonyme: grundsätzlich, im Wesentlichen, eigentlich
+ex: Im Grunde hast du recht: Basically, you are right.
+ex: Im Grunde ist die Idee sehr einfach: Basically, the idea is very simple.
+
+laut [laʊ̯t] (Adjektiv, Komparativ: lauter, Superlativ: am lautesten): loud; noisy
+English: loud; noisy
+Persian: بلند؛ پرصدا
+Penglish: boland; porseda
+Bedeutung: mit großer Lautstärke; stark hörbar.
+Synonyme: geräuschvoll, lärmend, lautstark
+Attributiv und prädikativ verwendbar
+ex: Die Musik ist zu laut: The music is too loud.
+ex: Er spricht lauter als ich: He speaks louder than I do.
+ex: Dieses Gerät ist am lautesten: This device is the loudest.
+
+eine Prüfung bestehen: to pass an exam
+English: to pass an exam
+Persian: در امتحان قبول شدن؛ امتحان را با موفقیت گذراندن
+Penglish: dar emtehan ghabool shodan; emtehan ra ba movafaghiat gozaroondan
+Bedeutung: bei einer Prüfung erfolgreich sein und die erforderliche Leistung erreichen.
+Synonyme: eine Prüfung schaffen, bei einer Prüfung erfolgreich sein
+ex: Ich habe die Prüfung bestanden: I passed the exam.
+ex: Sie muss die Prüfung bestehen, um das Studium abzuschließen: She has to pass the exam to complete her studies.
+
+unsichtbar [ˈʊnˌzɪçtbaːɐ̯] (Adjektiv, Komparativ: unsichtbarer, Superlativ: am unsichtbarsten): invisible
+English: invisible
+Persian: نامرئی؛ نادیدنی
+Penglish: namarei; nadidani
+Bedeutung: so, dass etwas nicht gesehen oder mit den Augen wahrgenommen werden kann.
+Synonyme: nicht sichtbar, verborgen
+Attributiv und prädikativ verwendbar
+ex: Der Stern ist mit bloßem Auge unsichtbar: The star is invisible to the naked eye.
+ex: Die Bakterien sind ohne Mikroskop unsichtbar: The bacteria are invisible without a microscope.
+ex: Dieses Zeichen ist fast unsichtbar: This sign is almost invisible.
+
+rotierend [ʁoˈtiːʁənt] (Adjektiv, nicht steigerbar): rotating; revolving
+English: rotating; revolving
+Persian: چرخان؛ در حال چرخش
+Penglish: charkhan; dar hale charkhesh
+Bedeutung: sich um eine Achse oder einen Mittelpunkt drehend.
+Synonyme: drehend, kreisend
+Attributiv und prädikativ verwendbar
+ex: Der Ventilator hat rotierende Flügel: The fan has rotating blades.
+ex: Die Scheibe ist ständig rotierend: The disk is constantly rotating.
+
+bestrafen [bəˈʃtʁaːfn̩] (Akk., transitiv): to punish
+English: to punish
+Persian: مجازات کردن؛ تنبیه کردن
+Penglish: mojazat kardan; tanbih kardan
+Verwendung: jemanden (Akk.) für etwas (Akk.) bestrafen
+Bedeutung: jemandem wegen eines Fehlers, einer Regelverletzung oder einer Straftat eine Strafe geben.
+Synonyme: ahnden, sanktionieren
+ex: Der Lehrer bestraft den Schüler für sein Verhalten: The teacher punishes the student for his behavior.
+ex: Er wurde für seine Tat bestraft: He was punished for his act.
+Präsens: ich bestrafe
+Präteritum: ich bestrafte
+Perfekt: ich habe bestraft
+Futur I: ich werde bestrafen
+Konjunktiv II: ich würde bestrafen
+Konjunktiv I: ich bestrafe
+
+die zuständige Person: the responsible person; the person in charge
+English: the responsible person; the person in charge
+Persian: شخص مسئول؛ فرد مربوطه
+Penglish: shakhs-e masool; fard-e marbooteh
+Bedeutung: die Person, die für eine bestimmte Aufgabe, Angelegenheit oder einen bestimmten Bereich verantwortlich ist.
+Kollokation: sich an die zuständige Person wenden
+Synonyme: die verantwortliche Person, der Ansprechpartner / die Ansprechpartnerin
+ex: Bitte wenden Sie sich an die zuständige Person: Please contact the person in charge.
+ex: Ich muss mit der zuständigen Person sprechen: I have to speak with the responsible person.
+
+den Verlauf des Gesprächs ändern: to change the course of the conversation
+English: to change the course of the conversation
+Persian: روند مکالمه را تغییر دادن
+Penglish: ravand-e mokalemeh ra taghir dadan
+Bedeutung: die Richtung oder den weiteren Ablauf eines Gesprächs verändern.
+Synonyme: das Gespräch in eine andere Richtung lenken, das Gesprächsthema wechseln
+ex: Er versuchte, den Verlauf des Gesprächs zu ändern: He tried to change the course of the conversation.
+ex: Mit dieser Frage änderte sie den Verlauf des Gesprächs: With this question, she changed the course of the conversation.
+
+Lebensmittel einkaufen: to go grocery shopping; to buy groceries
+English: to go grocery shopping; to buy groceries
+Persian: خرید مواد غذایی کردن؛ برای خرید خواربار رفتن
+Penglish: kharid-e mavadd-e ghazayi kardan; baraye kharid-e kharobar raftan
+Bedeutung: Lebensmittel und andere Dinge des täglichen Bedarfs in einem Supermarkt, Geschäft oder auf einem Markt kaufen.
+Kollokation: Lebensmittel im Supermarkt einkaufen
+Synonyme: einkaufen gehen, Lebensmittel kaufen
+ex: Ich muss heute noch Lebensmittel einkaufen: I still have to go grocery shopping today.
+ex: Wir kaufen jeden Samstag Lebensmittel ein: We go grocery shopping every Saturday.
+
+die Armut [ˈaʁmuːt]: poverty
+English: poverty
+Persian: فقر؛ تنگدستی
+Penglish: faghr; tangdasti
+Bedeutung: Zustand, in dem jemand nicht genug Geld oder materielle Mittel für die grundlegenden Bedürfnisse des Lebens hat.
+Genitiv: der Armut
+Plural: kein Plural
+Kollokation: in Armut leben
+Synonyme: Bedürftigkeit, Mittellosigkeit, Not
+ex: Viele Menschen leben in großer Armut: Many people live in extreme poverty.
+ex: Die Regierung möchte die Armut bekämpfen: The government wants to fight poverty.
+
+die Verzweiflung [fɛɐ̯ˈʦvaɪ̯flʊŋ]: despair; desperation
+English: despair; desperation
+Persian: ناامیدی؛ یأس؛ استیصال
+Penglish: naomidi; yas; estisal
+Bedeutung: ein Zustand großer Hoffnungslosigkeit, in dem man keinen Ausweg oder keine Lösung mehr sieht.
+Genitiv: der Verzweiflung
+Plural: kein Plural
+Kollokation: in Verzweiflung geraten
+Synonyme: Hoffnungslosigkeit, Mutlosigkeit, Niedergeschlagenheit
+ex: Aus Verzweiflung begann er zu weinen: Out of despair, he began to cry.
+ex: Sie wusste vor Verzweiflung nicht, was sie tun sollte: In her desperation, she did not know what to do.
+
+grundlegend [ˈɡʁʊntˌleːɡn̩t] (Adjektiv, Komparativ: grundlegender, Superlativ: am grundlegendsten): basic; fundamental
+English: basic; fundamental
+Persian: اساسی؛ بنیادی؛ پایه‌ای
+Penglish: asasi; bonyadi; paye-i
+Bedeutung: die wichtigsten Grundlagen betreffend; für etwas wesentlich und fundamental.
+Synonyme: fundamental, elementar, wesentlich
+Attributiv und prädikativ verwendbar
+ex: Ich habe nur grundlegende Kenntnisse in Deutsch: I only have basic knowledge of German.
+ex: Das ist eine grundlegende Voraussetzung für den Erfolg: That is a fundamental requirement for success.
+ex: Diese Frage ist grundlegender als die anderen: This question is more fundamental than the others.
+
+die Sünde [ˈzʏndə]: sin
+English: sin
+Persian: گناه
+Penglish: gonah
+Bedeutung: eine Handlung oder ein Verhalten, das nach religiösen oder moralischen Vorstellungen als falsch oder verboten gilt.
+Genitiv: der Sünde
+Plural: die Sünden
+Kollokation: eine Sünde begehen
+Synonyme: Verfehlung, Fehltritt
+ex: Er bereut seine Sünden: He regrets his sins.
+ex: Nach seiner Religion gilt das als Sünde: According to his religion, that is considered a sin.
+
+handeln [ˈhandl̩n] (intransitiv): to act; to take action
+English: to act; to take action
+Persian: عمل کردن؛ اقدام کردن
+Penglish: amal kardan; eghdam kardan
+Bedeutung: bewusst etwas tun oder in einer bestimmten Weise tätig werden.
+Synonyme: agieren, vorgehen, tätig werden
+ex: Wir müssen schnell handeln: We have to act quickly.
+ex: Er hat in dieser Situation richtig gehandelt: He acted correctly in this situation.
+Präsens: ich handle
+Präteritum: ich handelte
+Perfekt: ich habe gehandelt
+Futur I: ich werde handeln
+Konjunktiv II: ich würde handeln
+Konjunktiv I: ich handle
+
+das System [zʏsˈteːm]: system
+English: system
+Persian: سیستم؛ سامانه
+Penglish: sistem; samaneh
+Bedeutung: eine geordnete Gesamtheit von miteinander verbundenen Teilen, Regeln oder Strukturen, die zusammen funktionieren.
+Genitiv: des Systems
+Plural: die Systeme
+Kollokation: ein System entwickeln
+Synonyme: Struktur, Ordnung, Gefüge
+ex: Das neue System funktioniert sehr gut: The new system works very well.
+ex: Wir müssen dieses System verbessern: We need to improve this system.
+
+das Tal [taːl]: valley
+English: valley
+Persian: دره
+Penglish: darreh
+Bedeutung: ein tiefer liegendes Gebiet zwischen Bergen oder Hügeln, oft mit einem Fluss oder Bach.
+Genitiv: des Tals / des Tales
+Plural: die Täler
+Kollokation: durch ein Tal fahren
+Synonyme: Senke, Talsenke
+ex: Das Dorf liegt in einem schönen Tal: The village is located in a beautiful valley.
+ex: Wir wandern durch das Tal: We are hiking through the valley.
+
+die Abdeckung [ˈapˌdɛkʊŋ]: covering; cover; coverage
+English: covering; cover; coverage
+Persian: پوشش
+Penglish: pooshesh
+Bedeutung: etwas, das eine Fläche, einen Gegenstand oder einen Bereich bedeckt oder schützt.
+Genitiv: der Abdeckung
+Plural: die Abdeckungen
+Kollokation: eine Abdeckung anbringen
+Synonyme: Bedeckung, Schutz, Verkleidung
+ex: Die Abdeckung schützt das Gerät vor Staub: The cover protects the device from dust.
+ex: Bitte entferne die Abdeckung: Please remove the cover.
+
+der Meter [ˈmeːtɐ]: meter
+English: meter
+Persian: متر
+Penglish: metr
+Bedeutung: Maßeinheit für Länge; ein Meter entspricht 100 Zentimetern.
+Genitiv: des Meters
+Plural: die Meter
+Dativ Plural: den Metern
+Kollokation: zwei Meter lang sein
+Synonyme: Längeneinheit, Maßeinheit
+ex: Der Tisch ist zwei Meter lang: The table is two meters long.
+ex: In zehn Metern Entfernung steht ein Haus: There is a house at a distance of ten meters.
+
+der Jurist [juˈʁɪst] (Nomen, maskulin, n-Deklination): lawyer; legal professional; jurist
+English: lawyer; legal professional; jurist
+Persian: حقوقدان؛ متخصص حقوق
+Penglish: hoghooghdan; motekhasses-e hoghoogh
+Bedeutung: eine Person, die Rechtswissenschaften studiert hat und beruflich mit Recht arbeitet.
+Genitiv: des Juristen
+Plural: die Juristen
+Kollokation: als Jurist arbeiten
+Synonyme: Rechtswissenschaftler, Rechtsexperte
+ex: Er arbeitet als Jurist in einem großen Unternehmen: He works as a lawyer in a large company.
+ex: Der Jurist prüft den Vertrag: The legal professional reviews the contract.
+
+die Schlacht [ʃlaxt]: battle
+English: battle
+Persian: نبرد؛ جنگ
+Penglish: nabard; jang
+Bedeutung: ein größerer bewaffneter Kampf zwischen militärischen Einheiten oder Armeen.
+Genitiv: der Schlacht
+Plural: die Schlachten
+Kollokation: eine Schlacht gewinnen
+Synonyme: Gefecht, Kampf, Auseinandersetzung
+ex: Die Armee gewann die Schlacht: The army won the battle.
+ex: In dieser Schlacht starben viele Soldaten: Many soldiers died in this battle.
+
+die Fahrt [faːɐ̯t]: trip; ride; journey
+English: trip; ride; journey
+Persian: سفر؛ مسیر با وسیلهٔ نقلیه
+Penglish: safar; masir ba vasile-ye naghliyeh
+Bedeutung: das Zurücklegen einer Strecke mit einem Verkehrsmittel, zum Beispiel mit dem Auto, Zug, Bus oder Schiff.
+Genitiv: der Fahrt
+Plural: die Fahrten
+Kollokation: eine Fahrt machen
+Synonyme: Reise, Ausflug, Strecke
+ex: Die Fahrt nach Wien dauert zwei Stunden: The trip to Vienna takes two hours.
+ex: Während der Fahrt habe ich Musik gehört: I listened to music during the journey.
+
+der Hafen [ˈhaːfn̩]: harbor; port
+English: harbor; port
+Persian: بندر؛ لنگرگاه
+Penglish: bandar; langargah
+Bedeutung: ein geschützter Bereich am Meer, an einem Fluss oder See, an dem Schiffe anlegen, be- und entladen werden können.
+Genitiv: des Hafens
+Plural: die Häfen
+Kollokation: in den Hafen einlaufen
+Synonyme: Seehafen, Anlegeplatz, Hafenanlage
+ex: Das Schiff liegt im Hafen: The ship is in the harbor.
+ex: Wir sind am Morgen in den Hafen eingelaufen: We entered the port in the morning.
+
+der Geschäftsführer [ɡəˈʃɛftsˌfyːʁɐ]: managing director; general manager
+English: managing director; general manager
+Persian: مدیرعامل؛ مدیر اجرایی
+Penglish: modir-e amel; modir-e ejraei
+Bedeutung: eine Person, die ein Unternehmen oder eine Organisation leitet und für die Geschäftsführung verantwortlich ist.
+Genitiv: des Geschäftsführers
+Plural: die Geschäftsführer
+Kollokation: als Geschäftsführer tätig sein
+Synonyme: Unternehmensleiter, Geschäftsleiter, Manager
+ex: Er ist Geschäftsführer eines großen Unternehmens: He is the managing director of a large company.
+ex: Der Geschäftsführer hat den Vertrag unterschrieben: The managing director signed the contract.
