@@ -2212,7 +2212,7 @@ ex: Manche glauben, dass man Rache schnell nehmen soll: Some believe that one sh
 
 manche / manchen [ˈmançə / ˈmançn̩] (Pronomen / indefiniter Artikel): some; certain
 English: some; certain
-Persian: برخی معین
+Persian: برخی
 Penglish: barkhi moin
 Bedeutung: einige, aber nicht alle Personen oder Dinge.
 Synonyme: einige, gewisse, bestimmte
@@ -4229,18 +4229,6 @@ Kollokation: die öffentliche Verwaltung
 Synonyme: Administration, Leitung, Management
 ex: Die Verwaltung bearbeitet meinen Antrag: The administration is processing my application.
 ex: Er arbeitet in der Verwaltung einer Universität: He works in the administration of a university.
-
-der Anwendungsfall [ˈanˌvɛndʊŋsˌfal]: use case
-English: use case
-Persian: مورد استفاده
-Penglish: moord estefadeh
-Bedeutung: konkreter Fall, in dem ein Produkt oder System praktisch verwendet wird. Beschreibung einer Nutzungssituation.
-Genitiv: des Anwendungsfalls
-Plural: die Anwendungsfälle
-Kollokation: einen Anwendungsfall definieren
-Synonyme: Einsatzfall, Nutzungsszenario
-ex: Dieser Anwendungsfall ist typisch für Softwareentwicklung: This use case is typical in software development.
-ex: Wir analysieren den Anwendungsfall vor der Implementierung: We analyze the use case before implementation.
 
 die Strategie: strategy
 English: strategy
@@ -7614,10 +7602,16 @@ English: courtyard
 Persian: حیاط
 Penglish: hayat
 
-echt: true, truely
-English: true, truely
-Persian: درست است، واقعا
-Penglish: darest est, vaghea
+echt [ɛçt] (Adjektiv, Komparativ: echter, Superlativ: am echtesten): real; genuine; authentic
+English: real; genuine; authentic
+Persian: واقعی؛ اصل؛ حقیقی
+Penglish: vaghe'i; asl; haghighi
+Bedeutung: tatsächlich vorhanden oder wirklich so beschaffen; nicht künstlich, gefälscht oder vorgetäuscht.
+Synonyme: wirklich, authentisch, original
+Attributiv und prädikativ verwendbar
+ex: Das ist echtes Gold: That is real gold.
+ex: Seine Freude war echt: His joy was genuine.
+ex: Diese Tasche sieht echter aus als die andere: This bag looks more genuine than the other one.
 
 dumm: dumb, stupid
 English: dumb, stupid
@@ -7754,12 +7748,6 @@ Penglish: aknon
 Unsere Produkte werden nun weltweit gehandelt.: Our products are now traded worldwide.
 von nun an: as of now
 ab nun: as of now
-
-dieselbe: the same
-English: the same
-Persian: همان
-Penglish: cpehman
-Im Bus da sehe ich dieselben Leute, so wie immer ist es auch heute: in the bus I see the same people,...
 
 so wie …: as / the way that …
 English: as / the way that …
@@ -8722,18 +8710,6 @@ Attributiv und adverbial verwendbar
 ex: Wir helfen uns gegenseitig: We help each other.
 ex: Gegenseitiger Respekt ist sehr wichtig: Mutual respect is very important.
 ex: Die beiden Länder unterstützen sich gegenseitig: The two countries support each other.
-
-die Verantwortung [fɛɐ̯ˈʔantvɔʁtʊŋ]: responsibility
-English: responsibility
-Persian: مسئولیت
-Penglish: masoulit
-Bedeutung: die Pflicht, für die eigenen Handlungen, Entscheidungen oder für eine andere Person einzustehen.
-Genitiv: der Verantwortung
-Plural: die Verantwortungen
-Kollokation: Verantwortung übernehmen; Verantwortung tragen
-Synonyme: Pflicht, Zuständigkeit, Verantwortlichkeit
-ex: Eltern tragen Verantwortung für ihre Kinder: Parents bear responsibility for their children.
-ex: Ich übernehme die Verantwortung für meinen Fehler: I take responsibility for my mistake.
 
 der Stichpunkt [ˈʃtɪçˌpʊŋkt]: bullet point
 English: bullet point
@@ -23438,16 +23414,6 @@ English: parrot
 Persian: طوطی
 Penglish: tuti
 
-angenehm [ˈanɡəˌneːm] (Adjektiv, Komparativ: angenehmer, Superlativ: am angenehmsten): pleasant; enjoyable
-English: pleasant; enjoyable; khoshayand
-Persian: دلپذیر؛ لذت بخش
-Penglish: delpazir; lezat bakhsh
-Bedeutung: etwas, das gut ist und ein gutes Gefühl macht; nicht unangenehm.
-Synonyme: angenehm, schön, wohltuend
-Attributiv und prädikativ verwendbar
-ex: Das Wetter ist sehr angenehm: The weather is very pleasant.
-ex: Ich habe eine angenehme Zeit gehabt: I had a pleasant time.
-
 jagen:to hunt
 English: to hunt
 Persian: برای شکار
@@ -26464,10 +26430,21 @@ English: negarani
 Persian: نگارانی
 Penglish: negarani
 
-fürchten (jdn./etw.Akk ~): to fear sth
-English: to fear sth
-Persian: ترسیدن
-Penglish: tarsidan
+fürchten [ˈfʏʁçtn̩] (Akk., transitiv): to fear; to be afraid of
+English: to fear; to be afraid of
+Persian: ترسیدن از؛ ترس داشتن از
+Penglish: tarsidan az; tars dashtan az
+Verwendung: jemanden/etwas (Akk.) fürchten
+Bedeutung: vor jemandem oder etwas Angst haben; erwarten, dass etwas Unangenehmes oder Gefährliches passieren könnte.
+Synonyme: Angst haben vor, sich fürchten vor, bangen vor
+ex: Viele Menschen fürchten den Krieg: Many people fear war.
+ex: Sie fürchtet die Reaktion ihres Chefs: She fears her boss's reaction.
+Präsens: ich fürchte
+Präteritum: ich fürchtete
+Perfekt: ich habe gefürchtet
+Futur I: ich werde fürchten
+Konjunktiv II: ich würde fürchten
+Konjunktiv I: ich fürchte
 
 der Dunkelheit: darkness
 English: darkness
@@ -46529,6 +46506,9 @@ ex: Wir müssen auch diese Möglichkeit in Betracht ziehen: We also have to cons
 ex: Diese Lösung kommt nicht in Betracht: This solution is out of the question. ([duden.de][1])
 
 [1]: https://www.duden.de/rechtschreibung/Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung, Bedeutung, Definition, Herkunft | Duden"
+English: https://www.duden.de/rechtschreibung/Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung, Bedeutung, Definition, Herkunft | Duden"
+Persian: https://www.duden.de/rechtschreibung/Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung، Bedeutung، Definition، Herkunft | Duden"
+Penglish: https://www.duden.de/rechtschreibung/betracht?utm_source=chatgpt.com "betracht ▶ rechtschreibung, bedeutung, definition, herkunft | duden"
 
 zweifelsfrei [ˈtsvaɪ̯fl̩sˌfʁaɪ̯] (Adjektiv / Adverb, nicht steigerbar): beyond doubt; unequivocal; undoubtedly
 English: beyond doubt; unequivocal; undoubtedly
@@ -47132,3 +47112,617 @@ Kollokation: als Geschäftsführer tätig sein
 Synonyme: Unternehmensleiter, Geschäftsleiter, Manager
 ex: Er ist Geschäftsführer eines großen Unternehmens: He is the managing director of a large company.
 ex: Der Geschäftsführer hat den Vertrag unterschrieben: The managing director signed the contract.
+
+definieren [defiˈniːʁən] (Akk., transitiv): to define
+English: to define
+Persian: تعریف کردن؛ مشخص کردن
+Penglish: tarif kardan; moshakhas kardan
+Verwendung: etwas (Akk.) definieren; etwas als etwas definieren
+Bedeutung: die genaue Bedeutung, Eigenschaften oder Grenzen eines Begriffs oder einer Sache festlegen und erklären.
+Synonyme: bestimmen, festlegen, erklären
+ex: Kannst du diesen Begriff definieren: Can you define this term?
+ex: Das Gesetz definiert genau, was als Straftat gilt: The law defines exactly what counts as a criminal offense.
+Präsens: ich definiere
+Präteritum: ich definierte
+Perfekt: ich habe definiert
+Futur I: ich werde definieren
+Konjunktiv II: ich würde definieren
+Konjunktiv I: ich definiere
+
+die Karosserie [kaʁoˈseːʁiː]: car body; bodywork
+English: car body; bodywork
+Persian: بدنهٔ خودرو؛ بدنهٔ ماشین
+Penglish: badaneh-ye khodro; badaneh-ye mashin
+Bedeutung: äußerer Aufbau eines Fahrzeugs, der den Innenraum, den Motorraum und andere Fahrzeugteile umgibt.
+Genitiv: der Karosserie
+Plural: die Karosserien
+Kollokation: die Karosserie beschädigen
+Synonyme: Fahrzeugaufbau, Wagenaufbau
+ex: Die Karosserie des Autos wurde bei dem Unfall beschädigt: The car body was damaged in the accident.
+ex: Die Karosserie besteht größtenteils aus Metall: The car body consists mainly of metal.
+
+angenehm [ˈanɡəˌneːm] (Adverb): pleasantly; agreeably
+English: pleasantly; agreeably
+Persian: به‌طور خوشایند؛ به‌شکلی دلپذیر
+Penglish: be tore khoshayand; be shekle delpazir
+Bedeutung: auf eine Weise, die als wohltuend, erfreulich oder positiv empfunden wird.
+Synonyme: erfreulich, wohltuend
+ex: Der Raum ist angenehm warm: The room is pleasantly warm.
+ex: Sie war angenehm überrascht: She was pleasantly surprised.
+
+angenehm [ˈanɡəˌneːm] (Adjektiv, Komparativ: angenehmer, Superlativ: am angenehmsten): pleasant; agreeable
+English: pleasant; agreeable
+Persian: خوشایند؛ دلپذیر
+Penglish: khoshayand; delpazir
+Bedeutung: so, dass etwas als positiv, wohltuend oder erfreulich empfunden wird.
+Synonyme: erfreulich, wohltuend, behaglich
+Attributiv und prädikativ verwendbar
+ex: Das Wetter ist heute sehr angenehm: The weather is very pleasant today.
+ex: Wir hatten ein angenehmes Gespräch: We had a pleasant conversation.
+ex: Diese Temperatur ist angenehmer als gestern: This temperature is more pleasant than yesterday.
+
+an jenem Abend: that evening
+English: that evening
+Persian: آن عصر؛ آن شب
+Penglish: an asr; an shab
+Bedeutung: bezeichnet einen bestimmten Abend in der Vergangenheit oder in einem bereits erwähnten Zusammenhang.
+Synonyme: an diesem Abend
+ex: An jenem Abend war es sehr kalt: It was very cold that evening.
+ex: Ich werde diesen Abend nie vergessen: I will never forget that evening.
+
+ersetzen [ɛɐ̯ˈzɛʦn̩] (Akk., transitiv, untrennbar): to replace; to substitute
+English: to replace; to substitute
+Persian: جایگزین کردن
+Penglish: jaygozin kardan
+Verwendung: jemanden/etwas (Akk.) durch jemanden/etwas (Akk.) ersetzen
+Bedeutung: jemanden oder etwas an die Stelle einer anderen Person oder Sache setzen.
+Synonyme: austauschen, ersetzen durch
+ex: Wir müssen das alte Gerät ersetzen: We have to replace the old device.
+ex: Sie ersetzt Zucker durch Honig: She replaces sugar with honey.
+Präsens: ich ersetze
+Präteritum: ich ersetzte
+Perfekt: ich habe ersetzt
+Futur I: ich werde ersetzen
+Konjunktiv II: ich würde ersetzen
+Konjunktiv I: ich ersetze
+
+mit anderen Worten: in other words
+English: in other words
+Persian: به عبارت دیگر؛ به بیان دیگر
+Penglish: be ebarat-e digar; be bayan-e digar
+Bedeutung: verwendet, um etwas noch einmal anders, klarer oder einfacher auszudrücken.
+Synonyme: anders gesagt, das heißt
+ex: Mit anderen Worten, du bist nicht einverstanden: In other words, you do not agree.
+ex: Er hat keine Zeit; mit anderen Worten, er kann nicht kommen: He has no time; in other words, he cannot come.
+
+absprechen [ˈapˌʃpʁɛçn̩] (Dat. + Akk., trennbar, transitiv): to deny; to refuse to acknowledge
+English: to deny; to refuse to acknowledge
+Persian: از کسی سلب کردن؛ برای کسی قائل نبودن
+Penglish: az kasi salb kardan; baraye kasi gha'el naboodan
+Verwendung: jemandem (Dat.) etwas (Akk.) absprechen
+Bedeutung: behaupten, dass jemand eine bestimmte Fähigkeit, Eigenschaft, ein Recht oder einen Anspruch nicht besitzt.
+Synonyme: verweigern, aberkennen, in Abrede stellen
+ex: Niemand kann ihm seine Erfahrung absprechen: No one can deny him his experience.
+ex: Man kann ihr das Recht auf Kritik nicht absprechen: One cannot deny her the right to criticize.
+Präsens: ich spreche ab
+Präteritum: ich sprach ab
+Perfekt: ich habe abgesprochen
+Futur I: ich werde absprechen
+Konjunktiv II: ich würde absprechen
+Konjunktiv I: ich spreche
+
+erneuerbar [ɛɐ̯ˈnɔɪ̯ɐbaːɐ̯] (Adjektiv, nicht steigerbar): renewable
+English: renewable
+Persian: تجدیدپذیر
+Penglish: tajdidpazir
+Bedeutung: so beschaffen, dass es sich auf natürliche Weise wieder bildet oder erneut genutzt werden kann.
+Synonyme: regenerativ, nachwachsend
+Attributiv und prädikativ verwendbar
+ex: Solarenergie ist eine erneuerbare Energiequelle: Solar energy is a renewable energy source.
+ex: Wir sollten mehr erneuerbare Energien nutzen: We should use more renewable energy.
+
+solar [zoˈlaːɐ̯] (Adjektiv, nicht steigerbar): solar
+English: solar
+Persian: خورشیدی
+Penglish: khorshidi
+Bedeutung: die Sonne oder die Nutzung der Sonnenenergie betreffend.
+Synonyme: sonnenbezogen
+Attributiv und prädikativ verwendbar
+ex: Das Haus wird mit solarer Energie versorgt: The house is supplied with solar energy.
+ex: Solare Energie spielt eine wichtige Rolle bei erneuerbaren Energien: Solar energy plays an important role in renewable energies.
+
+der fossile Brennstoff [fɔˈsiːlɐ ˈbʁɛnʃtɔf]: fossil fuel
+English: fossil fuel
+Persian: سوخت فسیلی
+Penglish: sokht-e fosili
+Bedeutung: Brennstoff wie Kohle, Erdöl oder Erdgas, der aus organischem Material über sehr lange Zeiträume entstanden ist.
+Genitiv: des fossilen Brennstoffs
+Plural: die fossilen Brennstoffe
+Kollokation: fossile Brennstoffe verbrennen
+Synonyme: fossiler Energieträger
+ex: Kohle und Erdöl sind fossile Brennstoffe: Coal and petroleum are fossil fuels.
+ex: Viele Länder wollen weniger fossile Brennstoffe verwenden: Many countries want to use fewer fossil fuels.
+
+die Windkraft [ˈvɪntˌkʁaft]: wind power; wind energy
+English: wind power; wind energy
+Persian: انرژی بادی؛ نیروی باد
+Penglish: enerzhi-ye badi; nirou-ye bad
+Bedeutung: Energie, die mithilfe von Wind, besonders durch Windkraftanlagen, erzeugt wird.
+Genitiv: der Windkraft
+Plural: kein Plural
+Kollokation: Windkraft nutzen
+Synonyme: Windenergie
+ex: Windkraft ist eine wichtige erneuerbare Energiequelle: Wind power is an important renewable energy source.
+ex: Deutschland produziert viel Strom durch Windkraft: Germany produces a lot of electricity through wind power.
+
+können [ˈkœnən] (Modalverb, unregelmäßig): can; to be able to
+English: can; to be able to
+Persian: توانستن؛ قادر بودن
+Penglish: tavonestan; ghader boodan
+Bedeutung: die Fähigkeit, Möglichkeit oder Erlaubnis ausdrücken, etwas zu tun.
+Gebrauch: mit einem Infinitiv ohne „zu“.
+Synonyme: in der Lage sein, fähig sein
+Kasus: Akkusativ
+ex: Ich kann gut Deutsch sprechen: I can speak German well.
+ex: Wir können morgen darüber sprechen: We can talk about it tomorrow.
+Präsens: ich kann
+Präteritum: ich konnte
+Perfekt: ich habe gekonnt
+Futur I: ich werde können
+Konjunktiv II: ich könnte
+Konjunktiv I: ich könne
+
+die Querstraße [ˈkveːɐ̯ˌʃtʁaːsə]: cross street; side street
+English: cross street; side street
+Persian: خیابان فرعیِ متقاطع؛ خیابانی که خیابان دیگری را قطع می‌کند
+Penglish: khiabane fareie motaghate; khiabani ke khiabane digari ra ghat mikonad
+Bedeutung: eine Straße, die eine andere Straße kreuzt oder quer zu ihr verläuft.
+Genitiv: der Querstraße
+Plural: die Querstraßen
+Kollokation: in eine Querstraße abbiegen
+Synonyme: Seitenstraße, kreuzende Straße
+ex: Biegen Sie an der nächsten Querstraße rechts ab: Turn right at the next cross street.
+ex: Die Bäckerei liegt zwei Querstraßen von hier entfernt: The bakery is two cross streets away from here.
+
+schimmern [ˈʃɪmɐn] (intransitives Verb): to shimmer; to glimmer; to faintly shine
+English: to shimmer; to glimmer; to faintly shine
+Persian: کم‌نور درخشیدن؛ سوسو زدن؛ برق زدن
+Penglish: kam-noor derakhshidan; soo soo zadan; bargh zadan
+Bedeutung: schwach, sanft oder nur teilweise sichtbar leuchten oder glänzen.
+Synonyme: glimmen, glänzen, leuchten
+ex: Das Licht schimmert durch die Vorhänge: The light shimmers through the curtains.
+ex: Der See schimmert im Mondlicht: The lake glimmers in the moonlight.
+Präsens: ich schimmere
+Präteritum: ich schimmerte
+Perfekt: ich habe geschimmert
+Futur I: ich werde schimmern
+Konjunktiv II: ich würde schimmern
+Konjunktiv I: ich schimmere
+
+hinaus [hɪˈnaʊ̯s] (Adverb): out; outside; beyond
+English: out; outside; beyond
+Persian: به بیرون؛ بیرون؛ فراتر
+Penglish: be biroon; biroon; faratar
+Bedeutung: bezeichnet eine Bewegung von innen nach außen; in bestimmten Verbindungen auch eine Überschreitung einer Grenze oder eines Bereichs.
+Gebrauch: häufig mit Bewegungsverben; „hinaus“ beschreibt eine Bewegung vom Sprecher oder Bezugspunkt weg nach draußen.
+Synonyme: nach draußen, heraus
+ex: Er geht aus dem Haus hinaus: He goes out of the house.
+ex: Der Weg führt über das Dorf hinaus: The path leads beyond the village.
+
+sogleich [zoˈɡlaɪ̯ç] (Adverb, nicht steigerbar): immediately; at once; straightaway
+English: immediately; at once; straightaway
+Persian: بلافاصله؛ فوراً؛ همان دم
+Penglish: belafaseleh; foran; haman dam
+Bedeutung: ohne Verzögerung; unmittelbar danach oder in sehr kurzer Zeit.
+Gebrauch: wirkt heute oft etwas gehobener oder literarischer als „sofort“.
+Synonyme: sofort, unverzüglich, umgehend
+ex: Ich komme sogleich zurück: I will come back immediately.
+ex: Sie erkannte ihn sogleich: She recognized him at once.
+
+abtreten [ˈapˌtʁeːtn̩] (trennbares Verb, unregelmäßig): to step down; to resign; to cede; to transfer
+English: to step down; to resign; to cede; to transfer
+Persian: کناره‌گیری کردن؛ واگذار کردن؛ انتقال دادن
+Penglish: kenareh-giri kardan; vagozar kardan; enteghal dadan
+Bedeutung: eine Position oder ein Amt aufgeben; etwas an eine andere Person übergeben oder übertragen.
+Verwendung: von einem Amt/einer Position abtreten; etwas (Akk.) an jemanden (Akk.) abtreten
+Synonyme: zurücktreten, aufgeben, übertragen
+ex: Der Minister trat von seinem Amt ab: The minister stepped down from his office.
+ex: Er trat seine Rechte an die Firma ab: He transferred his rights to the company.
+Präsens: ich trete ab
+Präteritum: ich trat ab
+Perfekt: ich bin abgetreten / ich habe etwas abgetreten
+Futur I: ich werde abtreten
+Konjunktiv II: ich würde abtreten
+Konjunktiv I: ich trete ab
+
+einige davon: some of them; some of those
+English: some of them; some of those
+Persian: بعضی از آن‌ها؛ تعدادی از آن‌ها
+Penglish: bazi az anha; tedadi az anha
+Bedeutung: bezeichnet einen Teil einer vorher genannten Gruppe von Dingen oder Sachverhalten.
+Gebrauch: „davon“ bezieht sich besonders häufig auf Dinge oder Sachverhalte. Bei Personen verwendet man normalerweise „einige von ihnen“.
+Synonyme: manche davon, ein Teil davon
+ex: Ich habe viele Bücher. Einige davon sind sehr alt: I have many books. Some of them are very old.
+ex: Wir haben mehrere Probleme. Einige davon sind leicht zu lösen: We have several problems. Some of them are easy to solve.
+
+anreisen [ˈanˌʁaɪ̯zn̩] (trennbares Verb, intransitiv): to arrive; to travel to a place
+English: to arrive; to travel to a place
+Persian: رسیدن؛ به مقصد سفر کردن
+Penglish: residan; be maghsad safar kardan
+Bedeutung: zu einem bestimmten Ort reisen und dort ankommen, besonders im Zusammenhang mit Reisen, Veranstaltungen oder Unterkünften.
+Verwendung: anreisen verlangt normalerweise kein Akkusativ- oder Dativobjekt; häufig mit „nach + Dat.“ bei Städten/Ländern oder „zu + Dat.“ bei Personen/Veranstaltungen.
+Synonyme: ankommen, eintreffen, hinreisen
+ex: Wir reisen morgen nach Wien an: We are arriving in Vienna tomorrow.
+ex: Viele Gäste reisen am Freitag zur Konferenz an: Many guests are arriving for the conference on Friday.
+Präsens: ich reise an
+Präteritum: ich reiste an
+Perfekt: ich bin angereist
+Futur I: ich werde anreisen
+Konjunktiv II: ich würde anreisen
+Konjunktiv I: ich reise an
+
+das Pflichtfeld [ˈpflɪçtˌfɛlt] (Neutrum): required field; mandatory field
+English: required field; mandatory field
+Persian: فیلد اجباری؛ قسمت اجباری
+Penglish: filde ejbari; ghesmate ejbari
+Bedeutung: ein Feld in einem Formular oder einer Eingabemaske, das ausgefüllt werden muss.
+Genitiv: des Pflichtfeldes
+Plural: die Pflichtfelder
+Kollokation: ein Pflichtfeld ausfüllen
+Synonyme: erforderliches Feld, obligatorisches Feld
+ex: Dieses Pflichtfeld muss ausgefüllt werden: This required field must be filled in.
+ex: Alle Pflichtfelder sind mit einem Sternchen markiert: All mandatory fields are marked with an asterisk.
+
+übersichtlich [ˈyːbɐˌzɪçtlɪç] (Adjektiv, Komparativ: übersichtlicher, Superlativ: am übersichtlichsten): clear; well-organized; easy to understand
+English: clear; well-organized; easy to understand
+Persian: واضح؛ منظم؛ قابل فهم
+Penglish: vazeh; monazzam; ghabele fahm
+Bedeutung: so angeordnet oder dargestellt, dass man etwas schnell verstehen und einen guten Überblick darüber bekommen kann.
+Synonyme: klar, geordnet, verständlich
+Attributiv und prädikativ verwendbar
+ex: Die Tabelle ist sehr übersichtlich: The table is very clear and well-organized.
+ex: Die Informationen sind übersichtlich dargestellt: The information is presented clearly.
+ex: Diese Seite ist übersichtlicher als die andere: This page is clearer than the other one.
+
+das Diagramm [diaˈɡʁam]: diagram; chart
+English: diagram; chart
+Persian: نمودار؛ دیاگرام
+Penglish: nemoodar; diagram
+Bedeutung: grafische Darstellung von Daten, Zusammenhängen, Abläufen oder Strukturen.
+Genitiv: des Diagramms
+Plural: die Diagramme
+Kollokation: ein Diagramm erstellen
+Synonyme: Schaubild, Grafik, Darstellung
+ex: Das Diagramm zeigt die Entwicklung der Preise: The diagram shows the development of prices.
+ex: Wir erstellen ein Diagramm aus den gesammelten Daten: We create a chart from the collected data.
+
+alles im grünen Bereich sein: to be all right; to be within the acceptable range
+English: to be all right; to be within the acceptable range
+Persian: همه‌چیز خوب و در محدودهٔ قابل قبول بودن
+Penglish: hame-chiz khoob va dar mahdoude-ye ghabele ghabool boodan
+Bedeutung: bedeutet, dass alles in Ordnung ist oder sich innerhalb eines normalen, sicheren oder akzeptablen Bereichs befindet.
+Gebrauch: häufig bei Gesundheit, technischen Werten, Finanzen oder allgemein zur Beschreibung einer problemlosen Situation.
+Synonyme: alles in Ordnung sein, alles okay sein
+ex: Die Blutwerte sind alle im grünen Bereich: The blood values are all within the normal range.
+ex: Keine Sorge, finanziell ist alles im grünen Bereich: Don't worry, financially everything is fine.
+
+umherwandern [ʊmˈheːɐ̯ˌvandɐn] (trennbares Verb, intransitiv): to wander; to roam
+English: to wander; to roam
+Persian: پرسه زدن؛ بی‌هدف این‌طرف و آن‌طرف رفتن
+Penglish: parseh zadan; bi-hadaf in-taraf o on-taraf raftan
+Bedeutung: ohne bestimmtes Ziel von einem Ort zum anderen gehen oder sich bewegen.
+Synonyme: herumwandern, umherziehen, streifen
+ex: Er wandert stundenlang durch die Stadt umher: He wanders around the city for hours.
+ex: Wir wanderten ohne bestimmtes Ziel im Wald umher: We wandered through the forest without a particular destination.
+Präsens: ich wandere umher
+Präteritum: ich wanderte umher
+Perfekt: ich bin umhergewandert
+Futur I: ich werde umherwandern
+Konjunktiv II: ich würde umherwandern
+Konjunktiv I: ich wandere umher
+
+der Dorn [dɔʁn]: thorn
+English: thorn
+Persian: خار
+Penglish: khar
+Bedeutung: harter, spitzer Teil einer Pflanze, der zum Schutz dient oder aus einem Pflanzenorgan hervorgegangen ist.
+Genitiv: des Dorns
+Plural: die Dornen
+Kollokation: sich an einem Dorn stechen
+Synonyme: Stachel
+ex: Die Rose hat viele Dornen: The rose has many thorns.
+ex: Ich habe mich an einem Dorn gestochen: I pricked myself on a thorn.
+
+die Ameise [ˈaːmaɪ̯zə]: ant
+English: ant
+Persian: مورچه
+Penglish: moorche
+Bedeutung: kleines Insekt, das meist in großen, organisierten Gemeinschaften lebt.
+Genitiv: der Ameise
+Plural: die Ameisen
+Kollokation: eine Ameise beobachten
+Synonyme: —
+ex: Auf dem Boden krabbeln viele Ameisen: Many ants are crawling on the ground.
+ex: Die Ameise trägt ein kleines Stück Brot: The ant is carrying a small piece of bread.
+
+die Wimper [ˈvɪmpɐ]: eyelash
+English: eyelash
+Persian: مژه
+Penglish: mojeh
+Bedeutung: eines der kurzen Haare am Rand des oberen oder unteren Augenlids.
+Genitiv: der Wimper
+Plural: die Wimpern
+Kollokation: lange Wimpern haben
+Synonyme: —
+ex: Sie hat lange Wimpern: She has long eyelashes.
+ex: Eine Wimper ist mir ins Auge gefallen: An eyelash got into my eye.
+
+schräg [ʃʁɛːk] (Adjektiv, Komparativ: schräger, Superlativ: am schrägsten): slanted; oblique; diagonal
+English: slanted; oblique; diagonal
+Persian: مایل؛ مورب
+Penglish: mayel; morab
+Bedeutung: nicht gerade, senkrecht oder waagerecht verlaufend, sondern in einem Winkel.
+Synonyme: diagonal, geneigt, schief
+Attributiv und prädikativ verwendbar
+ex: Das schräge Licht fällt durch das Fenster: The slanting light falls through the window.
+ex: Die Sonnenstrahlen treffen schräg auf die Wand: The sun's rays hit the wall at an angle.
+
+geneigt [ɡəˈnaɪ̯kt] (Adjektiv, meist nicht steigerbar): inclined; disposed; leaning
+English: inclined; disposed; leaning
+Persian: متمایل؛ مایل
+Penglish: motamayel; mayel
+Bedeutung: in eine bestimmte Richtung geneigt oder dazu bereit beziehungsweise dazu neigend, etwas zu tun.
+Synonyme: bereit, gewillt, tendierend
+Attributiv und prädikativ verwendbar
+ex: Die Fläche ist leicht nach Süden geneigt: The surface is slightly inclined toward the south.
+ex: Ich bin geneigt, ihm zuzustimmen: I am inclined to agree with him.
+
+wie traurig schön!: how sadly beautiful!
+English: how sadly beautiful!
+Persian: چقدر غم‌انگیزانه زیبا!
+Penglish: cheghadr gham-angizan-e ziba!
+Bedeutung: drückt aus, dass etwas gleichzeitig schön und traurig wirkt.
+Synonyme: auf traurige Weise schön, zugleich schön und traurig
+ex: Wie traurig schön diese Szene ist!: How sadly beautiful this scene is!
+ex: Das Ende des Films ist traurig schön: The ending of the film is sadly beautiful.
+
+einkommensschwach [ˈaɪ̯nˌkɔmənsˌʃvax] (Adjektiv, nicht steigerbar): low-income
+English: low-income
+Persian: کم‌درآمد؛ از نظر درآمدی کمتر برخوردار
+Penglish: kam-daramad; az nazar-e daramadi kamtar barkhordar
+Bedeutung: über ein vergleichsweise geringes Einkommen verfügend; neutrale und höfliche Bezeichnung, besonders in formellen oder politischen Texten.
+Synonyme: finanziell schwächer gestellt, mit geringem Einkommen
+Attributiv und prädikativ verwendbar
+ex: Einkommensschwache Familien erhalten zusätzliche Unterstützung: Low-income families receive additional support.
+ex: Das Angebot richtet sich an einkommensschwache Haushalte: The offer is aimed at low-income households.
+
+sozial benachteiligt: socially disadvantaged
+English: socially disadvantaged
+Persian: از نظر اجتماعی کمتر برخوردار؛ محروم از برخی امکانات اجتماعی
+Penglish: az nazar-e ejtemaei kamtar barkhordar; mahroom az barkhi emkanat-e ejtemaei
+Bedeutung: aufgrund sozialer oder wirtschaftlicher Umstände schlechtere Möglichkeiten oder Chancen habend.
+Synonyme: gesellschaftlich benachteiligt, weniger privilegiert
+ex: Das Programm unterstützt sozial benachteiligte Menschen: The program supports socially disadvantaged people.
+ex: Kinder aus sozial benachteiligten Familien sollen bessere Bildungschancen erhalten: Children from socially disadvantaged families should receive better educational opportunities.
+
+finanziell weniger gut gestellt: less well-off; financially disadvantaged
+English: less well-off; financially disadvantaged
+Persian: از نظر مالی کمتر برخوردار؛ از نظر مالی در وضعیت ضعیف‌تری
+Penglish: az nazar-e mali kamtar barkhordar; az nazar-e mali dar vaziyat-e zaif-tari
+Bedeutung: weniger finanzielle Mittel als andere zur Verfügung habend; höfliche Umschreibung für „arm“.
+Synonyme: finanziell schwächer gestellt, einkommensschwach
+ex: Der Verein hilft finanziell weniger gut gestellten Familien: The association helps less well-off families.
+ex: Auch finanziell weniger gut gestellte Menschen sollen daran teilnehmen können: Less well-off people should also be able to participate.
+
+aufzählen [ˈaʊ̯fˌʦɛːlən] (trennbares Verb, transitiv + Akk.): to itemise; to enumerate; to list
+English: to itemise; to enumerate; to list
+Persian: برشمردن؛ فهرست کردن؛ یک‌به‌یک نام بردن
+Penglish: barshomordan; fehrest kardan; yek-be-yek nam bordan
+Verwendung: jemanden/etwas (Akk.) aufzählen
+Bedeutung: mehrere Personen, Dinge oder Punkte nacheinander nennen.
+Synonyme: auflisten, nennen, anführen
+ex: Kannst du die wichtigsten Gründe aufzählen: Can you itemise the most important reasons?
+ex: Sie zählte alle Probleme einzeln auf: She itemised all the problems individually.
+Präsens: ich zähle auf
+Präteritum: ich zählte auf
+Perfekt: ich habe aufgezählt
+Futur I: ich werde aufzählen
+Konjunktiv II: ich würde aufzählen
+Konjunktiv I: ich zähle auf
+
+echt [ɛçt] (Adverb, nicht steigerbar; umgangssprachlich): really; genuinely
+English: really; genuinely
+Persian: واقعاً؛ حقیقتاً
+Penglish: vaghe'an; haghighatan
+Bedeutung: verstärkt eine Aussage und bedeutet „wirklich“ oder „tatsächlich“.
+Synonyme: wirklich, tatsächlich
+ex: Das ist echt schwierig: That is really difficult.
+ex: Ich bin echt müde: I am really tired.
+
+die Backstube [ˈbakˌʃtuːbə]: bakery; baking room
+English: bakery; baking room
+Persian: کارگاه نانوایی؛ محل پخت نان و شیرینی
+Penglish: kargah-e nanoei; mahal-e pokht-e nan va shirini
+Bedeutung: Raum oder Arbeitsbereich in einer Bäckerei, in dem Brot, Brötchen, Kuchen und andere Backwaren hergestellt und gebacken werden.
+Genitiv: der Backstube
+Plural: die Backstuben
+Kollokation: in der Backstube arbeiten
+Synonyme: Backraum, Bäckereiraum
+ex: In der Backstube wird schon früh am Morgen gearbeitet: Work starts early in the morning in the bakery.
+ex: Der Duft von frischem Brot kommt aus der Backstube: The smell of fresh bread comes from the bakery.
+
+die Stube [ˈʃtuːbə]: room; sitting room; parlour
+English: room; sitting room; parlour
+Persian: اتاق؛ اتاق نشیمن
+Penglish: otagh; otagh-e neshiman
+Bedeutung: meist ein kleinerer, gemütlicher Wohn- oder Aufenthaltsraum; heute oft in traditionellen, regionalen oder zusammengesetzten Wörtern verwendet.
+Genitiv: der Stube
+Plural: die Stuben
+Kollokation: in der Stube sitzen
+Synonyme: Zimmer, Wohnstube, Aufenthaltsraum
+ex: Die Familie sitzt abends gemeinsam in der Stube: The family sits together in the sitting room in the evening.
+ex: In der alten Stube steht ein großer Holztisch: There is a large wooden table in the old parlour.
+
+schütteln [ˈʃʏtl̩n] (Verb, transitiv + Akk.): to shake
+English: to shake
+Persian: تکان دادن؛ لرزاندن
+Penglish: tekan dadan; larzandan
+Verwendung: jemanden/etwas (Akk.) schütteln
+Bedeutung: jemanden oder etwas schnell und mehrmals hin und her bewegen.
+Synonyme: rütteln, bewegen, erschüttern
+ex: Sie schüttelt die Flasche vor dem Öffnen: She shakes the bottle before opening it.
+ex: Er schüttelte den Kopf: He shook his head.
+Präsens: ich schüttle
+Präteritum: ich schüttelte
+Perfekt: ich habe geschüttelt
+Futur I: ich werde schütteln
+Konjunktiv II: ich würde schütteln
+Konjunktiv I: ich schüttle
+
+beneiden [bəˈnaɪ̯dn̩] (Verb, transitiv + Akk.): to envy
+English: to envy
+Persian: حسادت کردن به؛ غبطه خوردن به
+Penglish: hesadat kardan be; ghebteh khordan be
+Verwendung: jemanden (Akk.) um etwas (Akk.) beneiden
+Bedeutung: wünschen, etwas zu haben oder zu erleben, was eine andere Person besitzt oder erlebt.
+Synonyme: neidisch sein auf, missgönnen
+ex: Ich beneide ihn um seine Ruhe: I envy him for his calmness.
+ex: Viele Menschen beneiden sie um ihren Erfolg: Many people envy her for her success.
+Präsens: ich beneide
+Präteritum: ich beneidete
+Perfekt: ich habe beneidet
+Futur I: ich werde beneiden
+Konjunktiv II: ich würde beneiden
+Konjunktiv I: ich beneide
+
+hungernd [ˈhʊŋɐnt] (Partizip I von „hungern“, adjektivisch verwendbar): hungry; starving
+English: hungry; starving
+Persian: گرسنه؛ گرسنگی‌کشیده
+Penglish: gorosneh; gorosnegi-keshideh
+Bedeutung: Hunger habend; sich in einem Zustand befinden, in dem man dringend Nahrung braucht.
+Synonyme: hungrig, ausgehungert
+Attributiv und adverbial verwendbar
+ex: Die hungernden Menschen brauchen dringend Hilfe: The starving people urgently need help.
+ex: Er kam hungernd nach Hause: He came home hungry.
+Hinweis: „Partizip I“ ist in deinen bisherigen Wörterbuchmustern nicht als eigener Worttyp definiert; du kannst diesen Typ zu deinen Anweisungen hinzufügen.
+
+fröstelnd [ˈfʁøːstəlnt] (Partizip I von „frösteln“, adjektivisch verwendbar): shivering; feeling chilly
+English: shivering; feeling chilly
+Persian: لرزان از سرما؛ احساس سرماکنان
+Penglish: larzan az sarma; ehsas-e sarma konan
+Bedeutung: leicht vor Kälte zitternd oder ein unangenehmes Kältegefühl habend.
+Synonyme: frierend, zitternd
+Attributiv und adverbial verwendbar
+ex: Sie stand fröstelnd an der Bushaltestelle: She stood shivering at the bus stop.
+ex: Fröstelnd zog er seine Jacke enger um sich: Shivering, he pulled his jacket tighter around himself.
+Hinweis: „Partizip I“ ist in deinen bisherigen Wörterbuchmustern nicht als eigener Worttyp definiert; du kannst diesen Typ zu deinen Anweisungen hinzufügen.
+
+nesteln [ˈnɛstl̩n] (Verb, intransitiv; häufig mit „an + Dat.“): to fiddle; to fumble
+English: to fiddle; to fumble
+Persian: ور رفتن با چیزی؛ دست‌کاری کردن
+Penglish: var raftan ba chizi; dast-kari kardan
+Verwendung: an etwas (Dat.) nesteln; an etwas herumnesteln
+Bedeutung: mit den Fingern wiederholt und etwas unruhig oder ohne klares Ziel an etwas hantieren.
+Synonyme: herumfummeln, hantieren, herumspielen
+ex: Er nestelt nervös an seiner Jacke: He nervously fiddles with his jacket.
+ex: Sie nestelte eine Weile an dem Verschluss herum: She fiddled with the fastener for a while.
+Präsens: ich nestle
+Präteritum: ich nestelte
+Perfekt: ich habe genestelt
+Futur I: ich werde nesteln
+Konjunktiv II: ich würde nesteln
+Konjunktiv I: ich nestle
+
+die Schiebetür [ˈʃiːbəˌtyːɐ̯]: sliding door
+English: sliding door
+Persian: درِ کشویی
+Penglish: dar-e keshooyi
+Bedeutung: Tür, die nicht nach innen oder außen geöffnet wird, sondern seitlich entlang einer Führung verschoben wird.
+Genitiv: der Schiebetür
+Plural: die Schiebetüren
+Kollokation: eine Schiebetür öffnen
+Synonyme: Schiebetüranlage, Gleittür
+ex: Die Schiebetür öffnet sich automatisch: The sliding door opens automatically.
+ex: Er schiebt die Schiebetür zur Seite: He slides the door to the side.
+
+hindurch [hɪnˈdʊʁç] (Adverb): through; through it
+English: through; through it
+Persian: از میان؛ از داخل؛ از آن‌طرف
+Penglish: az mian; az dakhel; az an-taraf
+Bedeutung: bezeichnet eine Bewegung von einer Seite eines Raumes, Gegenstands oder Bereichs zur anderen Seite.
+Synonyme: durch, durch etwas hindurch
+ex: Wir gehen durch den Tunnel hindurch: We go through the tunnel.
+ex: Das Licht scheint durch das Fenster hindurch: The light shines through the window.
+Gebrauch: „hindurch“ steht oft zusammen mit „durch + Akk.“ und betont die vollständige Bewegung von einer Seite zur anderen.
+
+derart [ˈdeːɐ̯ˌʔaːɐ̯t] (Adverb, nicht steigerbar): so; in such a way; to such an extent
+English: so; in such a way; to such an extent
+Persian: این‌گونه؛ به این شکل؛ تا این حد
+Penglish: in-gooneh; be in shekl; ta in had
+Bedeutung: auf eine solche Weise oder in einem solchen Ausmaß.
+Synonyme: so, dermaßen, auf diese Weise
+ex: Er war derart müde, dass er sofort einschlief: He was so tired that he fell asleep immediately.
+ex: Die Situation hat sich derart verändert, dass wir neu planen müssen: The situation has changed to such an extent that we have to plan again.
+Gebrauch: häufig in der Struktur „derart ..., dass ...“, um einen starken Grad oder ein starkes Ausmaß auszudrücken.
+
+durchgefroren [ˈdʊʁçɡəˌfʁoːʁən] (Adjektiv, nicht steigerbar): frozen through; chilled to the bone
+English: frozen through; chilled to the bone
+Persian: از سرما یخ‌زده؛ از شدت سرما به‌شدت سردشده
+Penglish: az sarma yakh-zadeh; az sheddat-e sarma be-sheddat sard-shodeh
+Bedeutung: durch starke Kälte vollständig ausgekühlt oder sehr stark gefroren.
+Synonyme: ausgekühlt, durchfroren, eiskalt
+Attributiv und prädikativ verwendbar
+ex: Nach zwei Stunden im Schnee war ich völlig durchgefroren: After two hours in the snow, I was chilled to the bone.
+ex: Sie zog ihre durchgefrorenen Handschuhe aus: She took off her frozen-through gloves.
+Gebrauch: „durchgefrorenen“ ist eine deklinierte Form von „durchgefroren“, zum Beispiel „die durchgefrorenen Hände“.
+
+ertönen [ɛɐ̯ˈtøːnən] (Verb, intransitiv): to sound; to resound; to be heard
+English: to sound; to resound; to be heard
+Persian: به صدا درآمدن؛ طنین‌انداز شدن
+Penglish: be seda daramadan; tanin-andaz shodan
+Bedeutung: hörbar werden oder deutlich als Klang, Ton, Stimme oder Geräusch zu hören sein.
+Synonyme: erklingen, erschallen, zu hören sein
+ex: Plötzlich ertönt eine laute Stimme: Suddenly a loud voice is heard.
+ex: Aus dem Lautsprecher ertönte Musik: Music sounded from the loudspeaker.
+Präsens: ich ertöne
+Präteritum: ich ertönte
+Perfekt: ich bin ertönt
+Futur I: ich werde ertönen
+Konjunktiv II: ich würde ertönen
+Konjunktiv I: ich ertöne
+
+der Verlag [fɛɐ̯ˈlaːk]: publishing house; publisher
+English: publishing house; publisher
+Persian: انتشارات؛ مؤسسهٔ نشر
+Penglish: entesharat; moassese-ye nashr
+Bedeutung: Unternehmen, das Bücher, Zeitschriften oder andere Medien veröffentlicht und vertreibt.
+Genitiv: des Verlags
+Plural: die Verlage
+Kollokation: bei einem Verlag erscheinen
+Synonyme: Verlagshaus, Herausgeber
+ex: Das Buch ist bei einem bekannten Verlag erschienen: The book was published by a well-known publishing house.
+ex: Der Verlag veröffentlicht jedes Jahr viele neue Bücher: The publisher releases many new books every year.
+
+vereinfachte: simplified
+English: simplified
+Persian: ساده‌شده؛ ساده‌ترشده
+Penglish: sadeh-shodeh; sadeh-tar-shodeh
+Bedeutung: „vereinfachte“ ist je nach Satz entweder Präteritum von „vereinfachen“ oder eine deklinierte Form des Partizips/Adjektivs „vereinfacht“.
+ex: Er vereinfachte die Erklärung: He simplified the explanation.
+ex: Das ist eine vereinfachte Darstellung: This is a simplified representation.
+
+einschränken [ˈaɪ̯nˌʃʁɛŋkn̩] (trennbares Verb, transitiv + Akk.): to restrict; to limit
+English: to restrict; to limit
+Persian: محدود کردن؛ محدود ساختن
+Penglish: mahdood kardan; mahdood sakhtan
+Verwendung: jemanden/etwas (Akk.) einschränken; sich auf etwas (Akk.) einschränken
+Bedeutung: etwas in seinem Umfang, seiner Freiheit, seinen Möglichkeiten oder seiner Wirkung begrenzen.
+Synonyme: begrenzen, beschränken, reduzieren
+ex: Die neuen Regeln schränken unsere Möglichkeiten ein: The new rules restrict our options.
+ex: Wegen der Krankheit musste er seine Aktivitäten einschränken: Because of the illness, he had to limit his activities.
+Präsens: ich schränke ein
+Präteritum: ich schränkte ein
+Perfekt: ich habe eingeschränkt
+Futur I: ich werde einschränken
+Konjunktiv II: ich würde einschränken
+Konjunktiv I: ich schränke ein
