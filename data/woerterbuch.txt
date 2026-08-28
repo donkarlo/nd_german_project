@@ -28722,16 +28722,6 @@ Synonyme: weiterhin, nach wie vor, ferner
 ex: Ich lerne weiterhin Deutsch: I continue learning German.
 ex: Er arbeitet weiterhin in Wien: He still works in Vienna.
 
-tot [toːt] (Adjektiv, Komparativ: toter, Superlativ: am totesten): dead
-English: dead
-Persian: toter, Superlativ: am totesten): مرده
-Penglish: toter, Superlativ: am tosten): dead
-Bedeutung: ohne Leben; nicht mehr lebendig.
-Synonyme: leblos, verstorben
-Attributiv und prädikativ verwendbar
-ex: Der Fisch ist tot: The fish is dead.
-ex: Er fand einen toten Vogel: He found a dead bird.
-
 der Schnee (pl. —): snow
 English: snow
 Persian: برف
@@ -33983,11 +33973,16 @@ Synonyme: Muster, Exempel
 ex: Kannst du ein Beispiel geben: Can you give an example?
 ex: Das ist nur ein Beispiel: That is only an example.
 
-passend: appropriate
-English: appropriate
-Persian: مناسب
-Penglish: menasb
-Ich habe die passende Kleidung für alle Zwecke und Gelegenheiten.:I have the appropriate clothing for all purposes and occasions.
+passend [ˈpasn̩t] (Adjektiv, Komparativ: passender, Superlativ: am passendsten): suitable; appropriate; fitting
+English: suitable; appropriate; fitting
+Persian: مناسب؛ متناسب
+Penglish: monaseb; motenaseb
+Bedeutung: für einen bestimmten Zweck, eine Situation oder eine Person geeignet oder richtig.
+Gebrauch: häufig mit „zu + Dativ“: passend zu jemandem/etwas.
+Synonyme: geeignet, angemessen, entsprechend
+Attributiv und prädikativ verwendbar
+ex: Ich suche ein passendes Auto für meinen Alltag: I am looking for a suitable car for my everyday life.
+ex: Diese Schuhe passen gut zu deinem Anzug und sind sehr passend für den Anlass: These shoes go well with your suit and are very appropriate for the occasion.
 
 der Kurs (pl. die Kurse): course
 English: course
@@ -47726,3 +47721,279 @@ Perfekt: ich habe eingeschränkt
 Futur I: ich werde einschränken
 Konjunktiv II: ich würde einschränken
 Konjunktiv I: ich schränke ein
+
+sich abracken [ˈapˌʁakn̩] (reflexiv, trennbar, regelmäßig, regional/älter): to work oneself to exhaustion; to toil
+English: to work oneself to exhaustion; to toil
+Persian: خود را با کار زیاد خسته کردن؛ جان کندن
+Penglish: khod ra ba kar-e ziad khasteh kardan; jan kandan
+Verwendung: sich mit etwas (Dat.) abracken
+Bedeutung: sich durch schwere oder anstrengende Arbeit sehr ermüden; sich stark abmühen. Das heute üblichere Wort ist „sich abrackern“. ([Wiktionary][1])
+Synonyme: sich abrackern, sich abmühen, sich abplagen
+ex: Er rackt sich jeden Tag bei der Arbeit ab: He works himself to exhaustion every day.
+ex: Sie rackte sich jahrelang für ihre Familie ab: She toiled for her family for years.
+Präsens: ich racke mich ab
+Präteritum: ich rackte mich ab
+Perfekt: ich habe mich abgerackt
+Futur I: ich werde mich abracken
+Konjunktiv II: ich würde mich abracken
+Konjunktiv I: ich racke mich ab
+
+die Unschuld [ˈʊnʃʊlt]: innocence
+English: innocence
+Persian: معصومیت؛ بی‌گناهی
+Penglish: masoomiat; bi-gonahi
+Bedeutung: Zustand, in dem jemand keine Schuld trägt oder moralisch als rein und nicht verdorben gilt.
+Genitiv: der Unschuld
+Plural: kein Plural
+Kollokation: seine Unschuld beweisen
+Synonyme: Schuldlosigkeit, Arglosigkeit
+ex: Er konnte seine Unschuld beweisen: He was able to prove his innocence.
+ex: Das Kind verlor seine kindliche Unschuld: The child lost its childhood innocence.
+
+die Göttin [ˈɡœtɪn]: goddess
+English: goddess
+Persian: الهه
+Penglish: elaheh
+Bedeutung: weibliche Gottheit; übernatürliches göttliches Wesen weiblichen Geschlechts.
+Genitiv: der Göttin
+Plural: die Göttinnen
+Synonyme: weibliche Gottheit
+ex: Aphrodite ist eine Göttin der griechischen Mythologie: Aphrodite is a goddess in Greek mythology.
+ex: Die Menschen verehrten die Göttin: The people worshipped the goddess.
+
+die Entität [ɛntiˈtɛːt]: entity
+English: entity
+Persian: موجودیت؛ هستنده
+Penglish: mojoodiat; hastandeh
+Bedeutung: etwas, das als eigenständige Einheit existiert oder betrachtet wird; besonders in Philosophie, Informatik und Fachsprache.
+Genitiv: der Entität
+Plural: die Entitäten
+Kollokation: eine eigenständige Entität
+Synonyme: Einheit, Wesen, Objekt
+ex: Jede Entität hat eine eindeutige Identifikation: Each entity has a unique identification.
+ex: In der Datenbank wird jede Person als eigene Entität gespeichert: In the database, each person is stored as a separate entity.
+
+aufsaugen [ˈaʊ̯fˌzaʊ̯ɡn̩] (Akk., trennbar, transitiv): to absorb; to soak up
+English: to absorb; to soak up
+Persian: جذب کردن؛ به خود کشیدن
+Penglish: jazb kardan; be khod keshidan
+Verwendung: etwas (Akk.) aufsaugen
+Bedeutung: eine Flüssigkeit in sich aufnehmen, besonders bei Stoffen, Schwämmen, Papier oder ähnlichen Materialien.
+Synonyme: absorbieren, aufnehmen, einsaugen
+ex: Der Stoff saugt das Wasser auf: The fabric absorbs the water.
+ex: Der Schwamm hat die ganze Flüssigkeit aufgesaugt: The sponge soaked up all the liquid.
+Präsens: ich sauge auf
+Präteritum: ich saugte auf
+Perfekt: ich habe aufgesaugt
+Futur I: ich werde aufsaugen
+Konjunktiv II: ich würde aufsaugen
+Konjunktiv I: ich sauge auf
+
+verdauen [fɛɐ̯ˈdaʊ̯ən] (Akk., transitiv, regelmäßig): to digest
+English: to digest
+Persian: هضم کردن
+Penglish: hazm kardan
+Verwendung: etwas (Akk.) verdauen
+Bedeutung: Nahrung im Körper verarbeiten und in verwertbare Bestandteile zerlegen; übertragen auch: eine Erfahrung oder Information innerlich verarbeiten.
+Synonyme: verarbeiten
+ex: Ich kann schweres Essen nicht gut verdauen: I cannot digest heavy food well.
+ex: Er braucht Zeit, um die Nachricht zu verdauen: He needs time to digest the news.
+Präsens: ich verdaue
+Präteritum: ich verdaute
+Perfekt: ich habe verdaut
+Futur I: ich werde verdauen
+Konjunktiv II: ich würde verdauen
+Konjunktiv I: ich verdaue
+
+zurückgeben (Akk. + Dat., trennbar, transitiv, unregelmäßig): to give back; to return
+English: to give back; to return
+Persian: پس دادن؛ برگرداندن
+Penglish: pas dadan; bargardandan
+Verwendung: jemandem (Dat.) etwas (Akk.) zurückgeben
+Bedeutung: etwas wieder an die Person geben, der es gehört oder von der man es bekommen hat.
+Synonyme: retournieren, zurückbringen
+ex: Ich muss ihm das Buch morgen zurückgeben: I have to give the book back to him tomorrow.
+ex: Sie hat mir das Geld zurückgegeben: She gave the money back to me.
+Präsens: ich gebe zurück
+Präteritum: ich gab zurück
+Perfekt: ich habe zurückgegeben
+Futur I: ich werde zurückgeben
+Konjunktiv II: ich würde zurückgeben
+Konjunktiv I: ich gebe zurück
+
+die Blase [ˈblaːzə]: bubble; blister; bladder
+English: bubble; blister; bladder
+Persian: حباب؛ تاول؛ مثانه
+Penglish: hobab; tavol; masaneh
+Bedeutung: ein mit Luft oder Gas gefüllter kleiner Hohlraum; außerdem eine mit Flüssigkeit gefüllte Hauterhebung oder ein Organ zur Speicherung von Urin.
+Genitiv: der Blase
+Plural: die Blasen
+Synonyme: Luftblase, Bläschen
+ex: Im Wasser steigen kleine Blasen nach oben: Small bubbles rise to the surface in the water.
+ex: Durch die neuen Schuhe habe ich eine Blase am Fuß bekommen: I got a blister on my foot from the new shoes.
+
+der Automechaniker [ˈaʊ̯toˌmeçaːnɪkɐ]: car mechanic; auto mechanic
+English: car mechanic; auto mechanic
+Persian: تعمیرکار ماشین؛ مکانیک خودرو
+Penglish: tamirkar-e mashin; mekanik-e khodro
+Bedeutung: eine Person, die Autos untersucht, wartet und repariert.
+Genitiv: des Automechanikers
+Plural: die Automechaniker
+Synonyme: Kfz-Mechaniker, Kfz-Mechatroniker
+ex: Ich muss mein Auto zum Automechaniker bringen: I have to take my car to the mechanic.
+ex: Der Automechaniker repariert den Motor: The car mechanic is repairing the engine.
+
+vertrauenswürdig [fɛɐ̯ˈtʁaʊ̯ənsˌvʏʁdɪç] (Adjektiv, Komparativ: vertrauenswürdiger, Superlativ: am vertrauenswürdigsten): trustworthy; reliable
+English: trustworthy; reliable
+Persian: قابل اعتماد؛ مورد اعتماد
+Penglish: ghabele etemad; morede etemad
+Bedeutung: so zuverlässig und ehrlich, dass man einer Person oder Sache vertrauen kann.
+Synonyme: zuverlässig, glaubwürdig, seriös
+Attributiv und prädikativ verwendbar
+ex: Ich suche einen vertrauenswürdigen Automechaniker: I am looking for a trustworthy car mechanic.
+ex: Diese Werkstatt wirkt sehr vertrauenswürdig: This repair shop seems very trustworthy.
+
+vorab [foːɐ̯ˈʔap] (Adverb, nicht steigerbar): in advance; beforehand
+English: in advance; beforehand
+Persian: از قبل؛ پیشاپیش
+Penglish: az ghabl; pishapish
+Bedeutung: bevor etwas anderes geschieht; bereits im Voraus.
+Synonyme: vorher, im Voraus, zuvor
+ex: Ich möchte mich vorab über die Kosten informieren: I would like to find out about the costs in advance.
+ex: Vielen Dank vorab für Ihre Hilfe: Thank you in advance for your help.
+
+die Linderung [ˈlɪndəʁʊŋ]: relief; alleviation
+English: relief; alleviation
+Persian: تسکین؛ کاهش درد یا ناراحتی
+Penglish: taskin; kaheshe dard ya narahati
+Bedeutung: das Schwächerwerden oder Verringern von Schmerzen, Beschwerden oder anderen unangenehmen Zuständen.
+Genitiv: der Linderung
+Plural: die Linderungen
+Kollokation: Linderung verschaffen
+Synonyme: Erleichterung, Abschwächung, Milderung
+ex: Das Medikament verschafft eine schnelle Linderung der Schmerzen: The medication provides quick relief from the pain.
+ex: Ruhe kann zur Linderung der Beschwerden beitragen: Rest can help alleviate the symptoms.
+
+der Lichtblick [ˈlɪçtˌblɪk]: ray of hope; bright spot
+English: ray of hope; bright spot
+Persian: روزنهٔ امید؛ نکتهٔ امیدوارکننده
+Penglish: roozane-ye omid; nokte-ye omidvarkonandeh
+Bedeutung: etwas Positives oder Hoffnungsvolles in einer schwierigen oder unangenehmen Situation.
+Genitiv: des Lichtblicks
+Plural: die Lichtblicke
+Kollokation: ein Lichtblick sein
+Synonyme: Hoffnungsschimmer, Hoffnung, Aufmunterung
+ex: Das gute Ergebnis war ein Lichtblick in einer schwierigen Woche: The good result was a bright spot in a difficult week.
+ex: Seine Nachricht war für mich ein echter Lichtblick: His message was a real ray of hope for me.
+
+die finanzielle Lage [fiˌnanʦi̯ˈɛlə ˈlaːɡə]: financial situation; financial position
+English: financial situation; financial position
+Persian: موقعیت مالی؛ وضعیت مالی
+Penglish: mogheyat-e mali; vaziyat-e mali
+Bedeutung: die gegenwärtige wirtschaftliche und finanzielle Situation einer Person, Familie, Firma oder Organisation.
+Genitiv: der finanziellen Lage
+Plural: die finanziellen Lagen
+Kollokation: die finanzielle Lage verbessern
+Synonyme: finanzielle Situation, wirtschaftliche Lage
+ex: Meine finanzielle Lage ist im Moment schwierig: My financial situation is difficult at the moment.
+ex: Das Unternehmen versucht, seine finanzielle Lage zu verbessern: The company is trying to improve its financial position.
+
+das Verkehrssystem [fɛɐ̯ˈkeːɐ̯sˌzʏsteːm]: transportation system; transport system
+English: transportation system; transport system
+Persian: سیستم حمل‌ونقل
+Penglish: sistem-e haml-o-naghl
+Bedeutung: Gesamtheit der Verkehrsmittel, Verkehrswege und Einrichtungen, die dem Transport von Personen oder Gütern dienen.
+Genitiv: des Verkehrssystems
+Plural: die Verkehrssysteme
+Kollokation: ein öffentliches Verkehrssystem
+Synonyme: Transportsystem, Verkehrswesen
+ex: Wien hat ein gut ausgebautes öffentliches Verkehrssystem: Vienna has a well-developed public transportation system.
+ex: Das Verkehrssystem der Stadt soll verbessert werden: The city's transportation system is to be improved.
+
+die Glocke [ˈɡlɔkə]: bell
+English: bell
+Persian: زنگ؛ ناقوس
+Penglish: zang; naghoos
+Bedeutung: hohler Gegenstand aus Metall, der beim Anschlagen einen Klang erzeugt; häufig in Kirchen, Türanlagen oder als Signal verwendet.
+Genitiv: der Glocke
+Plural: die Glocken
+Kollokation: die Glocke läuten
+Synonyme: Klingel, Schelle
+ex: Die Glocke der Kirche läutet jeden Morgen: The church bell rings every morning.
+ex: Er hörte die Glocke an der Tür: He heard the bell at the door.
+
+dämmrig [ˈdɛmʁɪç] (Adjektiv, Komparativ: dämmriger, Superlativ: am dämmrigsten): dim; dusky; twilight-like
+English: dim; dusky; twilight-like
+Persian: نیمه‌تاریک؛ گرگ‌ومیش؛ کم‌نور
+Penglish: nime-tarik; gorg-o-mish; kam-noor
+Bedeutung: nur schwach beleuchtet; von einem Licht wie in der Dämmerung geprägt.
+Synonyme: schummrig, halbdunkel, dunkel
+Attributiv und prädikativ verwendbar
+ex: Wir saßen in einem dämmrigen Zimmer: We sat in a dim room.
+ex: Im dämmrigen Licht konnte ich sein Gesicht kaum erkennen: In the dim light, I could hardly recognize his face.
+
+so ein / solch ein ... dass: such a ... that
+English: such a ... that
+Persian: آن‌چنان ... که؛ آن‌قدر ... که
+Penglish: anchenan ... ke; anghadr ... ke
+Bedeutung: bezeichnet einen besonders starken Grad oder eine besonders ausgeprägte Eigenschaft einer Person oder Sache, sodass daraus eine Folge entsteht.
+Gebrauch: „so ein“ ist im normalen Sprachgebrauch sehr häufig; „solch ein“ klingt etwas gehobener. Bei einem Adjektiv ist auch die Struktur „ein so + Adjektiv + Nomen, dass ...“ sehr üblich.
+Synonyme: ein derartiger ... dass, ein so ... dass
+ex: Er zeigte ein so starkes Lächeln, dass man dachte, seit Jahren sei kein Hauch von Unglück mehr in seine Gedanken gedrungen: He was showing such a strong smile that one thought it had been years since even a trace of unhappiness had entered his mind.
+ex: Sie hatte solch eine große Angst, dass sie kein Wort sagen konnte: She was so afraid that she could not say a word.
+
+das Teilchen [ˈtaɪ̯lçən]: particle; tiny particle
+English: particle; tiny particle
+Persian: ذره
+Penglish: zarreh
+Bedeutung: ein sehr kleiner Teil eines Stoffes oder einer Sache.
+Genitiv: des Teilchens
+Plural: die Teilchen
+Synonyme: Partikel, Körnchen
+ex: In der Luft schweben winzige Teilchen: Tiny particles are floating in the air.
+ex: Kein einziges Teilchen davon war zu sehen: Not a single particle of it could be seen.
+
+eindringen [ˈaɪ̯nˌdʁɪŋən] (intransitiv, trennbar, in + Akk.): to penetrate; to enter; to intrude
+English: to penetrate; to enter; to intrude
+Persian: نفوذ کردن؛ وارد شدن
+Penglish: nofooz kardan; vared shodan
+Verwendung: in etwas (Akk.) eindringen
+Bedeutung: von außen in einen Raum, Stoff, Bereich oder übertragen in Gedanken und Gefühle gelangen.
+Synonyme: hineingelangen, vordringen
+ex: Wasser drang in die Wand ein: Water penetrated the wall.
+ex: Kein Hauch von Unglück schien in seine Gedanken einzudringen: Not a trace of unhappiness seemed to penetrate his thoughts.
+Präsens: ich dringe ein
+Präteritum: ich drang ein
+Perfekt: ich bin eingedrungen
+Futur I: ich werde eindringen
+Konjunktiv II: ich würde eindringen
+Konjunktiv I: ich dringe ein
+
+muskulös [mʊskuˈløːs] (Adjektiv, Komparativ: muskulöser, Superlativ: am muskulösesten): muscular; muscled
+English: muscular; muscled
+Persian: عضلانی؛ ماهیچه‌ای
+Penglish: azolani; mahichei
+Bedeutung: mit deutlich entwickelten oder kräftigen Muskeln.
+Synonyme: kräftig, athletisch, durchtrainiert
+Attributiv und prädikativ verwendbar
+ex: Er hat einen muskulösen Körper: He has a muscular body.
+ex: Seine Arme sind sehr muskulös: His arms are very muscular.
+
+über etwas (Akk.) Bescheid wissen: to know about something; to be informed about something
+English: to know about something; to be informed about something
+Persian: دربارهٔ چیزی اطلاع داشتن؛ از چیزی خبر داشتن
+Penglish: darbareye chizi ettela dashtan; az chizi khabar dashtan
+Bedeutung: Informationen oder Kenntnisse über eine bestimmte Sache haben.
+Synonyme: über etwas informiert sein, von etwas Kenntnis haben
+ex: Weißt du über dieses Problem Bescheid: Do you know about this problem?
+ex: Ich weiß darüber nicht viel Bescheid: I don't know much about it.
+
+Halt die Klappe!: Shut up!
+English: Shut up!
+Persian: خفه شو؛ ساکت شو
+Penglish: khafe sho; saket sho
+Bedeutung: sehr direkte und unhöfliche Aufforderung an jemanden, nicht weiterzureden.
+Gebrauch: umgangssprachlich und unhöflich; deutlich stärker als „Sei still!“.
+Synonyme: Sei still!, Halt den Mund!, Halt die Fresse!
+ex: Halt die Klappe und hör mir zu: Shut up and listen to me.
+ex: Er schrie: „Halt die Klappe!“: He shouted, “Shut up!”
