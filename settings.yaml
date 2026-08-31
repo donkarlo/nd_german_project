@@ -1,6 +1,7 @@
 database_path: data/woerterbuch.txt
 irregular_verbs_path: data/irregular_verbs.yaml
 irregular_adjectives_path: data/irregular_adjectives.yaml
+irregular_nouns_path: data/irregular_nouns.yaml
 max_results: 20
 fuzzy_threshold: 58
 search_debounce_ms: 80

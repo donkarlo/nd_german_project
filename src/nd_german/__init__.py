@@ -1,0 +1,1 @@
+"""German learning desktop application."""
