@@ -10943,15 +10943,15 @@ Synonyme: Zugriff, Möglichkeit, Erreichbarkeit
 ex: Viele Menschen haben keinen Zugang zu guter medizinischer Versorgung: Many people do not have access to good medical care.
 ex: Kinder sollten Zugang zu Bildung haben: Children should have access to education.
 
-außer [ˈaʊ̯sɐ] (Präposition + Dativ): except; apart from; besides
-English: except; apart from; besides
-Persian: جز جدا از علاوه بر این
-Penglish: jaz joda az alaveh bar in
-Bedeutung: bezeichnet eine Ausnahme oder nennt etwas Zusätzliches.
-Verwendung: außer + Dativ
-Synonyme: ausgenommen, abgesehen von, neben
-ex: Ich habe keine Hobbys außer Essen: I have no hobbies other than eating.
-ex: Außer Kaffee trinke ich auch Matcha: Besides coffee, I also drink matcha.
+außer [ˈaʊ̯sɐ] (Präposition + Dativ): other than, except for, apart from
+English: other than, except for, apart from
+Persian: غیر از، به‌جز
+Penglish: gheyr az, be joz
+Bedeutung: bezeichnet eine Person oder Sache, die von einer Aussage ausgeschlossen wird.
+Kasus: Dativ
+Synonyme: abgesehen von
+ex: Außer meinem Bruder weiß niemand davon: No one other than my brother knows about it.
+ex: Außer diesem Problem ist alles in Ordnung: Apart from this problem, everything is fine.
 
 der Mitschüler [ˈmɪtˌʃyːlɐ]: male classmate; fellow student
 English: male classmate; fellow student
@@ -48502,3 +48502,201 @@ Kollokation: ein breites Sortiment anbieten
 Synonyme: Auswahl, Angebot, Warenangebot
 ex: Das Geschäft bietet ein großes Sortiment an Kleidung an: The store offers a large selection of clothing.
 ex: Dieses Produkt gehört nicht mehr zum Sortiment: This product is no longer part of the range.
+
+der Felsen [ˈfɛlzn̩]: rock; cliff
+English: rock; cliff
+Persian: صخره؛ تخته‌سنگ بزرگ
+Penglish: sakhreh; takhte-sange bozorg
+Bedeutung: eine große, harte Gesteinsmasse, die aus dem Boden oder aus einem Berg herausragt.
+Genitiv: des Felsens
+Plural: die Felsen
+Kollokation: auf einen Felsen klettern
+Synonyme: Fels, Gesteinsblock
+ex: Wir kletterten auf einen hohen Felsen: We climbed onto a high rock.
+ex: Die Wellen schlagen gegen die Felsen: The waves crash against the rocks.
+
+gravieren [ɡʁaˈviːʁən] (Verb, Akk., transitiv): to engrave
+English: to engrave
+Persian: حک کردن؛ کنده‌کاری کردن
+Penglish: hak kardan; kandekari kardan
+Verwendung: etwas (Akk.) gravieren; etwas in etwas (Akk.) gravieren
+Bedeutung: Schrift, Muster oder Zeichen dauerhaft in eine harte Oberfläche einschneiden oder einarbeiten.
+Synonyme: eingravieren, einritzen, einschneiden
+ex: Er graviert den Namen in den Ring: He engraves the name into the ring.
+ex: Das Datum wurde auf die Metallplatte graviert: The date was engraved on the metal plate.
+Präsens: ich graviere
+Präteritum: ich gravierte
+Perfekt: ich habe graviert
+Futur I: ich werde gravieren
+Konjunktiv II: ich würde gravieren
+Konjunktiv I: ich graviere
+
+umkreisen [ʊmˈkʁaɪ̯zn̩] (Akk., transitiv, untrennbar): to circle; to orbit; to encircle
+English: to circle; to orbit; to encircle
+Persian: دور چیزی چرخیدن؛ چیزی را دور زدن؛ احاطه کردن
+Penglish: dore chizi charkhidan; chizi ra dor zadan; ehateh kardan
+Verwendung: jemanden/etwas (Akk.) umkreisen
+Bedeutung: sich kreisförmig um jemanden oder etwas bewegen oder jemanden bzw. etwas von allen Seiten umgeben.
+Synonyme: umrunden, umfahren, umgeben
+ex: Die Erde umkreist die Sonne: The Earth orbits the Sun.
+ex: Der Adler umkreist das Tal: The eagle circles the valley.
+Präsens: ich umkreise
+Präteritum: ich umkreiste
+Perfekt: ich habe umkreist
+Futur I: ich werde umkreisen
+Konjunktiv II: ich würde umkreisen
+Konjunktiv I: ich umkreise
+
+andererseits (Konjunktionaladverb): on the other hand
+English: on the other hand
+Persian: از طرف دیگر؛ از سوی دیگر
+Penglish: az tarafe digar; az sooye digar
+Bedeutung: leitet einen Gegensatz oder eine andere Sichtweise zu einer vorherigen Aussage ein.
+Synonyme: auf der anderen Seite, hingegen, dagegen
+Gebrauch: steht häufig am Satzanfang; danach folgt das konjugierte Verb direkt.
+ex: Einerseits ist das Auto günstig, andererseits ist es sehr alt: On the one hand, the car is cheap; on the other hand, it is very old.
+ex: Die Arbeit ist interessant. Andererseits ist sie sehr anstrengend: The work is interesting. On the other hand, it is very demanding.
+
+die Zugehörigkeit [ˈʦuːɡəˌhøːʁɪçkaɪ̯t]: belonging; affiliation; membership
+English: belonging; affiliation; membership
+Persian: تعلق؛ وابستگی؛ عضویت
+Penglish: taallogh; vabastegi; ozviat
+Bedeutung: der Zustand, zu einer Gruppe, Gemeinschaft, Organisation oder einem bestimmten Bereich zu gehören.
+Genitiv: der Zugehörigkeit
+Plural: die Zugehörigkeiten
+Kollokation: ein Gefühl der Zugehörigkeit
+Synonyme: Verbundenheit, Mitgliedschaft, Anbindung
+ex: Viele Menschen brauchen ein Gefühl der Zugehörigkeit: Many people need a sense of belonging.
+ex: Seine Zugehörigkeit zur Gruppe war deutlich: His affiliation with the group was clear.
+
+Korrigiere den letzten Satz.: Correct the last sentence.
+English: Correct the last sentence.
+Persian: آخرین جمله را اصلاح کن.
+Penglish: akharin jomle ra eslah kon.
+Bedeutung: Aufforderung an eine Person, den letzten Satz zu korrigieren.
+Gebrauch: Imperativ, 2. Person Singular (du) von „korrigieren“.
+ex: Korrigiere den letzten Satz bitte: Please correct the last sentence.
+ex: Korrigiere den letzten Satz und lies ihn noch einmal: Correct the last sentence and read it again.
+
+das Dokument [dokuˈmɛnt]: document
+English: document
+Persian: سند؛ مدرک
+Penglish: sanad; madrak
+Bedeutung: eine schriftliche oder digitale Unterlage, die Informationen enthält oder als Nachweis dient.
+Genitiv: des Dokuments
+Plural: die Dokumente
+Kollokation: ein Dokument unterschreiben
+Synonyme: Unterlage, Schriftstück, Urkunde
+ex: Bitte unterschreiben Sie dieses Dokument: Please sign this document.
+ex: Ich habe alle wichtigen Dokumente gespeichert: I have saved all the important documents.
+
+das Pfand [pfant]: deposit; pledge; collateral
+English: deposit; pledge; collateral
+Persian: بیعانه؛ ودیعه؛ گرو؛ مبلغِ قابل بازگشت
+Penglish: bieaneh; vadieh; gero; mablaghe ghabele bazgasht
+Bedeutung: Geld oder ein Gegenstand, der als Sicherheit gegeben wird; besonders auch ein Geldbetrag, den man beim Kauf bestimmter Verpackungen bezahlt und bei deren Rückgabe zurückbekommt.
+Genitiv: des Pfandes
+Plural: die Pfänder
+Kollokation: Pfand bezahlen; Pfand zurückbekommen
+Synonyme: Kaution, Sicherheit, Hinterlegung
+ex: Auf diese Flasche zahlt man 25 Cent Pfand: You pay a 25-cent deposit on this bottle.
+ex: Ich habe die Flaschen zurückgebracht und das Pfand zurückbekommen: I returned the bottles and got the deposit back.
+
+daneben [daˈneːbn̩] (Adverb, nicht steigerbar): next to it; beside it; wrong; off the mark
+English: next to it; beside it; wrong; off the mark
+Persian: کنار آن؛ در کنار آن؛ اشتباه؛ نادرست
+Penglish: kenare an; dar kenare an; eshtebah; naderost
+Bedeutung: bezeichnet eine Position unmittelbar neben etwas; übertragen kann es auch bedeuten, dass eine Aussage, Einschätzung oder Vermutung falsch ist.
+Synonyme: danebenstehend, nebenan; falsch, unzutreffend
+ex: Der Schrank steht daneben: The cupboard is standing next to it.
+ex: Mit dieser Vermutung liegst du völlig daneben: With this assumption, you are completely wrong.
+
+deklinieren [dekliˈniːʁən] (transitiv + Akk.): to decline
+English: to decline
+Persian: صرف کردن؛ تغییر دادنِ شکل واژه بر اساس حالت دستوری
+Penglish: sarf kardan; taghir dadan-e shekl-e vazhe bar asas-e halat-e dastoori
+Verwendung: ein Nomen/Adjektiv/Pronomen/Artikel (Akk.) deklinieren
+Bedeutung: die Form eines deklinierbaren Wortes nach Kasus, Numerus und gegebenenfalls Genus verändern.
+Synonyme: beugen, flektieren
+ex: Wir deklinieren heute deutsche Adjektive: We are declining German adjectives today.
+ex: Kannst du dieses Pronomen im Dativ deklinieren: Can you decline this pronoun in the dative?
+Präsens: ich dekliniere
+Präteritum: ich deklinierte
+Perfekt: ich habe dekliniert
+Futur I: ich werde deklinieren
+Konjunktiv II: ich würde deklinieren
+Konjunktiv I: ich dekliniere
+
+sich zu jemandem setzen (reflexive Wendung + Dativ): to sit down with someone; to join someone
+English: to sit down with someone; to join someone
+Persian: کنار کسی نشستن؛ پیش کسی نشستن
+Penglish: kenare kasi neshastan; pishe kasi neshastan
+Bedeutung: sich an einen Platz neben oder bei einer Person setzen.
+Verwendung: sich zu jemandem (Dat.) setzen
+ex: Die Fahrer setzen sich zu mir: The riders sit down with me.
+
+sich aus etwas zwiebeln (reflexiv + Dativ, umgangssprachlich): to wriggle out of something; to peel oneself out of something
+English: to wriggle out of something; to peel oneself out of something
+Persian: با زحمت لباس را از تن درآوردن؛ خود را از لایه‌های لباس بیرون آوردن
+Penglish: ba zahmat lebas ra az tan daravardan; khod ra az layehaye lebas biroon avardan
+Bedeutung: sich mit etwas Mühe aus enger oder mehrschichtiger Kleidung herausziehen.
+Verwendung: sich aus etwas (Dat.) zwiebeln
+ex: Sie zwiebeln sich aus ihren Kleidungsschichten: They wriggle out of their layers of clothing.
+
+die Kleidungsschicht [ˈklaɪ̯dʊŋsˌʃɪçt]: layer of clothing
+English: layer of clothing
+Persian: لایهٔ لباس
+Penglish: layeye lebas
+Bedeutung: eine einzelne Lage von mehreren Kleidungsstücken, die übereinander getragen werden.
+Genitiv: der Kleidungsschicht
+Plural: die Kleidungsschichten
+ex: Im Winter trage ich mehrere Kleidungsschichten: In winter I wear several layers of clothing.
+
+zusammenführen [tsuˈzamənˌfyːʁən] (Akk., trennbar, transitiv): to merge; to combine
+English: to merge; to combine
+Persian: ادغام کردن؛ یکی کردن
+Penglish: edgham kardan; yeki kardan
+Verwendung: etwas (Akk.) mit etwas (Dat.) zusammenführen; mehrere Dinge zusammenführen
+Bedeutung: mehrere getrennte Dinge, Daten, Dateien oder Bereiche zu einer Einheit verbinden.
+Synonyme: vereinigen, verbinden, zusammenlegen
+ex: Ich führe die beiden Dateien zusammen: I merge the two files.
+ex: Wir müssen diese Daten mit den neuen Daten zusammenführen: We need to merge this data with the new data.
+Präsens: ich führe zusammen
+Präteritum: ich führte zusammen
+Perfekt: ich habe zusammengeführt
+Futur I: ich werde zusammenführen
+Konjunktiv II: ich würde zusammenführen
+Konjunktiv I: ich führe zusammen
+
+die Reihe [ˈʁaɪ̯ə] (Nomen, feminin): row; line; series; sequence
+English: row; line; series; sequence
+Persian: ردیف؛ صف؛ مجموعه؛ سلسله
+Penglish: radif; saf; majmooe; selseleh
+Bedeutung: mehrere Personen oder Dinge, die geordnet nebeneinander oder nacheinander stehen oder folgen.
+Genitiv: der Reihe
+Plural: die Reihen
+Kollokation: in einer Reihe, eine Reihe von
+Synonyme: Folge, Linie, Serie
+ex: Die Kinder stehen in einer Reihe: The children are standing in a row.
+ex: Eine Reihe von Problemen ist aufgetreten: A series of problems has occurred.
+
+uneingeschränkt [ˈʊnʔaɪ̯nɡəˌʃʁɛŋkt] (Adjektiv, nicht steigerbar): unrestricted; unlimited; unconditional
+English: unrestricted; unlimited; unconditional
+Persian: نامحدود؛ بدون محدودیت؛ بی‌قیدوشرط
+Penglish: namahdood; bedoone mahdoodiyat; bi gheyd-o-shart
+Bedeutung: ohne Einschränkungen oder Begrenzungen.
+Synonyme: unbegrenzt, grenzenlos, vorbehaltlos
+ex: Sie hat uneingeschränktes Vertrauen in ihn: She has unconditional trust in him.
+ex: Der Zugang ist uneingeschränkt möglich: Access is possible without restriction.
+
+der Händler [ˈhɛndlɐ]: dealer; trader; merchant
+English: dealer; trader; merchant
+Persian: فروشنده؛ تاجر؛ توزیع‌کننده
+Penglish: forooshandeh; tajer; tozi-konandeh
+Bedeutung: eine Person oder Firma, die Waren kauft und verkauft.
+Genitiv: des Händlers
+Plural: die Händler
+Kollokation: an Händler verkaufen
+Synonyme: Verkäufer, Kaufmann, Anbieter
+ex: Wir verkaufen nur an Händler: We sell only to dealers.
+ex: Der Händler verkauft gebrauchte Autos: The dealer sells used cars.
