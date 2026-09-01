@@ -6477,17 +6477,18 @@ Imperativ: du: Erledige! ihr: Erledigt!
 Zusatz: sich erledigen = von selbst gelöst werden / no longer be necessary
 ex: Das Problem hat sich erledigt: The problem has resolved itself.
 
-das Wesen [ˈveːzn̩]: creature; being
-English: creature; being
-Persian: مخلوق؛ بودن
-Penglish: makhloogh; boodan
-Bedeutung: ein lebendes Ding oder eine Person; oft allgemein für Mensch, Tier oder Fantasiewesen.
+das Wesen [ˈveːzn̩]: being; creature; nature; essence
+English: being; creature; nature; essence
+Persian: موجود؛ مخلوق؛ ذات؛ ماهیت؛ سرشت
+Penglish: mojood; makhloogh; zat; mahiyat; seresht
+Bedeutung: ein lebendes Geschöpf oder eine Person; auch die grundlegende Natur, der Charakter oder die wesentlichen Eigenschaften einer Person oder Sache.
 Genitiv: des Wesens
 Plural: die Wesen
-Kollokation: ein fremdes Wesen
-Synonyme: Geschöpf, Kreatur, Lebewesen
+Kollokation: ein fremdes Wesen; das Wesen einer Sache verstehen
+Synonyme: Geschöpf, Lebewesen, Natur
 ex: Im Wald sahen sie ein seltsames Wesen: In the forest, they saw a strange creature.
-ex: Der Mensch ist ein soziales Wesen: The human is a social being.
+ex: Der Mensch ist ein soziales Wesen: The human being is a social being.
+ex: Vertrauen gehört zum Wesen einer guten Beziehung: Trust is part of the essence of a good relationship.
 
 erstechen [ɛɐ̯ˈʃtɛçn̩] (transitiv): to stab someone to death; to kill by stabbing
 English: to stab someone to death; to kill by stabbing
@@ -7480,11 +7481,6 @@ sich Akk befinden: to be located, to be situated
 English: to be located, to be situated
 Persian: قرار گرفتن، قرار گرفتن
 Penglish: gharar gereftan, gharar gereftan
-
-die Aussage: statement
-English: statement
-Persian: بیانیه
-Penglish: bayaniyeh
 
 die Gegend [ˈɡeːɡn̩t]: area; region; surroundings
 English: area; region; surroundings
@@ -29311,13 +29307,6 @@ Synonyme: Vorhaben, Ziel, Intention
 ex: Ich hatte keine schlechte Absicht: I had no bad intention.
 ex: Er hat das mit Absicht gemacht: He did that on purpose.
 
-absichtlich: intentionally
-English: intentionally
-Persian: عمدا
-Penglish: amdan
-ex: Er hat das absichtlich gemacht: He did that intentionally
-ex: Ich habe dich nicht absichtlich verletzt: I didn't hurt you intentionally
-
 konkret [kɔnˈkʁeːt] (Adverb): concretely; specifically; in concrete terms
 English: concretely; specifically; in concrete terms
 Persian: بطور ملموس؛ به طور خاص؛ به صورت ملموس
@@ -48700,3 +48689,325 @@ Kollokation: an Händler verkaufen
 Synonyme: Verkäufer, Kaufmann, Anbieter
 ex: Wir verkaufen nur an Händler: We sell only to dealers.
 ex: Der Händler verkauft gebrauchte Autos: The dealer sells used cars.
+
+Weg in etwas finden (Wendung + Akk.): to find its way into something
+English: to find its way into something
+Persian: به چیزی راه پیدا کردن؛ وارد چیزی شدن
+Penglish: be chizi rah peyda kardan; vared-e chizi shodan
+Bedeutung: allmählich oder auf irgendeine Weise in etwas gelangen; auch übertragen für Gefühle, Gedanken oder Veränderungen.
+ex: Die Bitterkeit hatte ihren Weg in sein Gesicht gefunden: Bitterness had found its way into his face.
+ex: Neue Ideen finden langsam ihren Weg in die Gesellschaft: New ideas are slowly finding their way into society.
+
+der Gaumen [ˈɡaʊ̯mən]: palate
+English: palate
+Persian: کام؛ سقف دهان
+Penglish: kam; saghfe dahan
+Bedeutung: der obere innere Teil des Mundes; übertragen auch der Geschmackssinn.
+Genitiv: des Gaumens
+Plural: die Gaumen
+Kollokation: den Gaumen reizen
+Synonyme: Munddach
+ex: Das heiße Essen verbrannte meinen Gaumen: The hot food burned my palate.
+ex: Der bittere Geschmack blieb lange am Gaumen: The bitter taste remained on the palate for a long time.
+
+in dem Moment, in dem (Wendung): at the moment when; the moment when
+English: at the moment when; the moment when
+Persian: در لحظه‌ای که؛ همان زمانی که
+Penglish: dar lahze-i ke; haman zamani ke
+Bedeutung: bezeichnet einen ganz bestimmten Zeitpunkt, zu dem etwas geschieht.
+Verwendung: „in dem Moment“ + Relativsatz mit „in dem“; im Relativsatz steht das konjugierte Verb am Ende.
+Synonyme: in dem Augenblick, in dem; sobald
+ex: In dem Moment, in dem ich ihn sah, erkannte ich ihn: The moment I saw him, I recognized him.
+ex: In dem Moment, in dem man es versteht, verändert sich alles: The moment one understands it, everything changes.
+
+etwas anderes (Wendung): something else; a different matter
+English: something else; a different matter
+Persian: چیز دیگری؛ یک چیز دیگر
+Penglish: chize digari; ye chize dige
+Bedeutung: etwas, das sich deutlich von einer anderen Sache unterscheidet; auch übertragen für etwas Besonderes oder qualitativ anderes.
+ex: Seinen Namen liebevoll zu rufen, ist etwas anderes: Calling his name lovingly is something else.
+ex: Darüber zu reden ist eine Sache, es selbst zu erleben ist etwas anderes: Talking about it is one thing; experiencing it yourself is something else.
+
+war er nicht selbst derjenige, der …? (Wendung): wasn’t he himself the one who …?
+English: wasn’t he himself the one who …?
+Persian: مگر خودش همان کسی نبود که ...؟
+Penglish: magar khodash haman kasi nabood ke ...?
+Bedeutung: eine rhetorische Frage, mit der man daran erinnert, dass die betreffende Person selbst etwas gesagt oder getan hat.
+Verwendung: „derjenige“ bezieht sich auf eine männliche Person; danach folgt häufig ein Relativsatz mit „der“.
+Synonyme: war nicht er selbst derjenige, der …?; war er nicht selbst der, der …?
+ex: War er nicht selbst derjenige, der das gesagt hat?: Wasn’t he himself the one who said that?
+ex: War er nicht selbst derjenige, der diese Regel eingeführt hat?: Wasn’t he himself the one who introduced this rule?
+
+werden [ˈveːɐ̯dn̩] (unregelmäßiges Verb, intransitiv; auch Hilfsverb): to become; to get
+English: to become; to get
+Persian: شدن
+Penglish: shodan
+Bedeutung: eine Veränderung ausdrücken; in einen neuen Zustand kommen.
+Verwendung: werden + Adjektiv/Nomen; als Hilfsverb auch für Futur I und Passiv
+Synonyme: sich entwickeln zu, sich verändern zu
+ex: Es wird kalt: It is getting cold.
+ex: Er wird Arzt: He is becoming a doctor.
+Präsens: ich werde
+Präteritum: ich wurde
+Perfekt: ich bin geworden
+Futur I: ich werde werden
+Konjunktiv II: ich würde
+Konjunktiv I: ich werde
+
+die Revolution [ʁevoluˈt͡si̯oːn]: revolution
+English: revolution
+Persian: انقلاب
+Penglish: enghelab
+Bedeutung: eine grundlegende und oft schnelle Veränderung eines politischen oder gesellschaftlichen Systems; auch eine sehr große Veränderung in einem bestimmten Bereich.
+Genitiv: der Revolution
+Plural: die Revolutionen
+Kollokation: eine Revolution beginnen; eine Revolution auslösen
+Synonyme: Umsturz, Aufstand, grundlegender Wandel
+ex: Die Revolution veränderte das politische System: The revolution changed the political system.
+ex: Das Internet hat eine technische Revolution ausgelöst: The internet triggered a technological revolution.
+
+neben etwas sein / liegen (Präposition + Dativ): to be / lie next to something
+English: to be / lie next to something
+Persian: کنار چیزی بودن؛ کنار چیزی قرار داشتن
+Penglish: kenare chizi boodan; kenare chizi gharar dashtan
+Bedeutung: sich unmittelbar an der Seite von etwas befinden.
+Verwendung: neben + Dativ bei einer Position
+Synonyme: sich neben etwas befinden
+ex: Die Schokolade liegt neben der Kaffeetasse: The chocolate is lying next to the coffee cup.
+ex: Das Buch ist neben dem Laptop: The book is next to the laptop.
+
+der Friseur [fʁiˈzøːɐ̯]: barber; hairdresser
+English: barber; hairdresser
+Persian: آرایشگر
+Penglish: arayeshgar
+Bedeutung: Person, die beruflich Haare schneidet, frisiert und pflegt.
+Genitiv: des Friseurs
+Plural: die Friseure
+Kollokation: zum Friseur gehen
+Synonyme: Barbier, Coiffeur
+ex: Ich gehe morgen zum Friseur: I am going to the barber tomorrow.
+ex: Der Friseur schneidet mir die Haare: The barber cuts my hair.
+
+der Friseursalon [fʁiˈzøːɐ̯zaˌlɔŋ]: hair salon; barbershop
+English: hair salon; barbershop
+Persian: آرایشگاه
+Penglish: arayeshgah
+Bedeutung: Geschäft, in dem Haare geschnitten, frisiert und gepflegt werden.
+Genitiv: des Friseursalons
+Plural: die Friseursalons
+Kollokation: in einen Friseursalon gehen
+Synonyme: Friseurladen, Haarsalon
+ex: Ich gehe heute in den Friseursalon: I am going to the hair salon today.
+ex: Dieser Friseursalon ist sehr beliebt: This hair salon is very popular.
+
+der Haarschnitt [ˈhaːɐ̯ˌʃnɪt]: haircut
+English: haircut
+Persian: مدل مو؛ کوتاهی مو
+Penglish: modele moo; kootahi-ye moo
+Bedeutung: Art, wie die Haare geschnitten sind; auch das Schneiden der Haare beim Friseur.
+Genitiv: des Haarschnitts
+Plural: die Haarschnitte
+Kollokation: einen neuen Haarschnitt bekommen
+Synonyme: Frisur, Haarstil
+ex: Ich brauche einen neuen Haarschnitt: I need a new haircut.
+ex: Dein Haarschnitt sieht gut aus: Your haircut looks good.
+
+abkommen [ˈapˌkɔmən] (trennbares Verb, intransitiv, von + Dat.): to deviate; to stray; to depart from
+English: to deviate; to stray; to depart from
+Persian: منحرف شدن؛ از چیزی فاصله گرفتن
+Penglish: monharef shodan; az chizi faseleh gereftan
+Verwendung: von etwas (Dat.) abkommen
+Bedeutung: eine Richtung, einen Weg, ein Thema oder einen ursprünglichen Plan verlassen.
+Synonyme: abweichen, sich entfernen, abschweifen
+ex: Das Auto kam von der Straße ab: The car went off the road.
+ex: Wir dürfen nicht von unserem Plan abkommen: We must not deviate from our plan.
+Präsens: ich komme ab
+Präteritum: ich kam ab
+Perfekt: ich bin abgekommen
+Futur I: ich werde abkommen
+Konjunktiv II: ich würde abkommen
+Konjunktiv I: ich komme ab
+
+hinbekommen [ˈhɪn bəˌkɔmən] (trennbares Verb, transitiv + Akk., umgangssprachlich): to manage; to get something done; to pull off
+English: to manage; to get something done; to pull off
+Persian: از پسِ چیزی برآمدن؛ انجام دادن؛ موفق شدن به انجام چیزی
+Penglish: az pase chizi baramadan; anjam dadan; movafagh shodan be anjame chizi
+Verwendung: etwas (Akk.) hinbekommen
+Bedeutung: es schaffen, etwas erfolgreich zu erledigen, zu lösen oder zustande zu bringen.
+Synonyme: schaffen, bewältigen, zustande bringen
+ex: Ich weiß nicht, wie ich das hinbekommen soll: I don't know how I am going to manage that.
+ex: Wir haben es trotzdem hinbekommen: We managed to get it done anyway.
+Präsens: ich bekomme hin
+Präteritum: ich bekam hin
+Perfekt: ich habe hinbekommen
+Futur I: ich werde hinbekommen
+Konjunktiv II: ich würde hinbekommen
+Konjunktiv I: ich bekomme hin
+
+doch machen: to do it after all; to go ahead and do it
+English: to do it after all; to go ahead and do it
+Persian: بالاخره انجام دادن؛ با این حال انجام دادن؛ انجامش دادن
+Penglish: belakhareh anjam dadan; ba in hal anjam dadan; anjamesh dadan
+Bedeutung: etwas trotz eines vorherigen Zweifels, einer Ablehnung oder einer anderen Erwartung machen; „doch“ betont dabei den Gegensatz zur vorherigen Situation.
+Synonyme: es trotzdem machen, es schließlich machen
+ex: Ich wollte nicht mitkommen, aber ich mache es doch: I didn't want to come along, but I am doing it after all.
+ex: Wenn du es wirklich willst, dann mach es doch: If you really want to, then go ahead and do it.
+
+die Kontrolle verlieren: to lose control; to lose control of the situation
+English: to lose control; to lose control of the situation
+Persian: رشتهٔ امور از دست در رفتن؛ کنترل اوضاع را از دست دادن
+Penglish: reshte-ye omoor az dast dar raftan; controle oza ro az dast dadan
+Bedeutung: eine Situation nicht mehr steuern oder beherrschen können.
+Verwendung: die Kontrolle über etwas (Akk.) verlieren
+Synonyme: etwas nicht mehr im Griff haben, die Herrschaft über etwas verlieren
+ex: Ich habe langsam die Kontrolle über die Situation verloren: I slowly lost control of the situation.
+ex: Wir dürfen die Kontrolle über das Projekt nicht verlieren: We must not lose control of the project.
+
+einfallen [ˈaɪ̯nˌfalən] (trennbares Verb, unregelmäßig, intransitiv, Dat.): to occur to; to come to mind
+English: to occur to; to come to mind
+Persian: به ذهن رسیدن؛ به فکر کسی رسیدن
+Penglish: be zehn residan; be fekre kasi residan
+Verwendung: jemandem (Dat.) einfallen
+Bedeutung: plötzlich als Gedanke oder Idee im Bewusstsein einer Person entstehen.
+Synonyme: in den Sinn kommen, in den Kopf kommen
+ex: Mir fällt gerade nichts ein: Nothing comes to mind right now.
+ex: Plötzlich ist mir eine gute Idee eingefallen: Suddenly, a good idea occurred to me.
+Präsens: mir fällt etwas ein
+Präteritum: mir fiel etwas ein
+Perfekt: mir ist etwas eingefallen
+Futur I: mir wird etwas einfallen
+Konjunktiv II: mir würde etwas einfallen
+Konjunktiv I: mir falle etwas ein
+
+offenbar [ˈɔfn̩baːɐ̯] (Adverb, nicht steigerbar): apparently; evidently; obviously
+English: apparently; evidently; obviously
+Persian: ظاهراً؛ گویا؛ آشکارا
+Penglish: zaheran; gooya; ashkara
+Bedeutung: drückt aus, dass etwas nach den vorhandenen Anzeichen sehr wahrscheinlich oder deutlich erkennbar ist.
+Synonyme: anscheinend, offensichtlich, augenscheinlich
+ex: Er hat offenbar den Termin vergessen: Apparently, he forgot the appointment.
+ex: Offenbar gibt es ein Problem mit dem System: Evidently, there is a problem with the system.
+
+das Verhältnis [fɛɐ̯ˈhɛltnɪs]: relationship; ratio; proportion
+English: relationship; ratio; proportion
+Persian: رابطه؛ نسبت
+Penglish: rabeteh; nesbat
+Bedeutung: Beziehung zwischen Personen oder Dingen; auch zahlenmäßige Relation zwischen zwei Größen.
+Genitiv: des Verhältnisses
+Plural: die Verhältnisse
+Kollokation: ein gutes Verhältnis zu jemandem haben
+Synonyme: Beziehung, Relation, Zusammenhang
+ex: Ich habe ein gutes Verhältnis zu meinen Kollegen: I have a good relationship with my colleagues.
+ex: Das Verhältnis zwischen Kosten und Nutzen ist wichtig: The ratio between costs and benefits is important.
+
+wesen [ˈveːzn̩] (Verb, schwach, intransitiv, gehoben/veraltet): to exist; to be present
+English: to exist; to be present
+Persian: وجود داشتن؛ حاضر بودن
+Penglish: vojood dashtan; hazer boodan
+Bedeutung: als lebende Kraft vorhanden sein; existieren. Heute wird das Verb fast nur noch in gehobener oder veralteter Sprache verwendet.
+Synonyme: existieren, vorhanden sein, sein
+ex: In diesem Ort west noch der Geist der Vergangenheit: The spirit of the past still exists in this place.
+ex: In ihm west eine große Kraft: A great force exists within him.
+Präsens: ich wese
+Präteritum: ich weste
+Perfekt: ich habe gewest
+Futur I: ich werde wesen
+Konjunktiv II: ich würde wesen
+Konjunktiv I: ich wese
+
+Das ist wirklich nett von dir: that's really kind of you
+English: that's really kind of you
+Persian: واقعاً ازت ممنونم؛ واقعاً لطف کردی
+Penglish: vaghean azat mamnoonam; vaghean lotf kardi
+Bedeutung: Ausdruck von Dankbarkeit, wenn jemand etwas Freundliches oder Hilfreiches getan hat.
+Synonyme: Das ist sehr lieb von dir, Vielen Dank, das ist sehr freundlich von dir
+ex: Du hast mir sehr geholfen. Das ist wirklich nett von dir: You helped me a lot. That's really kind of you.
+ex: Danke für das Geschenk. Das ist wirklich nett von dir: Thanks for the gift. That's really kind of you.
+
+sich richten (reflexiv, nach + Dat.): to follow; to be guided by; to conform to
+English: to follow; to be guided by; to conform to
+Persian: طبق چیزی عمل کردن؛ از چیزی پیروی کردن؛ خود را با چیزی هماهنگ کردن
+Penglish: tebghe chizi amal kardan; az chizi peyravi kardan; khod ra ba chizi hamahang kardan
+Verwendung: sich nach jemandem/etwas (Dat.) richten
+Bedeutung: sein Verhalten, seine Entscheidungen oder Handlungen an einer Person, Regel oder Situation orientieren.
+Synonyme: sich orientieren an, sich halten an, folgen
+ex: Wir müssen uns nach den Regeln richten: We have to follow the rules.
+ex: Ich richte mich nach deinem Zeitplan: I will follow your schedule.
+Präsens: ich richte mich
+Präteritum: ich richtete mich
+Perfekt: ich habe mich gerichtet
+Futur I: ich werde mich richten
+Konjunktiv II: ich würde mich richten
+Konjunktiv I: ich richte mich
+
+anrichten [ˈanˌʁɪçtn̩] (trennbares Verb, transitiv + Akk.): to cause; to do
+English: to cause; to do
+Persian: باعث شدن؛ وارد کردن
+Penglish: baes shodan; vared kardan
+Verwendung: etwas (Akk.) anrichten; jemandem (Dat.) etwas (Akk.) anrichten
+Bedeutung: etwas Negatives wie Schaden, Chaos oder Unheil verursachen.
+Synonyme: verursachen, hervorrufen, bewirken
+ex: Der Sturm hat großen Schaden angerichtet: The storm caused major damage.
+ex: Was hast du da angerichtet: What have you done?
+Präsens: ich richte an
+Präteritum: ich richtete an
+Perfekt: ich habe angerichtet
+Futur I: ich werde anrichten
+Konjunktiv II: ich würde anrichten
+Konjunktiv I: ich richte an
+
+der Buchhandel [ˈbuːxˌhandl̩]: book trade; bookselling
+English: book trade; bookselling
+Persian: کتاب‌فروشی؛ تجارت کتاب
+Penglish: ketabforooshi; tejarete ketab
+Bedeutung: Wirtschaftsbereich, der sich mit dem Verkauf und Vertrieb von Büchern beschäftigt.
+Genitiv: des Buchhandels
+Plural: kein Plural
+Kollokation: im Buchhandel arbeiten
+Synonyme: Buchgeschäft, Buchvertrieb
+ex: Sie arbeitet seit vielen Jahren im Buchhandel: She has worked in the book trade for many years.
+ex: Der Buchhandel hat sich durch den Onlineverkauf stark verändert: The book trade has changed significantly because of online sales.
+
+die Richtigkeit [ˈʁɪçtɪçkaɪ̯t]: correctness; accuracy
+English: correctness; accuracy
+Persian: درستی؛ صحت
+Penglish: dorosti; seyyat
+Bedeutung: die Eigenschaft, richtig, korrekt oder den Tatsachen entsprechend zu sein.
+Genitiv: der Richtigkeit
+Plural: kein Plural
+Kollokation: die Richtigkeit einer Aussage überprüfen
+Synonyme: Korrektheit, Genauigkeit
+ex: Wir müssen die Richtigkeit dieser Angaben überprüfen: We have to verify the correctness of this information.
+ex: Ich zweifle an der Richtigkeit seiner Aussage: I doubt the accuracy of his statement.
+
+eine Dusche nehmen: to take a shower
+English: to take a shower
+Persian: دوش گرفتن
+Penglish: doosh gereftan
+Bedeutung: sich unter einer Dusche waschen.
+Synonyme: duschen, sich abduschen
+ex: Ich nehme jeden Morgen eine Dusche: I take a shower every morning.
+ex: Ich möchte nach dem Sport eine Dusche nehmen: I want to take a shower after exercising.
+
+der Kopfschmerz [ˈkɔp͡fˌʃmɛʁt͡s]: headache
+English: headache
+Persian: سردرد
+Penglish: sardard
+Bedeutung: Schmerz im Kopf.
+Genitiv: des Kopfschmerzes
+Plural: die Kopfschmerzen
+Kollokation: Kopfschmerzen haben
+Synonyme: Kopfweh
+ex: Ich habe Kopfschmerzen: I have a headache.
+ex: Die Kopfschmerzen sind sehr stark: The headache is very severe.
+
+langfristig [ˈlaŋˌfʁɪstɪç] (Adjektiv, Komparativ: langfristiger, Superlativ: am langfristigsten): long-term
+English: long-term
+Persian: بلندمدت؛ درازمدت
+Penglish: bolandmoddat; derazmoddat
+Bedeutung: über einen langen Zeitraum hinweg geplant, wirkend oder bestehend.
+Synonyme: dauerhaft, langfristig angelegt
+Attributiv und prädikativ verwendbar
+ex: Wir brauchen eine langfristige Lösung: We need a long-term solution.
+ex: Diese Strategie ist langfristiger als die andere: This strategy is more long-term than the other one.
+ex: Diese Investition ist am langfristigsten geplant: This investment is planned for the longest term.

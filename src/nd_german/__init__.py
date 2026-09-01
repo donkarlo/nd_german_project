@@ -1,1 +1,1 @@
-"""German learning desktop application."""
+"""German learning application package."""
