@@ -1,0 +1,533 @@
+- the database is a raw woerterbuch.txt file that I uploaded in the project sources
+
+- database_rules: |
+    The database is a plain-text dictionary file.
+
+    Each dictionary entry is separated from the next entry by exactly one blank line.
+
+    Never use YAML, JSON, Markdown tables, bullet points, headings, or code structures
+    inside a dictionary entry.
+
+    When I ask for the meaning of a German word or expression, generate a ready-to-paste
+    woerterbuch.txt entry.
+
+    I may ask the question in German, English, Persian, or Penglish.
+    Regardless of the language of my question, the generated dictionary entry must always
+    follow one of the entry patterns below.
+
+    The first line must contain the German word or expression, its IPA pronunciation when
+    applicable, important grammatical information, and its concise English meaning.
+
+    Immediately after the first line, always add these three lines:
+
+    English: ...
+    Persian: ...
+    Penglish: ...
+
+    Persian must be natural Standard Iranian Persian, not Afghan Dari or Tajik Persian.
+
+    Penglish must represent natural Standard Iranian Persian pronunciation as commonly
+    written by Iranians. It must not be based on Afghan, Tajik, Arabic, or letter-by-letter
+    transliteration.
+
+    Examples:
+    مفرد -> mofrad
+    جنوب -> jonoob
+    شمال -> shomal
+    آرزو کردن -> arezoo kardan
+    سرزنش کردن -> sarzanesh kardan
+
+    Do not write forms such as:
+    مفرد -> mafrad
+    جنوب -> jenob
+
+    German grammatical terminology must be written in German.
+
+    Every "ex:" line must contain:
+    German example sentence: English translation
+
+    Do not add Persian or Penglish translations to example sentences unless I explicitly ask.
+
+    Give natural modern Standard German examples.
+
+    Infer the grammatical category of the requested word and use the appropriate pattern.
+
+    If a word belongs to more than one grammatical category, create separate entries only
+    when the meanings/usages are genuinely different.
+
+    Do not invent grammatical information. If a grammatical feature does not apply,
+    omit that line rather than writing meaningless placeholders.
+
+- entry_patterns: |
+
+    noun:
+
+      example:
+
+        die Entscheidung [ɛntˈʃaɪ̯dʊŋ]: decision
+        English: decision
+        Persian: تصمیم
+        Penglish: tasmim
+        Bedeutung: Auswahl zwischen mehreren Möglichkeiten nach Überlegung. Ergebnis eines Entscheidungsprozesses.
+        Genitiv: der Entscheidung
+        Plural: die Entscheidungen
+        Kollokation: eine Entscheidung treffen
+        Synonyme: Beschluss, Entschluss
+        ex: Ich treffe eine wichtige Entscheidung: I make an important decision.
+        ex: Die Entscheidung war schwierig: The decision was difficult.
+
+      rules:
+        Always include the definite article.
+        Always include Genitiv.
+        Always include Plural, or "Plural: kein Plural" when no normal plural exists.
+        Include an important Kollokation when one exists.
+
+
+    verb:
+
+      example:
+
+        hinzufügen [ˈhɪnʦuˌfyːɡn̩] (Akk. + Dat., trennbar): to add
+        English: to add
+        Persian: اضافه کردن
+        Penglish: ezafeh kardan
+        Verwendung: etwas (Akk.) zu etwas (Dat.) hinzufügen
+        Bedeutung: etwas zusätzlich zu etwas anderem geben oder ergänzen.
+        Synonyme: ergänzen, beigeben, dazugeben
+        ex: Ich füge Milch zum Kaffee hinzu: I add milk to the coffee.
+        ex: Kannst du Zucker hinzufügen: Can you add sugar?
+        Präsens: ich füge hinzu
+        Präteritum: ich fügte hinzu
+        Perfekt: ich habe hinzugefügt
+        Futur I: ich werde hinzufügen
+        Konjunktiv II: ich würde hinzufügen
+        Konjunktiv I: ich füge hinzu
+
+      rules:
+        State required cases and prepositions when relevant.
+        State "trennbar" for separable verbs.
+        State "untrennbar" when this information is useful.
+        State "reflexiv" when the verb is reflexive.
+        Preserve "sich" in reflexive infinitives.
+        State "transitiv" or "intransitiv" when useful.
+        Include Präsens, Präteritum, Perfekt, Futur I, Konjunktiv II, and Konjunktiv I.
+
+
+    adjective:
+
+      example:
+
+        wichtig [ˈvɪçtɪç] (Adjektiv, Komparativ: wichtiger, Superlativ: am wichtigsten): important
+        English: important
+        Persian: مهم
+        Penglish: mohem
+        Bedeutung: von großer Bedeutung; wesentlich für etwas.
+        Synonyme: bedeutend, wesentlich
+        Attributiv und prädikativ verwendbar
+        ex: Das ist eine wichtige Entscheidung: That is an important decision.
+        ex: Dieses Problem ist wichtiger als das andere: This problem is more important than the other one.
+        ex: Gesundheit ist am wichtigsten: Health is the most important.
+
+      rules:
+        Give Komparativ and Superlativ when the adjective is normally comparable.
+        If it is not normally comparable, write "Adjektiv, nicht steigerbar".
+        Mention important restrictions such as "nur attributiv" or "nur prädikativ".
+
+
+    adverb:
+
+      example:
+
+        oft [ɔft] (Adverb, nicht steigerbar): often; frequently
+        English: often; frequently
+        Persian: اغلب؛ زیاد
+        Penglish: aghlab; ziad
+        Bedeutung: viele Male; in regelmäßigen Abständen wiederkehrend.
+        Synonyme: häufig, regelmäßig
+        ex: Ich gehe oft ins Fitnessstudio: I often go to the gym.
+        ex: Oft denke ich an die Vergangenheit: Often I think about the past.
+
+      rules:
+        Mention "nicht steigerbar" when applicable.
+        Explain unusual sentence position when it is important.
+
+
+    conjunction:
+
+      example:
+
+        weil [vaɪ̯l] (Konjunktion, subordinierend + Verb am Ende): because
+        English: because
+        Persian: چون؛ زیرا
+        Penglish: chon; zira
+        Bedeutung: aus dem Grund, dass; aufgrund dessen.
+        Synonyme: da
+        Gebrauch: leitet einen Nebensatz ein; das konjugierte Verb steht am Ende.
+        ex: Ich bleibe zu Hause, weil ich krank bin: I stay at home because I am sick.
+        ex: Er lernt Deutsch, weil er in Österreich arbeitet: He learns German because he works in Austria.
+
+      rules:
+        Specify whether the conjunction is subordinierend, koordinierend, or korrelativ.
+        Always state the important word-order rule.
+
+
+    pronoun:
+
+      example:
+
+        jemand [ˈjeːmant] (Pronomen, Indefinitpronomen, deklinierbar): someone; somebody
+        English: someone; somebody
+        Persian: کسی
+        Penglish: kasi
+        Bedeutung: eine unbestimmte Person; irgendein Mensch.
+        Synonyme: irgendjemand, irgendwer, eine Person
+        Nominativ: jemand
+        Akkusativ: jemanden
+        Dativ: jemandem
+        Genitiv: jemandes
+        Gebrauch: bezeichnet eine unbestimmte Person.
+        ex: Jemand wartet vor der Tür: Someone is waiting at the door.
+        ex: Ich habe jemandem geholfen: I helped someone.
+
+      rules:
+        Identify the pronoun type.
+        Give Nominativ, Akkusativ, Dativ, and Genitiv when the pronoun is declined.
+        Omit irrelevant case forms for indeclinable pronouns.
+
+
+    particle:
+
+      example:
+
+        doch [dɔx] (Modalpartikel): after all; actually; but
+        English: after all; actually; but
+        Persian: که؛ بالاخره؛ مگر
+        Penglish: ke; belakhareh; mage
+        Bedeutung: drückt je nach Kontext Widerspruch, Erinnerung, Überraschung oder Nachdruck aus.
+        Gebrauch: die genaue Bedeutung hängt stark vom Satzkontext und von der Betonung ab.
+        ex: Das weißt du doch: You know that, after all.
+        ex: Komm doch mit: Why don't you come along?
+
+      rules:
+        Identify the particle type when possible, for example Modalpartikel, Fokuspartikel, Gradpartikel, or Negationspartikel.
+        Explain its pragmatic function because a literal translation is often insufficient.
+
+
+    preposition:
+
+      example:
+
+        trotz [trɔʦ] (Präposition + Genitiv): despite; in spite of
+        English: despite; in spite of
+        Persian: با وجود؛ علی‌رغم
+        Penglish: ba vojood; aliraghm
+        Bedeutung: bezeichnet einen Umstand, der eigentlich gegen das Geschehen spricht, es aber nicht verhindert.
+        Gebrauch: standardsprachlich mit Genitiv.
+        ex: Trotz des Regens gehen wir spazieren: Despite the rain, we are going for a walk.
+        ex: Trotz seiner Krankheit arbeitet er weiter: Despite his illness, he continues working.
+
+      rules:
+        Always state the required case.
+        For Wechselpräpositionen, state "Akkusativ oder Dativ" and explain the difference.
+        Mention important colloquial case variation when relevant.
+
+
+    article:
+
+      example:
+
+        der [deːɐ̯] (bestimmter Artikel, maskulin): the
+        English: the
+        Persian: حرف تعریف معین
+        Penglish: harfe tarif-e moayyan
+        Bedeutung: bestimmter Artikel für maskuline Nomen im Nominativ Singular.
+        Nominativ: der
+        Akkusativ: den
+        Dativ: dem
+        Genitiv: des
+        ex: Der Mann arbeitet heute: The man is working today.
+        ex: Ich sehe den Mann: I see the man.
+
+      rules:
+        Explain whether it is bestimmter, unbestimmter, or negativer Artikel.
+        Give the relevant declension forms.
+
+
+    determiner:
+
+      example:
+
+        dieser [ˈdiːzɐ] (Demonstrativartikel, deklinierbar): this; this one
+        English: this; this one
+        Persian: این
+        Penglish: in
+        Bedeutung: verweist auf eine bestimmte Person oder Sache.
+        Gebrauch: wird ähnlich wie der bestimmte Artikel dekliniert.
+        ex: Dieser Mann arbeitet hier: This man works here.
+        ex: Ich kenne diese Frau: I know this woman.
+
+      rules:
+        Identify whether it is Demonstrativartikel, Possessivartikel, Indefinitartikel,
+        Negativartikel, Interrogativartikel, or another determiner type.
+        Explain relevant declension behavior.
+
+
+    numeral:
+
+      example:
+
+        zwei [ʦvaɪ̯] (Kardinalzahl): two
+        English: two
+        Persian: دو
+        Penglish: do
+        Bedeutung: bezeichnet die Zahl 2 oder eine Menge von zwei Einheiten.
+        ex: Ich habe zwei Brüder: I have two brothers.
+        ex: Wir brauchen zwei Stunden: We need two hours.
+
+      rules:
+        Identify Kardinalzahl, Ordinalzahl, Bruchzahl, or another numeral type.
+        Include declension information only when relevant.
+
+
+    interjection:
+
+      example:
+
+        ach [ax] (Interjektion): oh; ah
+        English: oh; ah
+        Persian: آه؛ اِ
+        Penglish: ah; e
+        Bedeutung: drückt je nach Kontext Überraschung, Bedauern, Erkenntnis oder Ungeduld aus.
+        Gebrauch: Bedeutung und Wirkung hängen stark von Intonation und Kontext ab.
+        ex: Ach, das wusste ich nicht: Oh, I didn't know that.
+        ex: Ach so, jetzt verstehe ich: Oh, I see, now I understand.
+
+      rules:
+        Mention register or emotional function when important.
+
+
+    phrase:
+
+      example:
+
+        eine Entscheidung treffen: to make a decision
+        English: to make a decision
+        Persian: تصمیم گرفتن
+        Penglish: tasmim gereftan
+        Bedeutung: sich nach Überlegung für eine Möglichkeit entscheiden.
+        Kollokation: eine wichtige Entscheidung treffen
+        Synonyme: sich entscheiden, einen Entschluss fassen
+        ex: Wir müssen heute eine Entscheidung treffen: We have to make a decision today.
+        ex: Sie hat eine schwierige Entscheidung getroffen: She made a difficult decision.
+
+      rules:
+        Treat the expression as one semantic unit.
+        Do not translate the individual words separately when that would obscure the actual meaning.
+        Include required cases or prepositions when relevant.
+
+
+    idiom:
+
+      example:
+
+        ins kalte Wasser springen: to take the plunge
+        English: to take the plunge
+        Persian: دل به دریا زدن
+        Penglish: del be darya zadan
+        Bedeutung: etwas Neues oder Schwieriges ohne lange Vorbereitung beginnen.
+        Gebrauch: bildhafte, idiomatische Redewendung.
+        ex: Ich musste ins kalte Wasser springen und sofort anfangen: I had to take the plunge and start immediately.
+        ex: Manchmal muss man einfach ins kalte Wasser springen: Sometimes you just have to take the plunge.
+
+      rules:
+        Give the idiomatic meaning, not only the literal translation.
+        Mention when the expression is colloquial, formal, old-fashioned, or regional.
+
+
+    abbreviation:
+
+      example:
+
+        bzw. [bəˈʦiːʊŋsˌvaɪ̯zə] (Abkürzung von "beziehungsweise"): respectively; or rather
+        English: respectively; or rather
+        Persian: به‌ترتیب؛ یا دقیق‌تر بگوییم
+        Penglish: be tartib; ya daghigh-tar begim
+        Bedeutung: verbindet Alternativen oder präzisiert eine vorherige Aussage.
+        Gebrauch: besonders häufig in schriftlicher Sprache.
+        ex: Die Kinder sind zehn bzw. zwölf Jahre alt: The children are ten and twelve years old respectively.
+        ex: Wir treffen uns am Montag bzw. am Dienstag: We will meet on Monday or rather on Tuesday.
+
+      rules:
+        Always give the expanded German form when one exists.
+
+
+    proper_noun:
+
+      example:
+
+        Österreich [ˈøːstɐʁaɪ̯ç] (Eigenname, Neutrum): Austria
+        English: Austria
+        Persian: اتریش
+        Penglish: otrish
+        Bedeutung: Staat in Mitteleuropa mit der Hauptstadt Wien.
+        Gebrauch: normalerweise ohne Artikel.
+        ex: Ich lebe in Österreich: I live in Austria.
+        ex: Österreich liegt in Mitteleuropa: Austria is in Central Europe.
+
+      rules:
+        Mention the article when the proper noun conventionally requires one.
+
+
+    separable_verb:
+
+      example:
+
+        aufstehen [ˈaʊ̯fˌʃteːən] (trennbares Verb, intransitiv): to get up; to stand up
+        English: to get up; to stand up
+        Persian: بلند شدن
+        Penglish: boland shodan
+        Bedeutung: sich aus einer sitzenden oder liegenden Position erheben; morgens das Bett verlassen.
+        Synonyme: sich erheben
+        ex: Ich stehe jeden Morgen um sieben Uhr auf: I get up every morning at seven.
+        ex: Er steht vom Stuhl auf: He stands up from the chair.
+        Präsens: ich stehe auf
+        Präteritum: ich stand auf
+        Perfekt: ich bin aufgestanden
+        Futur I: ich werde aufstehen
+        Konjunktiv II: ich würde aufstehen
+        Konjunktiv I: ich stehe auf
+
+
+    reflexive_verb:
+
+      example:
+
+        sich erinnern [ɛɐ̯ˈʔɪnɐn] (reflexiv, an + Akk.): to remember
+        English: to remember
+        Persian: به یاد آوردن؛ یادش بودن
+        Penglish: be yad avordan; yadesh boodan
+        Verwendung: sich an jemanden/etwas (Akk.) erinnern
+        Bedeutung: eine Person, Sache oder ein Ereignis wieder ins Gedächtnis rufen.
+        Synonyme: zurückdenken an
+        ex: Ich erinnere mich an meine Kindheit: I remember my childhood.
+        ex: Erinnerst du dich an ihn: Do you remember him?
+        Präsens: ich erinnere mich
+        Präteritum: ich erinnerte mich
+        Perfekt: ich habe mich erinnert
+        Futur I: ich werde mich erinnern
+        Konjunktiv II: ich würde mich erinnern
+        Konjunktiv I: ich erinnere mich
+
+
+    modal_verb:
+
+      example:
+
+        müssen [ˈmʏsn̩] (Modalverb, unregelmäßig): must; to have to
+        English: must; to have to
+        Persian: مجبور بودن؛ باید
+        Penglish: majboor boodan; bayad
+        Bedeutung: eine Notwendigkeit oder Verpflichtung ausdrücken.
+        Gebrauch: mit einem Infinitiv ohne "zu".
+        ex: Ich muss heute arbeiten: I have to work today.
+        ex: Wir müssen jetzt gehen: We must go now.
+        Präsens: ich muss
+        Präteritum: ich musste
+        Perfekt: ich habe gemusst
+        Futur I: ich werde müssen
+        Konjunktiv II: ich müsste
+        Konjunktiv I: ich müsse
+
+
+    auxiliary_verb:
+
+      example:
+
+        haben [ˈhaːbn̩] (Hilfsverb, unregelmäßig): to have
+        English: to have
+        Persian: داشتن
+        Penglish: dashtan
+        Bedeutung: Besitz ausdrücken; außerdem Hilfsverb zur Bildung verschiedener Zeitformen.
+        Gebrauch: Hilfsverb für das Perfekt vieler Verben.
+        ex: Ich habe ein Auto: I have a car.
+        ex: Ich habe das Buch gelesen: I have read the book.
+        Präsens: ich habe
+        Präteritum: ich hatte
+        Perfekt: ich habe gehabt
+        Futur I: ich werde haben
+        Konjunktiv II: ich hätte
+        Konjunktiv I: ich habe
+
+
+    question_word:
+
+      example:
+
+        warum [vaˈʁʊm] (Interrogativadverb): why
+        English: why
+        Persian: چرا
+        Penglish: chera
+        Bedeutung: fragt nach einem Grund oder einer Ursache.
+        Gebrauch: steht häufig am Anfang einer direkten oder indirekten Frage.
+        ex: Warum lernst du Deutsch: Why are you learning German?
+        ex: Ich weiß nicht, warum er gegangen ist: I don't know why he left.
+
+
+    negation_word:
+
+      example:
+
+        nicht [nɪçt] (Negationspartikel): not
+        English: not
+        Persian: نه؛ نمی
+        Penglish: na; nemi
+        Bedeutung: verneint Verben, Adjektive, Adverbien, Satzteile oder ganze Aussagen.
+        Gebrauch: die Position von "nicht" hängt davon ab, welcher Teil des Satzes verneint wird.
+        ex: Ich komme heute nicht: I am not coming today.
+        ex: Das ist nicht teuer: That is not expensive.
+
+
+- generation_rules: |
+    Return only the completed dictionary entry unless I explicitly ask for an explanation.
+
+    Do not introduce the answer with phrases such as:
+    "Here is the entry"
+    "The meaning is"
+    "You can add this to your dictionary"
+
+    The answer must be directly copyable into woerterbuch.txt.
+
+    Use exactly one blank line between multiple generated entries.
+
+    Do not wrap the generated entry in Markdown code fences unless I explicitly ask for a code block.
+
+    Always use the German lemma as the dictionary headword.
+
+    For nouns, include the article in the headword.
+
+    For verbs, use the infinitive.
+
+    For reflexive verbs, use "sich + infinitive".
+
+    For adjectives and adverbs, use the positive/base form.
+
+    The English meaning on the first line must be concise.
+
+    "Bedeutung:" must explain the meaning in German, not merely repeat the English translation.
+
+    Prefer two example sentences.
+    Use three examples when a grammatical contrast needs to be demonstrated, such as
+    Positive/Komparativ/Superlativ.
+
+    Synonyme must be German synonyms.
+
+    Kollokation must contain a natural German collocation.
+
+    Do not force a Synonyme or Kollokation line when no useful natural item exists.
+
+    When a verb requires a grammatical construction, always include a "Verwendung:" line.
+
+    Always preserve German umlauts and ß.
+
+    Use Austrian Standard German only when an Austrian-specific distinction is relevant;
+    otherwise use general Standard German.

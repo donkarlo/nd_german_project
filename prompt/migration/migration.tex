@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{Deutch learning migration}
+\date{}
+\author{Mohammad Rahmani}
+
+\begin{document}
+
+   \maketitle
+
+   \begin{itemize}
+      \item all pinglish meaning are not good unless I have asked them directly in chat gpt in written mode for the penglish. previously when you were building the database you sayd you have listened the word pronouncation and you transcripted it. you must use another way to find the penglish 
+      \item Database must switched to relation sqlite if the spped imporoves
+      \begin{itemize}
+         \item all database fields must be in English and follow the rules I meantioned here on dropbox /repo/prompt/coding\_prompt.tex
+         \item every field such as gramaticall role or pronounciation must have its own column
+         \item each word is a hierarchy of meanings and each meaning can have multiple examples
+      \end{itemize}
+      \item multi meaning for the same spelling must follow these rules
+      \begin{itemize}
+         \item general
+         \begin{itemize}
+            \item the same word but totally different meaning
+            \item the same word with different grammatical role
+         \end{itemize}
+         \item verbs
+         \begin{itemize}
+            \item Different applications of a verb with different propositions should make a new meaning (intressire)
+            \item kasus must be mentioned for each meaning
+            \item when the verb has also a reflixiv form the  anew meaning must be created
+         \end{itemize}
+      \end{itemize}
+   \end{itemize}
+
+   \bibliographystyle{plainnat}
+   \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+
+\end{document}
