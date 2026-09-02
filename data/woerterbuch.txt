@@ -6467,6 +6467,7 @@ Bedeutung: eine Aufgabe, Arbeit oder Angelegenheit fertig machen.
 Synonyme: abschließen, fertigmachen, ausführen
 ex: Ich muss heute viele Aufgaben erledigen: I have to complete many tasks today.
 ex: Hast du die Sache schon erledigt: Have you already taken care of the matter?
+ex: Das Problem hat sich erledigt: The problem has resolved itself.
 Präsens: ich erledige
 Präteritum: ich erledigte
 Perfekt: ich habe erledigt
@@ -6475,7 +6476,6 @@ Konjunktiv II: ich erledigte / ich würde erledigen
 Konjunktiv I: ich erledige
 Imperativ: du: Erledige! ihr: Erledigt!
 Zusatz: sich erledigen = von selbst gelöst werden / no longer be necessary
-ex: Das Problem hat sich erledigt: The problem has resolved itself.
 
 das Wesen [ˈveːzn̩]: being; creature; nature; essence
 English: being; creature; nature; essence
@@ -14295,13 +14295,6 @@ Erlaubnis bekommen: to get permission
 English: to get permission
 Persian: برای گرفتن مجوز
 Penglish: baraye gereftan mojavvez
-
-die Erlaubnis (pl. die Erlaubnisse): permission
-English: permission
-Persian: اجازه
-Penglish: ejazeh
-ex: Ich habe die Erlaubnis zu gehen: I have permission to leave
-ex: Ohne Erlaubnis darfst du hier nicht bleiben: You are not allowed to stay here without permission
 
 die Nutzlosigkeit: uselessness
 English: uselessness
@@ -49011,3 +49004,196 @@ Attributiv und prädikativ verwendbar
 ex: Wir brauchen eine langfristige Lösung: We need a long-term solution.
 ex: Diese Strategie ist langfristiger als die andere: This strategy is more long-term than the other one.
 ex: Diese Investition ist am langfristigsten geplant: This investment is planned for the longest term.
+
+manch [manç] (Indefinitartikel / Indefinitpronomen, deklinierbar): some; many a
+English: some; many a
+Persian: بعضی؛ برخی؛ بعضی‌ها
+Penglish: bazi; barkhi; baziha
+Bedeutung: bezeichnet eine nicht genau bestimmte Anzahl von Personen oder Dingen; im Singular oft im Sinn von „der eine oder andere“.
+Gebrauch: vor einem Nomen wird „manch-“ wie ein Artikelwort dekliniert; substantivisch kann es auch ohne Nomen stehen.
+Synonyme: einige, gewisse
+ex: Manche Menschen mögen keine Veränderungen: Some people do not like changes.
+ex: Mancher hat damit Probleme: Some people have problems with that.
+
+ein geschlossener Behälter: a closed container
+English: a closed container
+Persian: ظرف دربسته
+Penglish: zarfe darbasteh
+Bedeutung: ein Behälter, dessen Deckel oder Öffnung geschlossen ist.
+Synonyme: ein verschlossener Behälter, ein geschlossenes Gefäß
+ex: Bewahren Sie das Lebensmittel in einem geschlossenen Behälter auf: Store the food in a closed container.
+ex: Die Flüssigkeit muss in einem geschlossenen Behälter transportiert werden: The liquid must be transported in a closed container.
+
+bestehend [bəˈʃteːənt] (Adjektiv, Partizip I von „bestehen“, nicht steigerbar): existing; current
+English: existing; current
+Persian: موجود؛ فعلی
+Penglish: mojood; feli
+Bedeutung: bereits vorhanden oder zu einem bestimmten Zeitpunkt noch gültig und vorhanden.
+Synonyme: vorhanden, gegenwärtig, aktuell
+Gebrauch: häufig attributiv; „bestehenden“ ist eine deklinierte Form von „bestehend“.
+ex: Die bestehenden Regeln müssen beachtet werden: The existing rules must be observed.
+ex: Wir wollen das bestehende System verbessern: We want to improve the existing system.
+
+der Rücktritt [ˈʁʏkˌtʁɪt]: resignation; stepping down
+English: resignation; stepping down
+Persian: استعفا؛ کناره‌گیری
+Penglish: este'fa; kenareh-giri
+Bedeutung: freiwilliges Aufgeben eines Amtes, einer Position oder einer Funktion.
+Genitiv: des Rücktritts
+Plural: die Rücktritte
+Kollokation: seinen Rücktritt erklären
+Synonyme: Demission, Amtsniederlegung, Rückzug
+ex: Der Minister erklärte seinen Rücktritt: The minister announced his resignation.
+ex: Nach dem Skandal forderten viele seinen Rücktritt: After the scandal, many demanded his resignation.
+
+viel los sein: to have a lot going on; to be busy
+English: to have a lot going on; to be busy
+Persian: سر آدم شلوغ بودن؛ اتفاقات یا کارهای زیادی در جریان بودن
+Penglish: sar-e adam sholoogh boodan; ettefaghat ya karhaye ziadi dar jaryan boodan
+Bedeutung: Es passieren viele Dinge oder es gibt viele Aktivitäten, Arbeit oder Ereignisse.
+Gebrauch: häufig in der Struktur „Bei jemandem/irgendwo ist viel los.“
+Synonyme: viel zu tun sein, viel passieren, geschäftig sein
+ex: War heute noch viel los bei dir: Did you still have a lot going on today?
+ex: Am Wochenende ist in der Innenstadt viel los: There is a lot going on in the city center at the weekend.
+
+katastrophal [katastʁoˈfaːl] (Adjektiv, Komparativ: katastrophaler, Superlativ: am katastrophalsten): disastrous; catastrophic
+English: disastrous; catastrophic
+Persian: فاجعه‌بار؛ بسیار بد و ویرانگر
+Penglish: faje'e-bar; besyar bad va virangar
+Bedeutung: sehr schlimm und mit schweren negativen Folgen verbunden.
+Synonyme: verheerend, desaströs, fatal
+Attributiv und prädikativ verwendbar
+ex: Die Folgen dieser Entscheidung waren katastrophal: The consequences of this decision were disastrous.
+ex: Das Projekt endete mit einem katastrophalen Ergebnis: The project ended with a catastrophic result.
+
+beiseitelegen [ˈbaɪ̯zaɪ̯təˌleːɡn̩] (trennbares Verb, Akk.): to put aside; to set aside
+English: to put aside; to set aside
+Persian: کنار گذاشتن
+Penglish: kenar gozashtan
+Verwendung: etwas (Akk.) beiseitelegen
+Bedeutung: etwas zur Seite legen oder für später aufbewahren.
+Synonyme: weglegen, zurücklegen
+ex: Ich lege das Buch beiseite: I put the book aside.
+ex: Sie hat etwas Geld beiseitegelegt: She set some money aside.
+Präsens: ich lege beiseite
+Präteritum: ich legte beiseite
+Perfekt: ich habe beiseitegelegt
+Futur I: ich werde beiseitelegen
+Konjunktiv II: ich würde beiseitelegen
+Konjunktiv I: ich lege beiseite
+
+ausschließen [ˈaʊ̯sˌʃliːsn̩] (trennbares Verb, Akk.): to exclude
+English: to exclude
+Persian: کنار گذاشتن؛ حذف کردن
+Penglish: kenar gozashtan; hazf kardan
+Verwendung: jemanden/etwas (Akk.) ausschließen
+Bedeutung: jemanden oder etwas nicht teilnehmen lassen oder aus einer Gruppe oder Möglichkeit entfernen.
+Synonyme: ausgrenzen, ausschalten
+ex: Niemand darf aus der Gruppe ausgeschlossen werden: Nobody may be excluded from the group.
+ex: Wir können diese Möglichkeit nicht ausschließen: We cannot exclude this possibility.
+Präsens: ich schließe aus
+Präteritum: ich schloss aus
+Perfekt: ich habe ausgeschlossen
+Futur I: ich werde ausschließen
+Konjunktiv II: ich würde ausschließen
+Konjunktiv I: ich schließe aus
+
+nach etwas fragen: to ask about something
+English: to ask about something
+Persian: دربارهٔ چیزی سؤال کردن
+Penglish: darbareye chizi soal kardan
+Bedeutung: eine Frage stellen, um Informationen über eine Sache zu bekommen.
+Gebrauch: nach + Dativ fragen
+Synonyme: sich nach etwas erkundigen, Informationen über etwas erfragen
+ex: Ich möchte nach dem Preis fragen: I would like to ask about the price.
+ex: Sie hat nach dem Termin gefragt: She asked about the appointment.
+
+vollgepackt [ˈfɔlɡəˌpakt] (Adjektiv, nicht sinnvoll steigerbar): packed full; crammed
+English: packed full; crammed
+Persian: کاملاً پُر؛ پُر از چیزهای مختلف
+Penglish: kamelan por; por az chizhaye mokhtalef
+Bedeutung: so gefüllt, dass kaum noch Platz frei ist.
+Synonyme: überfüllt, randvoll, voll
+Attributiv und prädikativ verwendbar
+ex: Ich trage einen vollgepackten Rucksack: I am carrying a fully packed backpack.
+ex: Der Zug war mit Menschen vollgepackt: The train was crammed with people.
+Gebrauch: „vollgepackten“ ist eine deklinierte Form von „vollgepackt“, z. B. „einen vollgepackten Koffer“.
+
+dranbleiben [ˈdʁanˌblaɪ̯bn̩] (trennbares Verb, intransitiv, umgangssprachlich): to keep at it; to stick with it
+English: to keep at it; to stick with it
+Persian: ادامه دادن؛ دست نکشیدن؛ پیگیر ماندن
+Penglish: edameh dadan; dast nakeshidan; peygir mandan
+Bedeutung: trotz Schwierigkeiten oder Anstrengung mit etwas weitermachen und nicht aufgeben.
+Synonyme: weitermachen, durchhalten, nicht aufgeben
+ex: Es ist wichtig, beim Deutschlernen dranzubleiben: It is important to keep at learning German.
+ex: Wenn du Erfolg haben willst, musst du dranbleiben: If you want to succeed, you have to stick with it.
+Präsens: ich bleibe dran
+Präteritum: ich blieb dran
+Perfekt: ich bin drangeblieben
+Futur I: ich werde dranbleiben
+Konjunktiv II: ich würde dranbleiben
+Konjunktiv I: ich bleibe dran
+Gebrauch: „dranzubleiben“ ist der Infinitiv mit „zu“ von „dranbleiben“, z. B. „Es ist schwer, dranzubleiben.“
+
+der Beste: the best
+English: the best
+Persian: بهترین؛ بهترین چیز / بهترین فرد
+Penglish: behtarin; behtarin chiz / behtarin fard
+Bedeutung: etwas oder jemand, das bzw. der besser als alle anderen ist.
+Gebrauch: substantivierte Form des Superlativs von „gut“.
+Synonyme: das Optimalste
+ex: Das ist das Beste für dich: That is the best for you.
+ex: Sie ist die Beste in der Klasse: She is the best in the class.
+
+am besten: best; the best
+English: best; the best
+Persian: به بهترین شکل؛ از همه بهتر
+Penglish: be behtarin shekl; az hame behtar
+Bedeutung: Superlativ von „gut“ in adverbialer oder prädikativer Verwendung.
+Gebrauch: gut → besser → am besten
+Synonyme: optimal, idealerweise
+ex: Er spricht von uns allen am besten Deutsch: He speaks German the best of all of us.
+ex: Am besten fahren wir mit dem Zug: It is best if we go by train.
+
+daran gewöhnt sein, etwas zu tun: to be used to doing something
+English: to be used to doing something
+Persian: به انجام کاری عادت داشتن
+Penglish: be anjam-e kari adat dashtan
+Bedeutung: etwas regelmäßig erlebt oder getan haben, sodass es nicht mehr ungewohnt oder schwierig ist.
+Gebrauch: an etwas (Akk.) gewöhnt sein; daran gewöhnt sein, etwas zu tun
+Synonyme: etwas gewohnt sein, mit etwas vertraut sein
+ex: Ich bin daran gewöhnt, früh aufzustehen: I am used to getting up early.
+ex: Sie ist daran gewöhnt, unter Stress zu arbeiten: She is used to working under stress.
+
+die Therapiesitzung: therapy session
+English: therapy session
+Persian: جلسهٔ درمان؛ جلسهٔ روان‌درمانی
+Penglish: jalaseye darman; jalaseye ravandarmani
+Bedeutung: ein vereinbarter Termin, bei dem eine therapeutische Behandlung oder ein therapeutisches Gespräch stattfindet.
+Synonyme: Therapietermin, therapeutische Sitzung
+ex: Ich habe morgen eine Therapiesitzung: I have a therapy session tomorrow.
+ex: Die Therapiesitzung dauert eine Stunde: The therapy session lasts one hour.
+
+die Stellung [ˈʃtɛlʊŋ]: position; placement
+English: position; placement
+Persian: جایگاه؛ جایگیری
+Penglish: jaygah; jaygiri
+Bedeutung: die Position, an der etwas steht; in der Grammatik besonders die Position eines Wortes im Satz.
+Genitiv: der Stellung
+Plural: die Stellungen
+Kollokation: die Stellung eines Wortes im Satz
+Synonyme: Position, Platzierung
+ex: Die Stellung von „nicht“ hängt davon ab, was verneint wird: The position of “nicht” depends on what is being negated.
+ex: Ich möchte die Stellung des Wortes „nicht“ im Satz lernen: I want to learn the position of the word “nicht” in the sentence.
+
+die Vorweihnachtszeit [ˈfoːɐ̯ˌvaɪ̯naxtsˌtsaɪ̯t]: pre-Christmas period; Advent season
+English: pre-Christmas period; Advent season
+Persian: دوران پیش از کریسمس؛ ایام قبل از کریسمس
+Penglish: doran-e pish az krismas; ayam-e ghabl az krismas
+Bedeutung: die Wochen vor Weihnachten, besonders die Adventszeit.
+Genitiv: der Vorweihnachtszeit
+Plural: kein Plural
+Kollokation: in der Vorweihnachtszeit
+Synonyme: Adventszeit, Weihnachtszeit
+ex: In der Vorweihnachtszeit sind die Geschäfte oft sehr voll: During the pre-Christmas period, the shops are often very crowded.
+ex: Viele Weihnachtsmärkte öffnen in der Vorweihnachtszeit: Many Christmas markets open during the Advent season.
