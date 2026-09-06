@@ -49864,3 +49864,105 @@ Kollokation: eine Kaution hinterlegen
 Synonyme: Sicherheitsleistung, Mietkaution
 ex: Für das Geschäft muss ich eine Kaution von 5.000 Euro zahlen: I have to pay a deposit of 5,000 euros for the shop.
 ex: Nach dem Ende des Mietvertrags bekomme ich die Kaution zurück: I get the deposit back after the rental contract ends.
+
+der Genuss [ɡəˈnʊs]: enjoyment; pleasure
+English: enjoyment; pleasure
+Persian: لذت؛ بهره‌مندی
+Penglish: lezzat; bahremandi
+Bedeutung: angenehmes Gefühl, das man beim Erleben, Essen, Trinken oder bei einer anderen erfreulichen Tätigkeit empfindet.
+Genitiv: des Genusses
+Plural: die Genüsse
+Kollokation: etwas mit Genuss essen
+Synonyme: Vergnügen, Freude, Wohlgefühl
+ex: Er trinkt seinen Kaffee mit Genuss: He drinks his coffee with enjoyment.
+ex: Musik zu hören ist für mich ein großer Genuss: Listening to music is a great pleasure.
+
+Genuss bringen: to bring pleasure; to give enjoyment
+English: to bring pleasure; to give enjoyment
+Persian: لذت بخشیدن؛ باعث لذت شدن
+Penglish: lezzat bakhshidan; baes-e lezzat shodan
+Bedeutung: jemandem ein angenehmes Gefühl oder Freude bereiten.
+Verwendung: jemandem (Dat.) Genuss bringen
+Synonyme: Freude bereiten, Vergnügen bereiten
+ex: Gutes Essen kann vielen Menschen Genuss bringen: Good food can bring pleasure to many people.
+ex: Musik bringt mir großen Genuss: Music gives me great pleasure.
+
+ein Beispiel geben: to give an example
+English: to give an example
+Persian: مثال زدن؛ مثال آوردن
+Penglish: mesal zadan; mesal avordan
+Bedeutung: etwas Konkretes nennen, um eine Aussage oder Erklärung verständlicher zu machen.
+Kollokation: ein konkretes Beispiel geben
+Synonyme: ein Beispiel nennen, etwas veranschaulichen
+ex: Kannst du ein Beispiel geben: Can you give an example?
+ex: Der Lehrer gibt ein Beispiel, um die Regel zu erklären: The teacher gives an example to explain the rule.
+
+die Ware [ˈvaːʁə]: goods; merchandise; product
+English: goods; merchandise; product
+Persian: کالا؛ جنس
+Penglish: kala; jens
+Bedeutung: ein Produkt oder Gegenstand, der hergestellt, gekauft oder verkauft wird.
+Genitiv: der Ware
+Plural: die Waren
+Kollokation: Waren kaufen
+Synonyme: Produkt, Artikel, Handelsgut
+ex: Die Ware ist schon bezahlt: The goods have already been paid for.
+ex: Das Geschäft bietet viele verschiedene Waren an: The store offers many different goods.
+
+die Besonderheit [bəˈzɔndɐhaɪ̯t]: special feature; peculiarity
+English: special feature; peculiarity
+Persian: ویژگی خاص؛ خصوصیت
+Penglish: vizhegi-ye khas; khosusiyat
+Bedeutung: eine Eigenschaft oder ein Merkmal, durch das sich jemand oder etwas von anderen unterscheidet.
+Genitiv: der Besonderheit
+Plural: die Besonderheiten
+Kollokation: eine Besonderheit aufweisen
+Synonyme: Eigenheit, Merkmal, Eigentümlichkeit
+ex: Eine Besonderheit dieser Stadt ist ihre alte Architektur: A special feature of this city is its old architecture.
+ex: Dieses Auto hat einige technische Besonderheiten: This car has some special technical features.
+
+das Merkmal [ˈmɛʁkmaːl]: feature; characteristic
+English: feature; characteristic
+Persian: ویژگی؛ مشخصه
+Penglish: vizhegi; moshakhaseh
+Bedeutung: eine Eigenschaft, an der man eine Person, Sache oder Gruppe erkennen oder beschreiben kann.
+Genitiv: des Merkmals
+Plural: die Merkmale
+Kollokation: ein typisches Merkmal
+Synonyme: Eigenschaft, Kennzeichen, Charakteristikum
+ex: Ein wichtiges Merkmal dieses Autos ist sein niedriger Verbrauch: An important feature of this car is its low fuel consumption.
+ex: Diese Merkmale unterscheiden die beiden Modelle: These features distinguish the two models.
+
+die Funktion [fʊŋkˈtsi̯oːn]: feature; function
+English: feature; function
+Persian: قابلیت؛ عملکرد؛ ویژگی کاربردی
+Penglish: ghabeliyat; amalkard; vizhegi-ye karbordi
+Bedeutung: eine bestimmte Möglichkeit oder Aufgabe, die ein Gerät, Programm oder System hat.
+Genitiv: der Funktion
+Plural: die Funktionen
+Kollokation: eine neue Funktion hinzufügen
+Synonyme: Möglichkeit, Eigenschaft, Feature
+ex: Die App hat eine neue Funktion: The app has a new feature.
+ex: Diese Funktion ist sehr praktisch: This feature is very practical.
+
+viel zu viele: far too many
+English: far too many
+Persian: خیلی بیش از حد؛ خیلی زیاد
+Penglish: kheili bish az had; kheili ziad
+Bedeutung: eine deutlich größere Anzahl, als nötig, sinnvoll oder erwünscht ist.
+Gebrauch: vor zählbaren Nomen im Plural.
+Synonyme: deutlich zu viele, weitaus zu viele
+ex: Es gibt viel zu viele Autos in der Stadt: There are far too many cars in the city.
+ex: Ich habe viel zu viele Aufgaben für heute: I have far too many tasks for today.
+
+das Fazit [ˈfaːtsɪt]: conclusion; summary; bottom line
+English: conclusion; summary; bottom line
+Persian: نتیجه‌گیری؛ جمع‌بندی
+Penglish: natije-giri; jam-bandi
+Bedeutung: abschließende Zusammenfassung oder Schlussfolgerung nach einer Betrachtung, Diskussion oder Untersuchung.
+Genitiv: des Fazits
+Plural: die Fazite
+Kollokation: ein Fazit ziehen
+Synonyme: Schlussfolgerung, Ergebnis, Resümee
+ex: Am Ende der Diskussion ziehen wir ein Fazit: At the end of the discussion, we draw a conclusion.
+ex: Mein Fazit ist insgesamt positiv: My overall conclusion is positive.
