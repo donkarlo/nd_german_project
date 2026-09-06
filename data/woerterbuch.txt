@@ -3871,11 +3871,6 @@ Konjunktiv II: ich entfaltete / ich würde entfalten
 Konjunktiv I: ich entfalte
 Imperativ: du: Entfalte! / Entfalt! ihr: Entfaltet!
 
-erhalten (etw.Akk ~): to gain
-English: to gain
-Persian: به دست آوردن
-Penglish: be dast avordan
-
 die Beratung: advice, consultation
 English: advice, consultation
 Persian: مشاوره، مشاوره
@@ -6442,21 +6437,6 @@ Kollokation: ein weißes Hemd tragen
 Synonyme: Oberhemd, Businesshemd
 ex: Ich trage heute ein blaues Hemd: I am wearing a blue shirt today.
 ex: Das Hemd passt gut zu dieser Hose: The shirt goes well with these pants.
-
-schaffen [ˈʃafn̩] (transitiv / intransitiv): to manage; to succeed; to create
-English: to manage; to succeed; to create
-Persian: مدیریت کردن؛ موفق شدن؛ برای ایجاد
-Penglish: modiriyat kardan; movaffagh shodan; baraye ijad
-Bedeutung: etwas erfolgreich erledigen; ein Ziel erreichen; genug Kraft oder Zeit für etwas haben.
-Synonyme: bewältigen, erreichen, meistern
-ex: Ich schaffe die Prüfung: I manage to pass the exam.
-ex: Wir schaffen das heute nicht: We cannot manage that today.
-Präsens: ich schaffe
-Präteritum: ich schaffte
-Perfekt: ich habe geschafft
-Futur I: ich werde schaffen
-Konjunktiv II: ich schaffte / ich würde schaffen
-Konjunktiv I: ich schaffe
 
 erledigen [ɛɐ̯ˈleːdɪɡn̩] (transitiv): to complete; to take care of; to get done
 English: to complete; to take care of; to get done
@@ -10386,19 +10366,6 @@ Synonyme: Kulturwissenschaften, Humanwissenschaften
 ex: Sie studiert Geisteswissenschaften an der Universität: She studies humanities at the university.
 ex: Geschichte und Philosophie gehören zu den Geisteswissenschaften: History and philosophy belong to the humanities.
 
-sich melden [ˈmɛldn̩] (bei jdm.Dat): to get in touch; to contact; to register
-English: to get in touch; to contact; to register
-Persian: تماس گرفتن؛ برای تماس؛ برای ثبت نام
-Penglish: tamas gereftan; baraye tamas; baraye sabt nam
-ex: Bitte melden Sie sich bei uns: Please contact us.
-ex: Ich melde mich später: I will get in touch later.
-Präsens: ich melde mich
-Präteritum: ich meldete mich
-Perfekt: ich habe mich gemeldet
-Futur I: ich werde mich melden
-Konjunktiv II: ich würde mich melden
-Konjunktiv I: ich melde mich
-
 die Vereinbarung [fɛɐ̯ˈaɪ̯nbaːʁʊŋ] (pl. die Vereinbarungen): agreement; arrangement
 English: agreement; arrangement
 Persian: توافق؛ ترتیب
@@ -11152,14 +11119,15 @@ Synonyme: hartgekochtes Ei, weichgekochtes Ei
 ex: Ich esse morgens ein gekochtes Ei: I eat a boiled egg in the morning.
 ex: Möchtest du ein hartgekochtes oder ein weichgekochtes Ei: Do you want a hard-boiled or a soft-boiled egg?
 
-so ein …: such a …
-English: such a …
-Persian: چنین…
-Penglish: chenin…
-Bedeutung: wird verwendet, um etwas zu betonen oder hervorzuheben.
-Synonyme: derart ein, so ein(e)
-ex: Ich weiß nicht, warum ich so ein Problem habe: I don’t know why I have such a problem.
-ex: Warum hast du so eine Idee: Why do you have such an idea?
+so ein: such a; a ... like that
+English: such a; a ... like that
+Persian: چنین؛ همچین؛ یک ... این‌طوری
+Penglish: chenin; hamchin; yek ... in-tori
+Bedeutung: bezeichnet eine Person oder Sache dieser Art; kann auch verwendet werden, um eine starke Reaktion wie Überraschung, Ärger oder Bewunderung auszudrücken.
+Gebrauch: so ein + maskulines oder neutrales Nomen; bei femininen Nomen: so eine; im Plural: solche
+Synonyme: solch ein, ein solcher
+ex: So ein Blödsinn: Such nonsense!
+ex: Ich möchte auch so ein Fahrrad: I would also like a bicycle like that.
 
 meiner Meinung nach: in my opinion
 English: in my opinion
@@ -11337,19 +11305,6 @@ Kollokation: ein Nummernschild am Auto haben
 Synonyme: Kennzeichen, Autokennzeichen
 ex: Das Auto hat ein neues Nummernschild: The car has a new license plate.
 ex: Ich habe mir das Nummernschild des Autos gemerkt: I memorized the car’s license plate.
-
-anmelden [ˈanˌmɛldən] (bei + Dat., für + Akk.) trennbar, reflexiv: to enroll; to register; to sign up
-English: to enroll; to register; to sign up
-Persian: برای ثبت نام؛ برای ثبت نام؛ برای ثبت نام
-Penglish: baraye sabt nam; baraye sabt nam; baraye sabt nam
-ex: Ich melde mich für den Kurs an: I enroll in the course.
-ex: Er hat sich an der Universität angemeldet: He enrolled at the university.
-Präsens: ich melde mich an
-Präteritum: ich meldete mich an
-Perfekt: ich habe mich angemeldet
-Futur I: ich werde mich anmelden
-Konjunktiv II: ich meldete mich an / ich würde mich anmelden
-Konjunktiv I: ich melde mich an
 
 Anmeldung: enrollment
 English: enrollment
@@ -25839,11 +25794,13 @@ English: return back
 Persian: برگشتن
 Penglish: bargashtan
 
-die Regel [ˈʁeːɡl̩]: rule
+die Regel
 English: rule
-Persian: حکومت کند
-Penglish: hokoomat konad
-Bedeutung: eine Vorschrift oder Anweisung, die bestimmt, was erlaubt, verboten oder zu tun ist.
+Persian: قانون؛ قاعده
+Penglish: ghanoon; ghaede
+Pronunciation: [ˈʁeːɡl̩]
+Grammatical role: noun
+Bedeutung: eine Vorschrift oder ein festes Prinzip, das bestimmt, wie etwas gemacht werden soll.
 Genitiv: der Regel
 Plural: die Regeln
 Kollokation: eine Regel befolgen
@@ -30726,21 +30683,6 @@ Futur I: ich werde melken
 Konjunktiv II: ich mölke / ich würde melken
 Konjunktiv I: ich melke
 
-schaffen [ˈʃafn̩] (Verb, transitiv/intransitiv): to manage; to accomplish; to create
-English: to manage; to accomplish; to create
-Persian: مدیریت کردن؛ به انجام رساندن؛ برای ایجاد
-Penglish: modiriyat kardan; be anjam resandan; baraye ijad
-Bedeutung: etwas erfolgreich erledigen; ein Ziel erreichen; etwas hervorbringen.
-Synonyme: bewältigen, erledigen, erreichen
-ex: Ich schaffe die Prüfung: I pass/manage the exam.
-ex: Wir schaffen das gemeinsam: We can manage it together.
-Präsens: ich schaffe
-Präteritum: ich schaffte
-Perfekt: ich habe geschafft
-Futur I: ich werde schaffen
-Konjunktiv II: ich schaffte / ich würde schaffen
-Konjunktiv I: ich schaffe
-
 die Seele (pl. die Seelen): soul
 English: soul
 Persian: روح
@@ -30797,16 +30739,16 @@ Synonyme: Abreise, Abgang
 ex: Die Abfahrt ist um 8 Uhr: The departure is at 8 o’clock.
 ex: Ich habe die Abfahrt verpasst: I missed the departure.
 
-die Erinnerung [ɛɐ̯ˈʔɪnəʁʊŋ]: memory
-English: memory
-Persian: حافظه
-Penglish: hafezeh
-Bedeutung: Fähigkeit, sich an etwas zu erinnern; gespeicherte Eindrücke oder Erfahrungen im Gehirn.
+die Erinnerung [ɛɐ̯ˈʔɪnəʁʊŋ]: memory; recollection
+English: memory; recollection
+Persian: خاطره؛ یاد؛ یادآوری
+Penglish: khatereh; yad; yadآvari
+Bedeutung: etwas aus der Vergangenheit, an das man sich erinnert; ein im Gedächtnis gespeicherter Eindruck oder eine Erfahrung.
 Genitiv: der Erinnerung
 Plural: die Erinnerungen
-Kollokation: eine gute/schlechte Erinnerung haben
-Synonyme: Gedächtnis, Andenken
-ex: Meine Erinnerung ist nicht gut: My memory is not good.
+Kollokation: eine gute/schlechte Erinnerung an etwas haben
+Synonyme: Gedächtnis, Andenken, Erinnerung
+ex: Ich habe nur eine schwache Erinnerung an diesen Tag: I have only a vague memory of that day.
 ex: Ich habe viele schöne Erinnerungen an meine Kindheit: I have many nice memories of my childhood.
 
 wenn es dir nichts ausmacht: if you don’t mind
@@ -31334,10 +31276,15 @@ English: dream for
 Persian: رویا برای
 Penglish: roya baraye
 
-denken an etw: thinking of sth
-English: thinking of sth
-Persian: به فکر کردن
-Penglish: be fekr kardan
+an jemanden/etwas denken: to think of someone/something; to think about someone/something
+English: to think of someone/something; to think about someone/something
+Persian: به کسی/چیزی فکر کردن
+Penglish: be kasi/chizi fekr kardan
+Bedeutung: eine Person oder Sache im Kopf haben und die Gedanken darauf richten.
+Gebrauch: an + Akkusativ
+Synonyme: über jemanden/etwas nachdenken, sich Gedanken über jemanden/etwas machen
+ex: Ich denke oft an meine Familie: I often think of my family.
+ex: Denkst du manchmal an deine Kindheit: Do you sometimes think about your childhood?
 
 an etw teilnehmen:to take a part in sth, to attend, participate
 English: to take a part in sth, to attend, participate
@@ -35134,21 +35081,6 @@ Synonyme: Kunstschaffender, Maler, Musiker
 ex: Er ist ein bekannter Künstler: He is a well-known artist.
 ex: Die Künstlerin malt moderne Bilder: The artist paints modern pictures.
 Hinweis: der Artist bedeutet meistens Akrobat/Zirkuskünstler, nicht allgemein artist.
-
-schaffen [ˈʃafn̩] (transitiv/intransitiv): to manage; to accomplish; to create
-English: to manage; to accomplish; to create
-Persian: مدیریت کردن؛ به انجام رساندن؛ برای ایجاد
-Penglish: modiriyat kardan; be anjam resandan; baraye ijad
-Bedeutung: etwas erfolgreich erledigen oder erreichen; etwas herstellen oder neu entstehen lassen.
-Synonyme: bewältigen, erreichen, erzeugen
-ex: Ich schaffe die Prüfung: I pass/manage the exam.
-ex: Wir schaffen das zusammen: We can manage it together.
-Präsens: ich schaffe
-Präteritum: ich schaffte / ich schuf
-Perfekt: ich habe geschafft / ich habe geschaffen
-Futur I: ich werde schaffen
-Konjunktiv II: ich schaffte / ich würde schaffen
-Konjunktiv I: ich schaffe
 
 kämen: to comb
 English: to comb
@@ -45739,23 +45671,6 @@ Synonyme: Servicekraft, Bedienung
 ex: Der Kellner bringt uns die Speisekarte: The waiter brings us the menu.
 ex: Ich habe den Kellner nach der Rechnung gefragt: I asked the waiter for the bill.
 
-übernachten [yːbɐˈnaxtn̩] (untrennbar, intransitiv): to stay overnight; to spend the night
-English: to stay overnight; to spend the night
-Persian: شب ماندن؛ برای گذراندن شب
-Penglish: shab mandan; baraye gozarandan shab
-Verwendung: irgendwo übernachten
-Bedeutung: die Nacht an einem bestimmten Ort verbringen und dort schlafen.
-Synonyme: die Nacht verbringen, nächtigen, schlafen
-ex: Wir übernachten heute in einem Hotel: We are staying overnight in a hotel today.
-ex: Ich habe bei einem Freund übernachtet: I stayed overnight at a friend's place.
-Präsens: ich übernachte
-Präteritum: ich übernachtete
-Perfekt: ich habe übernachtet
-Futur I: ich werde übernachten
-Konjunktiv II: ich übernachtete / ich würde übernachten
-Konjunktiv I: ich übernachte
-Imperativ: du: Übernachte! ihr: Übernachtet!
-
 der Aufenthalt [ˈaʊ̯fn̩tˌhalt]: stay; residence
 English: stay; residence
 Persian: ماندن محل سکونت
@@ -49197,3 +49112,755 @@ Kollokation: in der Vorweihnachtszeit
 Synonyme: Adventszeit, Weihnachtszeit
 ex: In der Vorweihnachtszeit sind die Geschäfte oft sehr voll: During the pre-Christmas period, the shops are often very crowded.
 ex: Viele Weihnachtsmärkte öffnen in der Vorweihnachtszeit: Many Christmas markets open during the Advent season.
+
+preiswert [ˈpʁaɪ̯sˌveːɐ̯t] (Adjektiv, Komparativ: preiswerter, Superlativ: am preiswertesten): inexpensive; reasonably priced
+English: inexpensive; reasonably priced
+Persian: ارزان؛ با قیمت مناسب
+Penglish: arzan; ba gheymat-e monaseb
+Bedeutung: nicht teuer und im Verhältnis zur Qualität oder Leistung günstig.
+Synonyme: günstig, billig, erschwinglich
+Attributiv und prädikativ verwendbar
+ex: Dieses Hotel ist sehr preiswert: This hotel is very reasonably priced.
+ex: Wir suchen eine preiswerte Wohnung: We are looking for an inexpensive apartment.
+ex: Dieses Angebot ist preiswerter als das andere: This offer is less expensive than the other one.
+
+das Kleid [klaɪ̯t]: dress
+English: dress
+Persian: پیراهن؛ لباس زنانه
+Penglish: pirahan; lebas-e zanane
+Bedeutung: ein Kleidungsstück für Frauen oder Mädchen, das Oberkörper und Beine bedeckt und aus einem zusammenhängenden Teil besteht.
+Genitiv: des Kleides
+Plural: die Kleider
+Kollokation: ein Kleid tragen
+Synonyme: Damenkleid, Kleidung
+ex: Sie trägt heute ein rotes Kleid: She is wearing a red dress today.
+ex: Ich habe ein neues Kleid gekauft: I bought a new dress.
+
+langweilig [ˈlaŋˌvaɪ̯lɪç] (Adjektiv, Komparativ: langweiliger, Superlativ: am langweiligsten): boring
+English: boring
+Persian: خسته‌کننده؛ کسل‌کننده
+Penglish: khaste-konande; kasel-konande
+Bedeutung: nicht interessant oder unterhaltsam; so, dass man sich dabei langweilt.
+Synonyme: uninteressant, eintönig, öde
+Attributiv und prädikativ verwendbar
+ex: Der Film war sehr langweilig: The movie was very boring.
+ex: Das ist eine langweilige Aufgabe: This is a boring task.
+ex: Dieses Buch ist langweiliger als das andere: This book is more boring than the other one.
+
+der Ordner [ˈɔʁdnɐ]: folder; directory
+English: folder; directory
+Persian: پوشه
+Penglish: poosheh
+Bedeutung: ein Bereich in einem Computersystem, in dem Dateien und weitere Ordner gespeichert und organisiert werden.
+Genitiv: des Ordners
+Plural: die Ordner
+Kollokation: einen Ordner erstellen
+Synonyme: Verzeichnis
+ex: Ich habe die Datei in diesem Ordner gespeichert: I saved the file in this folder.
+ex: Erstelle einen neuen Ordner auf dem Desktop: Create a new folder on the desktop.
+
+das Wesentliche [ˈveːzn̩tlɪçə] (substantiviertes Adjektiv, neutral): the essential thing; the essentials; what is essential
+English: the essential thing; the essentials; what is essential
+Persian: نکتهٔ اصلی؛ چیز ضروری؛ اصل مطلب
+Penglish: nokte-ye asli; chiz-e zaroori; asl-e matlab
+Bedeutung: das, was besonders wichtig, notwendig oder entscheidend ist.
+Genitiv: des Wesentlichen
+Plural: kein normaler Plural
+Kollokation: sich auf das Wesentliche konzentrieren
+Synonyme: das Wichtigste, der Kern, die Hauptsache
+ex: Wir sollten uns auf das Wesentliche konzentrieren: We should concentrate on the essentials.
+ex: Das Wesentliche habe ich bereits erklärt: I have already explained the essential part.
+
+ungelesen [ˈʊnɡəˌleːzn̩] (Adjektiv, nicht steigerbar): unread; not read
+English: unread; not read
+Persian: خوانده‌نشده؛ نخوانده
+Penglish: khoondeh-nashodeh; nakhoondeh
+Bedeutung: noch nicht gelesen; ohne dass jemand den Text gelesen hat.
+Synonyme: nicht gelesen, unberührt
+Attributiv und prädikativ verwendbar
+ex: Das Buch liegt noch ungelesen auf dem Tisch: The book is still lying unread on the table.
+ex: Ich habe viele ungelesene Nachrichten: I have many unread messages.
+
+retournieren [ʁetuʁˈniːʁən] (transitiv + Akk., untrennbar, besonders österreichisch): to return; to send back
+English: to return; to send back
+Persian: پس فرستادن؛ مرجوع کردن
+Penglish: pas ferestadan; marjoo kardan
+Verwendung: etwas (Akk.) retournieren
+Bedeutung: eine Ware oder einen Gegenstand an den Verkäufer oder Absender zurückschicken; besonders im österreichischen Deutsch gebräuchlich.
+Synonyme: zurückschicken, zurücksenden, zurückgeben
+ex: Ich möchte diese Ware retournieren: I would like to return this item.
+ex: Sie hat das Paket gestern retourniert: She returned the package yesterday.
+Präsens: ich retourniere
+Präteritum: ich retournierte
+Perfekt: ich habe retourniert
+Futur I: ich werde retournieren
+Konjunktiv II: ich würde retournieren
+Konjunktiv I: ich retourniere
+
+verspätet [fɛɐ̯ˈʃpɛːtət] (Adjektiv, Komparativ: verspäteter, Superlativ: am verspätetsten): late; delayed
+English: late; delayed
+Persian: دیرکرده؛ با تأخیر
+Penglish: dirkardeh; ba taakhir
+Bedeutung: später als geplant, erwartet oder vorgesehen eintreffend oder stattfindend.
+Synonyme: verspätet eintreffend, verzögert
+Attributiv und prädikativ verwendbar
+ex: Der verspätete Zug kommt in zehn Minuten: The delayed train arrives in ten minutes.
+ex: Wegen des Verkehrs kam er verspätet zur Arbeit: Because of the traffic, he arrived late for work.
+
+die Grundlage [ˈɡʁʊntˌlaːɡə]: basis; foundation
+English: basis; foundation
+Persian: پایه؛ اساس؛ مبنا
+Penglish: payeh; asas; mabna
+Bedeutung: etwas, auf dem etwas anderes beruht oder aufgebaut wird.
+Genitiv: der Grundlage
+Plural: die Grundlagen
+Kollokation: die Grundlage für etwas bilden
+Synonyme: Basis, Fundament, Ausgangspunkt
+ex: Vertrauen ist die Grundlage einer guten Beziehung: Trust is the basis of a good relationship.
+ex: Diese Daten bilden die Grundlage für unsere Entscheidung: These data form the basis for our decision.
+
+ein Glas Gift: a glass of poison
+English: a glass of poison
+Persian: یک جام شیشه‌ای زهر؛ یک لیوان زهر
+Penglish: yek jame shishei-ye zahr; yek livane zahr
+Bedeutung: ein Glas, das Gift enthält.
+Synonyme: ein Glas mit Gift
+ex: Auf dem Tisch stand ein Glas Gift: A glass of poison stood on the table.
+ex: Er hielt ein Glas mit Gift in der Hand: He was holding a glass of poison in his hand.
+
+auf die Seite fallen: to fall onto one’s side
+English: to fall onto one’s side
+Persian: به پهلو افتادن؛ روی پهلو افتادن
+Penglish: be pahloo oftadan; rooye pahloo oftadan
+Bedeutung: so fallen, dass man anschließend auf einer Körperseite liegt.
+Synonyme: seitlich hinfallen, auf die Seite stürzen
+ex: Er verlor das Gleichgewicht und fiel auf die Seite: He lost his balance and fell onto his side.
+ex: Das Fahrrad fiel auf die Seite: The bicycle fell onto its side.
+
+griffbereit [ˈɡʁɪf bəˌʁaɪ̯t] (Adjektiv, nicht steigerbar): handy; within easy reach; readily available
+English: handy; within easy reach; readily available
+Persian: دم‌دستی؛ در دسترس
+Penglish: dame dasti; dar dastres
+Bedeutung: so in der Nähe oder verfügbar, dass man etwas schnell und leicht benutzen oder nehmen kann.
+Synonyme: erreichbar, zur Hand, verfügbar
+Attributiv und prädikativ verwendbar
+ex: Ich habe immer einen Stift griffbereit: I always keep a pen handy.
+ex: Die wichtigsten Werkzeuge sollten griffbereit sein: The most important tools should be within easy reach.
+
+tiefgründig [ˈtiːfˌɡʁʏndɪç] (Adjektiv, Komparativ: tiefgründiger, Superlativ: am tiefgründigsten): profound; deep
+English: profound; deep
+Persian: عمیق؛ ژرف
+Penglish: amigh; zharf
+Bedeutung: geistig oder inhaltlich sehr tief; nicht oberflächlich und zum intensiven Nachdenken anregend.
+Synonyme: tiefsinnig, nachdenklich, gehaltvoll
+Attributiv und prädikativ verwendbar
+ex: Das war ein sehr tiefgründiges Gespräch: That was a very profound conversation.
+ex: Der Film behandelt einige tiefgründige Fragen: The film deals with some profound questions.
+
+duzen [ˈduːtsn̩] (transitiv + Akk.): to address someone with “du”; to be on first-name terms
+English: to address someone with “du”; to use the informal “you”
+Persian: با «تو» خطاب کردن؛ با کسی خودمانی صحبت کردن
+Penglish: ba "to" khatab kardan; ba kasi khodemani sohbat kardan
+Verwendung: jemanden (Akk.) duzen
+Bedeutung: eine Person mit „du“ statt mit „Sie“ ansprechen.
+Synonyme: mit „du“ ansprechen
+ex: Darf ich Sie duzen: May I address you with “du”?
+ex: Wir duzen uns seit vielen Jahren: We have been on first-name terms for many years.
+Präsens: ich duze
+Präteritum: ich duzte
+Perfekt: ich habe geduzt
+Futur I: ich werde duzen
+Konjunktiv II: ich würde duzen
+Konjunktiv I: ich duze
+
+einvernehmlich [ˈaɪ̯nfɛɐ̯ˌneːmlɪç] (Adjektiv, nicht steigerbar): consensual; by mutual agreement
+English: consensual; by mutual agreement
+Persian: با توافق دوطرفه؛ با رضایت طرفین
+Penglish: ba tavafogh-e do-tarafeh; ba rezayat-e tarafeyn
+Bedeutung: auf der Zustimmung und dem gemeinsamen Einverständnis aller beteiligten Personen beruhend.
+Synonyme: einverständlich, übereinstimmend, gemeinsam
+Attributiv und prädikativ verwendbar
+ex: Sie haben den Vertrag einvernehmlich beendet: They terminated the contract by mutual agreement.
+ex: Die Parteien fanden eine einvernehmliche Lösung: The parties found a consensual solution.
+
+sich absprechen [ˈapˌʃpʁɛçn̩] (reflexiv, trennbar, mit + Dat.): to coordinate; to consult with each other
+English: to coordinate; to consult with each other
+Persian: با هم هماهنگ کردن؛ با یکدیگر مشورت کردن
+Penglish: ba ham hamahang kardan; ba yekdigar mashverat kardan
+Verwendung: sich mit jemandem (Dat.) absprechen
+Bedeutung: mit einer anderen Person etwas gemeinsam besprechen und vereinbaren.
+Synonyme: sich abstimmen, sich verständigen, sich beraten
+ex: Ich muss mich zuerst mit meinem Kollegen absprechen: I have to coordinate with my colleague first.
+ex: Wir haben uns vorher miteinander abgesprochen: We coordinated with each other beforehand.
+Präsens: ich spreche mich ab
+Präteritum: ich sprach mich ab
+Perfekt: ich habe mich abgesprochen
+Futur I: ich werde mich absprechen
+Konjunktiv II: ich würde mich absprechen
+Konjunktiv I: ich spreche mich ab
+
+jemandem fällt etwas ein: something occurs to someone; something comes to someone’s mind
+English: something occurs to someone; something comes to someone’s mind
+Persian: چیزی به ذهن کسی رسیدن
+Penglish: chizi be zehn-e kasi residan
+Bedeutung: eine Idee, ein Gedanke oder eine Erinnerung kommt plötzlich ins Bewusstsein einer Person.
+Kollokation: Mir fällt etwas ein.
+Synonyme: jemandem in den Sinn kommen, jemandem durch den Kopf gehen
+ex: Mir ist plötzlich eine gute Idee eingefallen: A good idea suddenly occurred to me.
+ex: Fällt dir etwas ein: Does anything come to mind?
+
+einfallen [ˈaɪ̯nˌfalən] (trennbares Verb, jemandem (Dat.) fällt etwas (Nom.) ein): to occur to someone; to come to mind
+English: to occur to someone; to come to mind
+Persian: به ذهن کسی رسیدن؛ به فکر کسی رسیدن
+Penglish: be zehn-e kasi residan; be fekr-e kasi residan
+Verwendung: jemandem (Dat.) fällt etwas (Nom.) ein
+Bedeutung: ein Gedanke, eine Idee oder eine Erinnerung kommt plötzlich in das Bewusstsein einer Person.
+Synonyme: in den Sinn kommen, durch den Kopf gehen
+ex: Mir fällt plötzlich eine gute Idee ein: A good idea suddenly occurs to me.
+ex: Ist dir etwas eingefallen: Did anything come to mind?
+Präsens: mir fällt etwas ein
+Präteritum: mir fiel etwas ein
+Perfekt: mir ist etwas eingefallen
+Futur I: mir wird etwas einfallen
+Konjunktiv II: mir würde etwas einfallen
+Konjunktiv I: mir falle etwas ein
+
+die Partnerschaft [ˈpaʁtnɐʃaft]: partnership; relationship
+English: partnership; relationship
+Persian: شراکت؛ رابطهٔ عاطفی
+Penglish: sherakat; rabete-ye atefi
+Bedeutung: eine enge Verbindung zwischen zwei Personen oder Organisationen, die auf Zusammenarbeit, gemeinsamen Interessen oder einer persönlichen Beziehung beruht.
+Genitiv: der Partnerschaft
+Plural: die Partnerschaften
+Kollokation: eine Partnerschaft eingehen
+Synonyme: Beziehung, Verbindung, Kooperation
+ex: Sie leben seit vielen Jahren in einer glücklichen Partnerschaft: They have lived in a happy relationship for many years.
+ex: Die beiden Firmen haben eine Partnerschaft geschlossen: The two companies have formed a partnership.
+
+Kompromisse eingehen: to make compromises; to compromise
+English: to make compromises; to compromise
+Persian: سازش کردن؛ مصالحه کردن؛ کوتاه آمدن
+Penglish: sazesh kardan; mosalehe kardan; kootah oomadan
+Bedeutung: bei unterschiedlichen Interessen oder Meinungen auf einen Teil der eigenen Forderungen verzichten, damit eine gemeinsame Lösung möglich wird.
+Kollokation: bereit sein, Kompromisse einzugehen
+Synonyme: sich einigen, nachgeben, einen Mittelweg finden
+ex: In einer Partnerschaft muss man manchmal Kompromisse eingehen: In a relationship, you sometimes have to make compromises.
+ex: Beide Seiten waren bereit, Kompromisse einzugehen: Both sides were willing to compromise.
+
+wahr [vaːɐ̯] (Adjektiv, Komparativ: wahrer, Superlativ: am wahrsten): true; real; genuine
+English: true; real; genuine
+Persian: واقعی؛ حقیقی؛ درست
+Penglish: vagheei; haghighi; dorost
+Bedeutung: mit der Wirklichkeit oder den Tatsachen übereinstimmend; wirklich und nicht nur scheinbar.
+Synonyme: richtig, wirklich, echt
+Attributiv und prädikativ verwendbar
+ex: Das ist eine wahre Geschichte: That is a true story.
+ex: Seine Aussage ist wahr: His statement is true.
+ex: Das ist die wahrste Antwort, die ich geben kann: That is the truest answer I can give.
+
+losgehen [ˈloːsˌɡeːən] (trennbares Verb, intransitiv): to start; to begin; to set off
+English: to start; to begin; to set off
+Persian: شروع شدن؛ راه افتادن؛ به راه افتادن
+Penglish: shoroo shodan; rah oftadan; be rah oftadan
+Bedeutung: beginnen oder starten; sich auf den Weg machen.
+Synonyme: beginnen, starten, aufbrechen
+ex: Der Film geht um acht Uhr los: The film starts at eight o’clock.
+ex: Wir müssen jetzt losgehen: We have to set off now.
+Präsens: ich gehe los
+Präteritum: ich ging los
+Perfekt: ich bin losgegangen
+Futur I: ich werde losgehen
+Konjunktiv II: ich würde losgehen
+Konjunktiv I: ich gehe los
+
+ausfallen [ˈaʊ̯sˌfalən] (trennbares Verb, intransitiv): to be cancelled; to fail; to turn out
+English: to be cancelled; to fail; to turn out
+Persian: لغو شدن؛ از کار افتادن؛ از آب درآمدن
+Penglish: laghv shodan; az kar oftadan; az ab dar oomadan
+Bedeutung: nicht stattfinden; nicht funktionieren; ein bestimmtes Ergebnis haben.
+Synonyme: entfallen, versagen, sich ergeben
+ex: Der Unterricht fällt heute aus: The class is cancelled today.
+ex: Wegen eines technischen Problems ist der Strom ausgefallen: The power failed because of a technical problem.
+ex: Die Prüfung ist besser ausgefallen als erwartet: The exam turned out better than expected.
+Präsens: ich falle aus
+Präteritum: ich fiel aus
+Perfekt: ich bin ausgefallen
+Futur I: ich werde ausfallen
+Konjunktiv II: ich würde ausfallen
+Konjunktiv I: ich falle aus
+
+ansehen [ˈanˌzeːən] (trennbares Verb, transitiv + Akk.): to look at; to watch; to view
+English: to look at; to watch; to view
+Persian: نگاه کردن به؛ تماشا کردن
+Penglish: negah kardan be; tamasha kardan
+Verwendung: jemanden/etwas (Akk.) ansehen
+Bedeutung: den Blick bewusst auf jemanden oder etwas richten; etwas aufmerksam betrachten oder anschauen.
+Synonyme: anschauen, betrachten, beobachten
+ex: Ich sehe mir den Film heute Abend an: I am watching the film this evening.
+ex: Sie sieht das Bild lange an: She looks at the picture for a long time.
+Präsens: ich sehe an
+Präteritum: ich sah an
+Perfekt: ich habe angesehen
+Futur I: ich werde ansehen
+Konjunktiv II: ich würde ansehen
+Konjunktiv I: ich sehe an
+
+ähneln [ˈɛːnəln] (Verb, intransitiv + Dat.): to resemble; to be similar to
+English: to resemble; to be similar to
+Persian: شبیه بودن به
+Penglish: shabih boodan be
+Verwendung: jemandem/etwas (Dat.) ähneln
+Bedeutung: einer Person oder Sache in Aussehen, Eigenschaften oder Verhalten ähnlich sein.
+Synonyme: ähnlich sein, gleichen
+ex: Er ähnelt seinem Vater sehr: He resembles his father a lot.
+ex: Dieses Gebäude ähnelt einem Schloss: This building resembles a castle.
+Präsens: ich ähnele
+Präteritum: ich ähnelte
+Perfekt: ich habe geähnelt
+Futur I: ich werde ähneln
+Konjunktiv II: ich würde ähneln
+Konjunktiv I: ich ähnele
+
+kaufen [ˈkaʊ̯fn̩] (Verb, transitiv + Akk.): to buy
+English: to buy
+Persian: خریدن
+Penglish: kharidan
+Verwendung: etwas (Akk.) kaufen
+Bedeutung: etwas gegen Bezahlung erwerben.
+Synonyme: erwerben, anschaffen, besorgen
+ex: Ich kaufe einen neuen Computer: I am buying a new computer.
+ex: Sie kauft die Jacke: She buys the jacket.
+Präsens: ich kaufe
+Präteritum: ich kaufte
+Perfekt: ich habe gekauft
+Futur I: ich werde kaufen
+Konjunktiv II: ich würde kaufen
+Konjunktiv I: ich kaufe
+
+der Berufstätige [bəˈʁuːfsˌtɛːtɪɡə]: working person; employed person
+English: working person; employed person
+Persian: فرد شاغل؛ شخص شاغل
+Penglish: farde shaghel; shakhse shaghel
+Bedeutung: eine Person, die regelmäßig einer beruflichen Arbeit nachgeht.
+Genitiv: des Berufstätigen
+Plural: die Berufstätigen
+Synonyme: Erwerbstätiger, Arbeitnehmer
+ex: Viele Berufstätige fahren morgens mit dem Zug zur Arbeit: Many working people travel to work by train in the morning.
+ex: Für Berufstätige sind flexible Arbeitszeiten oft wichtig: Flexible working hours are often important for employed people.
+
+erhältlich [ɛɐ̯ˈhɛltlɪç] (Adjektiv, nicht steigerbar): available; obtainable
+English: available; obtainable
+Persian: موجود؛ قابل تهیه
+Penglish: mojood; ghabele tahieh
+Bedeutung: zu bekommen, zu kaufen oder verfügbar.
+Synonyme: verfügbar, zu bekommen, lieferbar
+Attributiv und prädikativ verwendbar
+ex: Das Buch ist in vielen Buchhandlungen erhältlich: The book is available in many bookstores.
+ex: Dieses Produkt ist auch online erhältlich: This product is also available online.
+
+das Verbot [fɛɐ̯ˈboːt]: ban; prohibition
+English: ban; prohibition
+Persian: ممنوعیت؛ منع
+Penglish: mamnooiyat; man
+Bedeutung: eine Regel oder Anordnung, die bestimmt, dass etwas nicht erlaubt ist.
+Genitiv: des Verbots
+Plural: die Verbote
+Kollokation: ein Verbot aussprechen
+Synonyme: Untersagung, Verweigerung, Einschränkung
+ex: In diesem Gebäude gilt ein Rauchverbot: Smoking is prohibited in this building.
+ex: Die Regierung hat ein Verbot ausgesprochen: The government imposed a ban.
+
+für etwas sein: to be in favor of something; to support something
+English: to be in favor of something; to support something
+Persian: موافقِ چیزی بودن؛ طرفدارِ چیزی بودن
+Penglish: movafegh-e chizi boodan; tarafdar-e chizi boodan
+Bedeutung: eine Sache, Idee oder Maßnahme unterstützen und sie für gut oder richtig halten.
+Verwendung: für + Akkusativ
+Synonyme: etwas unterstützen, etwas befürworten, etwas gutheißen
+ex: Ich bin für ein Verbot von Plastikbeuteln: I am in favor of a ban on plastic bags.
+ex: Bist du für diesen Vorschlag: Are you in favor of this proposal?
+
+das Make-up [ˈmeɪ̯kˌʔap]: makeup; cosmetics
+English: makeup; cosmetics
+Persian: آرایش
+Penglish: arayesh
+Bedeutung: kosmetische Mittel, die auf das Gesicht aufgetragen werden, um das Aussehen zu verändern oder zu verschönern.
+Genitiv: des Make-ups
+Plural: kein Plural
+Kollokation: Make-up auftragen
+Synonyme: Schminke, Kosmetik
+ex: Sie trägt nur wenig Make-up: She wears only a little makeup.
+ex: Sie trägt morgens Make-up auf: She applies makeup in the morning.
+
+verschmiert [fɛɐ̯ˈʃmiːɐ̯t] (Adjektiv, nicht steigerbar): smudged; smeared
+English: smudged; smeared
+Persian: درهم‌ریخته؛ پخش‌شده؛ مالیده و خراب‌شده
+Penglish: darham-rikhteh; pakhsh-shodeh; malideh o kharab-shodeh
+Bedeutung: so verteilt oder verwischt, dass die ursprüngliche Form nicht mehr sauber und deutlich ist; besonders bei Make-up, Farbe oder Tinte.
+Synonyme: verwischt, verlaufen
+Attributiv und prädikativ verwendbar
+ex: Ihr verschmiertes Make-up war noch auf ihrem Gesicht zu sehen: Her smudged makeup was still visible on her face.
+ex: Das Make-up war von den Tränen verschmiert: The makeup was smudged by the tears.
+
+tosend [ˈtoːzn̩t] (Adjektiv, nicht steigerbar): roaring; raging
+English: roaring; raging
+Persian: خروشان؛ پرخروش
+Penglish: khorooshan; porkhoroosh
+Bedeutung: sich mit großer Kraft und lautem Geräusch bewegend; besonders von Wasser, Wellen oder Sturm.
+Synonyme: brausend, stürmisch, wild
+Attributiv und prädikativ verwendbar
+ex: Die tosenden Wellen schlugen gegen die Felsen: The raging waves crashed against the rocks.
+ex: Wir hörten das tosende Meer: We heard the roaring sea.
+
+der Muttersprachler [ˈmʊtɐˌʃpʁaːxlɐ]: native speaker
+English: native speaker
+Persian: گویشور بومی؛ کسی که یک زبان، زبان مادری اوست
+Penglish: gooyeshvar-e boomi; kasi ke yek zaban, zaban-e madari-e oo ast
+Bedeutung: eine Person, die eine bestimmte Sprache als Muttersprache spricht.
+Genitiv: des Muttersprachlers
+Plural: die Muttersprachler
+Synonyme: Erstsprachler
+ex: Er ist Muttersprachler dieser Sprache: He is a native speaker of that language.
+ex: Sie spricht fast wie eine Muttersprachlerin: She speaks almost like a native speaker.
+
+das Insektenspray [ɪnˈzɛktn̩ˌʃpʁeː]: insect spray; insecticide spray
+English: insect spray; insecticide spray
+Persian: اسپری حشره‌کش
+Penglish: espre-ye hashare-kosh
+Bedeutung: ein Spray, das verwendet wird, um Insekten zu töten oder fernzuhalten.
+Genitiv: des Insektensprays
+Plural: die Insektensprays
+Kollokation: Insektenspray benutzen
+Synonyme: Insektizidspray, Ungezieferspray
+ex: Ich habe Insektenspray gegen die Mücken gekauft: I bought insect spray against the mosquitoes.
+ex: Benutze das Insektenspray nicht in der Nähe von Lebensmitteln: Do not use the insect spray near food.
+
+unmoralisch [ˈʊnmoˌʁaːlɪʃ] (Adjektiv, Komparativ: unmoralischer, Superlativ: am unmoralischsten): immoral
+English: immoral
+Persian: غیراخلاقی
+Penglish: gheyr-e akhlaghi
+Bedeutung: gegen moralische Grundsätze oder allgemein anerkannte Vorstellungen von richtigem Verhalten verstoßend.
+Synonyme: unsittlich, verwerflich, unethisch
+Attributiv und prädikativ verwendbar
+ex: Sein Verhalten war unmoralisch: His behavior was immoral.
+ex: Viele Menschen halten diese Handlung für unmoralisch: Many people consider this action immoral.
+
+die Mücke [ˈmʏkə]: mosquito; gnat
+English: mosquito; gnat
+Persian: پشه
+Penglish: pashe
+Bedeutung: ein kleines fliegendes Insekt; einige Arten stechen Menschen und Tiere und saugen Blut.
+Genitiv: der Mücke
+Plural: die Mücken
+Kollokation: von einer Mücke gestochen werden
+Synonyme: Stechmücke
+ex: Eine Mücke hat mich gestochen: A mosquito bit me.
+ex: Im Sommer gibt es hier viele Mücken: There are many mosquitoes here in summer.
+
+stechen [ˈʃtɛçn̩] (transitiv + Akk., unregelmäßig): to sting; to prick
+English: to sting; to prick
+Persian: نیش زدن؛ سوراخ کردن
+Penglish: nish zadan; soorakh kardan
+Verwendung: jemanden/etwas (Akk.) stechen
+Bedeutung: mit einem Stachel, einer Spitze oder einem spitzen Gegenstand in die Haut oder in etwas eindringen.
+Synonyme: piksen, durchstechen
+ex: Eine Mücke hat mich gestochen: A mosquito bit me.
+ex: Die Biene sticht ihn in den Arm: The bee stings him on the arm.
+Präsens: ich steche
+Präteritum: ich stach
+Perfekt: ich habe gestochen
+Futur I: ich werde stechen
+Konjunktiv II: ich würde stechen
+Konjunktiv I: ich steche
+
+generell [ɡenəˈʁɛl] (Adjektiv, Komparativ: genereller, Superlativ: am generellsten; auch adverbial): general; generally
+English: general; generally
+Persian: کلی؛ به‌طور کلی
+Penglish: kolli; be tore kolli
+Bedeutung: allgemein gültig oder auf die meisten Fälle bezogen; nicht auf einen einzelnen Fall beschränkt.
+Synonyme: allgemein, grundsätzlich, im Allgemeinen
+Attributiv, prädikativ und adverbial verwendbar
+ex: Das ist ein generelles Problem: That is a general problem.
+ex: Generell bin ich mit dieser Idee einverstanden: Generally, I agree with this idea.
+
+ethisch [ˈeːtɪʃ] (Adjektiv, Komparativ: ethischer, Superlativ: am ethischsten): ethical
+English: ethical
+Persian: اخلاقی
+Penglish: akhlaghi
+Bedeutung: moralische Grundsätze betreffend oder mit ihnen übereinstimmend.
+Synonyme: moralisch, sittlich
+Attributiv und prädikativ verwendbar
+ex: Wir müssen die ethischen Folgen dieser Entscheidung berücksichtigen: We must consider the ethical consequences of this decision.
+ex: Das ist eine wichtige ethische Frage: That is an important ethical question.
+
+der Vordergrund [ˈfoːɐ̯dɐˌɡʁʊnt]: foreground
+English: foreground
+Persian: پیش‌زمینه؛ بخش جلویی
+Penglish: pish-zamineh; bakhsh-e jeloyi
+Bedeutung: der vordere, dem Betrachter am nächsten liegende Bereich eines Bildes oder Raumes; übertragen auch etwas, das besonders wichtig oder auffällig ist.
+Genitiv: des Vordergrunds
+Plural: die Vordergründe
+Kollokation: im Vordergrund stehen
+Synonyme: vorderer Bereich, vordere Ebene
+ex: Im Vordergrund des Bildes steht ein Baum: There is a tree in the foreground of the picture.
+ex: Bei dieser Entscheidung stehen ethische Fragen im Vordergrund: Ethical questions are the main focus in this decision.
+
+das Brettspiel [ˈbʁɛtˌʃpiːl]: board game
+English: board game
+Persian: بازی رومیزی؛ بازی تخته‌ای
+Penglish: bazi-ye roo mizi; bazi-ye takhte-i
+Bedeutung: ein Spiel, das auf oder mit einem Spielbrett gespielt wird.
+Genitiv: des Brettspiels
+Plural: die Brettspiele
+Kollokation: ein Brettspiel spielen
+Synonyme: Gesellschaftsspiel
+ex: Wir spielen heute Abend ein Brettspiel: We are playing a board game this evening.
+ex: Schach ist ein bekanntes Brettspiel: Chess is a well-known board game.
+
+sogenannt [ˈzoːɡəˌnant] (Adjektiv, nicht steigerbar, meist attributiv): so-called
+English: so-called
+Persian: به‌اصطلاح؛ موسوم به
+Penglish: be estelah; mosoom be
+Bedeutung: bezeichnet eine Person oder Sache mit einem bestimmten Namen oder Ausdruck; kann auch zeigen, dass der Sprecher diese Bezeichnung mit etwas Distanz verwendet.
+Synonyme: so bezeichnet, als ... bezeichnet
+Nur meist attributiv verwendet
+ex: Sogenannte Gewaltspiele sollen das Verhalten von Jugendlichen beeinflussen: So-called violent games are said to influence the behavior of young people.
+ex: Das ist ein sogenanntes Gewaltspiel: This is a so-called violent game.
+
+das Gewaltspiel [ɡəˈvaltˌʃpiːl]: violent game; violent video game
+English: violent game; violent video game
+Persian: بازی خشونت‌آمیز؛ بازی ویدیویی خشونت‌آمیز
+Penglish: bazi-ye khoshoonat-amiz; bazi-ye videoei-ye khoshoonat-amiz
+Bedeutung: ein Spiel, besonders ein Computer- oder Videospiel, in dem Gewalt eine wichtige Rolle spielt oder dargestellt wird.
+Genitiv: des Gewaltspiels
+Plural: die Gewaltspiele
+Kollokation: Gewaltspiele spielen
+Synonyme: gewalthaltiges Spiel, gewalthaltiges Computerspiel
+ex: Manche Jugendliche spielen häufig Gewaltspiele: Some teenagers frequently play violent video games.
+ex: Es wird diskutiert, ob Gewaltspiele das Verhalten beeinflussen: It is debated whether violent games influence behavior.
+
+die Orientierungslosigkeit [oʁi̯ɛntiːʁʊŋsˌloːzɪçkaɪ̯t]: disorientation; confusion
+English: disorientation; confusion
+Persian: سرگردانی؛ سردرگمی
+Penglish: sargardani; sardargomi
+Bedeutung: ein Zustand, in dem man nicht weiß, wohin man gehen oder wie man handeln soll.
+Genitiv: der Orientierungslosigkeit
+Plural: kein Plural
+Kollokation: unter Orientierungslosigkeit leiden
+Synonyme: Verwirrung, Ratlosigkeit, Unsicherheit
+ex: Nach seiner Ankunft fühlte er eine starke Orientierungslosigkeit: After his arrival, he felt strongly disoriented.
+ex: Die vielen Möglichkeiten führten zu Orientierungslosigkeit: The many possibilities led to confusion.
+
+die Verlorenheit [fɛɐ̯ˈloːʁənhaɪ̯t]: feeling of being lost; lostness
+English: feeling of being lost; lostness
+Persian: سرگشتگی؛ احساس گم‌گشتگی
+Penglish: sargashtegi; ehsas-e gom-gashtegi
+Bedeutung: ein Zustand, in dem man sich innerlich orientierungslos, allein oder ohne klare Richtung fühlt.
+Genitiv: der Verlorenheit
+Plural: kein Plural
+Kollokation: ein Gefühl der Verlorenheit
+Synonyme: Orientierungslosigkeit, Ratlosigkeit, Verunsicherung
+ex: Nach der Trennung empfand er eine große Verlorenheit: After the separation, he felt deeply lost.
+ex: In der fremden Stadt überkam sie ein Gefühl der Verlorenheit: In the unfamiliar city, she was overcome by a feeling of being lost.
+
+griffbereit [ˈɡʁɪf bəˌʁaɪ̯t] (Adjektiv, nicht steigerbar; auch adverbial): within reach; handy; readily available
+English: within reach; handy; readily available
+Persian: دم‌دستی؛ در دسترس
+Penglish: dame dasti; dar dastres
+Bedeutung: so gelegen oder bereit, dass man etwas schnell und ohne Mühe erreichen oder benutzen kann.
+Synonyme: zur Hand, erreichbar, verfügbar
+Attributiv, prädikativ und adverbial verwendbar
+ex: Ich habe mein Handy immer griffbereit: I always keep my phone within reach.
+ex: Die wichtigsten Werkzeuge sollten griffbereit sein: The most important tools should be readily accessible.
+
+der Alkohol [alkoˈhoːl]: alcohol
+English: alcohol
+Persian: الکل
+Penglish: alkol
+Bedeutung: eine berauschende Substanz, die in Getränken wie Bier, Wein oder Spirituosen enthalten ist; chemisch bezeichnet Alkohol eine Gruppe organischer Verbindungen.
+Genitiv: des Alkohols
+Plural: die Alkohole (fachsprachlich in der Chemie; im allgemeinen Gebrauch meist kein Plural)
+Kollokation: Alkohol trinken
+ex: Er trinkt keinen Alkohol: He does not drink alcohol.
+ex: Dieses Getränk enthält keinen Alkohol: This drink contains no alcohol.
+
+herunterfallen [hɛˈʁʊntɐˌfalən] (trennbares Verb, intransitiv, unregelmäßig): to fall down; to fall off
+English: to fall down; to fall off
+Persian: فرو افتادن؛ پایین افتادن
+Penglish: foroo oftadan; paeen oftadan
+Bedeutung: sich durch einen Fall von einer höheren Position nach unten bewegen.
+Synonyme: hinunterfallen, fallen
+ex: Das Glas ist vom Tisch heruntergefallen: The glass fell off the table.
+ex: Ein Apfel fällt vom Baum herunter: An apple falls down from the tree.
+Präsens: ich falle herunter
+Präteritum: ich fiel herunter
+Perfekt: ich bin heruntergefallen
+Futur I: ich werde herunterfallen
+Konjunktiv II: ich würde herunterfallen
+Konjunktiv I: ich falle herunter
+
+zusammen mit: along with; together with
+English: along with; together with
+Persian: همراه با؛ به‌همراه
+Penglish: hamrah ba; be-hamrah
+Bedeutung: gemeinsam mit einer Person oder Sache; bezeichnet, dass jemand oder etwas zusätzlich dabei ist.
+Gebrauch: zusammen mit + Dativ
+Synonyme: gemeinsam mit, mitsamt
+ex: Ich bin zusammen mit meinem Bruder nach Wien gefahren: I went to Vienna along with my brother.
+ex: Sie schickte den Brief zusammen mit den Dokumenten: She sent the letter along with the documents.
+
+die Diskussion [dɪskʊˈsi̯oːn]: discussion
+English: discussion
+Persian: بحث؛ گفتگو
+Penglish: bahs; goftogoo
+Bedeutung: ein Gespräch oder Austausch, bei dem verschiedene Meinungen oder Argumente zu einem Thema geäußert werden.
+Genitiv: der Diskussion
+Plural: die Diskussionen
+Kollokation: eine Diskussion führen
+Synonyme: Debatte, Gespräch, Erörterung
+ex: Wir hatten eine lange Diskussion über das Problem: We had a long discussion about the problem.
+ex: Die Diskussion war sehr interessant: The discussion was very interesting.
+
+genial [ɡeˈni̯aːl] (Adjektiv, Komparativ: genialer, Superlativ: am genialsten): brilliant; ingenious; great
+English: brilliant; ingenious; great
+Persian: نبوغ‌آمیز؛ فوق‌العاده؛ عالی
+Penglish: nobugh-amiz; fogholadeh; ali
+Bedeutung: außergewöhnlich klug, einfallsreich oder sehr beeindruckend.
+Synonyme: brillant, großartig, einfallsreich
+Attributiv und prädikativ verwendbar
+ex: Das ist eine geniale Idee: That is a brilliant idea.
+ex: Der Plan war einfach genial: The plan was simply brilliant.
+
+unterhalten [ˌʊntɐˈhaltən] (Verb, transitiv + Akk., untrennbar, unregelmäßig): to entertain
+English: to entertain
+Persian: سرگرم کردن
+Penglish: sargarm kardan
+Verwendung: jemanden (Akk.) unterhalten
+Bedeutung: dafür sorgen, dass sich jemand amüsiert oder eine angenehme Zeit hat.
+Synonyme: amüsieren, beschäftigen, belustigen
+ex: Der Musiker unterhält die Gäste: The musician entertains the guests.
+ex: Der Film hat uns gut unterhalten: The film entertained us well.
+Präsens: ich unterhalte
+Präteritum: ich unterhielt
+Perfekt: ich habe unterhalten
+Futur I: ich werde unterhalten
+Konjunktiv II: ich würde unterhalten
+Konjunktiv I: ich unterhalte
+
+sich unterhalten [ˌʊntɐˈhaltən] (reflexiv, mit + Dat., über + Akk., untrennbar, unregelmäßig): to talk; to have a conversation
+English: to talk; to have a conversation
+Persian: گفتگو کردن؛ صحبت کردن
+Penglish: goftogoo kardan; sohbat kardan
+Verwendung: sich mit jemandem (Dat.) über jemanden/etwas (Akk.) unterhalten
+Bedeutung: mit einer anderen Person ein Gespräch führen.
+Synonyme: sprechen, reden, sich austauschen
+ex: Ich unterhalte mich mit meiner Freundin über die Arbeit: I am talking with my friend about work.
+ex: Wir haben uns lange über das Problem unterhalten: We talked about the problem for a long time.
+Präsens: ich unterhalte mich
+Präteritum: ich unterhielt mich
+Perfekt: ich habe mich unterhalten
+Futur I: ich werde mich unterhalten
+Konjunktiv II: ich würde mich unterhalten
+Konjunktiv I: ich unterhalte mich
+
+investieren [ɪnvɛsˈtiːʁən] (Verb, transitiv + Akk.; in + Akk.): to invest
+English: to invest
+Persian: سرمایه‌گذاری کردن
+Penglish: sarmayeh-gozari kardan
+Verwendung: Geld/Zeit/Arbeit (Akk.) in jemanden/etwas (Akk.) investieren
+Bedeutung: Geld, Zeit oder andere Mittel für etwas einsetzen, um später einen Nutzen oder Gewinn zu erhalten.
+Synonyme: anlegen, einsetzen, aufwenden
+ex: Die Firma investiert viel Geld in neue Technologien: The company invests a lot of money in new technologies.
+ex: Ich investiere viel Zeit in das Deutschlernen: I invest a lot of time in learning German.
+Präsens: ich investiere
+Präteritum: ich investierte
+Perfekt: ich habe investiert
+Futur I: ich werde investieren
+Konjunktiv II: ich würde investieren
+Konjunktiv I: ich investiere
+
+der Mittagstisch [ˈmɪtaːksˌtɪʃ]: lunch menu; lunch special
+English: lunch menu; lunch special
+Persian: منوی ناهار؛ غذای ویژهٔ ظهر
+Penglish: menu-ye nahar; ghaza-ye vizheh-ye zohr
+Bedeutung: ein meist preisgünstiges Essen oder Menü, das ein Restaurant zur Mittagszeit anbietet.
+Genitiv: des Mittagstisches
+Plural: die Mittagstische
+Kollokation: einen Mittagstisch anbieten
+Synonyme: Mittagsmenü, Mittagsangebot, Mittagsgericht
+ex: Das Restaurant bietet von Montag bis Freitag einen günstigen Mittagstisch an: The restaurant offers an inexpensive lunch menu from Monday to Friday.
+ex: Heute gibt es beim Mittagstisch Suppe und Schnitzel: Today's lunch special includes soup and schnitzel.
+
+der Blödsinn [ˈbløːtzɪn]: nonsense; foolishness
+English: nonsense; foolishness
+Persian: چرند؛ مزخرف؛ حرف بی‌معنی
+Penglish: cherand; mozakhraf; harf-e bi-mani
+Bedeutung: etwas, das unsinnig, falsch oder völlig unvernünftig ist.
+Genitiv: des Blödsinns
+Plural: kein Plural
+Kollokation: Blödsinn reden
+Synonyme: Unsinn, Quatsch, Schwachsinn
+ex: Das ist doch Blödsinn: That's nonsense.
+ex: Hör auf, solchen Blödsinn zu reden: Stop talking such nonsense.
+
+schaffen [ˈʃafn̩] (Verb): to manage; to accomplish; to succeed; to create
+English: to manage; to accomplish; to succeed; to create
+Persian: از عهده برآمدن؛ به انجام رساندن؛ موفق شدن؛ ایجاد کردن
+Penglish: az ohde bar amadan; be anjam resandan; movaffagh shodan; ijad kardan
+Bedeutung: etwas erfolgreich erledigen oder erreichen; genug Kraft oder Zeit für etwas haben; etwas herstellen, hervorbringen oder neu entstehen lassen.
+Synonyme: bewältigen, meistern, erreichen, erzeugen
+ex: Ich schaffe die Prüfung: I manage to pass the exam.
+ex: Wir schaffen das heute nicht: We cannot manage that today.
+ex: Der Künstler schafft ein neues Werk: The artist creates a new work.
+Präsens: ich schaffe
+Präteritum: ich schaffte (bewältigen/erreichen) / ich schuf (erschaffen)
+Perfekt: ich habe geschafft (bewältigen/erreichen) / ich habe geschaffen (erschaffen)
+Futur I: ich werde schaffen
+Konjunktiv II: ich schaffte / ich würde schaffen
+Konjunktiv I: ich schaffe
+
+abschaffen [ˈapˌʃafn̩] (Akk., trennbar, transitiv): to abolish; to eliminate; to get rid of
+English: to abolish; to eliminate; to get rid of
+Persian: لغو کردن؛ برچیدن؛ حذف کردن
+Penglish: laghv kardan; barchidan; hazf kardan
+Verwendung: etwas (Akk.) abschaffen
+Bedeutung: etwas offiziell oder dauerhaft beseitigen, sodass es nicht mehr besteht, gilt oder verwendet wird.
+Synonyme: beseitigen, aufheben, abschaffen
+ex: Die Regierung will diese Steuer abschaffen: The government wants to abolish this tax.
+ex: Wir sollten unnötige Regeln abschaffen: We should get rid of unnecessary rules.
+Präsens: ich schaffe ab
+Präteritum: ich schaffte ab
+Perfekt: ich habe abgeschafft
+Futur I: ich werde abschaffen
+Konjunktiv II: ich würde abschaffen
+Konjunktiv I: ich schaffe ab
+
+ein paar Jahre später: a few years later
+English: a few years later
+Persian: چند سال بعد
+Penglish: chand sal bad
+Bedeutung: nach dem Vergehen von einigen Jahren; einige Jahre nach einem bestimmten Zeitpunkt oder Ereignis.
+Synonyme: einige Jahre später, wenige Jahre danach
+ex: Ein paar Jahre später zog er nach Österreich: A few years later, he moved to Austria.
+ex: Wir trafen uns ein paar Jahre später wieder: We met again a few years later.
+
+nach ein paar Jahren: after a few years
+English: after a few years
+Persian: بعد از چند سال
+Penglish: bad az chand sal
+Bedeutung: nachdem einige Jahre vergangen sind.
+Synonyme: nach einigen Jahren, einige Jahre später
+ex: Nach ein paar Jahren zog er nach Österreich: After a few years, he moved to Austria.
+ex: Nach ein paar Jahren konnte sie fließend Deutsch sprechen: After a few years, she could speak German fluently.
+
+die Kaution [kaʊ̯ˈtsi̯oːn]: deposit; security deposit
+English: deposit; security deposit
+Persian: پول پیش؛ ودیعه
+Penglish: poole pish; vadie
+Bedeutung: Geldbetrag, den man als Sicherheit hinterlegt und normalerweise später zurückbekommt, zum Beispiel bei der Miete einer Wohnung oder eines Geschäfts.
+Genitiv: der Kaution
+Plural: die Kautionen
+Kollokation: eine Kaution hinterlegen
+Synonyme: Sicherheitsleistung, Mietkaution
+ex: Für das Geschäft muss ich eine Kaution von 5.000 Euro zahlen: I have to pay a deposit of 5,000 euros for the shop.
+ex: Nach dem Ende des Mietvertrags bekomme ich die Kaution zurück: I get the deposit back after the rental contract ends.
