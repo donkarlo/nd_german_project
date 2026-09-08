@@ -3,6 +3,7 @@ import sys
 
 from PySide6.QtGui import QIcon
 
+from conjugation_passive import PassiveGermanConjugator
 import language_application as application
 from language_application import *  # noqa: F401,F403
 
@@ -25,11 +26,13 @@ def _ensure_project_settings_argument() -> None:
         sys.argv[1:1] = ["--settings", str(SETTINGS_PATH)]
 
 
+application.base.legacy.GermanConjugator = PassiveGermanConjugator
 application.base.language_icon = _project_language_icon
 
 
 def main() -> int:
     _ensure_project_settings_argument()
+    application.base.legacy.GermanConjugator = PassiveGermanConjugator
     application.base.language_icon = _project_language_icon
     return application.main()
 
