@@ -306,12 +306,6 @@ Persian: همانطور که می دانید
 Penglish: hamantor ke mi danid
 Wie ihr wisst, wollte ich über etwas anderes reden
 
-wissen (etw.Akk ~): know
-English: know
-Persian: دانستن
-Penglish: danestan
-ich habe gewusst, ich wusste
-
 erste [ˈeːɐ̯stə] (Adjektiv, nicht steigerbar): first
 English: first
 Persian: اول
@@ -26123,10 +26117,21 @@ Synonyme: Beziehung, Verhältnis
 ex: Diese zwei Zahlen stehen in Relation zueinander: These two numbers are in relation to each other.
 ex: Die Kosten stehen nicht in Relation zum Ergebnis: The costs are not in relation to the result.
 
-achten: pay attention
-English: pay attention
-Persian: توجه کنید
-Penglish: tavajoh konid
+achten [ˈaxtn̩] (auf + Akk.): to pay attention to; to take care to
+English: to pay attention to; to take care to
+Persian: دقت کردن؛ توجه کردن
+Penglish: deghat kardan; tavajoh kardan
+Verwendung: auf jemanden/etwas (Akk.) achten
+Bedeutung: seine Aufmerksamkeit bewusst auf jemanden oder etwas richten; etwas berücksichtigen oder beachten.
+Synonyme: beachten, aufpassen, berücksichtigen
+ex: Achte bitte auf die Details: Please pay attention to the details.
+ex: Du musst darauf achten, keinen Fehler zu machen: You have to take care not to make a mistake.
+Präsens: ich achte
+Präteritum: ich achtete
+Perfekt: ich habe geachtet
+Futur I: ich werde achten
+Konjunktiv II: ich würde achten
+Konjunktiv I: ich achte
 
 schrecklich [ˈʃʁɛklɪç] (Adjektiv, Komparativ: schrecklicher, Superlativ: am schrecklichsten): terrible; awful; horrible
 English: terrible; awful; horrible
@@ -26725,10 +26730,21 @@ Futur I: ich werde fühlen
 Konjunktiv II: ich fühlte / ich würde fühlen
 Konjunktiv I: ich fühle
 
-angeben: indicate
-English: indicate
-Persian: نشان دادن
-Penglish: neshan dadan
+angeben [ˈanˌɡeːbn̩] (Akk., trennbar, transitiv, unregelmäßig): to state; to specify; to indicate
+English: to state; to specify; to indicate
+Persian: اعلام کردن؛ ذکر کردن؛ مشخص کردن
+Penglish: elam kardan; zekr kardan; moshakhas kardan
+Verwendung: etwas (Akk.) angeben
+Bedeutung: eine Information ausdrücklich nennen oder mitteilen.
+Synonyme: nennen, mitteilen, spezifizieren
+ex: Bitte geben Sie Ihre Adresse an: Please state your address.
+ex: Er gab an, dass er keine Erfahrung damit hatte: He stated that he had no experience with it.
+Präsens: ich gebe an
+Präteritum: ich gab an
+Perfekt: ich habe angegeben
+Futur I: ich werde angeben
+Konjunktiv II: ich würde angeben
+Konjunktiv I: ich gebe an
 
 der Passant (pl. die Passanten): passerby
 English: passerby
@@ -33028,11 +33044,17 @@ Synonyme: Baukunst, Aufbau, Struktur
 ex: Die Architektur des Gebäudes ist modern: The architecture of the building is modern.
 ex: Wir diskutieren die Architektur des Systems: We discuss the architecture of the system.
 
-der Wissenschaftler : researcher
-English: researcher
-Persian: محقق
-Penglish: mohaghegh
-Er arbeitet als Wissenschaftler in einem Labor.:He works as a researcher in a laboratory.
+der Wissenschaftler [ˈvɪsn̩ʃaftlɐ]: scientist; researcher
+English: scientist; researcher
+Persian: دانشمند؛ پژوهشگر
+Penglish: daneshmand; pazhooheshgar
+Bedeutung: eine Person, die wissenschaftlich arbeitet, forscht und neue Erkenntnisse gewinnt oder vorhandenes Wissen untersucht.
+Genitiv: des Wissenschaftlers
+Plural: die Wissenschaftler
+Kollokation: als Wissenschaftler arbeiten
+Synonyme: Forscher, Wissenschaftstreibender
+ex: Der Wissenschaftler untersucht die Auswirkungen des Klimawandels: The scientist studies the effects of climate change.
+ex: Viele Wissenschaftler arbeiten an diesem Forschungsprojekt: Many scientists are working on this research project.
 
 das Labor [laˈboːɐ̯] (-s, -e): laboratory
 English: laboratory
@@ -34312,11 +34334,6 @@ Bedeutung: sich im Nachhinein als etwas Bestimmtes zeigen.
 Synonyme: sich herausstellen als, sich entpuppen als
 ex: Der Plan erwies sich als Fehler: The plan turned out to be a mistake.
 ex: Die Reise hat sich als sehr nützlich erwiesen: The trip turned out to be very useful.
-
-klettern: climb
-English: climb
-Persian: صعود
-Penglish: soood
 
 steigen: bala keshidan, sich aufwärts-, in die Höhe bewegen; hochsteigen
 English: bala keshidan, sich aufwärts-, in die Höhe bewegen; hochsteigen
@@ -50111,3 +50128,121 @@ Kollokation: mit dem Roller fahren
 Synonyme: Motorroller, Tretroller
 ex: Ich fahre mit dem Roller zur Arbeit: I ride the scooter to work.
 ex: Er hat einen neuen Roller gekauft: He bought a new scooter.
+
+der Barkeeper-Lehrling: bartender apprentice; trainee bartender
+English: bartender apprentice; trainee bartender
+Persian: شاگرد بارمن؛ کارآموز بارمن
+Penglish: shagird-e barman; karamooz-e barman
+Bedeutung: eine Person, die lernt, als Barkeeper zu arbeiten.
+Synonyme: Barkeeper-Auszubildender, angehender Barkeeper
+ex: Er arbeitet als Barkeeper-Lehrling in einer Hotelbar: He works as a trainee bartender in a hotel bar.
+ex: Der Barkeeper-Lehrling lernt, wie man verschiedene Cocktails zubereitet: The bartender apprentice is learning how to prepare different cocktails.
+
+einige Jahre später: some years later
+English: some years later
+Persian: چند سال بعد
+Penglish: chand sal bad
+Bedeutung: nach dem Vergehen von einigen Jahren.
+Synonyme: ein paar Jahre später, einige Jahre danach
+ex: Einige Jahre später zog er nach Deutschland: Some years later, he moved to Germany.
+ex: Wir trafen uns einige Jahre später wieder: We met again some years later.
+
+deaktiviert [deaktiˈviːɐ̯t] (Adjektiv, nicht steigerbar): disabled; deactivated
+English: disabled; deactivated
+Persian: غیرفعال؛ غیرفعال‌شده
+Penglish: gheyrfaal; gheyrfaal-shodeh
+Bedeutung: so eingestellt, dass eine Funktion oder ein Bedienelement vorübergehend oder dauerhaft nicht benutzt werden kann.
+Synonyme: inaktiv, ausgeschaltet, gesperrt
+Attributiv und prädikativ verwendbar
+ex: Dieses Eingabefeld ist deaktiviert: This input field is disabled.
+ex: Die Schaltfläche bleibt deaktiviert, bis alle Pflichtfelder ausgefüllt sind: The button remains disabled until all required fields are filled in.
+
+eine gute Gewohnheit beibehalten: to keep a good habit
+English: to keep a good habit
+Persian: یک عادت خوب را حفظ کردن؛ به یک عادت خوب ادامه دادن
+Penglish: yek aadate khoob ra hefz kardan; be yek aadate khoob edameh dadan
+Bedeutung: eine positive Gewohnheit weiterhin regelmäßig ausüben und nicht damit aufhören.
+Kollokation: eine gesunde Gewohnheit beibehalten
+Synonyme: eine gute Gewohnheit fortsetzen, an einer guten Gewohnheit festhalten
+ex: Ich möchte diese gute Gewohnheit beibehalten: I want to keep this good habit.
+ex: Es ist wichtig, gute Gewohnheiten langfristig beizubehalten: It is important to keep good habits in the long term.
+
+beibehalten [ˈbaɪ̯bəˌhaltn̩] (Akk., trennbar, transitiv, unregelmäßig): to keep; to maintain; to retain
+English: to keep; to maintain; to retain
+Persian: حفظ کردن؛ ادامه دادن؛ نگه داشتن
+Penglish: hefz kardan; edameh dadan; negah dashtan
+Verwendung: etwas (Akk.) beibehalten
+Bedeutung: etwas nicht verändern oder aufgeben, sondern in derselben Form weiterführen.
+Synonyme: behalten, fortsetzen, aufrechterhalten
+ex: Ich möchte diese Gewohnheit beibehalten: I want to keep this habit.
+ex: Wir behalten die bisherigen Regeln bei: We are keeping the existing rules.
+Präsens: ich behalte bei
+Präteritum: ich behielt bei
+Perfekt: ich habe beibehalten
+Futur I: ich werde beibehalten
+Konjunktiv II: ich würde beibehalten
+Konjunktiv I: ich behalte bei
+
+die Soße [ˈzoːsə]: sauce
+English: sauce
+Persian: سس
+Penglish: sos
+Bedeutung: eine flüssige oder dickflüssige Speise, die zu einem Gericht gegeben wird, um Geschmack oder Konsistenz zu ergänzen.
+Genitiv: der Soße
+Plural: die Soßen
+Kollokation: eine Soße zubereiten
+Synonyme: die Sauce
+ex: Ich mache eine Soße für die Nudeln: I am making a sauce for the pasta.
+ex: Die Soße ist zu salzig: The sauce is too salty.
+
+jemanden mit jemand anderem verwechseln: to mistake someone for someone else; to confuse someone with someone else
+English: to mistake someone for someone else; to confuse someone with someone else
+Persian: کسی را با شخص دیگری اشتباه گرفتن
+Penglish: kasi ra ba shakhs-e digari eshtebah gereftan
+Bedeutung: eine Person fälschlicherweise für eine andere Person halten.
+Synonyme: jemanden für jemand anderen halten, jemanden falsch erkennen
+ex: Ich habe dich mit deinem Bruder verwechselt: I mistook you for your brother.
+ex: Sie hat mich mit jemand anderem verwechselt: She mistook me for someone else.
+
+verwechseln [fɛɐ̯ˈvɛksl̩n] (Akk., transitiv, untrennbar): to confuse; to mix up; to mistake
+English: to confuse; to mix up; to mistake
+Persian: اشتباه گرفتن؛ با هم قاطی کردن
+Penglish: eshtebah gereftan; ba ham ghati kardan
+Verwendung: jemanden/etwas (Akk.) mit jemandem/etwas (Dat.) verwechseln
+Bedeutung: eine Person oder Sache fälschlicherweise für eine andere halten oder zwei ähnliche Personen oder Dinge nicht richtig unterscheiden.
+Synonyme: durcheinanderbringen, falsch zuordnen, für jemanden/etwas anderes halten
+ex: Ich habe dich mit deinem Bruder verwechselt: I mistook you for your brother.
+ex: Du darfst diese beiden Begriffe nicht verwechseln: You must not confuse these two terms.
+Präsens: ich verwechsle
+Präteritum: ich verwechselte
+Perfekt: ich habe verwechselt
+Futur I: ich werde verwechseln
+Konjunktiv II: ich würde verwechseln
+Konjunktiv I: ich verwechsle
+
+sich irren [ˈɪʁən] (reflexiv, intransitiv): to be mistaken; to be wrong
+English: to be mistaken; to be wrong
+Persian: اشتباه کردن؛ در اشتباه بودن
+Penglish: eshtebah kardan; dar eshtebah boodan
+Bedeutung: etwas falsch einschätzen, glauben oder verstehen.
+Synonyme: sich täuschen, falschliegen
+ex: Wenn ich mich nicht irre, beginnt der Kurs morgen: If I’m not mistaken, the course starts tomorrow.
+ex: Du irrst dich, das ist nicht seine Telefonnummer: You are mistaken; that is not his phone number.
+Präsens: ich irre mich
+Präteritum: ich irrte mich
+Perfekt: ich habe mich geirrt
+Futur I: ich werde mich irren
+Konjunktiv II: ich würde mich irren
+Konjunktiv I: ich irre mich
+
+der Buchstabe [ˈbuːxˌʃtaːbə]: letter; letter of the alphabet
+English: letter; letter of the alphabet
+Persian: حرف؛ حرف الفبا
+Penglish: harf; harfe alefba
+Bedeutung: ein einzelnes Schriftzeichen eines Alphabets.
+Genitiv: des Buchstabens
+Plural: die Buchstaben
+Kollokation: einen Buchstaben schreiben
+Synonyme: Schriftzeichen
+ex: Das deutsche Alphabet hat 26 Grundbuchstaben: The German alphabet has 26 basic letters.
+ex: Das Wort beginnt mit dem Buchstaben A: The word begins with the letter A.

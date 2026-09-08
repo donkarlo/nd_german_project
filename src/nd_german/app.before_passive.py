@@ -6,13 +6,6 @@ from PySide6.QtGui import QIcon
 import language_application as application
 from language_application import *  # noqa: F401,F403
 
-try:
-    from passive_patch import install_passive_conjugation
-    from ui_polish_patch import install_ui_polish
-except ImportError:
-    from .passive_patch import install_passive_conjugation
-    from .ui_polish_patch import install_ui_polish
-
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SETTINGS_PATH = PROJECT_ROOT / "settings.yaml"
@@ -37,8 +30,6 @@ application.base.language_icon = _project_language_icon
 
 def main() -> int:
     _ensure_project_settings_argument()
-    install_passive_conjugation()
-    install_ui_polish()
     application.base.language_icon = _project_language_icon
     return application.main()
 
