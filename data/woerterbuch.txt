@@ -50246,3 +50246,176 @@ Kollokation: einen Buchstaben schreiben
 Synonyme: Schriftzeichen
 ex: Das deutsche Alphabet hat 26 Grundbuchstaben: The German alphabet has 26 basic letters.
 ex: Das Wort beginnt mit dem Buchstaben A: The word begins with the letter A.
+
+satt werden: to become full; to feel full
+English: to become full; to feel full
+Persian: سیر شدن
+Penglish: sir shodan
+Bedeutung: nach dem Essen keinen Hunger mehr haben.
+Synonyme: keinen Hunger mehr haben, sich satt essen
+ex: Ich werde von dieser Suppe schnell satt: I get full quickly from this soup.
+ex: Hast du genug gegessen, um satt zu werden?: Have you eaten enough to get full?
+
+filtern [ˈfɪltɐn] (Akk., transitiv): to filter
+English: to filter
+Persian: فیلتر کردن؛ پالایش کردن
+Penglish: filter kardan; palayesh kardan
+Verwendung: etwas (Akk.) filtern
+Bedeutung: bestimmte Bestandteile aus einer Flüssigkeit, einer Datenmenge oder einer Informationsmenge auswählen oder entfernen.
+Synonyme: sieben, aussortieren, herausfiltern
+ex: Das Programm filtert die Suchergebnisse: The program filters the search results.
+ex: Diese Maschine filtert das Wasser: This machine filters the water.
+Präsens: ich filtere
+Präteritum: ich filterte
+Perfekt: ich habe gefiltert
+Futur I: ich werde filtern
+Konjunktiv II: ich würde filtern
+Konjunktiv I: ich filtere
+
+infolgedessen [ˈɪnfolɡəˌdɛsn̩] (Konjunktionaladverb): consequently; as a result
+English: consequently; as a result
+Persian: در نتیجه؛ بنابراین
+Penglish: dar natijeh; banabarin
+Bedeutung: drückt aus, dass etwas die Folge eines vorher genannten Sachverhalts ist.
+Synonyme: deshalb, daher, demzufolge
+Gebrauch: steht infolgedessen am Satzanfang, folgt das konjugierte Verb direkt danach.
+ex: Es hat stark geregnet. Infolgedessen wurde die Straße gesperrt: It rained heavily. As a result, the road was closed.
+ex: Er war krank und konnte infolgedessen nicht arbeiten: He was sick and consequently could not work.
+
+sowieso [zoˈviːzoː] (Adverb, nicht steigerbar): anyway; in any case; anyhow
+English: anyway; in any case; anyhow
+Persian: به‌هرحال؛ در هر صورت؛ به‌هرصورت
+Penglish: be har hal; dar har soorat; be har soorat
+Bedeutung: drückt aus, dass etwas unabhängig von anderen Umständen gilt oder ohnehin der Fall ist.
+Synonyme: ohnehin, jedenfalls, auf jeden Fall
+ex: Ich gehe sowieso morgen einkaufen: I’m going shopping tomorrow anyway.
+ex: Das ist sowieso zu teuer für mich: That is too expensive for me anyway.
+
+das Ganze gerade: the whole thing precisely; the whole thing especially
+English: the whole thing precisely; the whole thing especially
+Persian: کل ماجرا دقیقاً؛ کل قضیه درست به‌خاطر همین
+Penglish: kole majara daghighan; kole ghazieh dorost be khatere hamin
+Bedeutung: In diesem Satz sind „Ganze“ und „gerade“ zwei verschiedene Wörter. „das Ganze“ bedeutet die ganze Sache / die ganze Situation. „gerade“ bedeutet hier „genau“ oder „ausgerechnet“.
+ex: Das Ganze wird gerade durch ein Verbot noch interessanter: The whole thing becomes even more interesting precisely because of a ban.
+ex: Gerade dadurch entsteht ein Problem: Precisely because of that, a problem arises.
+
+der Sprung [ʃpʁʊŋ]: jump; leap
+English: jump; leap
+Persian: پرش؛ جهش
+Penglish: paresh; jahesh
+Bedeutung: eine schnelle Bewegung, bei der man sich vom Boden abstößt und für kurze Zeit in der Luft ist.
+Genitiv: des Sprunges / Sprungs
+Plural: die Sprünge
+Kollokation: einen Sprung machen
+Synonyme: Satz, Hüpfer
+ex: Er machte einen großen Sprung über den Bach: He made a big jump over the stream.
+ex: Die Katze schafft hohe Sprünge: The cat can make high jumps.
+
+gängig [ˈɡɛŋɪç] (Adjektiv, Komparativ: gängiger, Superlativ: am gängigsten): common; widely used; customary
+English: common; widely used; customary
+Persian: رایج؛ متداول؛ معمول
+Penglish: rayej; motadavel; mamool
+Bedeutung: allgemein bekannt, häufig verwendet oder weit verbreitet.
+Synonyme: üblich, verbreitet, gebräuchlich
+Attributiv und prädikativ verwendbar
+ex: Das ist eine gängige Methode: That is a common method.
+ex: Diese Bezeichnung ist im Deutschen sehr gängig: This term is very common in German.
+ex: Diese Variante ist gängiger als die andere: This variant is more commonly used than the other one.
+
+die Nation [naˈtsi̯oːn]: nation
+English: nation
+Persian: ملت؛ کشور
+Penglish: mellat; keshvar
+Bedeutung: große Gemeinschaft von Menschen, die sich durch gemeinsame Geschichte, Kultur, Sprache oder politische Zugehörigkeit verbunden fühlt.
+Genitiv: der Nation
+Plural: die Nationen
+Kollokation: eine unabhängige Nation
+Synonyme: Volk, Staat
+ex: Viele Nationen arbeiten in dieser Organisation zusammen: Many nations work together in this organization.
+ex: Die Nation feiert heute ihren Nationalfeiertag: The nation is celebrating its national holiday today.
+
+an Bord: on board; aboard
+English: on board; aboard
+Persian: در وسیلهٔ نقلیه؛ داخل وسیلهٔ نقلیه
+Penglish: dar vasileye naghlieh; dakhele vasileye naghlieh
+Bedeutung: in oder auf einem Verkehrsmittel befindlich; als Passagier oder Besatzungsmitglied mitfahrend.
+Gebrauch: häufig mit „sein“, „haben“ oder nach einem Nomen wie Bus, Zug, Schiff oder Flugzeug.
+Synonyme: mitfahrend, im Fahrzeug
+ex: Der Bus hatte 20 Personen an Bord: The bus had 20 people on board.
+ex: Alle Passagiere sind bereits an Bord: All passengers are already on board.
+
+verschmutzen [fɛɐ̯ˈʃmʊʦn̩] (transitives Verb, Akk.): to pollute; to contaminate
+English: to pollute; to contaminate
+Persian: آلوده کردن
+Penglish: aloodeh kardan
+Verwendung: etwas (Akk.) verschmutzen; besonders die Luft, das Wasser oder die Umwelt verschmutzen
+Bedeutung: etwas durch schädliche, schmutzige oder unerwünschte Stoffe verunreinigen.
+Synonyme: verunreinigen, belasten, kontaminieren
+ex: Autos verschmutzen die Luft: Cars pollute the air.
+ex: Die Fabrik verschmutzt die Luft mit Schadstoffen: The factory pollutes the air with pollutants.
+Präsens: ich verschmutze
+Präteritum: ich verschmutzte
+Perfekt: ich habe verschmutzt
+Futur I: ich werde verschmutzen
+Konjunktiv II: ich würde verschmutzen
+Konjunktiv I: ich verschmutze
+
+der Zufall [ˈtsuːfal]: coincidence; chance
+English: coincidence; chance
+Persian: تصادف؛ اتفاق
+Penglish: tasadof; ettefagh
+Bedeutung: ein unerwartetes Ereignis, das ohne erkennbare Absicht oder Planung geschieht.
+Genitiv: des Zufalls
+Plural: die Zufälle
+Kollokation: durch Zufall
+Synonyme: Fügung, Zufälligkeit
+ex: Wir haben uns durch Zufall getroffen: We met by chance.
+ex: Das war kein Zufall: That was no coincidence.
+
+letztlich [ˈlɛt͡stlɪç] (Adverb, nicht steigerbar): ultimately; in the end
+English: ultimately; in the end
+Persian: در نهایت؛ نهایتاً؛ سرانجام
+Penglish: dar nahayat; nahayatan; saranjam
+Bedeutung: nach Berücksichtigung aller Umstände; am Ende einer Entwicklung oder Überlegung.
+Synonyme: letztendlich, schließlich, am Ende
+ex: Letztlich musst du selbst entscheiden: Ultimately, you have to decide for yourself.
+ex: Letztlich war die Entscheidung richtig: In the end, the decision was right.
+
+die Probe [ˈpʁoːbə]: test; sample; rehearsal
+English: test; sample; rehearsal
+Persian: آزمایش؛ نمونه؛ تمرین
+Penglish: azmayesh; nemooneh; tamrin
+Bedeutung: eine Überprüfung von etwas; eine kleine Menge zur Untersuchung; oder eine Übung vor einer Aufführung.
+Genitiv: der Probe
+Plural: die Proben
+Kollokation: eine Probe nehmen; eine Probe machen
+Synonyme: Test, Muster, Generalprobe
+ex: Der Arzt nimmt eine Blutprobe: The doctor takes a blood sample.
+ex: Heute Abend haben wir eine Probe für das Konzert: We have a rehearsal for the concert this evening.
+
+umbringen [ˈʊmˌbʁɪŋən] (trennbares Verb, transitiv + Akk.): to kill
+English: to kill
+Persian: کشتن؛ به قتل رساندن
+Penglish: koshtan; be ghatl resandan
+Verwendung: jemanden (Akk.) umbringen
+Bedeutung: den Tod eines Menschen oder Tieres absichtlich oder durch eine Handlung verursachen.
+Synonyme: töten, ermorden
+ex: Der Täter wollte ihn umbringen: The perpetrator wanted to kill him.
+ex: Das Gift kann Tiere umbringen: The poison can kill animals.
+Präsens: ich bringe um
+Präteritum: ich brachte um
+Perfekt: ich habe umgebracht
+Futur I: ich werde umbringen
+Konjunktiv II: ich würde umbringen
+Konjunktiv I: ich bringe um
+
+zynisch [ˈtsyːnɪʃ] (Adjektiv, Komparativ: zynischer, Superlativ: am zynischsten): cynical
+English: cynical
+Persian: بدبینانه؛ طعنه‌آمیز و بی‌رحمانه
+Penglish: badbinaneh; taneh-amiz va bi-rahmaneh
+Bedeutung: eine Haltung oder Äußerung, die Gefühle, Werte oder Motive anderer Menschen spöttisch, kalt oder respektlos betrachtet.
+Synonyme: spöttisch, sarkastisch, menschenverachtend
+Attributiv und prädikativ verwendbar
+ex: Seine Bemerkung war ziemlich zynisch: His remark was quite cynical.
+ex: Sie reagierte mit einem zynischen Lächeln: She reacted with a cynical smile.
+ex: Diese Aussage klingt noch zynischer: This statement sounds even more cynical.

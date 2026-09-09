@@ -1,37 +1,14 @@
 from __future__ import annotations
 
 import html
-from pathlib import Path
 
 import app_base as base
 from PySide6.QtGui import QColor
-from PySide6.QtCore import Qt, QSettings
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QTabBar, QLabel
 
 
 GRAMMAR_CSS = ""
-
-
-PERSISTENCE_DIR = Path("/home/donkarlo/Dropbox/repo/data/nd_german_project")
-WINDOW_STATE_PATH = PERSISTENCE_DIR / "window_state.ini"
-
-
-def _window_settings() -> QSettings:
-    PERSISTENCE_DIR.mkdir(parents=True, exist_ok=True)
-    return QSettings(str(WINDOW_STATE_PATH), QSettings.Format.IniFormat)
-
-
-def _restore_window_geometry(window) -> None:
-    settings = _window_settings()
-    geometry = settings.value("main_window/geometry")
-    if geometry is not None:
-        window.restoreGeometry(geometry)
-
-
-def _save_window_geometry(window) -> None:
-    settings = _window_settings()
-    settings.setValue("main_window/geometry", window.saveGeometry())
-    settings.sync()
 
 
 GRAMMAR_QT_STYLESHEET = """
@@ -356,9 +333,6 @@ def _open_add_dialog(self) -> None:
 def _polish_controls(window) -> None:
     legacy = base.legacy
 
-    # Add a small visual gap below the native title bar.
-    window.setContentsMargins(0, 7, 0, 0)
-
     for edit in window.findChildren(legacy.QLineEdit):
         edit.setMinimumHeight(38)
         font = edit.font()
@@ -520,19 +494,12 @@ def _install_runtime_patches() -> None:
         return
 
     original_init = cls.__init__
-    original_close_event = cls.closeEvent
 
     def polished_init(self, *args, **kwargs):
         original_init(self, *args, **kwargs)
         _polish_controls(self)
-        _restore_window_geometry(self)
-
-    def polished_close_event(self, event):
-        _save_window_geometry(self)
-        return original_close_event(self, event)
 
     cls.__init__ = polished_init
-    cls.closeEvent = polished_close_event
     cls.GRAMMAR_CSS = ""
     cls._table = staticmethod(_grammar_table)
     cls._format_conjugation_line = staticmethod(_format_conjugation_line)

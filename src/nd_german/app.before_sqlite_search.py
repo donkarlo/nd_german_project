@@ -11,11 +11,9 @@ from language_application import *  # noqa: F401,F403
 
 try:
     from passive_patch import install_passive_conjugation
-    from sqlite_search_patch import install as install_sqlite_search
     from ui_polish_patch import install_ui_polish
 except ImportError:
     from .passive_patch import install_passive_conjugation
-    from .sqlite_search_patch import install as install_sqlite_search
     from .ui_polish_patch import install_ui_polish
 
 
@@ -23,8 +21,6 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PERSISTENCE_DIR = Path("/home/donkarlo/Dropbox/repo/data/nd_german_project")
 LEGACY_SETTINGS_PATH = PROJECT_ROOT / "settings.yaml"
 SETTINGS_PATH = PERSISTENCE_DIR / "settings.yaml"
-TEXT_DATABASE_PATH = PROJECT_ROOT / "data" / "woerterbuch.txt"
-SQLITE_DATABASE_PATH = PERSISTENCE_DIR / "dictionary.sqlite3"
 
 
 def _project_language_icon() -> QIcon:
@@ -74,16 +70,8 @@ application.base.language_icon = _project_language_icon
 def main() -> int:
     _ensure_project_settings_argument()
     _install_headword_colon_fix()
-
-    install_sqlite_search(
-        application,
-        application.base,
-        source_path=TEXT_DATABASE_PATH,
-        sqlite_path=SQLITE_DATABASE_PATH,
-    )
     install_passive_conjugation()
     install_ui_polish()
-
     application.base.language_icon = _project_language_icon
     return application.main()
 
