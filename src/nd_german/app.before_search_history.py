@@ -11,12 +11,10 @@ from language_application import *  # noqa: F401,F403
 
 try:
     from passive_patch import install_passive_conjugation
-    from search_history_patch import install as install_search_history
     from sqlite_search_patch import install as install_sqlite_search
     from ui_polish_patch import install_ui_polish
 except ImportError:
     from .passive_patch import install_passive_conjugation
-    from .search_history_patch import install as install_search_history
     from .sqlite_search_patch import install as install_sqlite_search
     from .ui_polish_patch import install_ui_polish
 
@@ -85,7 +83,6 @@ def main() -> int:
     )
     install_passive_conjugation()
     install_ui_polish()
-    install_search_history()
 
     application.base.language_icon = _project_language_icon
     return application.main()

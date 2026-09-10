@@ -18438,10 +18438,16 @@ ex: Das Ergebnis war überraschend: The result was surprising.
 ex: Überraschenderweise hat er gewonnen: Surprisingly, he won.
 ex: Diese Nachricht ist überraschender als die andere: This news is more surprising than the other one.
 
-erstaunlich: amazing
-English: amazing
-Persian: شگفت انگیز
-Penglish: shegeft angiz
+erstaunlich [ɛɐ̯ˈʃtaʊ̯nlɪç] (Adjektiv, Komparativ: erstaunlicher, Superlativ: am erstaunlichsten): astonishing; amazing; surprising
+English: astonishing; amazing; surprising
+Persian: شگفت‌انگیز؛ حیرت‌آور؛ تعجب‌آور
+Penglish: shegeft-angiz; heyrat-avar; taajob-avar
+Bedeutung: so ungewöhnlich oder unerwartet, dass es Überraschung oder Bewunderung hervorruft.
+Synonyme: überraschend, verblüffend, bemerkenswert
+Attributiv und prädikativ verwendbar
+ex: Sie hat erstaunliche Fortschritte gemacht: She has made astonishing progress.
+ex: Das Ergebnis ist wirklich erstaunlich: The result is really surprising.
+ex: Seine Leistung war noch erstaunlicher als erwartet: His performance was even more astonishing than expected.
 
 die Abreise: departure
 English: departure
@@ -19389,10 +19395,21 @@ Penglish: ghassab
 ex: Der Metzger verkauft frisches Fleisch: The butcher sells fresh meat
 ex: Ich kenne den Metzger in diesem Laden gut: I know the butcher in this shop well
 
-begegnen: meet, eneinbinden (jdn./etw.Akk ~)counter
-English: meet, eneinbinden (jdn./etw.Akk ~)counter
-Persian: ملاقات; eneinbinden (jdn./etw.Akk ~) شمارنده
-Penglish: molaghat; eneinbinden (jdn./etw.Akk ~) shomarandeh
+begegnen [bəˈɡeːɡnən] (Dat., untrennbar, intransitiv): to meet; to encounter
+English: to meet; to encounter
+Persian: برخورد کردن با؛ روبه‌رو شدن با
+Penglish: barkhord kardan ba; rooberoo shodan ba
+Verwendung: jemandem/etwas (Dat.) begegnen
+Bedeutung: jemanden oder etwas zufällig treffen oder mit jemandem bzw. etwas in Kontakt kommen.
+Synonyme: treffen, antreffen
+ex: Ich bin ihm gestern zufällig begegnet: I met him by chance yesterday.
+ex: Auf dem Weg zur Arbeit bin ich einer alten Freundin begegnet: On the way to work, I ran into an old friend.
+Präsens: ich begegne
+Präteritum: ich begegnete
+Perfekt: ich bin begegnet
+Futur I: ich werde begegnen
+Konjunktiv II: ich würde begegnen
+Konjunktiv I: ich begegne
 
 strom: electricity, power
 English: electricity, power
@@ -20059,10 +20076,21 @@ ex: Der König war sehr mächtig: The king was very powerful.
 ex: Dieses Unternehmen ist mächtiger als viele Staaten: This company is more powerful than many countries.
 ex: Sie ist eine der mächtigsten Personen der Welt: She is one of the most powerful people in the world.
 
-berichten: report
-English: report
-Persian: گزارش کردن
-Penglish: gozaresh kardan
+berichten [bəˈʁɪçtn̩] (über + Akk. / von + Dat., intransitiv): to report; to inform; to give an account
+English: to report; to inform; to give an account
+Persian: گزارش دادن؛ خبر دادن
+Penglish: gozaresh dadan; khabar dadan
+Verwendung: über jemanden/etwas (Akk.) berichten; von jemandem/etwas (Dat.) berichten
+Bedeutung: Informationen über ein Ereignis, eine Situation oder ein Thema mitteilen.
+Synonyme: melden, erzählen, informieren
+ex: Die Zeitung berichtet über den Unfall: The newspaper reports on the accident.
+ex: Er berichtete von seinen Erfahrungen: He reported on his experiences.
+Präsens: ich berichte
+Präteritum: ich berichtete
+Perfekt: ich habe berichtet
+Futur I: ich werde berichten
+Konjunktiv II: ich würde berichten
+Konjunktiv I: ich berichte
 
 schlagen [ˈʃlaːɡn̩] (etw./jdn. Akk.): beat, strike
 English: beat, strike
@@ -24333,12 +24361,17 @@ Penglish: engheraz gooneh ha; az dast dadan tanavvo zisti
 ex: Das Artensterben nimmt weltweit rapide zu: Species extinction is increasing rapidly worldwide.
 ex: Der Klimawandel beschleunigt das Artensterben: Climate change accelerates the loss of biodiversity.
 
-das Aussterben [ˈaʊ̯sˌʃtɛʁbn̩] (sg.; kein Plural üblich): extinction; dying out
-English: extinction; dying out
-Persian: انقراض; در حال مرگ
-Penglish: engheraz; dar hal marg
-ex: Das Aussterben vieler Tierarten ist eine globale Krise: The extinction of many animal species is a global crisis.
-ex: Der Mensch trägt Mitschuld am Aussterben seltener Arten: Humans bear partial responsibility for the extinction of rare species.
+das Aussterben [ˈaʊ̯sˌʃtɛʁbn̩]: extinction
+English: extinction
+Persian: انقراض
+Penglish: engheraz
+Bedeutung: vollständiges Verschwinden einer Tierart, Pflanzenart oder einer anderen biologischen Gruppe.
+Genitiv: des Aussterbens
+Plural: kein Plural
+Kollokation: vom Aussterben bedroht sein
+Synonyme: Verschwinden, Erlöschen
+ex: Viele Tierarten sind vom Aussterben bedroht: Many animal species are threatened with extinction.
+ex: Das Aussterben der Dinosaurier geschah vor Millionen von Jahren: The extinction of the dinosaurs happened millions of years ago.
 
 umsteigen [ˈʊmˌʃtaɪ̯ɡn̩] (auf etw.Akk): switch; change (transport/system)
 English: switch; change (transport/system)
@@ -50419,3 +50452,160 @@ Attributiv und prädikativ verwendbar
 ex: Seine Bemerkung war ziemlich zynisch: His remark was quite cynical.
 ex: Sie reagierte mit einem zynischen Lächeln: She reacted with a cynical smile.
 ex: Diese Aussage klingt noch zynischer: This statement sounds even more cynical.
+
+die Reife [ˈʁaɪ̯fə]: maturity
+English: maturity
+Persian: بلوغ؛ پختگی
+Penglish: bolugh; pokhtegi
+Bedeutung: Zustand, in dem eine Person körperlich, geistig oder emotional ausreichend entwickelt und erwachsen ist.
+Genitiv: der Reife
+Plural: kein Plural
+Kollokation: emotionale Reife zeigen
+Synonyme: Erwachsensein, Mündigkeit
+ex: Er zeigt für sein Alter eine erstaunliche Reife: He shows remarkable maturity for his age.
+ex: Emotionale Reife entwickelt sich oft mit der Erfahrung: Emotional maturity often develops with experience.
+
+die Einbindung [ˈaɪ̯nˌbɪndʊŋ]: integration; inclusion; incorporation
+English: integration; inclusion; incorporation
+Persian: ادغام؛ گنجاندن؛ مشارکت دادن
+Penglish: edgham; gonjandan; mosharekat dadan
+Bedeutung: das Einbeziehen oder Integrieren einer Person, Sache oder eines Systems in einen größeren Zusammenhang.
+Genitiv: der Einbindung
+Plural: die Einbindungen
+Kollokation: die Einbindung in ein System
+Synonyme: Integration, Einbeziehung, Eingliederung
+ex: Die Einbindung neuer Mitarbeiter ist sehr wichtig: The integration of new employees is very important.
+ex: Die Einbindung der Software in das bestehende System dauert einige Tage: The integration of the software into the existing system takes a few days.
+
+besorgen [bəˈzɔʁɡn̩] (Akk., transitiv): to get; to obtain; to procure
+English: to get; to obtain; to procure
+Persian: تهیه کردن؛ گرفتن؛ فراهم کردن
+Penglish: tahieh kardan; gereftan; faraham kardan
+Verwendung: etwas (Akk.) besorgen
+Bedeutung: etwas beschaffen oder dafür sorgen, dass man etwas bekommt, das man braucht.
+Synonyme: beschaffen, holen, organisieren
+ex: Ich muss noch Lebensmittel besorgen: I still need to get groceries.
+ex: Kannst du mir die Tickets besorgen: Can you get the tickets for me?
+Präsens: ich besorge
+Präteritum: ich besorgte
+Perfekt: ich habe besorgt
+Futur I: ich werde besorgen
+Konjunktiv II: ich würde besorgen
+Konjunktiv I: ich besorge
+
+der Prüfbericht [ˈpʁyːf bəˌʁɪçt]: inspection report; test report
+English: inspection report; test report
+Persian: گزارش بازرسی؛ گزارش بررسی
+Penglish: gozaresh-e bazresi; gozaresh-e barrasi
+Bedeutung: schriftlicher Bericht, in dem die Ergebnisse einer Prüfung, Kontrolle oder technischen Untersuchung festgehalten werden.
+Genitiv: des Prüfberichts
+Plural: die Prüfberichte
+Kollokation: einen Prüfbericht erstellen
+Synonyme: Untersuchungsbericht, Kontrollbericht, Testbericht
+ex: Der Prüfbericht zeigt mehrere technische Mängel: The inspection report shows several technical defects.
+ex: Ich habe den Prüfbericht vom Mechaniker erhalten: I received the inspection report from the mechanic.
+
+rum [ʁʊm] (Adverb, umgangssprachlich, Kurzform von „herum“): around; about
+English: around; about
+Persian: دور؛ این‌طرف و آن‌طرف؛ اطراف
+Penglish: door; in taraf oon taraf; atraf
+Bedeutung: um etwas herum oder ohne bestimmte Richtung an verschiedenen Orten; umgangssprachliche Kurzform von „herum“.
+Synonyme: herum, umher
+ex: Warum liegen deine Sachen überall rum: Why are your things lying around everywhere?
+ex: Wir sind den ganzen Tag in der Stadt rumgelaufen: We walked around the city all day.
+
+rum sein (umgangssprachlich): to be over; to be finished
+English: to be over; to be finished
+Persian: تمام شدن؛ به پایان رسیدن
+Penglish: tamam shodan; be payan residan
+Bedeutung: beendet oder vorbei sein.
+Synonyme: vorbei sein, zu Ende sein
+ex: Heute Abend ist ja schon fast rum: This evening is already almost over.
+ex: Der Urlaub ist leider schon rum: Unfortunately, the vacation is already over.
+
+die Geburt: birth
+English: birth
+Persian: تولد؛ زایمان
+Penglish: tavalod; zayeman
+Bedeutung: der Vorgang, bei dem ein Kind oder Tier zur Welt kommt.
+Genitiv: der Geburt
+Plural: die Geburten
+Kollokation: die Geburt eines Kindes
+Synonyme: Entbindung, Niederkunft
+ex: Die Geburt ihres Kindes war im Mai: The birth of her child was in May.
+ex: Seit seiner Geburt lebt er in Graz: He has lived in Graz since his birth.
+
+der Lebenswille [ˈleːbn̩sˌvɪlə]: will to live
+English: will to live
+Persian: امید به زندگی؛ میل به ادامهٔ زندگی
+Penglish: omid be zendegi; meyl be edame-ye zendegi
+Bedeutung: der innere Wunsch und die psychische Motivation, weiterzuleben.
+Genitiv: des Lebenswillens
+Plural: kein Plural
+Kollokation: einen starken Lebenswillen haben
+Synonyme: Lebensmut, Überlebenswille
+ex: Trotz seiner schwierigen Situation hat er einen starken Lebenswillen: Despite his difficult situation, he has a strong will to live.
+ex: Der Lebenswille kann einen großen Einfluss auf die psychische Verfassung haben: The will to live can have a major influence on a person's psychological condition.
+
+mehrmals [ˈmeːɐ̯ˌmaːls] (Adverb, nicht steigerbar): several times; repeatedly
+English: several times; repeatedly
+Persian: چند بار؛ چندین بار
+Penglish: chand bar; chandin bar
+Bedeutung: mehr als einmal; bei mehreren verschiedenen Gelegenheiten.
+Synonyme: mehrfach, wiederholt
+ex: Ich habe ihn mehrmals angerufen: I called him several times.
+ex: Sie hat das Buch mehrmals gelesen: She read the book several times.
+
+durchschnittlich [ˈdʊʁçˌʃnɪtlɪç] (Adjektiv, Komparativ: durchschnittlicher, Superlativ: am durchschnittlichsten): average; mean
+English: average; mean
+Persian: متوسط؛ میانگین
+Penglish: motevaset; miyangin
+Bedeutung: einem berechneten oder typischen Mittelwert entsprechend.
+Synonyme: im Mittel, mittlere
+Attributiv und prädikativ verwendbar
+ex: Die durchschnittliche Lebenserwartung ist gestiegen: The average life expectancy has increased.
+ex: Die durchschnittliche Lebensdauer dieses Geräts beträgt zehn Jahre: The average lifespan of this device is ten years.
+
+die Lärmbelastung: noise pollution; noise exposure
+English: noise pollution; noise exposure
+Persian: آلودگی صوتی؛ مواجهه با سر و صدای زیاد
+Penglish: aloodegi-ye soti; movajeh ba sar o seda-ye ziad
+Bedeutung: Belastung von Menschen oder Umwelt durch störenden oder gesundheitsschädlichen Lärm.
+Genitiv: der Lärmbelastung
+Plural: die Lärmbelastungen
+Kollokation: hoher Lärmbelastung ausgesetzt sein
+Synonyme: Lärmbelästigung, Geräuschbelastung
+ex: Die Lärmbelastung in großen Städten ist oft sehr hoch: Noise pollution in large cities is often very high.
+ex: Dauerhafte Lärmbelastung kann die Gesundheit beeinträchtigen: Long-term noise exposure can affect health.
+
+leiden unter + Dat.: to suffer from
+English: to suffer from
+Persian: رنج بردن از؛ مبتلا بودن به
+Penglish: ranj bordan az; mobtala boodan be
+Bedeutung: durch etwas körperlich, psychisch oder allgemein stark belastet oder beeinträchtigt sein.
+Verwendung: unter jemandem/etwas (Dat.) leiden
+Synonyme: beeinträchtigt sein durch, belastet sein durch
+ex: Er leidet unter starken Rückenschmerzen: He suffers from severe back pain.
+ex: Viele Menschen leiden unter Stress: Many people suffer from stress.
+
+gezielt [ɡəˈtsiːlt] (Adjektiv, Komparativ: gezielter, Superlativ: am gezieltesten): targeted; deliberate; specific
+English: targeted; deliberate; specific
+Persian: هدفمند؛ مشخص؛ حساب‌شده
+Penglish: hadafmand; moshakhas; hesab-shodeh
+Bedeutung: bewusst auf ein bestimmtes Ziel oder einen bestimmten Zweck ausgerichtet.
+Synonyme: zielgerichtet, bewusst, zweckgerichtet
+Attributiv und prädikativ verwendbar
+ex: Die Regierung plant gezielte Maßnahmen gegen die Luftverschmutzung: The government is planning targeted measures against air pollution.
+ex: Mit gezieltem Training kann man seine Leistung verbessern: With targeted training, one can improve performance.
+ex: Diese Methode ist gezielter als die vorherige: This method is more targeted than the previous one.
+
+enorm [eˈnɔʁm] (Adjektiv, Komparativ: enormer, Superlativ: am enormsten): enormous; immense; tremendous
+English: enormous; immense; tremendous
+Persian: بسیار بزرگ؛ عظیم؛ فوق‌العاده زیاد
+Penglish: besyar bozorg; azim; fogholadeh ziad
+Bedeutung: außergewöhnlich groß, stark oder umfangreich.
+Synonyme: riesig, gewaltig, immens
+Attributiv und prädikativ verwendbar
+ex: Die Kosten sind enorm gestiegen: The costs have increased enormously.
+ex: Das Projekt erfordert einen enormen Aufwand: The project requires an enormous amount of effort.
+ex: Der Unterschied ist enorm: The difference is enormous.
