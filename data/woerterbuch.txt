@@ -13851,11 +13851,6 @@ Synonyme: Variante, Fassung, Ausgabe
 ex: Ich habe die neueste Version der App installiert: I installed the latest version of the app.
 ex: Es gibt zwei Versionen dieser Geschichte: There are two versions of this story.
 
-draußen adv: outside
-English: outside
-Persian: خارج
-Penglish: kharej
-
 unmotiviert: unmotivated
 English: unmotivated
 Persian: بی انگیزه
@@ -20105,10 +20100,17 @@ Futur I: ich werde schlagen
 Konjunktiv II: ich würde schlagen
 Konjunktiv I: ich schlage
 
-die Malerei: painting
-English: painting
-Persian: نقاشی
-Penglish: naghashi
+die Malerei [maləˈʁaɪ̯] (Nomen, feminin): painting; art of painting
+English: painting; art of painting
+Persian: نقاشی؛ هنر نقاشی
+Penglish: naghashi; honar-e naghashi
+Bedeutung: die Kunst oder Tätigkeit, Bilder mit Farben zu gestalten.
+Genitiv: der Malerei
+Plural: kein Plural
+Kollokation: moderne Malerei
+Synonyme: Malkunst
+ex: Sie interessiert sich für moderne Malerei: She is interested in modern painting.
+ex: Die Malerei ist eine alte Kunstform: Painting is an ancient art form.
 
 ohnmächtig werden [ˈoːnˌmɛçtɪç ˈveːɐ̯dən] intransitiv: faint; lose consciousness
 English: faint; lose consciousness
@@ -26735,10 +26737,14 @@ Attributiv und prädikativ verwendbar
 ex: Sie ist sehr sozial und hilft anderen gern: She is very social and likes helping others.
 ex: Soziale Probleme sind in vielen Ländern wichtig: Social problems are important in many countries.
 
-draußen: outdoor
-English: outdoor
-Persian: در فضای باز
-Penglish: dar fazaye baz
+draußen [ˈdʁaʊ̯sn̩] (Adverb, nicht steigerbar): outside; outdoors
+English: outside; outdoors
+Persian: بیرون؛ در بیرون
+Penglish: biroon; dar biroon
+Bedeutung: außerhalb eines Gebäudes oder geschlossenen Raumes; im Freien.
+Synonyme: im Freien, außerhalb
+ex: Die Kinder spielen draußen: The children are playing outside.
+ex: Es ist draußen sehr kalt: It is very cold outside.
 
 nackt: naked, nude
 English: naked, nude
@@ -30545,13 +30551,6 @@ ex: Das war mir sehr peinlich: That was very embarrassing for me.
 ex: Die Situation war peinlich: The situation was embarrassing.
 ex: Es ist peinlich, das zu fragen: It is embarrassing to ask that.
 
-embarrassing [ɪmˈbærəsɪŋ]: embarrassing / awkward / making someone feel ashamed
-English: embarrassing / awkward / making someone feel ashamed
-Persian: شرم آور; ناخوشایند; باعث می شود کسی احساس شرم کند
-Penglish: sharm avar; nakhoshayand; baes mi she kasi ehsas sharm konad
-ex: It was an embarrassing moment for him: It was a moment that made him feel ashamed.
-ex: Forgetting her name was really embarrassing: Forgetting her name was very awkward.
-
 bestimmen [bəˈʃtɪmən] (transitiv): determine; define; decide
 English: determine; define; decide
 Persian: تعیین کردن; تعریف کردن; تصمیم گرفتن
@@ -34171,7 +34170,7 @@ English: determined
 Persian: تعیین شده است
 Penglish: tain shodeh ast
 
-(ent)scheiden / sich entscheiden: decide
+sich entscheiden: decide
 English: decide
 Persian: تصمیم گرفتن
 Penglish: tasmim gereftan
@@ -50609,3 +50608,105 @@ Attributiv und prädikativ verwendbar
 ex: Die Kosten sind enorm gestiegen: The costs have increased enormously.
 ex: Das Projekt erfordert einen enormen Aufwand: The project requires an enormous amount of effort.
 ex: Der Unterschied ist enorm: The difference is enormous.
+
+der Ablauf [ˈapˌlaʊ̯f] (Nomen, maskulin): flow; process; sequence
+English: flow; process; sequence
+Persian: روند؛ روال؛ ترتیب مراحل
+Penglish: ravand; raval; tartib-e marahel
+Bedeutung: die zeitliche oder logische Reihenfolge, in der einzelne Schritte eines Vorgangs stattfinden.
+Genitiv: des Ablaufs
+Plural: die Abläufe
+Kollokation: einen Ablauf planen
+Synonyme: Prozess, Verlauf, Vorgehensweise
+ex: Der Ablauf des Programms ist einfach: The flow of the program is simple.
+ex: Wir müssen den Ablauf des Projekts verbessern: We need to improve the workflow of the project.
+
+literarisch [liteˈʁaːʁɪʃ] (Adjektiv, Komparativ: literarischer, Superlativ: am literarischsten): literary; in a literary style
+English: literary; in a literary style
+Persian: ادبی؛ ادیبانه
+Penglish: adabi; adibaneh
+Bedeutung: die Literatur betreffend oder in einer sprachlich anspruchsvollen, literarischen Weise formuliert.
+Synonyme: dichterisch, kunstsprachlich, schriftstellerisch
+Attributiv und prädikativ verwendbar; auch adverbial gebraucht
+ex: Der Text ist sehr literarisch geschrieben: The text is written in a very literary style.
+ex: Er drückt seine Gedanken gern literarisch aus: He likes to express his thoughts in a literary way.
+ex: Diese Beschreibung wirkt literarischer als die vorherige: This description sounds more literary than the previous one.
+
+neben [ˈneːbn̩] (Präposition + Akkusativ oder Dativ): next to; beside
+English: next to; beside
+Persian: کنار؛ در کنار
+Penglish: kenar; dar kenar
+Bedeutung: bezeichnet eine Position unmittelbar oder sehr nahe an der Seite von jemandem oder etwas.
+Gebrauch: Dativ bei einem Ort oder einer Position (Wo?); Akkusativ bei einer Bewegung oder Richtung zu einer Position (Wohin?).
+Synonyme: bei, an der Seite von
+ex: Ich sitze neben meinem Freund: I am sitting next to my friend.
+ex: Ich setze mich neben meinen Freund: I sit down next to my friend.
+
+antik [anˈtiːk] (Adjektiv, Komparativ: antiker, Superlativ: am antiksten): ancient; antique
+English: ancient; antique
+Persian: باستانی؛ عتیقه
+Penglish: bastani; atigheh
+Bedeutung: aus der Antike stammend oder für die Antike typisch; auch sehr alt und historisch wertvoll.
+Synonyme: altertümlich, historisch, klassisch
+Attributiv und prädikativ verwendbar
+ex: Wir besuchten eine antike Stadt: We visited an ancient city.
+ex: Dieses Gebäude stammt aus der antiken Zeit: This building dates from ancient times.
+ex: Diese Statue ist antiker als die andere: This statue is more ancient than the other one.
+
+niederländisch [ˈniːdɐˌlɛndɪʃ] (Adjektiv, nicht steigerbar): Dutch
+English: Dutch
+Persian: هلندی
+Penglish: holandi
+Bedeutung: die Niederlande, ihre Bevölkerung, Sprache oder Kultur betreffend.
+Synonyme: holländisch (umgangssprachlich, oft ungenau)
+Attributiv und prädikativ verwendbar
+ex: Er spricht Niederländisch und interessiert sich für niederländische Kultur: He speaks Dutch and is interested in Dutch culture.
+ex: Das ist ein niederländischer Künstler: That is a Dutch artist.
+
+das Gemälde [ɡəˈmɛːldə] (Nomen, Neutrum): painting; painting artwork
+English: painting; painting artwork
+Persian: تابلو نقاشی؛ نقاشی
+Penglish: tablo-ye naghashi; naghashi
+Bedeutung: ein mit Farben gemaltes Bild, besonders als Kunstwerk.
+Genitiv: des Gemäldes
+Plural: die Gemälde
+Kollokation: ein Gemälde malen
+Synonyme: Bild, Kunstwerk
+ex: Das Gemälde hängt an der Wand: The painting hangs on the wall.
+ex: Dieses Gemälde stammt aus dem 18. Jahrhundert: This painting dates from the 18th century.
+
+der Maler [ˈmaːlɐ] (Nomen, maskulin): painter
+English: painter
+Persian: نقاش
+Penglish: naghash
+Bedeutung: eine Person, die Bilder malt, besonders als künstlerische Tätigkeit.
+Genitiv: des Malers
+Plural: die Maler
+Kollokation: ein berühmter Maler
+Synonyme: Künstler, Kunstmaler
+ex: Vincent van Gogh war ein niederländischer Maler: Vincent van Gogh was a Dutch painter.
+ex: Der Maler arbeitet an einem neuen Gemälde: The painter is working on a new painting.
+
+die Niederlande [ˈniːdɐˌlandə] (Eigenname, Plural): the Netherlands
+English: the Netherlands
+Persian: هلند
+Penglish: holand
+Bedeutung: Staat in Westeuropa mit der Hauptstadt Amsterdam.
+Gebrauch: immer mit bestimmtem Artikel im Plural: die Niederlande; in den Niederlanden; aus den Niederlanden.
+ex: Ich komme aus den Niederlanden: I come from the Netherlands.
+ex: Die Niederlande sind für ihre Fahrräder bekannt: The Netherlands is known for its bicycles.
+
+malen [ˈmaːlən] (Verb, transitiv oder intransitiv): to paint
+English: to paint
+Persian: نقاشی کردن
+Penglish: naghashi kardan
+Bedeutung: mit Farben ein Bild oder eine Darstellung auf einer Fläche schaffen.
+Synonyme: zeichnen, gestalten
+ex: Sie malt gern Landschaften: She likes to paint landscapes.
+ex: Er malt ein Bild von seiner Heimatstadt: He is painting a picture of his hometown.
+Präsens: ich male
+Präteritum: ich malte
+Perfekt: ich habe gemalt
+Futur I: ich werde malen
+Konjunktiv II: ich würde malen
+Konjunktiv I: ich male

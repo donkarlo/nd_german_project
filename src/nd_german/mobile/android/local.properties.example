@@ -1,0 +1,6 @@
+# Android SDK on Ubuntu, for example:
+sdk.dir=/home/donkarlo/Android/Sdk
+
+# Create a dedicated Dropbox API app for ND German Android and paste its App Key here.
+# A dedicated key avoids OAuth redirect collisions with the ND Planning Android app.
+ND_GERMAN_DROPBOX_APP_KEY=YOUR_DROPBOX_APP_KEY
