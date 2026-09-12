@@ -11,6 +11,8 @@ import com.ndgerman.android.BuildConfig
 import com.ndgerman.android.data.DictionaryDatabase
 import com.ndgerman.android.data.SyncState
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.FileOutputStream
@@ -19,13 +21,18 @@ private const val REMOTE_DATABASE = "/repo/data/nd_german_project/dictionary.sql
 
 class DropboxCredentialStore(context: Context) {
     private val prefs = context.applicationContext.getSharedPreferences("nd_german_dropbox_auth", Context.MODE_PRIVATE)
+
     fun credential(): DbxCredential? {
         val raw = prefs.getString("credential", null) ?: return null
         return runCatching { DbxCredential.Reader.readFully(raw) }.getOrElse {
-            prefs.edit().remove("credential").apply(); null
+            prefs.edit().remove("credential").apply()
+            null
         }
     }
-    fun store(value: DbxCredential) = prefs.edit().putString("credential", DbxCredential.Writer.writeToString(value)).apply()
+
+    fun store(value: DbxCredential) =
+        prefs.edit().putString("credential", DbxCredential.Writer.writeToString(value)).apply()
+
     fun clear() = prefs.edit().clear().apply()
 }
 
@@ -34,7 +41,10 @@ class DropboxGateway(private val context: Context) {
     private var awaitingAuth = false
     @Volatile private var cachedClient: DbxClientV2? = null
 
-    fun configured() = BuildConfig.DROPBOX_APP_KEY.isNotBlank() && BuildConfig.DROPBOX_APP_KEY != "missing_nd_german_dropbox_app_key"
+    fun configured() =
+        BuildConfig.DROPBOX_APP_KEY.isNotBlank() &&
+            BuildConfig.DROPBOX_APP_KEY != "missing_nd_german_dropbox_app_key"
+
     fun authenticated() = store.credential() != null
 
     fun startAuthentication() {
@@ -63,7 +73,9 @@ class DropboxGateway(private val context: Context) {
 
     fun signOut() {
         runCatching { if (authenticated()) client().auth().tokenRevoke() }
-        store.clear(); cachedClient = null; awaitingAuth = false
+        store.clear()
+        cachedClient = null
+        awaitingAuth = false
     }
 
     private fun client(): DbxClientV2 {
@@ -71,22 +83,29 @@ class DropboxGateway(private val context: Context) {
         return synchronized(this) {
             cachedClient ?: run {
                 val credential = store.credential() ?: error("Dropbox is not connected")
-                DbxClientV2(DbxRequestConfig("nd-german-android/0.1"), credential).also { cachedClient = it }
+                DbxClientV2(DbxRequestConfig("nd-german-android/0.1"), credential)
+                    .also { cachedClient = it }
             }
         }
     }
 
-    fun remoteMetadata(): FileMetadata = client().files().getMetadata(REMOTE_DATABASE) as FileMetadata
+    fun remoteMetadata(): FileMetadata =
+        client().files().getMetadata(REMOTE_DATABASE) as FileMetadata
 
     fun downloadDatabase(destination: File): FileMetadata {
         destination.parentFile?.mkdirs()
+
         // Verify that the revision did not change while downloading.
         repeat(2) { attempt ->
             val before = remoteMetadata()
-            FileOutputStream(destination).use { out -> client().files().download(REMOTE_DATABASE).download(out) }
+            FileOutputStream(destination).use { out ->
+                client().files().download(REMOTE_DATABASE).download(out)
+            }
             val after = remoteMetadata()
             if (before.rev == after.rev) return after
-            if (attempt == 1) error("The desktop database changed while Android was downloading it. Try Pull again.")
+            if (attempt == 1) {
+                error("The desktop database changed while Android was downloading it. Automatic sync will retry.")
+            }
         }
         error("Could not obtain a stable remote dictionary revision")
     }
@@ -105,54 +124,178 @@ class DictionarySyncManager(
     val gateway: DropboxGateway = DropboxGateway(context),
 ) {
     private val prefs = context.applicationContext.getSharedPreferences("nd_german_sync", Context.MODE_PRIVATE)
+    private val syncMutex = Mutex()
 
     fun initialState(): SyncState = SyncState(
         connected = gateway.authenticated(),
         pendingLocalChanges = prefs.getBoolean("pending", false),
         lastRemoteRevision = prefs.getString("rev", null),
-        message = if (gateway.authenticated()) "Dropbox connected" else "Offline database ready",
+        message = if (gateway.authenticated()) "Dropbox connected · automatic sync" else "Offline database ready",
     )
 
+    /**
+     * Normal sync path used by the app.
+     *
+     * - No local edits: pull automatically when Dropbox/Ubuntu has a newer revision.
+     * - Pending Android edits and unchanged remote revision: push automatically.
+     * - Pending Android edits and changed remote revision: keep the Android edit safe and report
+     *   a conflict instead of overwriting either side.
+     */
+    suspend fun syncAutomatically(): SyncState = withContext(Dispatchers.IO) {
+        syncMutex.withLock {
+            if (!gateway.authenticated()) return@withLock initialState()
+
+            val pending = prefs.getBoolean("pending", false)
+            val knownRevision = prefs.getString("rev", null)
+
+            if (pending) {
+                if (knownRevision == null) {
+                    return@withLock initialState().copy(
+                        connected = true,
+                        pendingLocalChanges = true,
+                        message = "Dropbox connected · local edits need an initial safe merge",
+                    )
+                }
+
+                val remote = gateway.remoteMetadata()
+                if (remote.rev == knownRevision) {
+                    return@withLock pushUnlocked(knownRevision)
+                }
+
+                return@withLock initialState().copy(
+                    connected = true,
+                    pendingLocalChanges = true,
+                    lastRemoteRevision = knownRevision,
+                    message = "Sync conflict · Ubuntu changed too; Android edits are kept locally",
+                )
+            }
+
+            val remote = gateway.remoteMetadata()
+            if (knownRevision == null || remote.rev != knownRevision) {
+                return@withLock pullUnlocked(discardLocalChanges = false)
+            }
+
+            initialState().copy(
+                connected = true,
+                busy = false,
+                pendingLocalChanges = false,
+                lastRemoteRevision = remote.rev,
+                message = "Auto-synced · rev ${remote.rev.take(8)}",
+            )
+        }
+    }
+
     suspend fun pull(discardLocalChanges: Boolean = false): SyncState = withContext(Dispatchers.IO) {
+        syncMutex.withLock {
+            pullUnlocked(discardLocalChanges)
+        }
+    }
+
+    private suspend fun pullUnlocked(discardLocalChanges: Boolean): SyncState {
         check(gateway.authenticated()) { "Connect Dropbox first." }
+
         val pending = prefs.getBoolean("pending", false)
-        if (pending && !discardLocalChanges) error("Local edits are pending. Push them or explicitly discard them before Pull.")
-        val temp = File.createTempFile("nd-german-pull-", ".sqlite3", database.databaseFile.parentFile)
-        try {
+        if (pending && !discardLocalChanges) {
+            error("Local Android edits are pending. They were kept safe and were not overwritten.")
+        }
+
+        val temp = File.createTempFile(
+            "nd-german-pull-",
+            ".sqlite3",
+            database.databaseFile.parentFile,
+        )
+        return try {
             val metadata = gateway.downloadDatabase(temp)
             database.replaceFrom(temp)
-            prefs.edit().putString("rev", metadata.rev).putBoolean("pending", false).apply()
-            SyncState(true, false, false, metadata.rev, "Pulled desktop dictionary · rev ${metadata.rev.take(8)}")
+            prefs.edit()
+                .putString("rev", metadata.rev)
+                .putBoolean("pending", false)
+                .apply()
+
+            SyncState(
+                connected = true,
+                busy = false,
+                pendingLocalChanges = false,
+                lastRemoteRevision = metadata.rev,
+                message = "Auto-pulled Ubuntu changes · rev ${metadata.rev.take(8)}",
+            )
         } finally {
             temp.delete()
         }
     }
 
     suspend fun markLocalChangeAndPushIfPossible(): SyncState = withContext(Dispatchers.IO) {
-        prefs.edit().putBoolean("pending", true).apply()
-        if (!gateway.authenticated()) return@withContext initialState().copy(message = "Saved locally · Dropbox not connected")
-        val expected = prefs.getString("rev", null)
-            ?: return@withContext initialState().copy(message = "Saved locally · Pull once before first Dropbox push")
-        push(expected)
+        syncMutex.withLock {
+            prefs.edit().putBoolean("pending", true).apply()
+
+            if (!gateway.authenticated()) {
+                return@withLock initialState().copy(
+                    pendingLocalChanges = true,
+                    message = "Saved locally · waiting for Dropbox",
+                )
+            }
+
+            val expected = prefs.getString("rev", null)
+                ?: return@withLock initialState().copy(
+                    connected = true,
+                    pendingLocalChanges = true,
+                    message = "Saved locally · waiting for first safe Dropbox sync",
+                )
+
+            val remote = gateway.remoteMetadata()
+            if (remote.rev != expected) {
+                return@withLock initialState().copy(
+                    connected = true,
+                    pendingLocalChanges = true,
+                    lastRemoteRevision = expected,
+                    message = "Saved locally · Ubuntu changed too; edit kept safe",
+                )
+            }
+
+            pushUnlocked(expected)
+        }
     }
 
     suspend fun pushCurrent(): SyncState = withContext(Dispatchers.IO) {
-        check(gateway.authenticated()) { "Connect Dropbox first." }
-        val expected = prefs.getString("rev", null) ?: error("Pull the Dropbox database once before the first Push.")
-        push(expected)
+        syncMutex.withLock {
+            check(gateway.authenticated()) { "Connect Dropbox first." }
+            val expected = prefs.getString("rev", null)
+                ?: error("Dropbox has not been synchronized once yet.")
+
+            val remote = gateway.remoteMetadata()
+            check(remote.rev == expected) {
+                "Ubuntu changed since the last Android sync. Android edits were not overwritten."
+            }
+            pushUnlocked(expected)
+        }
     }
 
-    private suspend fun push(expectedRevision: String): SyncState {
-        val snapshot = File.createTempFile("nd-german-push-", ".sqlite3", database.databaseFile.parentFile)
+    private suspend fun pushUnlocked(expectedRevision: String): SyncState {
+        val snapshot = File.createTempFile(
+            "nd-german-push-",
+            ".sqlite3",
+            database.databaseFile.parentFile,
+        )
+
         return try {
             database.snapshotTo(snapshot)
             val metadata = gateway.uploadDatabaseRevisionSafe(snapshot, expectedRevision)
-            prefs.edit().putString("rev", metadata.rev).putBoolean("pending", false).apply()
-            SyncState(true, false, false, metadata.rev, "Synced Android edit · rev ${metadata.rev.take(8)}")
+            prefs.edit()
+                .putString("rev", metadata.rev)
+                .putBoolean("pending", false)
+                .apply()
+
+            SyncState(
+                connected = true,
+                busy = false,
+                pendingLocalChanges = false,
+                lastRemoteRevision = metadata.rev,
+                message = "Auto-pushed Android change · rev ${metadata.rev.take(8)}",
+            )
         } catch (t: Throwable) {
             prefs.edit().putBoolean("pending", true).apply()
             throw IllegalStateException(
-                "Dropbox did not accept this revision. The desktop database may have changed. Your Android edit is safe locally; Pull/resolve before retrying Push.",
+                "Dropbox changed while Android was syncing. The Android edit is safe locally and will not overwrite Ubuntu.",
                 t,
             )
         } finally {
@@ -162,6 +305,9 @@ class DictionarySyncManager(
 
     fun clearRevisionAfterSignOut(): SyncState {
         gateway.signOut()
-        return initialState().copy(connected = false, message = "Dropbox disconnected")
+        return initialState().copy(
+            connected = false,
+            message = "Dropbox disconnected · local database still available",
+        )
     }
 }
