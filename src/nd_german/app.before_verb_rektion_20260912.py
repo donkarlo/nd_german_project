@@ -10,21 +10,15 @@ import language_application as application
 from language_application import *  # noqa: F401,F403
 
 try:
-    import sqlite_search_patch as sqlite_search
-    import verb_rektion_patch
-    from full_entry_rektion_patch import install as install_full_entry_rektion
     from passive_patch import install_passive_conjugation
     from search_history_patch import install as install_search_history
+    from sqlite_search_patch import install as install_sqlite_search
     from ui_polish_patch import install_ui_polish
-    from verb_rektion_patch import install as install_verb_rektion
 except ImportError:
-    from . import sqlite_search_patch as sqlite_search
-    from . import verb_rektion_patch
-    from .full_entry_rektion_patch import install as install_full_entry_rektion
     from .passive_patch import install_passive_conjugation
     from .search_history_patch import install as install_search_history
+    from .sqlite_search_patch import install as install_sqlite_search
     from .ui_polish_patch import install_ui_polish
-    from .verb_rektion_patch import install as install_verb_rektion
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -83,7 +77,7 @@ def main() -> int:
     _ensure_project_settings_argument()
     _install_headword_colon_fix()
 
-    sqlite_search.install(
+    install_sqlite_search(
         application,
         application.base,
         source_path=TEXT_DATABASE_PATH,
@@ -92,17 +86,6 @@ def main() -> int:
     install_passive_conjugation()
     install_ui_polish()
     install_search_history()
-
-    # Keep one paste-ready complete-entry editor. Rektion is parsed from the entry
-    # itself; the normalized SQLite valency model and styled result rendering stay active.
-    install_full_entry_rektion(verb_rektion_patch)
-    install_verb_rektion(
-        application,
-        application.base,
-        sqlite_search,
-        sqlite_path=SQLITE_DATABASE_PATH,
-        text_path=TEXT_DATABASE_PATH,
-    )
 
     application.base.language_icon = _project_language_icon
     return application.main()

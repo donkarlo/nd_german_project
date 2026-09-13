@@ -11,16 +11,12 @@ from language_application import *  # noqa: F401,F403
 
 try:
     import sqlite_search_patch as sqlite_search
-    import verb_rektion_patch
-    from full_entry_rektion_patch import install as install_full_entry_rektion
     from passive_patch import install_passive_conjugation
     from search_history_patch import install as install_search_history
     from ui_polish_patch import install_ui_polish
     from verb_rektion_patch import install as install_verb_rektion
 except ImportError:
     from . import sqlite_search_patch as sqlite_search
-    from . import verb_rektion_patch
-    from .full_entry_rektion_patch import install as install_full_entry_rektion
     from .passive_patch import install_passive_conjugation
     from .search_history_patch import install as install_search_history
     from .ui_polish_patch import install_ui_polish
@@ -92,10 +88,6 @@ def main() -> int:
     install_passive_conjugation()
     install_ui_polish()
     install_search_history()
-
-    # Keep one paste-ready complete-entry editor. Rektion is parsed from the entry
-    # itself; the normalized SQLite valency model and styled result rendering stay active.
-    install_full_entry_rektion(verb_rektion_patch)
     install_verb_rektion(
         application,
         application.base,
