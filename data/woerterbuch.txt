@@ -7655,10 +7655,17 @@ Synonyme: Klang, Geräusch, Laut
 ex: Ich höre einen leisen Ton: I hear a quiet sound.
 ex: Der Ton kommt aus dem Lautsprecher: The sound comes from the speaker.
 
-der Wettbewerb: competition
-English: competition
-Persian: رقابت
-Penglish: reghabat
+der Wettbewerb [ˈvɛtbəˌvɛʁp]: contest; competition
+English: contest; competition
+Persian: مسابقه؛ رقابت
+Penglish: mosabegheh; reghabat
+Bedeutung: Veranstaltung oder Situation, bei der mehrere Personen oder Gruppen miteinander konkurrieren, um zu gewinnen oder eine bestimmte Leistung zu erreichen.
+Genitiv: des Wettbewerbs
+Plural: die Wettbewerbe
+Kollokation: an einem Wettbewerb teilnehmen
+Synonyme: Konkurrenz, Wettkampf
+ex: Sie nimmt an einem internationalen Wettbewerb teil: She is taking part in an international contest.
+ex: Er hat den Wettbewerb gewonnen: He won the contest.
 
 sich Akk befinden: be located, be situated
 English: be located, be situated
@@ -52374,3 +52381,246 @@ Gebrauch: umgangssprachlich; „so“ schwächt oder lockert die Aussage ab.
 Synonyme: allgemein, im Allgemeinen, generell
 ex: Wie geht es dir so allgemein: How are you doing overall?
 ex: Was denkst du so allgemein darüber: What do you think about it in general?
+
+sich orientieren [oʁiɛnˈtiːʁən] (reflexiv, an + Dat., regelmäßig): to follow; to use as a guide; to base oneself on
+English: to follow; to use as a guide; to base oneself on
+Persian: الگو گرفتن از؛ ملاک قرار دادن؛ خود را با چیزی هماهنگ کردن
+Penglish: olgoo gereftan az; melak gharar dadan; khod ra ba chizi hamahang kardan
+Verwendung: sich an jemandem/etwas (Dat.) orientieren
+Bedeutung: jemanden oder etwas als Vorbild, Maßstab oder Orientierung benutzen und das eigene Verhalten danach ausrichten.
+Synonyme: sich richten nach, sich ausrichten an
+Rektion: sich [Akk.] + an jemandem/etwas [Dat.]
+ex: Die Sprecherin orientiert sich an aktuellen Modetrends: The speaker follows current fashion trends.
+ex: Ich orientiere mich an den Empfehlungen meines Lehrers: I use my teacher's recommendations as a guide.
+Präsens: ich orientiere mich
+Präteritum: ich orientierte mich
+Perfekt: ich habe mich orientiert
+Futur I: ich werde mich orientieren
+Konjunktiv II: ich würde mich orientieren
+Konjunktiv I: ich orientiere mich
+
+ungewohnt [ˈʊnɡəˌvoːnt] (Adjektiv, Komparativ: ungewohnter, Superlativ: am ungewohntesten): unfamiliar; unusual
+English: unfamiliar; unusual
+Persian: ناآشنا؛ غیرعادی
+Penglish: naashna; gheyr-e adi
+Bedeutung: nicht vertraut oder anders als das, woran man gewöhnt ist.
+Synonyme: fremd, ungewöhnlich, unbekannt
+Attributiv und prädikativ verwendbar
+ex: Die neue Situation ist für mich ungewohnt: The new situation is unfamiliar to me.
+ex: Es war ein ungewohntes Gefühl: It was an unusual feeling.
+ex: Diese Arbeitsweise ist ungewohnter als die alte: This way of working is more unfamiliar than the old one.
+
+das Lexikon [ˈlɛksikɔn]: encyclopedia; reference book; lexicon
+English: encyclopedia; reference book; lexicon
+Persian: دانشنامه؛ فرهنگ؛ واژه‌نامه
+Penglish: daneshnameh; farhang; vazheh-nameh
+Bedeutung: Nachschlagewerk, das Informationen über Begriffe, Themen oder Wörter enthält.
+Genitiv: des Lexikons
+Plural: die Lexika; die Lexiken
+Kollokation: in einem Lexikon nachschlagen
+Synonyme: Nachschlagewerk, Enzyklopädie, Wörterbuch
+ex: Ich habe den Begriff in einem Lexikon nachgeschlagen: I looked up the term in an encyclopedia.
+ex: Dieses Lexikon enthält viele Fachbegriffe: This reference book contains many technical terms.
+
+taktisch [ˈtaktɪʃ] (Adjektiv, Komparativ: taktischer, Superlativ: am taktischsten): tactical
+English: tactical
+Persian: تاکتیکی؛ راهبردی در سطح عملیاتی
+Penglish: taktiki; rahbordi dar sathe amaliati
+Bedeutung: auf eine konkrete Vorgehensweise oder einen kurzfristigen Plan zur Erreichung eines Ziels bezogen.
+Synonyme: planmäßig, strategisch, zweckmäßig
+Attributiv und prädikativ verwendbar
+ex: Das war eine taktische Entscheidung: That was a tactical decision.
+ex: Die Mannschaft spielte sehr taktisch: The team played very tactically.
+ex: Dieser Plan ist taktischer als der vorherige: This plan is more tactical than the previous one.
+
+erneuern [ɛɐ̯ˈnɔɪ̯ɐn] (Akk., untrennbar, transitiv, regelmäßig): to renew; to replace; to renovate
+English: to renew; to replace; to renovate
+Persian: تجدید کردن؛ نو کردن؛ نوسازی کردن
+Penglish: tajdid kardan; no kardan; nosazi kardan
+Verwendung: etwas (Akk.) erneuern
+Bedeutung: etwas Altes durch etwas Neues ersetzen oder etwas wieder in einen neuen bzw. besseren Zustand bringen.
+Synonyme: renovieren, austauschen, auffrischen
+Rektion: etwas [Akk.]
+ex: Wir müssen die alten Fenster erneuern: We need to replace the old windows.
+ex: Ich muss meinen Reisepass erneuern: I need to renew my passport.
+Präsens: ich erneuere
+Präteritum: ich erneuerte
+Perfekt: ich habe erneuert
+Futur I: ich werde erneuern
+Konjunktiv II: ich würde erneuern
+Konjunktiv I: ich erneuere
+
+wohlriechend [ˈvoːlˌʁiːçn̩t] (Adjektiv, Komparativ: wohlriechender, Superlativ: am wohlriechendsten): pleasant-smelling; fragrant
+English: pleasant-smelling; fragrant
+Persian: خوش‌بو؛ دارای بوی خوش
+Penglish: khosh-boo; daraye booye khosh
+Bedeutung: einen angenehmen Geruch habend.
+Synonyme: duftend, aromatisch
+Attributiv und prädikativ verwendbar
+ex: Die Blumen sind wohlriechend: The flowers smell pleasant.
+ex: Sie benutzt eine wohlriechende Seife: She uses a pleasant-smelling soap.
+
+übergehen [ˈyːbɐˌɡeːən] (trennbares Verb, unregelmäßig, intransitiv): to move on; to proceed; to transition
+English: to move on; to proceed; to transition
+Persian: به چیزی دیگر پرداختن؛ وارد حالت دیگری شدن؛ منتقل شدن
+Penglish: be chizi-ye digar pardakhtan; vared-e halat-e digari shodan; montaghel shodan
+Bedeutung: von einem Thema, Zustand, Stadium oder einer Tätigkeit zu einem anderen wechseln.
+Synonyme: wechseln, fortschreiten, überwechseln
+Rektion: zu etwas [Dat.]
+Rektion 2: in etwas [Akk.]
+ex: Wir sind zum nächsten Thema übergegangen: We moved on to the next topic.
+ex: Der Regen ist allmählich in Schnee übergegangen: The rain gradually turned into snow.
+Präsens: ich gehe über
+Präteritum: ich ging über
+Perfekt: ich bin übergegangen
+Futur I: ich werde übergehen
+Konjunktiv II: ich würde übergehen
+Konjunktiv I: ich gehe über
+
+die Entspannung [ɛntˈʃpanʊŋ]: relaxation
+English: relaxation
+Persian: آرامش؛ رفع تنش؛ استراحت
+Penglish: aramesh; raf-e tanesh; esterahat
+Bedeutung: Zustand, in dem körperliche oder psychische Anspannung abnimmt und man ruhiger wird.
+Genitiv: der Entspannung
+Plural: die Entspannungen
+Kollokation: zur Entspannung
+Synonyme: Erholung, Ruhe, Lockerung
+Gebrauch: In Zusammensetzungen steht häufig die Form Entspannungs- mit Fugen-s, zum Beispiel Entspannungsübung, Entspannungstechnik, Entspannungsmusik.
+ex: Musik hilft mir bei der Entspannung: Music helps me relax.
+ex: Ich mache jeden Abend eine Übung zur Entspannung: I do a relaxation exercise every evening.
+
+ich bin ganz Ohr: I'm all ears
+English: I'm all ears
+Persian: سراپا گوشم؛ با دقت گوش می‌دهم
+Penglish: sarapa goosham; ba deghat goosh midaham
+Bedeutung: Man sagt das, wenn man jemandem zeigen möchte, dass man aufmerksam zuhört und bereit ist, das zu hören, was die Person sagen möchte.
+Gebrauch: idiomatische Redewendung, häufig in der gesprochenen Sprache. 
+Synonyme: Ich höre dir aufmerksam zu; Ich höre zu.
+ex: Erzähl mir, was passiert ist. Ich bin ganz Ohr: Tell me what happened. I'm all ears.
+ex: Wenn du eine Idee hast, bin ich ganz Ohr: If you have an idea, I'm all ears.
+
+populistisch [popuˈlɪstɪʃ] (Adjektiv, Komparativ: populistischer, Superlativ: am populistischsten): populist
+English: populist
+Persian: عوام‌گرا؛ پوپولیستی
+Penglish: avam-gara; populisti
+Bedeutung: politische Ideen oder Aussagen betreffend, die sich stark auf die Interessen und Gefühle „des Volkes“ berufen und häufig einen Gegensatz zwischen dem Volk und einer Elite darstellen.
+Synonyme: volksnah (nur teilweise), demagogisch (je nach Kontext)
+Attributiv und prädikativ verwendbar
+ex: Die Partei vertritt populistische Positionen: The party represents populist positions.
+ex: Seine Rede war sehr populistisch: His speech was very populist.
+
+der Politiker [poˈliːtɪkɐ]: politician
+English: politician
+Persian: سیاستمدار
+Penglish: siasatmadar
+Bedeutung: Person, die beruflich oder aktiv in der Politik tätig ist und politische Entscheidungen mitgestaltet.
+Genitiv: des Politikers
+Plural: die Politiker
+Kollokation: ein führender Politiker
+Synonyme: Staatsmann (je nach Kontext), Amtsträger (je nach Kontext)
+ex: Der Politiker hält eine Rede im Parlament: The politician gives a speech in parliament.
+ex: Viele Politiker diskutieren über die neue Regelung: Many politicians are discussing the new regulation.
+
+die Verhandlung [fɛɐ̯ˈhandlʊŋ]: negotiation
+English: negotiation
+Persian: مذاکره؛ گفت‌وگو برای رسیدن به توافق
+Penglish: mozakeré; goft-o-goo baraye residan be tavafogh
+Bedeutung: Gespräch zwischen zwei oder mehreren Seiten mit dem Ziel, eine Einigung oder Vereinbarung zu erreichen.
+Genitiv: der Verhandlung
+Plural: die Verhandlungen
+Kollokation: Verhandlungen führen
+Synonyme: Gespräch, Aushandlung
+ex: Die beiden Seiten führen Verhandlungen über einen neuen Vertrag: The two sides are conducting negotiations over a new contract.
+ex: Die Verhandlungen waren erfolgreich: The negotiations were successful.
+
+delegieren [deleˈɡiːʁən] (Akk. + an + Akk., transitiv, regelmäßig): to delegate
+English: to delegate
+Persian: واگذار کردن؛ تفویض کردن
+Penglish: vagozar kardan; tafviz kardan
+Verwendung: etwas (Akk.) an jemanden (Akk.) delegieren
+Bedeutung: eine Aufgabe, Verantwortung oder Entscheidungsbefugnis an eine andere Person übertragen.
+Synonyme: übertragen, übertragen an, abgeben
+Rektion: etwas [Akk.] + an jemanden [Akk.]
+ex: Der Chef delegiert diese Aufgabe an seine Mitarbeiterin: The boss delegates this task to his employee.
+ex: Man kann nicht jede Verantwortung an andere delegieren: You cannot delegate every responsibility to others.
+Präsens: ich delegiere
+Präteritum: ich delegierte
+Perfekt: ich habe delegiert
+Futur I: ich werde delegieren
+Konjunktiv II: ich würde delegieren
+Konjunktiv I: ich delegiere
+
+die Wahrnehmung [ˈvaːɐ̯ˌneːmʊŋ]: perception
+English: perception
+Persian: ادراک؛ دریافت حسی
+Penglish: edrak; daryaft-e hessi
+Bedeutung: Aufnahme und Verarbeitung von Sinneseindrücken oder Informationen aus der Umgebung.
+Genitiv: der Wahrnehmung
+Plural: die Wahrnehmungen
+Kollokation: die menschliche Wahrnehmung
+Synonyme: Empfindung, Eindruck, Erfassung
+ex: Unsere Wahrnehmung wird von früheren Erfahrungen beeinflusst: Our perception is influenced by previous experiences.
+ex: Menschen können dieselbe Situation unterschiedlich wahrnehmen: People can perceive the same situation differently.
+
+der Außenminister [ˈaʊ̯sn̩mɪˌnɪstɐ]: foreign minister
+English: foreign minister
+Persian: وزیر امور خارجه
+Penglish: vazir-e omur-e khareje
+Bedeutung: Minister, der für die Außenpolitik und die Beziehungen eines Staates zu anderen Ländern zuständig ist.
+Genitiv: des Außenministers
+Plural: die Außenminister
+Kollokation: der österreichische Außenminister
+Synonyme: Außenressortchef (je nach Kontext)
+ex: Der Außenminister trifft seinen französischen Kollegen: The foreign minister meets his French counterpart.
+ex: Die Außenminister diskutieren über die internationale Lage: The foreign ministers discuss the international situation.
+
+pragmatisch [pʁaɡˈmaːtɪʃ] (Adjektiv, Komparativ: pragmatischer, Superlativ: am pragmatischsten): pragmatic; practical
+English: pragmatic; practical
+Persian: عمل‌گرا؛ واقع‌بینانه؛ کاربردی
+Penglish: amal-gara; vaghe-binaneh; karbordi
+Bedeutung: auf praktische Lösungen und konkrete Ergebnisse ausgerichtet, statt sich hauptsächlich an theoretischen Prinzipien oder Idealen zu orientieren.
+Synonyme: praktisch, lösungsorientiert, realistisch, sachlich
+Attributiv und prädikativ verwendbar
+ex: Wir brauchen eine pragmatische Lösung für dieses Problem: We need a pragmatic solution to this problem.
+ex: Sie geht sehr pragmatisch mit schwierigen Situationen um: She deals with difficult situations very pragmatically.
+ex: Seine Entscheidung war pragmatischer als ideologisch: His decision was more pragmatic than ideological.
+
+überraschend [ˌyːbɐˈʁaʃn̩t] (Adjektiv, Komparativ: überraschender, Superlativ: am überraschendsten): surprising
+English: surprising
+Persian: غافلگیرکننده؛ غیرمنتظره؛ شگفت‌آور
+Penglish: ghafelgir-konandeh; gheyr-e montazereh; shegeft-avar
+Bedeutung: so unerwartet, dass es Erstaunen oder Verwunderung hervorruft.
+Synonyme: unerwartet, erstaunlich, verblüffend
+Attributiv und prädikativ verwendbar
+ex: Das Ergebnis war überraschend: The result was surprising.
+ex: Es war eine überraschende Entscheidung: It was a surprising decision.
+ex: Seine Reaktion war überraschender als erwartet: His reaction was more surprising than expected.
+
+dagegen [daˈɡeːɡn̩] (Pronominaladverb / Adverb): against it; against that; on the other hand; in contrast
+English: against it; against that; on the other hand; in contrast
+Persian: علیه آن؛ در برابر آن؛ در مقابل؛ از طرف دیگر
+Penglish: alayhe an; dar barabare an; dar moghabel; az tarafe digar
+Bedeutung: 1. bezeichnet eine ablehnende oder entgegengesetzte Haltung gegenüber einer Sache; 2. stellt zwei Aussagen oder Sachverhalte kontrastierend gegenüber.
+Synonyme: hingegen, im Gegensatz dazu, andererseits
+Gebrauch: Als Pronominaladverb ersetzt „dagegen“ normalerweise „gegen + Sache“. Bei Personen verwendet man normalerweise „gegen ihn/sie“ und nicht „dagegen“.
+ex: Ich bin dagegen: I am against it.
+ex: Viele Menschen protestieren dagegen: Many people are protesting against it.
+ex: Mein Bruder ist sehr sportlich, ich dagegen bewege mich wenig: My brother is very athletic; I, on the other hand, exercise little.
+
+gewähren [ɡəˈvɛːʁən] (Akk. + Dat., transitiv, unregelmäßig): to accord; to grant
+English: to accord; to grant
+Persian: اعطا کردن؛ قائل شدن؛ دادن
+Penglish: eta kardan; gha'el shodan; dadan
+Verwendung: jemandem (Dat.) etwas (Akk.) gewähren
+Bedeutung: jemandem offiziell oder bewusst etwas geben oder zugestehen, zum Beispiel Rechte, Schutz oder Anerkennung.
+Synonyme: zugestehen, einräumen, verleihen
+Rektion: jemandem [Dat.] + etwas [Akk.]
+ex: Der Staat gewährt den Bürgern bestimmte Rechte: The state accords the citizens certain rights.
+ex: Man gewährte ihm besonderen Schutz: He was accorded special protection.
+Präsens: ich gewähre
+Präteritum: ich gewährte
+Perfekt: ich habe gewährt
+Futur I: ich werde gewähren
+Konjunktiv II: ich würde gewähren
+Konjunktiv I: ich gewähre

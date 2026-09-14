@@ -9,11 +9,6 @@ _PLACEHOLDER = (
     r"jemanden|jemandem|jemandes|jemand|etwas|jdn\.?|jdm\.?|etw\.?"
 )
 _BARE_INFINITIVE_RE = re.compile(r"\bInfinitiv\s+ohne\s+zu\b", re.IGNORECASE)
-_VERWENDUNG_RE = re.compile(
-    r"^\s*(?:[-•]\s*)?(?:\*\*|__)?"
-    r"Verwendung(?:\*\*|__)?\s*:\s*(?:\*\*|__)?(?P<value>.*?)\s*$",
-    re.IGNORECASE,
-)
 
 
 def _clean_pattern_text(text: str) -> str:
@@ -53,87 +48,6 @@ def _has_grounded_argument(pattern) -> bool:
     return False
 
 
-def _sense_from_pattern(pattern) -> str | None:
-    """Use the governed preposition as a compact sense label when available."""
-    for arg in getattr(pattern, "arguments", ()):
-        preposition = getattr(arg, "preposition", None)
-        if preposition:
-            return str(preposition)
-    return None
-
-
-def _patterns_from_verwendung(
-    raw: str,
-    *,
-    first_line: str,
-    headword: str,
-    parse_pattern,
-):
-    """Recover valency from full-phrase Verwendung examples.
-
-    Example:
-        Verwendung: sich über etwas (Akk.) freuen; sich auf etwas (Akk.) freuen
-
-    becomes two normalized patterns:
-        sich [Akk.] + über etwas [Akk.]
-        sich [Akk.] + auf etwas [Akk.]
-    """
-    patterns = []
-    seen = set()
-
-    for line in raw.splitlines():
-        match = _VERWENDUNG_RE.match(line)
-        if not match:
-            continue
-
-        value = match.group("value").strip()
-        if not value:
-            continue
-
-        # A semicolon separates alternative constructions in the project's
-        # generated dictionary entries. Do not split on commas because they can
-        # belong to natural-language notes.
-        for part in re.split(r"\s*;\s*", value):
-            part = part.strip()
-            if not part:
-                continue
-
-            cleaned = _clean_pattern_text(part)
-            try:
-                pattern = parse_pattern(
-                    cleaned,
-                    first_line=first_line,
-                    headword=headword,
-                    sense_label=None,
-                )
-            except Exception:
-                # A free-form Verwendung note must never make dictionary loading
-                # fail. Ignore only that non-parseable alternative.
-                continue
-
-            if not _has_grounded_argument(pattern):
-                continue
-
-            sense_label = _sense_from_pattern(pattern)
-            if sense_label and getattr(pattern, "sense_label", None) != sense_label:
-                # PatternSpec is a frozen dataclass in verb_rektion_patch, so
-                # create a fresh object instead of mutating it.
-                pattern = type(pattern)(
-                    arguments=pattern.arguments,
-                    source=getattr(pattern, "source", "verwendung"),
-                    confidence=getattr(pattern, "confidence", 0.95),
-                    sense_label=sense_label,
-                )
-
-            key = str(getattr(pattern, "display", "")).strip().casefold()
-            if not key or key in seen:
-                continue
-            seen.add(key)
-            patterns.append(pattern)
-
-    return patterns
-
-
 def install(verb_rektion_module) -> None:
     """Keep one complete-entry editor and parse Rektion from the pasted entry."""
 
@@ -145,9 +59,9 @@ def install(verb_rektion_module) -> None:
         re.IGNORECASE,
     )
 
-    # Extend explicit parsing while preserving the normalized SQLite model.
+    # Extend explicit parsing while preserving the normalized v2 SQLite model.
     original_parse = verb_rektion_module._parse_pattern_text
-    if not getattr(original_parse, "_nd_full_entry_mode_v3", False):
+    if not getattr(original_parse, "_nd_full_entry_mode_v2", False):
         def parse_pattern_text(text: str, *, first_line: str, headword: str, sense_label: str | None = None):
             cleaned = _clean_pattern_text(text)
             bare_infinitive = bool(_BARE_INFINITIVE_RE.search(cleaned))
@@ -189,32 +103,16 @@ def install(verb_rektion_module) -> None:
                 sense_label=sense_label,
             )
 
-        parse_pattern_text._nd_full_entry_mode_v3 = True
-        # Keep the old marker too so older wrapper checks cannot double-wrap it.
         parse_pattern_text._nd_full_entry_mode_v2 = True
         verb_rektion_module._parse_pattern_text = parse_pattern_text
 
-    # Unknown inferred patterns such as "Rektion: sich [?]" are not useful.
-    # If that stale line is present, fall back to the richer Verwendung field.
+    # Unknown inferred patterns such as "Rektion: ?" are not useful to the learner.
     original_patterns_for_entry = verb_rektion_module._patterns_for_entry
-    if not getattr(original_patterns_for_entry, "_nd_verwendung_rektion_v3", False):
+    if not getattr(original_patterns_for_entry, "_nd_grounded_rektion_only", False):
         def patterns_for_entry(raw: str, first_line: str, headword: str):
             patterns = original_patterns_for_entry(raw, first_line, headword)
-            grounded = [pattern for pattern in patterns if _has_grounded_argument(pattern)]
-            if grounded:
-                return grounded
+            return [pattern for pattern in patterns if _has_grounded_argument(pattern)]
 
-            usage_patterns = _patterns_from_verwendung(
-                raw,
-                first_line=first_line,
-                headword=headword,
-                parse_pattern=verb_rektion_module._parse_pattern_text,
-            )
-            if usage_patterns:
-                return usage_patterns
-            return []
-
-        patterns_for_entry._nd_verwendung_rektion_v3 = True
         patterns_for_entry._nd_grounded_rektion_only = True
         verb_rektion_module._patterns_for_entry = patterns_for_entry
 
@@ -276,9 +174,3 @@ def install(verb_rektion_module) -> None:
 
         render_rektion_line._nd_purple_rektion_label = True
         verb_rektion_module._render_rektion_line = render_rektion_line
-
-    # Trigger exactly one migration of the normalized valency data.  This repairs
-    # already-saved raw entries such as "Rektion: sich [?]" on the next desktop
-    # start, while leaving future starts untouched after meta version 3 is stored.
-    if str(getattr(verb_rektion_module, "SCHEMA_VERSION", "")) == "2":
-        verb_rektion_module.SCHEMA_VERSION = "3"
