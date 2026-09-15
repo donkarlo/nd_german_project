@@ -2515,11 +2515,6 @@ Persian: به قاب sth
 Penglish: be ghab sth
 Rektion: etwas [Akk.]
 
-der Rahmen: frame
-English: frame
-Persian: قاب
-Penglish: ghab
-
 gründen (etw.Akk ~): ound sth.
 English: ound sth.
 Persian: به ound sth.
@@ -4159,11 +4154,6 @@ Kollokation: Auswirkungen auf etwas haben
 Synonyme: Folge, Einfluss, Konsequenz
 ex: Die Entscheidung hat große Auswirkungen auf die Wirtschaft: The decision has major effects on the economy.
 ex: Der Klimawandel hat Auswirkungen auf unser Leben: Climate change has an impact on our lives.
-
-separat: separate
-English: separate
-Persian: جدا کردن
-Penglish: joda kardan
 
 die Komponente: component
 English: component
@@ -9875,10 +9865,16 @@ Futur I: ich werde Bescheid wissen
 Konjunktiv II: ich wüsste Bescheid / ich würde Bescheid wissen
 Konjunktiv I: ich wisse Bescheid
 
-separat: separately
-English: separately
-Persian: به طور جداگانه
-Penglish: be tor jodaganeh
+separat [zepaˈʁaːt] (Adjektiv, Komparativ: separater, Superlativ: am separatesten): separate; separately
+English: separate; separately
+Persian: جدا؛ مجزا؛ به‌طور جداگانه
+Penglish: joda; mojazza; be-tor-e jodaganeh
+Bedeutung: von etwas anderem getrennt oder unabhängig; nicht zusammen.
+Synonyme: getrennt, einzeln, gesondert
+Attributiv und prädikativ verwendbar
+ex: Wir brauchen für jedes Projekt eine separate Datei: We need a separate file for each project.
+ex: Die beiden Probleme müssen separat behandelt werden: The two problems must be handled separately.
+ex: Dieser Bereich ist separater als der andere: This area is more separate than the other.
 
 getrennt: separately
 English: separately
@@ -13875,13 +13871,6 @@ Persian: کف دست (کف دست)
 Penglish: kaf dast (kaf dast)
 ex: Meine Handfläche ist ganz trocken: My palm is completely dry
 ex: Er zeigte mir etwas auf seiner Handfläche: He showed me something on his palm
-
-der Rahmen (pl. die Rahmen): frame; framework; boundary
-English: frame; framework; boundary
-Persian: قاب; چارچوب; مرز
-Penglish: ghab; charchoob; marz
-ex: Der Rahmen des Bildes ist aus Holz: The frame of the picture is made of wood.
-ex: Das Thema passt nicht in diesen Rahmen: The topic does not fit within this framework.
 
 sein Recht bekommen: obtain one's right
 English: obtain one's right
@@ -23464,12 +23453,17 @@ Persian: سرخ شده
 Penglish: sorkh shodeh
 Rektion: ?
 
-die Abkürzung (pl. die Abkürzungen): shortcut / abbreviation / a shorter way
-English: shortcut / abbreviation / a shorter way
-Persian: میانبر; مخفف; راه کوتاهتر
-Penglish: miyanbor; mokhaffaf; rah kootahtar
-ex: Wir nehmen eine Abkürzung durch den Park: We take a shortcut through the park
-ex: Diese Abkürzung ist schwer zu verstehen: This abbreviation is hard to understand
+die Abkürzung [ˈapˌkʏʁt͡sʊŋ]: abbreviation
+English: abbreviation
+Persian: مخفف
+Penglish: mokhafaf
+Bedeutung: verkürzte Form eines Wortes oder einer Wortgruppe.
+Genitiv: der Abkürzung
+Plural: die Abkürzungen
+Kollokation: eine Abkürzung verwenden
+Synonyme: Kurzform
+ex: „z. B.“ ist die Abkürzung für „zum Beispiel“: “z. B.” is the abbreviation for “zum Beispiel”.
+ex: Was bedeutet diese Abkürzung?: What does this abbreviation mean?
 
 Ich bin nicht satt: sir nistam
 English: sir nistam
@@ -52744,3 +52738,148 @@ Kollokation: Teamgeist zeigen; den Teamgeist stärken
 Synonyme: Gemeinschaftsgeist, Zusammenhalt
 ex: Ein guter Teamgeist ist für unsere Arbeit wichtig: Good team spirit is important for our work.
 ex: Gemeinsame Aktivitäten stärken den Teamgeist: Shared activities strengthen team spirit.
+
+profitieren [pʁofiˈtiːʁən] (von + Dat., regelmäßig, intransitiv): to benefit; to profit
+English: to benefit; to profit
+Persian: سود بردن؛ بهره‌مند شدن
+Penglish: sood bordan; bahremand shodan
+Verwendung: von jemandem/etwas (Dat.) profitieren
+Bedeutung: durch jemanden, etwas oder eine Situation einen Vorteil oder Nutzen haben.
+Synonyme: Nutzen haben, einen Vorteil haben, gewinnen
+Rektion: von jemandem/etwas [Dat.]
+ex: Viele Menschen profitieren von dieser Regelung: Many people benefit from this regulation.
+ex: Die Unternehmen profitieren von niedrigeren Kosten: The companies benefit from lower costs.
+Präsens: ich profitiere
+Präteritum: ich profitierte
+Perfekt: ich habe profitiert
+Futur I: ich werde profitieren
+Konjunktiv II: ich würde profitieren
+Konjunktiv I: ich profitiere
+
+umgekehrt [ˈʊmɡəˌkeːɐ̯t] (Adverb): vice versa; conversely; the other way around
+English: vice versa; conversely; the other way around
+Persian: برعکس؛ بالعکس؛ و برعکس
+Penglish: baraks; belaks; va baraks
+Bedeutung: bezeichnet, dass eine Aussage auch in der entgegengesetzten Richtung gilt.
+Synonyme: andersherum, andersrum
+ex: Kinder lernen von Erwachsenen und umgekehrt: Children learn from adults and vice versa.
+ex: Er hilft mir, und umgekehrt helfe ich ihm: He helps me, and vice versa I help him.
+
+die Migration [miɡʁaˈtsi̯oːn]: migration
+English: migration
+Persian: مهاجرت
+Penglish: mohajerat
+Bedeutung: dauerhafte oder vorübergehende Verlagerung des Wohn- oder Lebensortes in ein anderes Gebiet oder Land.
+Genitiv: der Migration
+Plural: die Migrationen
+Kollokation: internationale Migration
+Synonyme: Wanderung, Abwanderung, Zuwanderung
+ex: Migration ist ein wichtiges politisches Thema: Migration is an important political issue.
+ex: Wirtschaftliche Gründe können zur Migration führen: Economic reasons can lead to migration.
+
+der Zweig [ʦvaɪ̯k]: branch; field; sector
+English: branch; field; sector
+Persian: شاخه؛ رشته؛ حوزه
+Penglish: shakheh; reshteh; hozeh
+Bedeutung: ein Teil eines Baumes oder einer Pflanze, der vom Stamm ausgeht; übertragen auch ein Teilbereich eines Fachgebiets oder einer Wirtschaft.
+Genitiv: des Zweiges
+Plural: die Zweige
+Kollokation: ein Zweig der Wissenschaft
+Synonyme: Ast, Bereich, Fachgebiet
+ex: Auf dem Zweig sitzt ein Vogel: A bird is sitting on the branch.
+ex: Die Robotik ist ein Zweig der Technik: Robotics is a branch of engineering.
+
+der Hersteller [ˈheːɐ̯ˌʃtɛlɐ]: manufacturer; producer; maker
+English: manufacturer; producer; maker
+Persian: سازنده؛ تولیدکننده
+Penglish: sazandeh; tolidkonandeh
+Bedeutung: eine Person oder ein Unternehmen, das Waren, Geräte oder andere Produkte herstellt.
+Genitiv: des Herstellers
+Plural: die Hersteller
+Kollokation: der Hersteller eines Produkts
+Synonyme: Produzent, Fabrikant
+ex: Der Hersteller bietet zwei Jahre Garantie: The manufacturer offers a two-year warranty.
+ex: Wer ist der Hersteller dieses Geräts?: Who is the manufacturer of this device?
+
+dran [dʁan] (Adverb, umgangssprachliche Kurzform von „daran“): on it; at it; attached; one's turn
+English: on it; at it; attached; one's turn
+Persian: به آن؛ روی آن؛ نوبتش بودن؛ وصل بودن
+Penglish: be an; rooye an; nobatesh boodan; vasl boodan
+Bedeutung: umgangssprachliche Form von „daran“; die genaue Bedeutung hängt vom Verb und vom Kontext ab.
+Gebrauch: besonders häufig in festen Verbindungen wie „dran sein“, „dranbleiben“ oder „etwas dran haben“.
+Synonyme: daran
+ex: Jetzt bist du dran: Now it's your turn.
+ex: An der Wand hängt ein Schild, und ein Zettel ist auch dran: There is a sign on the wall, and a note is attached to it too.
+
+kopieren [koˈpiːʁən] (Akk., regelmäßig, transitiv): to copy; to duplicate
+English: to copy; to duplicate
+Persian: کپی کردن؛ نسخه‌برداری کردن
+Penglish: kopi kardan; noskhe-bardari kardan
+Verwendung: jemanden/etwas (Akk.) kopieren
+Bedeutung: von etwas eine gleiche oder sehr ähnliche Kopie herstellen; auch Daten oder Dateien vervielfältigen.
+Synonyme: duplizieren, vervielfältigen
+Rektion: jemanden/etwas [Akk.]
+ex: Ich kopiere die Datei auf meinen Computer: I copy the file to my computer.
+ex: Kannst du dieses Dokument kopieren?: Can you copy this document?
+Präsens: ich kopiere
+Präteritum: ich kopierte
+Perfekt: ich habe kopiert
+Futur I: ich werde kopieren
+Konjunktiv II: ich würde kopieren
+Konjunktiv I: ich kopiere
+
+spazieren [ʃpaˈtsiːʁən] (regelmäßig, intransitiv): to walk; to take a walk; to stroll
+English: to walk; to take a walk; to stroll
+Persian: قدم زدن؛ پیاده‌روی کردن
+Penglish: ghadam zadan; piyade-ravi kardan
+Bedeutung: ohne Eile zu Fuß gehen, meistens zur Erholung oder zum Vergnügen.
+Synonyme: einen Spaziergang machen, bummeln, schlendern
+ex: Wir spazieren jeden Abend im Park: We take a walk in the park every evening.
+ex: Am Sonntag sind wir zwei Stunden spaziert: On Sunday we walked for two hours.
+Präsens: ich spaziere
+Präteritum: ich spazierte
+Perfekt: ich bin spaziert
+Futur I: ich werde spazieren
+Konjunktiv II: ich würde spazieren
+Konjunktiv I: ich spaziere
+
+der Sonderfall [ˈzɔndɐˌfal]: special case; exceptional case
+English: special case; exceptional case
+Persian: مورد خاص؛ حالت استثنایی
+Penglish: morede khas; halate estesnaei
+Bedeutung: ein Fall, der von der allgemeinen Regel abweicht und deshalb besonders behandelt werden muss.
+Genitiv: des Sonderfalls
+Plural: die Sonderfälle
+Kollokation: einen Sonderfall darstellen
+Synonyme: Ausnahmefall, Ausnahme
+ex: Das ist ein Sonderfall und kann nicht nach der allgemeinen Regel behandelt werden: This is a special case and cannot be treated according to the general rule.
+ex: Dieser Patient stellt einen Sonderfall dar: This patient represents a special case.
+
+der Randfall [ˈʁantˌfal]: edge case; borderline case
+English: edge case; borderline case
+Persian: حالت مرزی؛ مورد استثنایی
+Penglish: halat-e marzi; mored-e estesnaei
+Bedeutung: ein Fall, der nur unter ungewöhnlichen oder extremen Bedingungen auftritt und außerhalb des normalen Standardfalls liegt.
+Genitiv: des Randfalls
+Plural: die Randfälle
+Kollokation: einen Randfall berücksichtigen
+Synonyme: Sonderfall, Grenzfall, Ausnahmefall
+ex: Die Software muss auch Randfälle korrekt behandeln: The software must also handle edge cases correctly.
+ex: Dieser Fehler tritt nur in einem seltenen Randfall auf: This error occurs only in a rare edge case.
+
+umbenennen [ˈʊm.bəˌnɛnən] (Akk., trennbar, transitiv): to rename
+English: to rename
+Persian: تغییر نام دادن؛ نام را عوض کردن
+Penglish: taghir-e nam dadan; nam ra avaz kardan
+Verwendung: jemanden/etwas (Akk.) umbenennen
+Bedeutung: einer Person, Datei, einem Ordner, Ort oder einer Sache einen neuen Namen geben.
+Synonyme: neu benennen
+Rektion: jemanden/etwas [Akk.]
+ex: Ich möchte diese Datei umbenennen: I want to rename this file.
+ex: Der Ordner wurde umbenannt: The folder was renamed.
+Präsens: ich benenne um
+Präteritum: ich benannte um
+Perfekt: ich habe umbenannt
+Futur I: ich werde umbenennen
+Konjunktiv II: ich würde umbenennen
+Konjunktiv I: ich benenne um
