@@ -24496,15 +24496,6 @@ English: least / smallest (adjective form) ex: This is the least important point
 Persian: کمترین; کوچکترین (شکل صفت) ex: This is the less important point: This is the less important point
 Penglish: kamtarin; koochaktarin (shekl sefat) ex: This is the less important point: This is the less important point
 
-mindestens: at minimum; at least
-English: at minimum; at least
-Persian: حداقل; حداقل
-Penglish: haddeaghal; haddeaghal
-Bedeutung: nicht weniger als; als kleinste Menge, Zahl oder Voraussetzung.
-Synonyme: wenigstens, zumindest
-ex: Du musst mindestens zwei Meter Abstand halten: You must keep at least two meters distance.
-ex: Die Reparatur kostet mindestens 300 Euro: The repair costs at minimum 300 euros.
-
 das Doktorat: 
 English: the doctorate
 Persian: دکتری
@@ -30051,20 +30042,6 @@ Futur I: ich werde ausgießen
 Konjunktiv II: ich gösse aus / ich würde ausgießen
 Konjunktiv I: ich gieße aus
 
-verlassen (etw.Akk ~): leave (a place)
-English: leave (a place)
-Persian: ترک (یک مکان)
-Penglish: tark (yek makan)
-Rektion: etwas [Akk.]
-ex: Ich verlasse das Haus früh am Morgen: I leave the house early in the morning.
-ex: Er hat die Stadt verlassen: He left the city.
-Präsens: ich verlasse
-Präteritum: ich verließ
-Perfekt: ich habe verlassen
-Futur I: ich werde verlassen
-Konjunktiv II: ich würde verlassen
-Konjunktiv I: ich verlasse
-
 das Haus [haʊ̯s] (-es, Häuser): house
 English: house
 Persian: خانه
@@ -34498,8 +34475,8 @@ ex: Wir treffen uns am Freitag bzw. am Samstag: We meet on Friday or rather on S
 
 bzw. [beːt͡səˈveː] (Abkürzung, Konjunktion): beziehungsweise; respectively; or rather
 English: beziehungsweise; respectively; or rather
-Persian: beziehungsweise; به ترتیب; یا بهتر است بگوییم
-Penglish: beziehungsweise; be tartib; ya behtar ast begooim
+Persian:  به ترتیب; یا بهتر است بگوییم
+Penglish:  be tartib; ya behtar ast begooim
 Synonyme: oder genauer gesagt
 ex: Wir treffen uns am Montag bzw. Dienstag: We meet on Monday or rather Tuesday.
 ex: Die Tickets kosten 10 bzw. 15 Euro: The tickets cost 10 and 15 euros respectively.
@@ -52624,3 +52601,146 @@ Perfekt: ich habe gewährt
 Futur I: ich werde gewähren
 Konjunktiv II: ich würde gewähren
 Konjunktiv I: ich gewähre
+
+sich auf jemanden/etwas freuen [zɪç aʊ̯f ˈjeːmandn̩/ˈɛtvas ˈfʁɔɪ̯ən] (reflexiv, auf + Akk.): to look forward to someone/something
+English: to look forward to someone/something
+Persian: مشتاقِ دیدن یا رسیدنِ کسی/چیزی بودن؛ منتظر چیزی بودن با خوشحالی
+Penglish: moshtaghe didan ya residane kasi/chizi boodan; montazere chizi boodan ba khoshhali
+Verwendung: sich auf jemanden/etwas (Akk.) freuen
+Bedeutung: mit Freude erwarten, dass eine Person kommt oder etwas in der Zukunft passiert.
+Synonyme: etwas mit Freude erwarten, gespannt sein auf
+Rektion: sich [Akk.] + auf jemanden/etwas [Akk.]
+ex: Ich freue mich auf das Wochenende: I am looking forward to the weekend.
+ex: Sie freut sich auf ihren Urlaub: She is looking forward to her vacation.
+Präsens: ich freue mich auf
+Präteritum: ich freute mich auf
+Perfekt: ich habe mich auf etwas gefreut
+Futur I: ich werde mich auf etwas freuen
+Konjunktiv II: ich würde mich auf etwas freuen
+Konjunktiv I: ich freue mich auf
+
+die Ablenkung [ˈapˌlɛŋkʊŋ]: distraction; diversion
+English: distraction; diversion
+Persian: حواس‌پرتی؛ منحرف کردن توجه
+Penglish: havas-parti; monharef kardane tavajoh
+Bedeutung: etwas, das die Aufmerksamkeit von einer Sache weg auf etwas anderes richtet.
+Genitiv: der Ablenkung
+Plural: die Ablenkungen
+Kollokation: für Ablenkung sorgen
+Synonyme: Zerstreuung, Störung, Unterbrechung
+ex: Beim Lernen brauche ich Ruhe ohne Ablenkung: When studying, I need quiet without distraction.
+ex: Das Handy ist für mich eine große Ablenkung: The phone is a major distraction for me.
+
+die Abwechslung [ˈapˌvɛkslʊŋ]: variety; change
+English: variety; change
+Persian: تنوع؛ تغییر برای جلوگیری از یکنواختی
+Penglish: tanavo; taghir baraye jelogiri az yeknavakhti
+Bedeutung: Veränderung oder Unterschied, der etwas weniger eintönig und interessanter macht.
+Genitiv: der Abwechslung
+Plural: die Abwechslungen
+Kollokation: für Abwechslung sorgen
+Kollokation: zur Abwechslung
+Synonyme: Vielfalt, Veränderung, Wechsel
+ex: Ein neues Hobby sorgt für Abwechslung im Alltag: A new hobby provides variety in everyday life.
+ex: Zur Abwechslung gehen wir heute zu Fuß: For a change, we are walking today.
+
+etwas ist ein Thema für jemanden: something is an issue/topic for someone; something matters to someone
+English: something is an issue/topic for someone; something matters to someone
+Persian: چیزی برای کسی موضوع یا مسئله بودن؛ چیزی برای کسی اهمیت داشتن
+Penglish: chizi baraye kasi mozu ya masaleh boodan; chizi baraye kasi ahammiyat dashtan
+Bedeutung: etwas ist für eine Person relevant, wichtig oder Gegenstand ihrer Aufmerksamkeit oder Diskussion.
+Synonyme: für jemanden relevant sein, jemanden betreffen, für jemanden wichtig sein
+Rektion: für jemanden [Akk.]
+ex: Datenschutz ist für viele Menschen ein wichtiges Thema: Data protection is an important issue for many people.
+ex: Geld ist für ihn kein großes Thema: Money is not a big issue for him.
+
+das Fertiggericht [ˈfɛʁtɪçɡəˌʁɪçt]: ready meal; convenience food
+English: ready meal; convenience food
+Persian: غذای آماده؛ غذای نیمه‌آماده
+Penglish: ghazaye amadeh; ghazaye nimeh-amadeh
+Bedeutung: industriell vorbereitetes Gericht, das vor dem Essen nur noch kurz erwärmt oder fertig zubereitet werden muss.
+Genitiv: des Fertiggerichts
+Plural: die Fertiggerichte
+Kollokation: Fertiggerichte kaufen
+Synonyme: Fertigessen, Convenience-Food
+ex: Viele Fertiggerichte enthalten viel Salz: Many ready meals contain a lot of salt.
+ex: Wenn ich wenig Zeit habe, esse ich manchmal ein Fertiggericht: When I have little time, I sometimes eat a ready meal.
+
+das Burnout / der Burnout [ˈbœːɐ̯naʊ̯t]: burnout
+English: burnout
+Persian: فرسودگی شدید؛ فرسودگی شغلی
+Penglish: farsoodegi-ye shadid; farsoodegi-ye shoghli
+Bedeutung: Zustand starker körperlicher und emotionaler Erschöpfung, häufig als Folge lang anhaltender beruflicher oder persönlicher Belastung.
+Genitiv: des Burn-outs
+Plural: die Burn-outs
+Kollokation: unter einem Burn-out leiden
+Synonyme: Erschöpfungszustand, Überlastung
+ex: Nach mehreren Jahren hoher Belastung erlitt er ein Burn-out: After several years of heavy stress, he suffered burnout.
+ex: Dauerhafter Stress kann zu einem Burn-out führen: Constant stress can lead to burnout.
+
+raten [ˈʁaːtn̩] (unregelmäßig): to advise; to recommend; to guess
+English: to advise; to recommend; to guess
+Persian: توصیه کردن؛ پیشنهاد کردن؛ حدس زدن
+Penglish: tosiyeh kardan; pishnahad kardan; hads zadan
+Verwendung: jemandem (Dat.) zu etwas (Dat.) raten; jemandem (Dat.) zu + Infinitiv raten; etwas (Akk.) raten
+Bedeutung: jemandem empfehlen, etwas Bestimmtes zu tun oder sich für etwas zu entscheiden; oder eine Antwort geben, obwohl man sie nicht sicher weiß.
+Synonyme: empfehlen, nahelegen; vermuten, schätzen
+Rektion: jemandem [Dat.] + zu etwas [Dat.]
+Rektion 2: jemandem [Dat.] + zu + Infinitiv
+Rektion 3: etwas [Akk.]
+Rektion 4: W-Satz
+ex: Der Arzt rät mir zu mehr Bewegung: The doctor advises me to get more exercise.
+ex: Ich rate dir, früher zu kommen: I advise you to come earlier.
+ex: Ich kann die Antwort nur raten: I can only guess the answer.
+ex: Rate mal, wie alt er ist: Guess how old he is.
+Präsens: ich rate
+Präteritum: ich riet
+Perfekt: ich habe geraten
+Futur I: ich werde raten
+Konjunktiv II: ich würde raten
+Konjunktiv I: ich rate
+
+jemandem das Feld überlassen: to leave the field to someone; to give way to someone
+English: to leave the field to someone; to give way to someone
+Persian: میدان را به کسی دادن؛ کنار رفتن و اجازه دادن که دیگری ادامه دهد
+Penglish: meydan ra be kasi dadan; kenar raftan va ejaze dadan ke digari edame dahad
+Bedeutung: sich zurückziehen oder auf weitere Konkurrenz verzichten, sodass eine andere Person handeln, gewinnen oder die Kontrolle übernehmen kann.
+Synonyme: jemandem weichen, sich zurückziehen, jemandem den Vortritt lassen
+Rektion: jemandem [Dat.] + etwas [Akk.]
+ex: Nach der Niederlage überließ er seinem Konkurrenten das Feld: After the defeat, he left the field to his competitor.
+ex: Sie wollte nicht weiter kämpfen und überließ den anderen das Feld: She did not want to continue fighting and gave way to the others.
+
+der Motorschaden [ˈmoːtoːɐ̯ˌʃaːdn̩]: engine damage; engine failure
+English: engine damage; engine failure
+Persian: خرابی موتور؛ آسیب موتور
+Penglish: kharabi-ye motor; asib-e motor
+Bedeutung: ein schwerer technischer Defekt oder Schaden am Motor eines Fahrzeugs.
+Genitiv: des Motorschadens
+Plural: die Motorschäden
+Kollokation: einen Motorschaden haben; einen Motorschaden erleiden
+Synonyme: Motordefekt, Motorschaden
+ex: Das Auto hat einen Motorschaden: The car has engine damage.
+ex: Nach dem Motorschaden musste das Auto abgeschleppt werden: After the engine failure, the car had to be towed away.
+
+trocken [ˈtʁɔkn̩] (Adjektiv, Komparativ: trockener, Superlativ: am trockensten): dry
+English: dry
+Persian: خشک
+Penglish: khoshk
+Bedeutung: ohne oder mit sehr wenig Feuchtigkeit oder Wasser.
+Synonyme: dürr, wasserarm
+Attributiv und prädikativ verwendbar
+ex: Die Kleidung ist wieder trocken: The clothes are dry again.
+ex: Der Boden ist im Sommer sehr trocken: The ground is very dry in summer.
+ex: Dieses Handtuch ist trockener als das andere: This towel is drier than the other one.
+
+der Teamgeist [ˈtiːmˌɡaɪ̯st]: team spirit
+English: team spirit
+Persian: روحیهٔ تیمی؛ روحیهٔ همکاری گروهی
+Penglish: roohiye-ye timi; roohiye-ye hamkari-ye goroohi
+Bedeutung: das Gefühl der Zusammengehörigkeit und die Bereitschaft, innerhalb einer Gruppe gemeinsam zu arbeiten und sich gegenseitig zu unterstützen.
+Genitiv: des Teamgeistes
+Plural: kein Plural
+Kollokation: Teamgeist zeigen; den Teamgeist stärken
+Synonyme: Gemeinschaftsgeist, Zusammenhalt
+ex: Ein guter Teamgeist ist für unsere Arbeit wichtig: Good team spirit is important for our work.
+ex: Gemeinsame Aktivitäten stärken den Teamgeist: Shared activities strengthen team spirit.
