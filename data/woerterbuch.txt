@@ -52883,3 +52883,179 @@ Perfekt: ich habe umbenannt
 Futur I: ich werde umbenennen
 Konjunktiv II: ich würde umbenennen
 Konjunktiv I: ich benenne um
+
+das Brot [bʁoːt]: bread
+English: bread
+Persian: نان
+Penglish: nan
+Bedeutung: ein Grundnahrungsmittel, das meist aus Mehl, Wasser, Hefe oder Sauerteig hergestellt und gebacken wird.
+Genitiv: des Brotes
+Plural: die Brote
+Kollokation: Brot backen
+Synonyme: Backware
+ex: Ich esse jeden Morgen Brot mit Käse: I eat bread with cheese every morning.
+ex: Dieses Brot ist noch frisch: This bread is still fresh.
+
+umzugsbereit [ˈʊmʦuːksbəˌʁaɪ̯t] (Adjektiv, nicht steigerbar): ready to move; willing to relocate
+English: ready to move; willing to relocate
+Persian: آمادهٔ اسباب‌کشی؛ آمادهٔ نقل مکان
+Penglish: amade-ye asbab-keshi; amade-ye naghl-e makan
+Bedeutung: bereit, den Wohnort zu wechseln oder in eine andere Wohnung, Stadt oder Region umzuziehen.
+Synonyme: umzugswillig, bereit umzuziehen
+Attributiv und prädikativ verwendbar
+ex: Ich bin umzugsbereit, wenn ich eine gute Stelle finde: I am willing to relocate if I find a good job.
+ex: Das Unternehmen sucht umzugsbereite Mitarbeiter: The company is looking for employees who are willing to relocate.
+
+loslassen [ˈloːsˌlasn̩] (Verb, trennbar, stark): to let go; to release
+English: to let go; to release
+Persian: ول کردن؛ رها کردن؛ دست برداشتن از گرفتن
+Penglish: vel kardan; raha kardan; dast bardashtan az gereftan
+Bedeutung: etwas oder jemanden nicht mehr festhalten.
+Rektion: jemanden/etwas [Akk.]
+Präsens: ich lasse los
+Präteritum: ich ließ los
+Perfekt: ich habe losgelassen
+Futur I: ich werde loslassen
+Konjunktiv II: ich ließe los
+ex: Lass meine Hand los!: Let go of my hand!
+ex: Er ließ den Hund los: He let the dog go.
+
+zufällig [ˈtsuːˌfɛlɪç] (Adjektiv / Adverb, Komparativ: zufälliger, Superlativ: am zufälligsten): random; accidental; by chance
+English: random; accidental; by chance
+Persian: تصادفی؛ اتفاقی
+Penglish: tasadofi; ettefaghi
+Bedeutung: ohne Absicht oder ohne vorherige Planung; durch Zufall entstanden oder ausgewählt.
+Synonyme: ungeplant, unbeabsichtigt, per Zufall
+Attributiv, prädikativ und adverbial verwendbar
+ex: Ich habe ihn zufällig auf der Straße gesehen: I saw him by chance on the street.
+ex: Der Computer wählt eine zufällige Zahl aus: The computer selects a random number.
+
+sich regen [zɪç ˈʁeːɡn̩] (Verb, reflexiv, regelmäßig): to stir; to move; to show signs of activity
+English: to stir; to move; to become active
+Persian: تکان خوردن؛ جنبیدن؛ فعال شدن
+Penglish: takan khordan; jonbidan; fa'al shodan
+Bedeutung: sich leicht bewegen oder beginnen, Aktivität zu zeigen.
+Rektion: sich [Akk.]
+Präsens: ich rege mich
+Präteritum: ich regte mich
+Perfekt: ich habe mich geregt
+Futur I: ich werde mich regen
+Konjunktiv II: ich würde mich regen
+Synonyme: sich bewegen, sich rühren
+ex: Das Kind regte sich plötzlich: The child suddenly moved.
+ex: In der Bevölkerung regte sich Widerstand: Resistance began to emerge among the population
+
+regnen [ˈʁeːɡnən] (Verb, regelmäßig, unpersönlich): to rain
+English: to rain
+Persian: باران باریدن
+Penglish: baran baridan
+Bedeutung: wenn Wasser in Form von Regentropfen aus den Wolken fällt.
+Präsens: es regnet
+Präteritum: es regnete
+Perfekt: es hat geregnet
+Futur I: es wird regnen
+Konjunktiv II: es würde regnen
+ex: Es regnet seit dem Morgen: It has been raining since the morning.
+ex: Morgen wird es wahrscheinlich regnen: It will probably rain tomorrow.
+
+sich einen Tag freinehmen [zɪç ˈaɪ̯nən taːk ˈfʁaɪ̯ˌneːmən] (Verbphrase, reflexiv, trennbar): to take a day off from work
+English: to take a day off from work
+Persian: یک روز مرخصی گرفتن
+Penglish: yek rooz morakhasi gereftan
+Verwendung: sich einen Tag freinehmen
+Bedeutung: für einen Tag nicht zur Arbeit gehen, weil man sich für diesen Tag freigenommen hat.
+Synonyme: einen Tag Urlaub nehmen, sich einen Tag frei nehmen
+Rektion: sich [Dat.] + etwas [Akk.]
+ex: Ich nehme mir morgen einen Tag frei: I am taking a day off from work tomorrow.
+ex: Sie hat sich am Freitag einen Tag freigenommen: She took a day off from work on Friday.
+Präsens: ich nehme mir einen Tag frei
+Präteritum: ich nahm mir einen Tag frei
+Perfekt: ich habe mir einen Tag freigenommen
+Futur I: ich werde mir einen Tag freinehmen
+Konjunktiv II: ich würde mir einen Tag freinehmen
+Konjunktiv I: ich nehme mir einen Tag frei
+
+der Knochen [ˈknɔxn̩]: bone
+English: bone
+Persian: استخوان
+Penglish: ostokhan
+Bedeutung: harter Teil des Skeletts eines Menschen oder Tieres.
+Genitiv: des Knochens
+Plural: die Knochen
+Kollokation: sich einen Knochen brechen
+Synonyme: Gebein
+ex: Er hat sich einen Knochen gebrochen: He broke a bone.
+ex: Dieser Knochen ist sehr klein: This bone is very small.
+
+der Profi [ˈpʁoːfi]: professional; expert
+English: professional; expert
+Persian: حرفه‌ای؛ متخصص
+Penglish: herfei; motekhasses
+Bedeutung: eine Person, die etwas beruflich oder auf sehr hohem Niveau macht.
+Genitiv: des Profis
+Plural: die Profis
+Kollokation: ein echter Profi sein
+Synonyme: Fachmann, Experte
+ex: Er ist ein Profi im Umgang mit Computern: He is an expert at working with computers.
+ex: Sie spielt wie ein Profi: She plays like a professional.
+
+die Gymnastik [ɡʏmˈnastɪk]: gymnastics; light exercise
+English: gymnastics; light exercise
+Persian: نرمش
+Penglish: narmesh
+Bedeutung: leichte körperliche Übungen, um den Körper zu bewegen, zu lockern oder beweglicher zu machen.
+Plural: kein Plural
+Kollokation: Gymnastik machen
+Synonyme: Übungen, Bewegung
+ex: Ich mache jeden Morgen zehn Minuten Gymnastik: I do ten minutes of light exercise every morning.
+ex: Gymnastik hilft mir gegen Rückenschmerzen: Light exercise helps me with back pain.
+
+das Gesäß [ɡəˈzɛːs]: buttocks; bottom
+English: buttocks; bottom
+Persian: باسن
+Penglish: basan
+Bedeutung: der hintere Teil des menschlichen Körpers unterhalb des Rückens.
+Genitiv: des Gesäßes
+Plural: die Gesäße
+Synonyme: der Po (umgangssprachlich), der Hintern (umgangssprachlich)
+ex: Nach dem Training habe ich Schmerzen im Gesäß: After the workout, I have pain in my buttocks.
+ex: Er fiel auf das Gesäß: He fell on his bottom.
+
+entlasten [ɛntˈlastn̩] (Akk., transitiv): to relieve; to ease; to take the strain off
+English: to relieve; to ease; to take the strain off
+Persian: سبک کردن؛ فشار را کم کردن؛ از بار کسی یا چیزی کم کردن
+Penglish: sabok kardan; feshar ra kam kardan; az bare kasi ya chizi kam kardan
+Verwendung: jemanden/etwas (Akk.) entlasten
+Bedeutung: eine Belastung, Arbeit, Verantwortung oder körperlichen Druck verringern.
+Synonyme: erleichtern, entkräften, entbürden
+Rektion: jemanden/etwas [Akk.]
+ex: Diese Übung entlastet den Rücken: This exercise takes the strain off the back.
+ex: Die neue Mitarbeiterin entlastet das Team: The new employee reduces the team's workload.
+Präsens: ich entlaste
+Präteritum: ich entlastete
+Perfekt: ich habe entlastet
+Futur I: ich werde entlasten
+Konjunktiv II: ich würde entlasten
+Konjunktiv I: ich entlaste
+
+bis dann: see you then; until then
+English: see you then; until then
+Persian: تا آن موقع؛ پس تا بعد
+Penglish: ta an moghe; pas ta bad
+Bedeutung: Abschiedsformel, wenn man erwartet, die andere Person zu einem bekannten späteren Zeitpunkt wiederzusehen oder wiederzusprechen.
+Gebrauch: informell und sehr häufig in Gesprächen.
+Synonyme: bis später, bis bald
+ex: Wir sehen uns morgen. Bis dann: See you tomorrow. See you then.
+ex: Ich rufe dich heute Abend an. Bis dann: I’ll call you this evening. Until then.
+
+das Zusammensein [ˈtsuːzamənˌzaɪ̯n]: being together; togetherness
+English: being together; togetherness
+Persian: با هم بودن؛ باهم‌بودگی
+Penglish: ba ham boodan; ba ham boodegi
+Bedeutung: der Zustand oder die Zeit, in der Menschen zusammen sind.
+Genitiv: des Zusammenseins
+Plural: kein Plural
+Kollokation: das Zusammensein mit jemandem
+Synonyme: Beisammensein, Miteinander
+ex: Ich genieße das Zusammensein mit meiner Familie: I enjoy being together with my family.
+ex: Das Zusammensein mit Freunden ist mir wichtig: Being together with friends is important to me.
