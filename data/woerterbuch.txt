@@ -3209,8 +3209,8 @@ ex: Regelmäßiges Üben ist am effektivsten: Regular practice is the most effec
 
 eng [ɛŋ] (Adjektiv, Komparativ: enger, Superlativ: am engsten; „engere“ = deklinierte Form): narrow; tight; close
 English: narrow; tight; close
-Persian: enger; Superlativ: am engsten; «engere» = deklinierte Form): باریک; تنگ بستن
-Penglish: enger; Superlativ: am engsten; «engere» = deklinierte Form): barik; tang bastan
+Persian: باریک; تنگ بستن
+Penglish: barik; tang bastan
 Bedeutung: mit wenig Platz; nicht weit; bei Beziehungen auch sehr nah oder vertraut.
 Synonyme: schmal, knapp, nah
 Attributiv und prädikativ verwendbar
@@ -15139,11 +15139,25 @@ English: shining
 Persian: درخشان
 Penglish: derakhshan
 
-scheinen : shine
-English: shine
-Persian: درخشیدن
-Penglish: derakhshidan
-Rektion: ?
+scheinen [ˈʃaɪ̯nən] (unregelmäßiges Verb, intransitiv): to seem; to appear; to shine
+English: to seem; to appear; to shine
+Persian: به نظر رسیدن؛ درخشیدن؛ تابیدن
+Penglish: be nazar residan; derakhshidan; tabidan
+Verwendung: 1. jemand/etwas scheint + Adjektiv; jemand/etwas scheint zu + Infinitiv; es scheint, dass ... 2. Licht oder die Sonne scheint.
+Bedeutung: 1. den Eindruck machen, dass jemand oder etwas auf eine bestimmte Weise ist. 2. Licht ausstrahlen oder sichtbar leuchten.
+Synonyme: 1. wirken, den Eindruck machen 2. leuchten, strahlen
+Rektion: zu + Infinitiv
+Rektion 2: dass-Satz
+ex: Er scheint müde zu sein: He seems to be tired.
+ex: Es scheint, dass niemand zu Hause ist: It seems that nobody is at home.
+ex: Die Sonne scheint: The sun is shining.
+ex: Das Licht scheint durch das Fenster: The light is shining through the window.
+Präsens: ich scheine
+Präteritum: ich schien
+Perfekt: ich habe geschienen
+Futur I: ich werde scheinen
+Konjunktiv II: ich würde scheinen
+Konjunktiv I: ich scheine
 
 der Hinweis (pl. die Hinweise): hint;  tip
 English: hint;  tip
@@ -53059,3 +53073,189 @@ Kollokation: das Zusammensein mit jemandem
 Synonyme: Beisammensein, Miteinander
 ex: Ich genieße das Zusammensein mit meiner Familie: I enjoy being together with my family.
 ex: Das Zusammensein mit Freunden ist mir wichtig: Being together with friends is important to me.
+
+die Schlagfertigkeit [ˈʃlaːkˌfɛʁtɪçkaɪ̯t]: quick-wittedness; repartee
+English: quick-wittedness; repartee
+Persian: حاضر‌جوابی؛ جواب حاضر و سریع
+Penglish: hazer-javabi; javab-e hazer o sari
+Bedeutung: Fähigkeit, in einem Gespräch schnell und passend auf eine Bemerkung, Kritik oder Frage zu reagieren.
+Genitiv: der Schlagfertigkeit
+Plural: kein Plural
+Kollokation: Schlagfertigkeit zeigen
+Synonyme: Geistesgegenwart, Wortgewandtheit
+ex: Ihre Schlagfertigkeit beeindruckte alle: Her quick-wittedness impressed everyone.
+ex: In solchen Situationen braucht man etwas Schlagfertigkeit: In such situations, you need some quick-wittedness.
+
+einschließlich [ˈaɪ̯nʃliːslɪç] (Präposition + Genitiv): including; inclusive of
+English: including; inclusive of
+Persian: شاملِ؛ از جمله
+Penglish: shamel-e; az jomle
+Bedeutung: gibt an, dass jemand oder etwas in eine genannte Menge oder Angabe einbezogen ist.
+Gebrauch: standardsprachlich meist mit Genitiv.
+Synonyme: inklusive, samt
+ex: Der Preis beträgt 50 Euro einschließlich aller Gebühren: The price is 50 euros including all fees.
+ex: Alle waren da, einschließlich meines Bruders: Everyone was there, including my brother.
+
+die Tagesdecke [ˈtaːɡəsˌdɛkə]: bedspread; bed cover
+English: bedspread; bed cover
+Persian: روتختی؛ روکش تخت
+Penglish: rootakhti; rookesh-e takht
+Bedeutung: dekorative Decke, die über das Bett und die Bettwäsche gelegt wird.
+Genitiv: der Tagesdecke
+Plural: die Tagesdecken
+Kollokation: eine Tagesdecke über das Bett legen
+Synonyme: Bettüberwurf
+ex: Ich lege eine Tagesdecke über das Bett: I put a bedspread over the bed.
+ex: Die Tagesdecke passt gut zu den Vorhängen: The bedspread matches the curtains well.
+
+gitterförmig [ˈɡɪtɐˌfœʁmɪç] (Adjektiv, nicht steigerbar): lattice-like; grid-shaped; mesh-like
+English: lattice-like; grid-shaped; mesh-like
+Persian: مشبک؛ شبکه‌ای
+Penglish: moshabak; shabake-i
+Bedeutung: aus sich kreuzenden Linien, Stäben oder Öffnungen bestehend und dadurch wie ein Gitter aufgebaut.
+Synonyme: netzartig, rasterförmig
+Attributiv und prädikativ verwendbar
+ex: Das Material hat eine gitterförmige Struktur: The material has a mesh-like structure.
+ex: Die Abdeckung ist gitterförmig: The cover is lattice-like.
+
+die Kartoffel [kaʁˈtɔfl̩]: potato
+English: potato
+Persian: سیب‌زمینی
+Penglish: sibzamini
+Bedeutung: essbare Knolle einer Pflanze, die häufig gekocht, gebraten oder gebacken gegessen wird.
+Genitiv: der Kartoffel
+Plural: die Kartoffeln
+Kollokation: Kartoffeln kochen
+Synonyme: Erdapfel (österreichisch, regional)
+ex: Ich koche Kartoffeln zum Abendessen: I cook potatoes for dinner.
+ex: Die Kartoffeln sind schon weich: The potatoes are already soft.
+
+die Spalterbse [ˈʃpaltˌʔɛʁbzə]: split pea
+English: split pea
+Persian: لپه
+Penglish: lappeh
+Bedeutung: geschälte und in zwei Hälften geteilte getrocknete Erbse; häufig gelb und zum Kochen verwendet.
+Genitiv: der Spalterbse
+Plural: die Spalterbsen
+Kollokation: gelbe Spalterbsen kochen
+Synonyme: Schälerbse
+ex: Für dieses Gericht brauche ich gelbe Spalterbsen: I need yellow split peas for this dish.
+ex: Die Spalterbsen müssen zuerst gewaschen werden: The split peas must be washed first.
+
+die Kirsche [ˈkɪʁʃə]: cherry
+English: cherry
+Persian: گیلاس
+Penglish: gilas
+Bedeutung: kleine runde, meist rote Frucht mit einem Stein in der Mitte.
+Genitiv: der Kirsche
+Plural: die Kirschen
+Kollokation: Kirschen essen
+Synonyme: keine gebräuchlichen
+ex: Ich esse gern Kirschen: I like eating cherries.
+ex: Die Kirschen sind süß und reif: The cherries are sweet and ripe.
+
+der Trichter [ˈtʁɪçtɐ]: funnel
+English: funnel
+Persian: قیف
+Penglish: ghif
+Bedeutung: kegelförmiger Gegenstand mit einer engen Öffnung unten, mit dem Flüssigkeiten oder kleine feste Stoffe in ein Gefäß gefüllt werden.
+Genitiv: des Trichters
+Plural: die Trichter
+Kollokation: einen Trichter benutzen
+Synonyme: Einfülltrichter
+ex: Ich gieße das Öl mit einem Trichter in die Flasche: I pour the oil into the bottle using a funnel.
+ex: Der Trichter liegt in der Küchenschublade: The funnel is in the kitchen drawer.
+
+die Schale [ˈʃaːlə]: bowl; peel; skin; shell
+English: bowl; peel; skin; shell
+Persian: کاسه؛ پیاله؛ پوست؛ پوسته
+Penglish: kaseh; piyaleh; poost; poosteh
+Bedeutung: 1. offenes, meist rundes Gefäß zum Essen, Servieren oder Aufbewahren von Lebensmitteln. 2. äußere Schicht oder feste Hülle von Obst, Gemüse, Eiern oder anderen Dingen.
+Genitiv: der Schale
+Plural: die Schalen
+Kollokation: etwas in eine Schale geben; die Schale entfernen
+Synonyme: Schüssel, Schälchen; Haut, Hülle
+ex: Ich gebe den Salat in eine Schale: I put the salad into a bowl.
+ex: Die Schale der Kartoffel ist sehr dünn: The skin of the potato is very thin.
+
+das Gemüse [ɡəˈmyːzə]: vegetables; vegetable produce
+English: vegetables
+Persian: سبزیجات
+Penglish: sabzijat
+Bedeutung: essbare Pflanzenteile wie Karotten, Kartoffeln, Paprika, Zwiebeln oder Brokkoli.
+Genitiv: des Gemüses
+Plural: die Gemüse (selten; meist verwendet man „Gemüsesorten“)
+Kollokation: Gemüse schneiden
+Synonyme: Gemüsesorten
+ex: Ich esse jeden Tag viel Gemüse: I eat a lot of vegetables every day.
+ex: Das Gemüse ist frisch: The vegetables are fresh.
+
+fruchtig [ˈfʁʊçtɪç] (Adjektiv, Komparativ: fruchtiger, Superlativ: am fruchtigsten): fruity
+English: fruity
+Persian: میوه‌ای؛ با طعم یا عطر میوه
+Penglish: mive-i; ba ta'm ya atre mive
+Bedeutung: einen deutlichen Geschmack oder Geruch nach Früchten habend.
+Synonyme: fruchtbetont, aromatisch
+Attributiv und prädikativ verwendbar
+ex: Dieser Tee schmeckt sehr fruchtig: This tea tastes very fruity.
+ex: Der Wein hat ein fruchtiges Aroma: The wine has a fruity aroma.
+
+die Rasierklinge [ʁaˈziːɐ̯ˌklɪŋə]: razor blade
+English: razor blade
+Persian: تیغ ریش‌تراشی؛ تیغ اصلاح
+Penglish: tighe rishtarashi; tighe eslah
+Bedeutung: sehr dünne und scharfe Klinge, die zum Rasieren von Haaren verwendet wird.
+Genitiv: der Rasierklinge
+Plural: die Rasierklingen
+Kollokation: die Rasierklinge wechseln
+Synonyme: Klinge
+ex: Ich muss die Rasierklinge wechseln: I need to change the razor blade.
+ex: Diese Rasierklinge ist nicht mehr scharf: This razor blade is no longer sharp.
+
+die Klinge [ˈklɪŋə]: blade
+English: blade
+Persian: تیغه
+Penglish: tigheh
+Bedeutung: scharfer Teil eines Messers, Rasierers oder ähnlichen Werkzeugs, mit dem etwas geschnitten wird.
+Genitiv: der Klinge
+Plural: die Klingen
+Kollokation: eine scharfe Klinge
+Synonyme: Schneide, Messerblatt
+ex: Die Klinge des Messers ist sehr scharf: The blade of the knife is very sharp.
+ex: Ich muss die Klinge wechseln: I need to change the blade.
+
+der Kosmetik- und Hygieneartikel [kɔsˈmeːtɪk ʊnt hyɡi̯ˈeːnəʔaʁˌtiːkl̩]: cosmetic and hygiene product; toiletry
+English: cosmetic and hygiene product; toiletry
+Persian: لوازم آرایشی و بهداشتی
+Penglish: lavazeme arayeshi va behdashti
+Bedeutung: Produkt zur Körperpflege, Hygiene oder Verschönerung, zum Beispiel Shampoo, Zahnpasta, Rasierklingen oder Kosmetik.
+Genitiv: des Kosmetik- und Hygieneartikels
+Plural: die Kosmetik- und Hygieneartikel
+Kollokation: Kosmetik- und Hygieneartikel kaufen
+Synonyme: Pflegeprodukte, Körperpflegeprodukte
+ex: Im Supermarkt gibt es viele Kosmetik- und Hygieneartikel: There are many cosmetic and hygiene products in the supermarket.
+ex: Ich muss noch einige Kosmetik- und Hygieneartikel kaufen: I still need to buy some toiletries.
+
+pauschal [paʊ̯ˈʃaːl] (Adjektiv/Adverb, meist nicht gesteigert): flat-rate; lump-sum; blanket; general
+English: flat-rate; lump-sum; blanket; general
+Persian: مقطوع؛ یکجا؛ کلی؛ بدون در نظر گرفتن جزئیات
+Penglish: maghtoo; yekja; kolli; bedoone dar nazar gereftane joziyat
+Bedeutung: 1. als feste Gesamtsumme berechnet, ohne einzelne Kosten getrennt zu berechnen. 2. allgemein und undifferenziert, ohne einzelne Fälle oder Details zu berücksichtigen.
+Synonyme: insgesamt, allgemein, undifferenziert
+Attributiv, prädikativ und adverbial verwendbar
+ex: Die Kosten werden pauschal berechnet: The costs are calculated as a flat rate.
+ex: Wir zahlen einen pauschalen Preis von 50 Euro: We pay a flat price of 50 euros.
+ex: Diese Aussage ist zu pauschal: This statement is too general.
+ex: Man kann das nicht pauschal sagen: You cannot say that in general.
+
+die Latenz [laˈtɛnt͡s]: latency; delay
+English: latency; delay
+Persian: تأخیر؛ زمان پاسخ‌دهی
+Penglish: taakhir; zamane pasokh-dehi
+Bedeutung: Zeitverzögerung zwischen einem Ereignis, Signal oder einer Eingabe und der entsprechenden Reaktion oder Ausgabe.
+Genitiv: der Latenz
+Plural: die Latenzen
+Kollokation: geringe Latenz
+Synonyme: Verzögerung, Reaktionsverzögerung
+ex: Eine geringe Latenz ist für Online-Spiele wichtig: Low latency is important for online games.
+ex: Das Netzwerk hat eine hohe Latenz: The network has high latency.
