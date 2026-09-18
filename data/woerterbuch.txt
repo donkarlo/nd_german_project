@@ -14833,18 +14833,6 @@ Konjunktiv II: ich genösse / ich würde genießen
 Konjunktiv I: ich genieße
 Imperativ: du: Genieß! / Genieße! ihr: Genießt!
 
-die Form [fɔʁm]: form; shape
-English: form; shape
-Persian: فرم; شکل
-Penglish: form; shekl
-Bedeutung: äußere Gestalt oder Struktur von etwas; Art, wie etwas aussieht oder aufgebaut ist.
-Genitiv: der Form
-Plural: die Formen
-Kollokation: eine runde Form
-Synonyme: Gestalt, Struktur, Umriss
-ex: Die Form des Tisches ist rund: The shape of the table is round.
-ex: Diese Form gefällt mir: I like this form.
-
 das Formular [fɔʁmuˈlaːɐ̯]: form
 English: form
 Persian: فرم
@@ -20834,13 +20822,6 @@ die Tiefe: depth
 English: depth
 Persian: عمق
 Penglish: omgh
-
-der Luxus (pl. die Luxusgüter): luxury
-English: luxury
-Persian: لوکس
-Penglish: looks
-ex: Luxus ist nicht immer notwendig: Luxury is not always necessary
-ex: Er lebt in großem Luxus: He lives in great luxury
 
 luxuriös (Adj.): luxurious
 English: luxurious
@@ -53259,3 +53240,162 @@ Kollokation: geringe Latenz
 Synonyme: Verzögerung, Reaktionsverzögerung
 ex: Eine geringe Latenz ist für Online-Spiele wichtig: Low latency is important for online games.
 ex: Das Netzwerk hat eine hohe Latenz: The network has high latency.
+
+die Untertasse [ˈʊntɐˌtasə]: saucer
+English: saucer
+Persian: نعلبکی
+Penglish: naalbeki
+Bedeutung: kleiner flacher Teller, der unter eine Tasse gestellt wird.
+Genitiv: der Untertasse
+Plural: die Untertassen
+Kollokation: eine Tasse mit Untertasse
+Synonyme: Tassenteller
+ex: Die Tasse steht auf einer Untertasse: The cup is standing on a saucer.
+ex: Sie stellte die Kaffeetasse auf die Untertasse: She placed the coffee cup on the saucer.
+
+die Motivationslosigkeit [motivaˈtsi̯oːnsloːzɪçkaɪ̯t]: lack of motivation; demotivation
+English: lack of motivation; demotivation
+Persian: بی‌انگیزگی
+Penglish: bi-angizigi
+Bedeutung: Zustand, in dem jemand wenig oder keine Motivation hat, etwas zu tun oder ein Ziel zu verfolgen.
+Genitiv: der Motivationslosigkeit
+Plural: kein Plural
+Kollokation: unter Motivationslosigkeit leiden
+Synonyme: Antriebslosigkeit, Unmotiviertheit
+ex: In letzter Zeit leide ich unter Motivationslosigkeit: Lately, I have been suffering from a lack of motivation.
+ex: Seine Motivationslosigkeit macht ihm das Lernen schwer: His lack of motivation makes studying difficult.
+
+geschwollen [ɡəˈʃvɔlən] (Adjektiv, Komparativ: geschwollener, Superlativ: am geschwollensten): swollen
+English: swollen
+Persian: ورم‌کرده؛ متورم
+Penglish: varam-kardeh; motavarram
+Bedeutung: durch eine Schwellung vergrößert oder dicker als normal.
+Synonyme: angeschwollen, verdickt
+Attributiv und prädikativ verwendbar
+ex: Mein Fuß ist geschwollen: My foot is swollen.
+ex: Sein Auge ist stark geschwollen: His eye is badly swollen.
+
+verrutschen [fɛɐ̯ˈʁʊtʃn̩] (untrennbar, intransitiv): to slip; to shift; to move out of place
+English: to slip; to shift; to move out of place
+Persian: جابه‌جا شدن؛ از جای خود حرکت کردن؛ لغزیدن
+Penglish: jabeja shodan; az jaye khod harekat kardan; laghzidan
+Bedeutung: unbeabsichtigt die ursprüngliche Position verändern und sich etwas zur Seite oder an eine andere Stelle bewegen.
+Synonyme: sich verschieben, wegrutschen
+ex: Das Kissen ist im Schlaf verrutscht: The pillow shifted out of place while I was sleeping.
+ex: Die Brille ist auf meiner Nase verrutscht: The glasses slipped on my nose.
+Präsens: ich verrutsche
+Präteritum: ich verrutschte
+Perfekt: ich bin verrutscht
+Futur I: ich werde verrutschen
+Konjunktiv II: ich würde verrutschen
+Konjunktiv I: ich verrutsche
+
+injizieren [ɪnjiˈtsiːʁən] (transitiv, untrennbar): to inject
+English: to inject
+Persian: تزریق کردن
+Penglish: tazrigh kardan
+Verwendung: jemandem (Dat.) etwas (Akk.) injizieren; etwas (Akk.) in etwas (Akk.) injizieren
+Bedeutung: eine Flüssigkeit, besonders ein Medikament, mit einer Spritze in den Körper oder in ein Gewebe einbringen.
+Synonyme: einspritzen, verabreichen
+Rektion: jemandem [Dat.] + etwas [Akk.]
+Rektion 2: etwas [Akk.] + in etwas [Akk.]
+ex: Der Arzt injiziert dem Patienten ein Medikament: The doctor injects the patient with a medication.
+ex: Das Medikament wird in die Vene injiziert: The medication is injected into the vein.
+Präsens: ich injiziere
+Präteritum: ich injizierte
+Perfekt: ich habe injiziert
+Futur I: ich werde injizieren
+Konjunktiv II: ich würde injizieren
+Konjunktiv I: ich injiziere
+
+missbrauchen [ˈmɪsˌbʁaʊ̯xn̩] (untrennbar, transitiv): to abuse; to misuse
+English: to abuse; to misuse
+Persian: سوءاستفاده کردن؛ مورد سوءاستفاده قرار دادن
+Penglish: sooestefadeh kardan; morede sooestefadeh gharar dadan
+Verwendung: jemanden/etwas (Akk.) missbrauchen
+Bedeutung: jemanden oder etwas auf schädliche, falsche oder unzulässige Weise benutzen.
+Synonyme: ausnutzen, zweckentfremden
+Rektion: jemanden/etwas [Akk.]
+ex: Er missbrauchte seine Macht: He abused his power.
+ex: Niemand darf andere Menschen missbrauchen: No one may abuse other people.
+Präsens: ich missbrauche
+Präteritum: ich missbrauchte
+Perfekt: ich habe missbraucht
+Futur I: ich werde missbrauchen
+Konjunktiv II: ich würde missbrauchen
+Konjunktiv I: ich missbrauche
+
+der Missbrauch [ˈmɪsˌbʁaʊ̯x]: abuse; misuse
+English: abuse; misuse
+Persian: سوءاستفاده؛ بدرفتاری
+Penglish: sooestefadeh; badraftari
+Bedeutung: schädliche, falsche oder unzulässige Verwendung von etwas oder schlechte Behandlung einer Person.
+Genitiv: des Missbrauchs
+Plural: die Missbräuche
+Kollokation: Missbrauch verhindern
+Synonyme: Ausnutzung, Fehlgebrauch
+ex: Der Missbrauch von Macht ist ein ernstes Problem: The abuse of power is a serious problem.
+ex: Der Missbrauch wurde der Polizei gemeldet: The abuse was reported to the police.
+
+vorhalten [ˈfoːɐ̯ˌhaltn̩] (trennbar, transitiv): to reproach someone with something; to hold something against someone
+English: to reproach someone with something; to hold something against someone
+Persian: چیزی را به روی کسی آوردن؛ کسی را بابت چیزی سرزنش کردن
+Penglish: chizi ra be rooye kasi avordan; kasi ra babate chizi sarzanesh kardan
+Verwendung: jemandem (Dat.) etwas (Akk.) vorhalten
+Bedeutung: jemanden kritisch an einen Fehler, ein Verhalten oder eine frühere Handlung erinnern und ihm dies zum Vorwurf machen.
+Synonyme: vorwerfen, ankreiden
+Rektion: jemandem [Dat.] + etwas [Akk.]
+ex: Sie hielt ihm seinen früheren Fehler vor: She reproached him with his earlier mistake.
+ex: Du musst mir das nicht ständig vorhalten: You do not have to keep holding that against me.
+Präsens: ich halte vor
+Präteritum: ich hielt vor
+Perfekt: ich habe vorgehalten
+Futur I: ich werde vorhalten
+Konjunktiv II: ich würde vorhalten
+Konjunktiv I: ich halte vor
+
+das mittlere Alter [ˈmɪtləʁə ˈʔaltɐ]: middle age
+English: middle age
+Persian: میانسالی
+Penglish: miansali
+Bedeutung: Lebensabschnitt zwischen dem jungen Erwachsenenalter und dem höheren Alter.
+Genitiv: des mittleren Alters
+Plural: kein Plural
+Kollokation: im mittleren Alter sein
+ex: Viele Menschen verändern im mittleren Alter ihre Lebensgewohnheiten: Many people change their lifestyle in middle age.
+ex: Er ist im mittleren Alter: He is middle-aged.
+
+das Seniorenheim [zeˈni̯oːʁənˌhaɪ̯m]: retirement home; home for elderly people
+English: retirement home; home for elderly people
+Persian: خانه سالمندان
+Penglish: khaneye salmandan
+Bedeutung: Einrichtung, in der ältere Menschen wohnen und je nach Bedarf Betreuung und Pflege erhalten.
+Genitiv: des Seniorenheims
+Plural: die Seniorenheime
+Kollokation: in einem Seniorenheim leben
+Synonyme: Altersheim, Pflegeheim
+ex: Seine Großmutter lebt in einem Seniorenheim: His grandmother lives in a retirement home.
+ex: Das Seniorenheim bietet Betreuung rund um die Uhr: The retirement home provides care around the clock.
+
+die Unfähigkeit [ˈʊnˌfɛːɪçkaɪ̯t]: inability; incapacity
+English: inability; incapacity
+Persian: ناتوانی؛ عدم توانایی
+Penglish: natavani; adame tavanaei
+Bedeutung: fehlende Fähigkeit, etwas zu tun oder zu leisten.
+Genitiv: der Unfähigkeit
+Plural: die Unfähigkeiten
+Kollokation: die Unfähigkeit, etwas zu tun
+Synonyme: Unvermögen, Unfähigkeit
+ex: Seine Unfähigkeit, die Aufgabe zu lösen, war offensichtlich: His inability to solve the task was obvious.
+ex: Die Unfähigkeit zu schlafen kann sehr belastend sein: The inability to sleep can be very stressful.
+
+das Handgelenk [ˈhantɡəˌlɛŋk]: wrist
+English: wrist
+Persian: مچ دست
+Penglish: mache dast
+Bedeutung: Gelenk zwischen Hand und Unterarm.
+Genitiv: des Handgelenks
+Plural: die Handgelenke
+Kollokation: sich das Handgelenk verletzen
+ex: Mein Handgelenk tut weh: My wrist hurts.
+ex: Sie trägt eine Uhr am Handgelenk: She wears a watch on her wrist.
