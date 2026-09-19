@@ -9359,20 +9359,6 @@ English: near
 Persian: نزدیک
 Penglish: nazdik
 
-ersetzen [ɛɐ̯ˈzɛtsən] (Akk.) trennbar, transitiv: replace
-English: replace
-Persian: جایگزین کردن
-Penglish: jaygozin kardan
-Rektion: jemanden/etwas [Akk.]
-ex: Ich ersetze die alte Batterie: I replace the old battery.
-ex: Kannst du mich morgen ersetzen?: Can you replace me tomorrow?
-Präsens: ich ersetze
-Präteritum: ich ersetzte
-Perfekt: ich habe ersetzt
-Futur I: ich werde ersetzen
-Konjunktiv II: ich ersetzte / ich würde ersetzen
-Konjunktiv I: ich ersetze
-
 kombinieren: combine
 English: combine
 Persian: ترکیب کردن
@@ -31330,12 +31316,17 @@ Synonyme: Zeitraum, Phase, Zeitabschnitt
 ex: Das war eine schwierige Periode in meinem Leben: That was a difficult period in my life.
 ex: Die wirtschaftliche Periode dauerte mehrere Jahre: The economic period lasted several years.
 
-das Gesicht [ɡəˈzɪçt] (pl. die Gesichter): face
+das Gesicht [ɡəˈzɪçt]: face
 English: face
-Persian: صورت
-Penglish: soorat
-ex: Er hat ein freundliches Gesicht: He has a friendly face.
-ex: Ich habe sie an ihrem Gesicht erkannt: I recognized her by her face.
+Persian: چهره؛ صورت
+Penglish: chehreh; soorat
+Bedeutung: der vordere Teil des Kopfes mit Augen, Nase und Mund; auch das äußere Erscheinungsbild einer Person.
+Genitiv: des Gesichts
+Plural: die Gesichter
+Kollokation: jemandem ins Gesicht sehen
+Synonyme: Antlitz, Miene
+ex: Sie hat ein freundliches Gesicht: She has a friendly face.
+ex: Man konnte die Müdigkeit in seinem Gesicht sehen: You could see the tiredness in his face.
 
 die Wange [ˈvaŋə] (pl. die Wangen): cheek
 English: cheek
@@ -47672,11 +47663,6 @@ Synonyme: Erwägung, Berücksichtigung
 ex: Wir müssen auch diese Möglichkeit in Betracht ziehen: We also have to consider this possibility.
 ex: Diese Lösung kommt nicht in Betracht: This solution is out of the question. ([duden.de][1])
 
-[1]: https://www.duden.de/rechtschreibung/Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung, Bedeutung, Definition, Herkunft | Duden"
-English: https://www.duden.de/rechtschreibung/Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung, Bedeutung, Definition, Herkunft | Duden"
-Persian: https:; www.duden.de; rechtschreibung; Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung; Bedeutung; Definition; Herkunft; Duden"
-Penglish: https:; www.duden.de; rechtschreibung; Betracht?utm_source=chatgpt.com "Betracht ▶ Rechtschreibung; Bedeutung; Definition; Herkunft; Duden"
-
 zweifelsfrei [ˈtsvaɪ̯fl̩sˌfʁaɪ̯] (Adjektiv / Adverb, nicht steigerbar): beyond doubt; unequivocal; undoubtedly
 English: beyond doubt; unequivocal; undoubtedly
 Persian: بدون شک; قطعی; مسلم
@@ -53399,3 +53385,243 @@ Plural: die Handgelenke
 Kollokation: sich das Handgelenk verletzen
 ex: Mein Handgelenk tut weh: My wrist hurts.
 ex: Sie trägt eine Uhr am Handgelenk: She wears a watch on her wrist.
+
+zubringen [ˈtsuːˌbʁɪŋən] (Akk., trennbar, transitiv): to spend; to pass (time)
+English: to spend; to pass (time)
+Persian: گذراندن؛ سپری کردن
+Penglish: gozarandan; separi kardan
+Verwendung: eine bestimmte Zeit (Akk.) irgendwo oder mit jemandem/etwas zubringen
+Bedeutung: eine bestimmte Zeit an einem Ort oder mit einer Tätigkeit bzw. Person verbringen.
+Synonyme: verbringen, verbringen mit
+Rektion: jemanden/etwas [Akk.]
+ex: Ich bringe den Abend zu Hause zu: I spend the evening at home.
+ex: Er brachte viel Zeit mit seiner Familie zu: He spent a lot of time with his family.
+Präsens: ich bringe zu
+Präteritum: ich brachte zu
+Perfekt: ich habe zugebracht
+Futur I: ich werde zubringen
+Konjunktiv II: ich würde zubringen
+Konjunktiv I: ich bringe zu
+
+jemanden zu einem Date einladen [ˈjeːmandn̩ tsuː ˈaɪ̯nəm deɪ̯t ˈaɪ̯nˌlaːdn̩] (Akk. + zu + Dat., trennbar): to ask someone out; to invite someone on a date
+English: to ask someone out; to invite someone on a date
+Persian: از کسی برای قرار عاشقانه دعوت کردن
+Penglish: az kasi baraye gharare asheghaneh davat kardan
+Verwendung: jemanden (Akk.) zu einem Date (Dat.) einladen
+Bedeutung: jemanden fragen, ob er oder sie sich mit einem zu einem romantischen Treffen verabreden möchte.
+Synonyme: jemanden um ein Date bitten, jemanden nach einem Date fragen
+Rektion: jemanden [Akk.] + zu etwas [Dat.]
+ex: Er hat sie zu einem Date eingeladen: He asked her out on a date.
+ex: Ich möchte sie zu einem Date einladen: I would like to ask her out.
+Präsens: ich lade jemanden zu einem Date ein
+Präteritum: ich lud jemanden zu einem Date ein
+Perfekt: ich habe jemanden zu einem Date eingeladen
+Futur I: ich werde jemanden zu einem Date einladen
+Konjunktiv II: ich würde jemanden zu einem Date einladen
+Konjunktiv I: ich lade jemanden zu einem Date ein
+
+die Aufführung [ˈaʊ̯fˌfyːʁʊŋ]: performance; showing
+English: performance; showing
+Persian: اجرا؛ نمایش
+Penglish: ejra; namayesh
+Bedeutung: öffentliche Darbietung eines Theaterstücks, Konzerts, Films oder eines anderen künstlerischen Werks.
+Genitiv: der Aufführung
+Plural: die Aufführungen
+Kollokation: eine Aufführung besuchen
+Synonyme: Vorstellung, Darbietung
+ex: Die Aufführung beginnt um acht Uhr: The performance begins at eight o’clock.
+ex: Wir haben gestern eine Theateraufführung besucht: We attended a theatre performance yesterday.
+
+hinkriegen [ˈhɪnˌkʁiːɡn̩] (Akk., trennbar, transitiv, umgangssprachlich): to manage; to get something done
+English: to manage; to get something done
+Persian: از عهدهٔ چیزی برآمدن؛ موفق به انجام کاری شدن
+Penglish: az ohde-ye chizi bar omadan; movafagh be anjam-e kari shodan
+Verwendung: etwas (Akk.) hinkriegen
+Bedeutung: es schaffen, etwas erfolgreich zu tun, zu lösen oder zu erledigen.
+Synonyme: schaffen, bewältigen, zustande bringen
+Rektion: etwas [Akk.]
+ex: Ich kriege das schon hin: I’ll manage it.
+ex: Wie hast du das hingekriegt: How did you manage to do that?
+Präsens: ich kriege hin
+Präteritum: ich kriegte hin
+Perfekt: ich habe hingekriegt
+Futur I: ich werde hinkriegen
+Konjunktiv II: ich würde hinkriegen
+Konjunktiv I: ich kriege hin
+
+die Atemübung [ˈaːtəmˌʔyːbʊŋ]: breathing exercise
+English: breathing exercise
+Persian: تمرین تنفسی؛ تمرین تنفس
+Penglish: tamrin-e tanaffosi; tamrin-e tanaffos
+Bedeutung: Übung, bei der man die Atmung bewusst kontrolliert, zum Beispiel zur Entspannung oder Konzentration.
+Genitiv: der Atemübung
+Plural: die Atemübungen
+Kollokation: eine Atemübung machen
+Synonyme: Atemtraining
+ex: Ich mache jeden Abend eine Atemübung: I do a breathing exercise every evening.
+ex: Diese Atemübung hilft mir, mich zu entspannen: This breathing exercise helps me relax.
+
+aktiv [akˈtiːf] (Adjektiv, Komparativ: aktiver, Superlativ: am aktivsten): active
+English: active
+Persian: فعال
+Penglish: fa'al
+Bedeutung: tätig und engagiert; etwas bewusst tun oder regelmäßig an Tätigkeiten teilnehmen.
+Synonyme: tätig, engagiert
+Attributiv und prädikativ verwendbar
+ex: Er ist körperlich sehr aktiv: He is physically very active.
+ex: Sie führt ein aktives Leben: She leads an active life.
+ex: Am Wochenende bin ich aktiver als unter der Woche: I am more active on weekends than during the week.
+
+reinhängen [ˈʁaɪ̯nˌhɛŋən] (Akk., trennbar, transitiv, umgangssprachlich): to hang something in; to put something in by hanging
+English: to hang something in; to put something in by hanging
+Persian: چیزی را داخل چیزی آویزان کردن
+Penglish: chizi ra dakhele chizi avizan kardan
+Verwendung: etwas (Akk.) irgendwo reinhängen
+Bedeutung: etwas so aufhängen, dass es sich danach in einem bestimmten Raum, Behälter oder Bereich befindet.
+Synonyme: hineinhängen
+Rektion: jemanden/etwas [Akk.]
+ex: Häng bitte die Jacke in den Schrank rein: Please hang the jacket in the wardrobe.
+ex: Ich habe die Tasche dort reingehängt: I hung the bag in there.
+Präsens: ich hänge rein
+Präteritum: ich hängte rein
+Perfekt: ich habe reingehängt
+Futur I: ich werde reinhängen
+Konjunktiv II: ich würde reinhängen
+Konjunktiv I: ich hänge rein
+
+sich reinhängen [zɪç ˈʁaɪ̯nˌhɛŋən] (reflexiv, trennbar, umgangssprachlich): to put a lot of effort into something; to work hard
+English: to put a lot of effort into something; to work hard
+Persian: خیلی تلاش کردن؛ خود را وقف کاری کردن
+Penglish: kheili talash kardan; khod ra vaghfe kari kardan
+Verwendung: sich reinhängen; sich bei/in etwas reinhängen
+Bedeutung: sich bei einer Aufgabe stark bemühen und viel Energie dafür einsetzen.
+Synonyme: sich anstrengen, sich bemühen, sich einsetzen
+ex: Wenn du dich richtig reinhängst, schaffst du die Prüfung: If you really put in the effort, you'll pass the exam.
+ex: Er hat sich bei dem Projekt richtig reingehängt: He put a lot of effort into the project.
+Präsens: ich hänge mich rein
+Präteritum: ich hängte mich rein
+Perfekt: ich habe mich reingehängt
+Futur I: ich werde mich reinhängen
+Konjunktiv II: ich würde mich reinhängen
+Konjunktiv I: ich hänge mich rein
+
+der Fahrradschlauch [ˈfaːɐ̯ʁaːtˌʃlaʊ̯x]: bicycle inner tube
+English: bicycle inner tube
+Persian: تیوب دوچرخه
+Penglish: tiub-e docharkhe
+Bedeutung: ein mit Luft gefüllter Gummischlauch im Fahrradreifen.
+Genitiv: des Fahrradschlauchs
+Plural: die Fahrradschläuche
+Kollokation: einen Fahrradschlauch wechseln
+Synonyme: Schlauch
+ex: Mein Fahrradschlauch hat ein Loch: My bicycle inner tube has a hole.
+ex: Ich muss den Fahrradschlauch wechseln: I have to replace the bicycle inner tube.
+
+der Reparateur [ʁepaʁaˈtøːɐ̯]: repairer; repair technician
+English: repairer; repair technician
+Persian: تعمیرکار
+Penglish: tamirkar
+Bedeutung: Person, die beschädigte oder defekte Geräte, Maschinen oder andere Gegenstände repariert.
+Genitiv: des Reparateurs
+Plural: die Reparateure
+Kollokation: einen Reparateur rufen
+Synonyme: Reparaturtechniker, Mechaniker, Handwerker
+ex: Ich muss einen Reparateur rufen: I have to call a repairer.
+ex: Der Reparateur hat das Gerät repariert: The repairer repaired the device.
+
+übertragen [ˌyːbɐˈtʁaːɡn̩] (Akk. + Dat., untrennbar, transitiv): to devolve; to transfer; to delegate
+English: to devolve; to transfer; to delegate
+Persian: واگذار کردن؛ انتقال دادن
+Penglish: واگذار kardan; enteghal dadan
+Verwendung: jemandem (Dat.) etwas (Akk.) übertragen
+Bedeutung: eine Aufgabe, Verantwortung, Befugnis oder Macht an eine andere Person oder Institution weitergeben.
+Synonyme: delegieren, übergeben, anvertrauen
+Rektion: jemandem [Dat.] + etwas [Akk.]
+ex: Die Regierung überträgt mehr Befugnisse auf die Regionen: The government devolves more powers to the regions.
+ex: Die Verantwortung wurde den lokalen Behörden übertragen: The responsibility was devolved to the local authorities.
+Präsens: ich übertrage
+Präteritum: ich übertrug
+Perfekt: ich habe übertragen
+Futur I: ich werde übertragen
+Konjunktiv II: ich würde übertragen
+Konjunktiv I: ich übertrage
+
+städtisch [ˈʃtɛtɪʃ] (Adjektiv, nicht steigerbar): urban; municipal
+English: urban; municipal
+Persian: شهری
+Penglish: shahri
+Bedeutung: eine Stadt betreffend; zu einer Stadt gehörend oder für eine Stadt typisch.
+Synonyme: urban
+Attributiv und prädikativ verwendbar
+ex: Das städtische Verkehrsnetz ist gut ausgebaut: The urban transport network is well developed.
+ex: Diese Gegend ist sehr städtisch geprägt: This area has a strongly urban character.
+
+die feine Linie [ˈfaɪ̯nə ˈliːni̯ə]: fine line
+English: fine line
+Persian: خط ریز؛ چین ظریف روی پوست
+Penglish: khat-e riz; chin-e zarif ruye poost
+Bedeutung: eine sehr kleine, flache Falte auf der Haut; häufig für erste oder leichte Gesichtsfalten verwendet.
+Genitiv: der feinen Linie
+Plural: die feinen Linien
+Kollokation: feine Linien im Gesicht
+Synonyme: Fältchen
+ex: Unter den Augen habe ich feine Linien: I have fine lines under my eyes.
+ex: Die Creme soll feine Linien reduzieren: The cream is supposed to reduce fine lines.
+
+wofür [voˈfyːɐ̯] (Interrogativadverb / Pronominaladverb, wo(r) + für): what for; for what
+English: what for; for what
+Persian: برای چه؛ برای چه چیزی
+Penglish: baraye che; baraye che chizi
+Bedeutung: fragt nach dem Zweck, dem Grund oder danach, für welche Sache etwas bestimmt ist.
+Gebrauch: ersetzt „für + Sache“. Für Personen verwendet man normalerweise „für wen“, nicht „wofür“.
+Struktur: wo(r) + Präposition → wofür; bei Präpositionen mit Vokal steht meist „wor-“: woran, worüber, worauf.
+Synonyme: für was (umgangssprachlich)
+ex: Wofür brauchst du das Geld: What do you need the money for?
+ex: Ich weiß nicht, wofür dieses Gerät verwendet wird: I don't know what this device is used for.
+ex: Wofür interessierst du dich: What are you interested in?
+
+der Therapeut [teʁaˈpɔɪ̯t] (maskulin, n-Deklination): therapist
+English: therapist
+Persian: درمانگر؛ تراپیست
+Penglish: darmangar; terapist
+Bedeutung: eine männliche Person, die Menschen mit therapeutischen Methoden behandelt oder unterstützt.
+Genitiv: des Therapeuten
+Plural: die Therapeuten
+Kollokation: einen Termin beim Therapeuten haben
+Synonyme: Behandler, Therapie-Fachkraft
+ex: Ich habe morgen einen Termin bei meinem Therapeuten: I have an appointment with my therapist tomorrow.
+ex: Der Therapeut zeigt mir neue Übungen: The therapist shows me new exercises.
+
+beruhigen [bəˈʁuːɪɡn̩] (Akk., untrennbar, transitiv): to calm; to reassure
+English: to calm; to reassure
+Persian: آرام کردن؛ اطمینان خاطر دادن
+Penglish: aram kardan; etminan-e khater dadan
+Verwendung: jemanden (Akk.) beruhigen
+Bedeutung: bewirken, dass jemand weniger nervös, ängstlich, aufgeregt oder beunruhigt ist.
+Synonyme: besänftigen, trösten
+Rektion: jemanden [Akk.]
+ex: Ich versuche, ihn zu beruhigen: I am trying to calm him down.
+ex: Die Therapeutin beruhigte den Patienten: The therapist reassured the patient.
+Präsens: ich beruhige
+Präteritum: ich beruhigte
+Perfekt: ich habe beruhigt
+Futur I: ich werde beruhigen
+Konjunktiv II: ich würde beruhigen
+Konjunktiv I: ich beruhige
+
+sich beruhigen [bəˈʁuːɪɡn̩] (reflexiv): to calm down
+English: to calm down
+Persian: آرام شدن؛ آرام گرفتن
+Penglish: aram shodan; aram gereftan
+Verwendung: sich (Akk.) beruhigen
+Bedeutung: weniger nervös, ängstlich, wütend oder aufgeregt werden.
+Synonyme: sich entspannen, zur Ruhe kommen
+Rektion: sich [Akk.]
+ex: Beruhige dich bitte: Please calm down.
+ex: Nach ein paar Minuten habe ich mich wieder beruhigt: After a few minutes, I calmed down again.
+Präsens: ich beruhige mich
+Präteritum: ich beruhigte mich
+Perfekt: ich habe mich beruhigt
+Futur I: ich werde mich beruhigen
+Konjunktiv II: ich würde mich beruhigen
+Konjunktiv I: ich beruhige mich
