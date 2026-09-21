@@ -277,18 +277,15 @@ def _import_text_database(source_path: Path) -> None:
 
 
 def ensure_primary_database() -> None:
-    """Use SQLite as the source of truth; text is only a one-time bootstrap."""
+    """Migrate once from the text database, then make SQLite authoritative."""
     global _FTS5, _ENABLED
 
     source_path, sqlite_path = _require_paths()
+    if not source_path.is_file():
+        raise FileNotFoundError(f"Dictionary source not found: {source_path}")
 
     with _LOCK:
         if not sqlite_path.exists():
-            if not source_path.is_file():
-                raise FileNotFoundError(
-                    f"Dictionary SQLite database and bootstrap text are missing: "
-                    f"{sqlite_path} / {source_path}"
-                )
             _import_text_database(source_path)
             return
 
@@ -301,12 +298,8 @@ def ensure_primary_database() -> None:
                 _ENABLED = True
                 return
 
-            if not source_path.is_file():
-                raise FileNotFoundError(
-                    "SQLite exists but is not marked primary, and the one-time "
-                    f"migration source is missing: {source_path}"
-                )
-
+            # Upgrade the previous hybrid SQLite cache. If the text source changed
+            # after that cache was built, import it once before switching authority.
             cached_signature = _stored_source_signature(connection)
             current_signature = _source_signature(source_path)
             needs_import = cached_signature != current_signature
@@ -323,8 +316,9 @@ def ensure_primary_database() -> None:
 
         _ENABLED = True
 
+
 def _export_text_mirror() -> None:
-    """Manual text export helper; never called by normal application writes."""
+    """Keep woerterbuch.txt as a readable backup/export, not as the live database."""
     source_path, _ = _require_paths()
 
     with _connection() as connection:
@@ -403,6 +397,7 @@ def sqlite_add(self, _database_path, raw_entry: str):
         updated = list(self.entries)
         updated.append(entry)
         self.__init__(updated)
+        _export_text_mirror()
 
     return entry
 
@@ -439,6 +434,7 @@ def sqlite_replace(self, _database_path, entry_index: int, raw_entry: str):
         updated = list(self.entries)
         updated[entry_index] = replacement
         self.__init__(updated)
+        _export_text_mirror()
 
     return replacement
 
@@ -486,6 +482,7 @@ def sqlite_delete(self, _database_path, entry_index: int):
         updated = list(self.entries)
         del updated[entry_index]
         self.__init__(updated)
+        _export_text_mirror()
 
     return removed
 
@@ -685,7 +682,7 @@ def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
 
 
 def _sqlite_generate_missing_meanings(application, window) -> None:
-    """Run the existing enrichment logic directly against SQLite."""
+    """Run the existing enrichment logic against SQLite, then export the text mirror."""
     patch = application.patch
     legacy = application.enrichment
     source_path, _ = _require_paths()
@@ -806,6 +803,7 @@ def _sqlite_generate_missing_meanings(application, window) -> None:
                         except Exception:
                             connection.rollback()
                             raise
+                    _export_text_mirror()
 
                 window._meaning_generation_revision = (
                     getattr(window, "_meaning_generation_revision", 0) + 1
@@ -848,7 +846,7 @@ def install(application, base, *, source_path: Path, sqlite_path: Path) -> None:
         # if migration cannot complete.
         return
 
-    # SQLite is the source of truth. The text file is bootstrap/manual export only.
+    # SQLite is now the source of truth. The text file is only an exported mirror.
     dictionary_core.DictionaryIndex.from_file = classmethod(sqlite_from_file)
     base.ORIGINAL_ADD = sqlite_add
     base.ORIGINAL_REPLACE = sqlite_replace

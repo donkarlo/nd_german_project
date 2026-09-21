@@ -29984,22 +29984,23 @@ Synonyme: Spülbecken, Waschbecken
 ex: Das Geschirr steht noch in der Spüle: The dishes are still in the sink.
 ex: Ich wasche das Gemüse in der Spüle: I wash the vegetables in the sink.
 
-riechen [ˈʁiːçn̩] transitiv/intransitiv: smell
-English: smell
-Persian: بوییدن
-Penglish: booidan
-Rektion: ?
-Bedeutung: mit der Nase wahrnehmen; einen bestimmten Geruch haben.
-Synonyme: duften, stinken, wahrnehmen
-ex: Ich rieche frisches Brot: I smell fresh bread.
-ex: Die Blumen riechen gut: The flowers smell good.
+riechen [ˈʁiːçn̩] (Akk. / nach + Dat., transitiv oder intransitiv, unregelmäßig): to smell; to smell of
+English: to smell; to detect by smell; to smell of
+Persian: بو کردن؛ بوی چیزی را حس کردن؛ بو دادن؛ بوی چیزی را دادن
+Penglish: boo kardan; booye chizi ra hes kardan; boo dadan; booye chizi ra dadan
+Verwendung: jemanden/etwas (Akk.) riechen; nach jemandem/etwas (Dat.) riechen; gut/schlecht/angenehm riechen
+Bedeutung: mit der Nase einen Geruch wahrnehmen; einen bestimmten Geruch haben oder verbreiten.
+Synonyme: wahrnehmen, erschnuppern, duften
+Rektion: jemanden/etwas [Akk.] + nach etwas [Dat.]
+ex: Ich rieche Kaffee: I smell coffee.
+ex: Das Zimmer riecht nach Kaffee: The room smells of coffee.
+ex: Die Blumen riechen sehr angenehm: The flowers smell very pleasant.
 Präsens: ich rieche
 Präteritum: ich roch
 Perfekt: ich habe gerochen
 Futur I: ich werde riechen
-Konjunktiv II: ich röche / ich würde riechen
+Konjunktiv II: ich würde riechen
 Konjunktiv I: ich rieche
-imperativ: du: Riech!  ihr: Riecht!
 
 ausgießen [ˈaʊ̯sˌɡiːsn̩] trennbar, transitiv: pour out
 English: pour out

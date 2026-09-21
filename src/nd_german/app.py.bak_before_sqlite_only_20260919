@@ -101,7 +101,7 @@ def main() -> int:
         application.base,
         sqlite_search,
         sqlite_path=SQLITE_DATABASE_PATH,
-        text_path=None,  # SQLite-only runtime; text export is manual.
+        text_path=TEXT_DATABASE_PATH,
     )
 
     application.base.language_icon = _project_language_icon
