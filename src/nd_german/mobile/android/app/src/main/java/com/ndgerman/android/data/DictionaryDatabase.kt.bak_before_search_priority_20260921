@@ -51,16 +51,12 @@ class DictionaryDatabase(private val context: Context) {
         mutex.withLock {
             val q = DictionaryText.normalize(query)
             open().use { conn ->
-                if (q.isBlank()) return@use selectEntries(
-                    conn,
-                    "SELECT ${columns()} FROM entries ORDER BY entry_index LIMIT ?",
-                ) { it.bindLong(1, limit.toLong()) }
+                if (q.isBlank()) return@use selectEntries(conn, "SELECT ${columns()} FROM entries ORDER BY entry_index LIMIT ?") {
+                    it.bindLong(1, limit.toLong())
+                }
 
-                val candidateLimit = max(180, minOf(320, limit * 16))
                 val found = linkedMapOf<Int, DictionaryEntry>()
                 val prefix = "$q%"
-
-                // Fast indexed German headword candidates plus first-line English.
                 selectEntries(
                     conn,
                     """
@@ -69,22 +65,19 @@ class DictionaryDatabase(private val context: Context) {
                        OR headword_norm LIKE ? OR lexeme_norm LIKE ? OR translation_norm LIKE ?
                     ORDER BY
                       CASE WHEN headword_norm = ? OR lexeme_norm = ? THEN 0
-                           WHEN lexeme_norm LIKE ? THEN 1
-                           WHEN headword_norm LIKE ? THEN 2
-                           WHEN translation_norm = ? THEN 3 ELSE 4 END,
+                           WHEN headword_norm LIKE ? OR lexeme_norm LIKE ? THEN 1
+                           WHEN translation_norm = ? THEN 2 ELSE 3 END,
                       length(lexeme_norm), headword_norm
                     LIMIT ?
                     """.trimIndent(),
                 ) { stmt ->
                     stmt.bindText(1, q); stmt.bindText(2, q); stmt.bindText(3, q)
                     stmt.bindText(4, prefix); stmt.bindText(5, prefix); stmt.bindText(6, prefix)
-                    stmt.bindText(7, q); stmt.bindText(8, q)
-                    stmt.bindText(9, prefix); stmt.bindText(10, prefix)
-                    stmt.bindText(11, q); stmt.bindLong(12, candidateLimit.toLong())
+                    stmt.bindText(7, q); stmt.bindText(8, q); stmt.bindText(9, prefix); stmt.bindText(10, prefix)
+                    stmt.bindText(11, q); stmt.bindLong(12, limit.toLong())
                 }.forEach { found[it.index] = it }
 
-                // FTS supplies Penglish, Persian and explicit English candidates.
-                if (found.size < candidateLimit && q.length >= 2 && hasFts(conn)) {
+                if (found.size < limit && q.length >= 2 && hasFts(conn)) {
                     val fts = q.split(' ').filter(String::isNotBlank).joinToString(" AND ") { token ->
                         "\"${token.replace("\"", "\"\"")}\"*"
                     }
@@ -99,52 +92,15 @@ class DictionaryDatabase(private val context: Context) {
                             """.trimIndent(),
                         ) { stmt ->
                             stmt.bindText(1, fts)
-                            stmt.bindLong(2, candidateLimit.toLong())
+                            stmt.bindLong(2, (limit * 3).toLong())
                         }
                     }.getOrDefault(emptyList()).forEach { found.putIfAbsent(it.index, it) }
                 }
 
-                // Relax the FTS token to its first 3-4 chars so small internal
-                // misspellings can still become candidates without scanning all rows.
-                if (found.size < candidateLimit && q.length >= 4 && hasFts(conn)) {
-                    val firstToken = q.split(' ').firstOrNull(String::isNotBlank).orEmpty()
-                    val relaxed = firstToken.take(minOf(4, firstToken.length))
-                    if (relaxed.length >= 3) {
-                        val fts = "\"${relaxed.replace("\"", "\"\"")}\"*"
-                        runCatching {
-                            selectEntries(
-                                conn,
-                                """
-                                SELECT ${columns("e")} FROM entries_fts f
-                                JOIN entries e ON e.entry_index = f.rowid
-                                WHERE entries_fts MATCH ?
-                                LIMIT ?
-                                """.trimIndent(),
-                            ) { stmt ->
-                                stmt.bindText(1, fts)
-                                stmt.bindLong(2, minOf(180, candidateLimit).toLong())
-                            }
-                        }.getOrDefault(emptyList()).forEach { found.putIfAbsent(it.index, it) }
-                    }
+                if (found.size < max(8, limit / 2) && q.length >= 3) {
+                    fuzzyFallback(conn, q, limit * 4).forEach { found.putIfAbsent(it.index, it) }
                 }
-
-                // Always reserve a German fuzzy path; FTS candidates must not crowd
-                // out a near spelling such as "behörd"/"behrde" -> "Behörde".
-                if (q.length >= 3 && found.size < candidateLimit) {
-                    fuzzyGermanCandidates(conn, q, candidateLimit - found.size)
-                        .forEach { found.putIfAbsent(it.index, it) }
-                }
-
-                found.values
-                    .map { searchScore(q, it) to it }
-                    .filter { it.first > 0.0 }
-                    .sortedWith(
-                        compareByDescending<Pair<Double, DictionaryEntry>> { it.first }
-                            .thenBy { it.second.lexemeNorm.length }
-                            .thenBy { it.second.headwordNorm },
-                    )
-                    .take(limit)
-                    .map { it.second }
+                found.values.take(limit)
             }
         }
     }
@@ -286,63 +242,19 @@ class DictionaryDatabase(private val context: Context) {
         headwordNorm = stmt.getText(6), lexemeNorm = stmt.getText(7), translationNorm = stmt.getText(8), searchNorm = stmt.getText(9),
     )
 
-    private fun fieldScore(
-        q: String,
-        value: String,
-        base: Double,
-        fuzzyCutoff: Double?,
-    ): Double {
-        if (value.isBlank()) return 0.0
-        if (value == q) return base + 400.0
-        if (value.startsWith(q)) return base + 320.0 - minOf(40.0, (value.length - q.length).toDouble())
-        if (q in value.split(' ')) return base + 260.0
-        if (q in value) return base + 220.0
-
-        if (fuzzyCutoff != null && q.length >= 3) {
-            val score = similarity(q, value)
-            if (score >= fuzzyCutoff) return base + score * 100.0
-        }
-        return 0.0
-    }
-
-    private fun searchScore(q: String, entry: DictionaryEntry): Double = maxOf(
-        // Deliberate priority: German > Penglish > Persian > English.
-        fieldScore(q, entry.lexemeNorm, 4000.0, 0.72),
-        fieldScore(q, entry.headwordNorm, 3990.0, 0.72),
-        fieldScore(q, DictionaryText.normalize(entry.penglish), 3000.0, 0.74),
-        fieldScore(q, DictionaryText.normalize(entry.persian), 2000.0, null),
-        fieldScore(q, DictionaryText.normalize(entry.english), 1000.0, 0.78),
-    )
-
-    private fun fuzzyGermanCandidates(
-        conn: SQLiteConnection,
-        q: String,
-        candidateLimit: Int,
-    ): List<DictionaryEntry> {
-        if (candidateLimit <= 0 || q.isBlank()) return emptyList()
-        val first = q.first().toString()
+    private fun fuzzyFallback(conn: SQLiteConnection, q: String, candidateLimit: Int): List<DictionaryEntry> {
+        val first = q.firstOrNull()?.toString().orEmpty()
         val candidates = selectEntries(
             conn,
-            """
-            SELECT ${columns()} FROM entries
-            WHERE lexeme_norm LIKE ?
-              AND length(lexeme_norm) BETWEEN ? AND ?
-            ORDER BY abs(length(lexeme_norm) - ?), lexeme_norm
-            LIMIT ?
-            """.trimIndent(),
+            "SELECT ${columns()} FROM entries WHERE lexeme_norm LIKE ? OR translation_norm LIKE ? LIMIT 1800",
         ) { stmt ->
             stmt.bindText(1, "$first%")
-            stmt.bindLong(2, maxOf(1, q.length - 4).toLong())
-            stmt.bindLong(3, (q.length + 8).toLong())
-            stmt.bindLong(4, q.length.toLong())
-            stmt.bindLong(5, minOf(220, candidateLimit).toLong())
+            stmt.bindText(2, "$first%")
         }
-        return candidates
-            .map { entry -> maxOf(similarity(q, entry.lexemeNorm), similarity(q, entry.headwordNorm)) to entry }
-            .filter { it.first >= 0.60 }
-            .sortedByDescending { it.first }
-            .take(candidateLimit)
-            .map { it.second }
+        return candidates.map { entry ->
+            val score = maxOf(similarity(q, entry.lexemeNorm), similarity(q, entry.headwordNorm), similarity(q, entry.translationNorm))
+            score to entry
+        }.filter { it.first >= 0.60 }.sortedByDescending { it.first }.take(candidateLimit).map { it.second }
     }
 
     private fun similarity(a: String, b: String): Double {
