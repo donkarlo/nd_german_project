@@ -217,7 +217,7 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
                         sync = sync,
                         databaseCount = count,
                         results = results,
-                        status = "Saved · $count entries",
+                        status = "$count dictionary entries",
                     )
                 }
                 onDone?.invoke()

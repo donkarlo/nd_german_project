@@ -346,11 +346,6 @@ def _open_add_dialog(self) -> None:
     self.tabs.setCurrentIndex(0)
     self.search_box.setText(added.headword)
     self.perform_search()
-    legacy.QMessageBox.information(
-        self,
-        "Entry added",
-        f'Added “{added.headword}” ({added.role}) to the app.',
-    )
 
 
 def _polish_controls(window) -> None:

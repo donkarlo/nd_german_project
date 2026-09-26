@@ -928,11 +928,6 @@ class DictionaryWindow(QMainWindow):
         self.tabs.setCurrentIndex(0)
         self.search_box.setText(added.headword)
         self.perform_search()
-        QMessageBox.information(
-            self,
-            "Entry added",
-            f'Added “{added.headword}” ({added.role}) to the app.',
-        )
 
     def open_edit_dialog(self, entry_index: int) -> None:
         if self.index is None or not 0 <= entry_index < len(self.index.entries):
@@ -962,7 +957,6 @@ class DictionaryWindow(QMainWindow):
             return
         self.search_box.setText(updated.headword)
         self.perform_search()
-        QMessageBox.information(self, "Entry updated", f'Updated “{updated.headword}”.')
 
     def delete_dictionary_entry(self, entry_index: int) -> None:
         if self.index is None or not 0 <= entry_index < len(self.index.entries):
