@@ -7,6 +7,7 @@ from pathlib import Path
 from dictionary_core import (
     DictionaryIndex,
     DuplicateEntryError,
+    german_inflection_stems,
     normalize_text,
     parse_entry,
     split_entries,
@@ -44,6 +45,65 @@ class DictionaryCoreTests(unittest.TestCase):
         self.assertEqual(index.search("opportunity", 1)[0].entry.headword, "die Gelegenheit")
         self.assertEqual(index.search("sarzanesh", 1)[0].entry.headword, "zurechtweisen")
         self.assertEqual(index.search("Gelegenhait", 1)[0].entry.headword, "die Gelegenheit")
+
+    def test_inflected_nouns_and_adjectives_find_base_form(self) -> None:
+        sample = """der Hund: dog
+
+das Haus: house
+
+die Frau: woman
+
+der Name: name
+
+golden (Adjektiv): golden
+
+klein: small
+
+groß: big
+
+die Größe: size
+"""
+        index = DictionaryIndex(
+            parse_entry(raw)
+            for raw in split_entries(sample)
+        )
+
+        self.assertEqual(
+            index.search("Hunde", 1)[0].entry.headword,
+            "der Hund",
+        )
+        self.assertEqual(
+            index.search("Häuser", 1)[0].entry.headword,
+            "das Haus",
+        )
+        self.assertEqual(
+            index.search("Frauen", 1)[0].entry.headword,
+            "die Frau",
+        )
+        self.assertEqual(
+            index.search("Namen", 1)[0].entry.headword,
+            "der Name",
+        )
+        self.assertEqual(
+            index.search("goldenen", 1)[0].entry.headword,
+            "golden",
+        )
+        self.assertEqual(
+            index.search("kleinen", 1)[0].entry.headword,
+            "klein",
+        )
+        self.assertEqual(
+            index.search("großen", 1)[0].entry.headword,
+            "groß",
+        )
+        self.assertEqual(
+            index.search("Größen", 1)[0].entry.headword,
+            "die Größe",
+        )
+        self.assertIn(
+            "haus",
+            german_inflection_stems("Häuser"),
+        )
 
     def test_duplicate_prevention_and_append(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

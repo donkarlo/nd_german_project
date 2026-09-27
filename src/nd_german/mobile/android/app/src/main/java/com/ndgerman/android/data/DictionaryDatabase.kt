@@ -50,6 +50,10 @@ class DictionaryDatabase(private val context: Context) {
     suspend fun search(query: String, limit: Int = 20): List<DictionaryEntry> = withContext(Dispatchers.IO) {
         mutex.withLock {
             val q = DictionaryText.normalize(query)
+            val nounPreferred =
+                query.trimStart()
+                    .firstOrNull()
+                    ?.isUpperCase() == true
             open().use { conn ->
                 if (q.isBlank()) return@use selectEntries(
                     conn,
@@ -59,6 +63,8 @@ class DictionaryDatabase(private val context: Context) {
                 val candidateLimit = max(180, minOf(320, limit * 16))
                 val found = linkedMapOf<Int, DictionaryEntry>()
                 val prefix = "$q%"
+                val inflectionStems =
+                    DictionaryText.inflectionStems(q)
 
                 // Fast indexed German headword candidates plus first-line English.
                 selectEntries(
@@ -82,6 +88,40 @@ class DictionaryDatabase(private val context: Context) {
                     stmt.bindText(9, prefix); stmt.bindText(10, prefix)
                     stmt.bindText(11, q); stmt.bindLong(12, candidateLimit.toLong())
                 }.forEach { found[it.index] = it }
+
+                if (
+                    inflectionStems.isNotEmpty() &&
+                    found.size < candidateLimit
+                ) {
+                    val placeholders =
+                        List(inflectionStems.size) { "?" }
+                            .joinToString(",")
+                    val sql =
+                        """
+                        SELECT ${columns()} FROM entries
+                        WHERE role IN ('noun','adjective','participle','unknown')
+                          AND lexeme_norm IN ($placeholders)
+                        LIMIT ?
+                        """.trimIndent()
+                    selectEntries(conn, sql) { stmt ->
+                        inflectionStems.forEachIndexed {
+                                index,
+                                stem,
+                            ->
+                            stmt.bindText(index + 1, stem)
+                        }
+                        stmt.bindLong(
+                            inflectionStems.size + 1,
+                            (candidateLimit - found.size)
+                                .toLong(),
+                        )
+                    }.forEach {
+                        found.putIfAbsent(
+                            it.index,
+                            it,
+                        )
+                    }
+                }
 
                 // FTS supplies Penglish, Persian and explicit English candidates.
                 if (found.size < candidateLimit && q.length >= 2 && hasFts(conn)) {
@@ -136,7 +176,14 @@ class DictionaryDatabase(private val context: Context) {
                 }
 
                 found.values
-                    .map { searchScore(q, it) to it }
+                    .map {
+                        searchScore(
+                            q,
+                            it,
+                            inflectionStems,
+                            nounPreferred,
+                        ) to it
+                    }
                     .filter { it.first > 0.0 }
                     .sortedWith(
                         compareByDescending<Pair<Double, DictionaryEntry>> { it.first }
@@ -305,14 +352,64 @@ class DictionaryDatabase(private val context: Context) {
         return 0.0
     }
 
-    private fun searchScore(q: String, entry: DictionaryEntry): Double = maxOf(
-        // Deliberate priority: German > Penglish > Persian > English.
-        fieldScore(q, entry.lexemeNorm, 4000.0, 0.72),
-        fieldScore(q, entry.headwordNorm, 3990.0, 0.72),
-        fieldScore(q, DictionaryText.normalize(entry.penglish), 3000.0, 0.74),
-        fieldScore(q, DictionaryText.normalize(entry.persian), 2000.0, null),
-        fieldScore(q, DictionaryText.normalize(entry.english), 1000.0, 0.78),
-    )
+    private fun searchScore(
+        q: String,
+        entry: DictionaryEntry,
+        inflectionStems: List<String>,
+        nounPreferred: Boolean,
+    ): Double {
+        val inflectionScore =
+            if (
+                entry.role == "noun" ||
+                entry.role == "adjective" ||
+                entry.role == "participle" ||
+                entry.role == "unknown"
+            ) {
+                val rolePenalty =
+                    if (nounPreferred) {
+                        when (entry.role) {
+                            "noun" -> 0.0
+                            "adjective" -> 18.0
+                            "participle" -> 18.0
+                            else -> 20.0
+                        }
+                    } else {
+                        when (entry.role) {
+                            "noun" -> 22.0
+                            "adjective" -> 0.0
+                            "participle" -> 8.0
+                            else -> 6.0
+                        }
+                    }
+                inflectionStems
+                    .mapIndexedNotNull { index, stem ->
+                        if (entry.lexemeNorm == stem) {
+                            4350.0 -
+                                rolePenalty -
+                                minOf(
+                                    30.0,
+                                    index * 3.0,
+                                )
+                        } else {
+                            null
+                        }
+                    }
+                    .maxOrNull()
+                    ?: 0.0
+            } else {
+                0.0
+            }
+
+        return maxOf(
+            inflectionScore,
+            // Deliberate priority: German > Penglish > Persian > English.
+            fieldScore(q, entry.lexemeNorm, 4000.0, 0.72),
+            fieldScore(q, entry.headwordNorm, 3990.0, 0.72),
+            fieldScore(q, DictionaryText.normalize(entry.penglish), 3000.0, 0.74),
+            fieldScore(q, DictionaryText.normalize(entry.persian), 2000.0, null),
+            fieldScore(q, DictionaryText.normalize(entry.english), 1000.0, 0.78),
+        )
+    }
 
     private fun fuzzyGermanCandidates(
         conn: SQLiteConnection,

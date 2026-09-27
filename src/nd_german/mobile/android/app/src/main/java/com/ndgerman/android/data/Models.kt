@@ -82,6 +82,39 @@ object DictionaryText {
         return spaces.replace(value, " ").trim()
     }
 
+    fun inflectionStems(text: String): List<String> {
+        val query = normalize(text)
+        if (
+            query.length < 4 ||
+            ' ' in query ||
+            !query.all(Char::isLetter)
+        ) {
+            return emptyList()
+        }
+
+        val suffixes =
+            listOf(
+                "ern",
+                "nen",
+                "en",
+                "em",
+                "er",
+                "es",
+                "e",
+                "n",
+                "s",
+            )
+        val seen = linkedSetOf(query)
+        val stems = mutableListOf<String>()
+        suffixes.forEach { suffix ->
+            if (!query.endsWith(suffix)) return@forEach
+            val stem = query.dropLast(suffix.length)
+            if (stem.length < 3 || !seen.add(stem)) return@forEach
+            stems += stem
+        }
+        return stems
+    }
+
     fun parse(rawText: String): ParsedEntry {
         val cleaned = rawText.replace("\uFEFF", "").trim()
         require(cleaned.isNotBlank()) { "The entry is empty." }

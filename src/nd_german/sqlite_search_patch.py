@@ -551,8 +551,42 @@ def _field_score(
     return 0.0
 
 
-def _rank_entry(entry, normalized_query: str, fuzzy_threshold: int) -> float:
+def _rank_entry(
+    entry,
+    normalized_query: str,
+    fuzzy_threshold: int,
+    *,
+    noun_preferred: bool = False,
+) -> float:
     penglish_norm, persian_norm, english_norm = _extract_language_fields(entry)
+
+    inflection_score = 0.0
+    if entry.role in {"noun", "adjective", "participle", "unknown"}:
+        role_penalty = (
+            {
+                "noun": 0.0,
+                "adjective": 18.0,
+                "participle": 18.0,
+                "unknown": 20.0,
+            }
+            if noun_preferred
+            else {
+                "noun": 22.0,
+                "adjective": 0.0,
+                "participle": 8.0,
+                "unknown": 6.0,
+            }
+        )[entry.role]
+        for position, stem in enumerate(
+            dictionary_core.german_inflection_stems(normalized_query)
+        ):
+            if entry.lexeme_norm == stem:
+                inflection_score = max(
+                    inflection_score,
+                    4350.0
+                    - role_penalty
+                    - min(30.0, float(position * 3)),
+                )
 
     # Search priority is deliberate:
     # German > Penglish > Persian > English.
@@ -563,6 +597,7 @@ def _rank_entry(entry, normalized_query: str, fuzzy_threshold: int) -> float:
     english_cutoff = max(78.0, float(fuzzy_threshold))
 
     return max(
+        inflection_score,
         _field_score(
             normalized_query,
             entry.lexeme_norm,
@@ -697,6 +732,22 @@ def _candidate_indices(normalized_query: str, candidate_limit: int) -> list[int]
         )
         append_rows(rows)
 
+        inflection_stems = dictionary_core.german_inflection_stems(q)
+        if inflection_stems and len(candidates) < candidate_limit:
+            placeholders = ",".join("?" for _ in inflection_stems)
+            remaining = max(1, candidate_limit - len(candidates))
+            rows = connection.execute(
+                f"""
+                SELECT entry_index
+                FROM entries
+                WHERE role IN ('noun','adjective','participle','unknown')
+                  AND lexeme_norm IN ({placeholders})
+                LIMIT ?
+                """,
+                (*inflection_stems, remaining),
+            )
+            append_rows(rows)
+
         # Full-token/prefix search over the complete entry supplies candidates for
         # Penglish, Persian and explicit English fields. Final ranking below decides
         # field priority; FTS order itself is not trusted.
@@ -809,12 +860,23 @@ def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
             )
         return []
 
+    stripped_query = query.lstrip()
+    noun_preferred = bool(
+        stripped_query
+        and stripped_query[0].isupper()
+    )
+
     scored: list = []
     for index in indices:
         entry = live_entries.get(index)
         if entry is None:
             continue
-        score = _rank_entry(entry, normalized_query, fuzzy_threshold)
+        score = _rank_entry(
+            entry,
+            normalized_query,
+            fuzzy_threshold,
+            noun_preferred=noun_preferred,
+        )
         if score > 0:
             scored.append(dictionary_core.SearchResult(entry, score))
 

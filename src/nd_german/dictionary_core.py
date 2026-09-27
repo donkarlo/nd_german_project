@@ -85,6 +85,47 @@ def make_trigrams(text: str) -> frozenset[str]:
     return frozenset(compact[i : i + 3] for i in range(len(compact) - 2))
 
 
+_GERMAN_INFLECTION_SUFFIXES = (
+    "ern",
+    "nen",
+    "en",
+    "em",
+    "er",
+    "es",
+    "e",
+    "n",
+    "s",
+)
+
+
+def german_inflection_stems(text: str) -> tuple[str, ...]:
+    """Return conservative noun/adjective base-form candidates for a query.
+
+    The candidates are only hints. Search code accepts them only when an
+    existing noun/adjective has exactly that lexeme, which keeps ordinary
+    typo tolerance independent from German inflection handling.
+    """
+    query = normalize_text(text)
+    if (
+        len(query) < 4
+        or " " in query
+        or not query.isalpha()
+    ):
+        return ()
+
+    stems: list[str] = []
+    seen = {query}
+    for suffix in _GERMAN_INFLECTION_SUFFIXES:
+        if not query.endswith(suffix):
+            continue
+        stem = query[: -len(suffix)]
+        if len(stem) < 3 or stem in seen:
+            continue
+        seen.add(stem)
+        stems.append(stem)
+    return tuple(stems)
+
+
 def split_entries(text: str) -> list[str]:
     return [chunk.strip() for chunk in ENTRY_SEPARATOR_RE.split(text) if chunk.strip()]
 
@@ -266,9 +307,39 @@ class DictionaryIndex:
         return {idx for idx, _ in sorted(counts.items(), key=lambda item: item[1], reverse=True)[:700]}
 
     @staticmethod
-    def _exact_score(entry: DictionaryEntry, query: str) -> float:
+    def _exact_score(
+        entry: DictionaryEntry,
+        query: str,
+        *,
+        noun_preferred: bool = False,
+    ) -> float:
         if entry.headword_norm == query or entry.lexeme_norm == query:
             return 1000.0
+
+        if entry.role in {"noun", "adjective", "participle", "unknown"}:
+            role_penalty = (
+                {
+                    "noun": 0.0,
+                    "adjective": 18.0,
+                    "participle": 18.0,
+                    "unknown": 20.0,
+                }
+                if noun_preferred
+                else {
+                    "noun": 22.0,
+                    "adjective": 0.0,
+                    "participle": 8.0,
+                    "unknown": 6.0,
+                }
+            )[entry.role]
+            for position, stem in enumerate(german_inflection_stems(query)):
+                if entry.lexeme_norm == stem:
+                    return (
+                        980.0
+                        - role_penalty
+                        - min(20.0, float(position * 2))
+                    )
+
         if entry.lexeme_norm.startswith(query):
             return 960.0 - min(40.0, len(entry.lexeme_norm) - len(query))
         if entry.headword_norm.startswith(query):
@@ -294,10 +365,19 @@ class DictionaryIndex:
             return [SearchResult(entry, 0.0) for entry in self.entries[:limit]]
 
         scored: dict[int, float] = {}
+        stripped_query = query.lstrip()
+        noun_preferred = bool(
+            stripped_query
+            and stripped_query[0].isupper()
+        )
 
         # Cheap exact/substring scan over all entries to guarantee complete direct matches.
         for idx, entry in enumerate(self.entries):
-            score = self._exact_score(entry, normalized_query)
+            score = self._exact_score(
+                entry,
+                normalized_query,
+                noun_preferred=noun_preferred,
+            )
             if score:
                 scored[idx] = score
 
