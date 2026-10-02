@@ -130,49 +130,26 @@ def split_entries(text: str) -> list[str]:
     return [chunk.strip() for chunk in ENTRY_SEPARATOR_RE.split(text) if chunk.strip()]
 
 
-def split_first_line(first_line: str) -> tuple[str, str]:
-    """Split the display line at the first colon outside IPA brackets/grammar parentheses."""
-    paren_depth = 0
-    bracket_depth = 0
-    for idx, ch in enumerate(first_line):
-        if ch == "[":
-            bracket_depth += 1
-        elif ch == "]" and bracket_depth:
-            bracket_depth -= 1
-        elif ch == "(" and bracket_depth == 0:
-            paren_depth += 1
-        elif ch == ")" and bracket_depth == 0 and paren_depth:
-            paren_depth -= 1
-        elif ch == ":" and paren_depth == 0 and bracket_depth == 0:
-            return first_line[:idx].strip(), first_line[idx + 1 :].strip()
-    return first_line.strip(), ""
-
-
 def extract_headword(first_line: str) -> str:
-    left, _ = split_first_line(first_line)
+    left = first_line.split(":", 1)[0].strip()
     left = IPA_RE.sub("", left)
     left = PAREN_RE.sub("", left)
-    # Remove frequent grammatical labels that may follow a bare headword.
-    # Article-led nouns such as "das Verb", "das Adverb" or
-    # "die Präposition" must keep the grammatical term as part of the noun.
-    article_led_noun = bool(
-        re.match(r"^(?:der|die|das|ein|eine)\s+", left, flags=re.IGNORECASE)
+    # Remove frequent grammatical labels that may follow the headword.
+    left = re.sub(
+        r"\s+(?:trennbar|untrennbar|nicht trennbar|transitiv|intransitiv|reflexiv|"
+        r"regelmäßig|unregelmäßig|stark|schwach|adjektiv|adverb|pronom|"
+        r"konjunktion|präposition|substantiv|verb)(?:\s.*)?$",
+        "",
+        left,
+        flags=re.IGNORECASE,
     )
-    if not article_led_noun:
-        left = re.sub(
-            r"\s+(?:trennbar|untrennbar|nicht trennbar|transitiv|intransitiv|reflexiv|"
-            r"regelmäßig|unregelmäßig|stark|schwach|adjektiv|adverb|pronom|"
-            r"konjunktion|präposition|substantiv|verb)(?:\s.*)?$",
-            "",
-            left,
-            flags=re.IGNORECASE,
-        )
     return WHITESPACE_RE.sub(" ", left).strip(" -")
 
 
 def extract_translation(first_line: str) -> str:
-    _, translation = split_first_line(first_line)
-    return translation
+    if ":" not in first_line:
+        return ""
+    return first_line.split(":", 1)[1].strip()
 
 
 def detect_role(first_line: str, headword: str) -> str:

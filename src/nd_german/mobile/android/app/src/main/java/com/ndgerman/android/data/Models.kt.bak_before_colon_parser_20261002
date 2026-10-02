@@ -115,24 +115,6 @@ object DictionaryText {
         return stems
     }
 
-    private fun splitFirstLine(firstLine: String): Pair<String, String> {
-        var parenDepth = 0
-        var bracketDepth = 0
-        firstLine.forEachIndexed { index, ch ->
-            when (ch) {
-                '[' -> bracketDepth += 1
-                ']' -> if (bracketDepth > 0) bracketDepth -= 1
-                '(' -> if (bracketDepth == 0) parenDepth += 1
-                ')' -> if (bracketDepth == 0 && parenDepth > 0) parenDepth -= 1
-                ':' -> if (parenDepth == 0 && bracketDepth == 0) {
-                    return firstLine.substring(0, index).trim() to
-                        firstLine.substring(index + 1).trim()
-                }
-            }
-        }
-        return firstLine.trim() to ""
-    }
-
     fun parse(rawText: String): ParsedEntry {
         val cleaned = rawText.replace("\uFEFF", "").trim()
         require(cleaned.isNotBlank()) { "The entry is empty." }
@@ -154,7 +136,7 @@ object DictionaryText {
         if (head.isBlank()) head = lines.first().trim(' ', ':', ';', '|', '=', '_', '-', '–', '—')
         if (head.isBlank()) head = "[unrecognized entry]"
 
-        val translation = splitFirstLine(first).second
+        val translation = first.substringAfter(':', "").trim()
         val role = detectRole(first, head)
         val headNorm = normalize(head)
         val lexemeNorm = headNorm.replace(Regex("^(?:der|die|das|ein|eine)\\s+"), "")
@@ -172,14 +154,10 @@ object DictionaryText {
     }
 
     fun extractHeadword(firstLine: String): String {
-        var cleaned = splitFirstLine(firstLine).first
-        cleaned = ipa.replace(cleaned, "")
-        cleaned = paren.replace(cleaned, "").trim()
-        val articleLedNoun = Regex("^(?:der|die|das|ein|eine)\\s+", RegexOption.IGNORE_CASE)
-            .containsMatchIn(cleaned)
-        if (!articleLedNoun) {
-            cleaned = roleSplitter.split(cleaned, 2).firstOrNull().orEmpty()
-        }
+        var cleaned = ipa.replace(firstLine, "")
+        cleaned = paren.replace(cleaned, "")
+        cleaned = cleaned.substringBefore(':').trim()
+        cleaned = roleSplitter.split(cleaned, 2).firstOrNull().orEmpty()
         return spaces.replace(cleaned, " ").trim(' ', '-')
     }
 
