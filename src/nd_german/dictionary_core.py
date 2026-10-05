@@ -193,6 +193,16 @@ def detect_role(first_line: str, headword: str) -> str:
         return "participle"
     if "phrase" in line or "redewendung" in line:
         return "phrase"
+    if "interjektion" in line:
+        return "interjection"
+    if "partikel" in line:
+        return "particle"
+    if "artikel" in line:
+        return "article"
+    if "numeral" in line or "zahlwort" in line:
+        return "numeral"
+    if "eigenname" in line:
+        return "proper_noun"
 
     noun_prefixes = (
         "der ",
