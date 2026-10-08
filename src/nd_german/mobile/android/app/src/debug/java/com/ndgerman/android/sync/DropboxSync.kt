@@ -121,10 +121,14 @@ class DropboxGateway(private val context: Context) {
 class DictionarySyncManager(
     context: Context,
     private val database: DictionaryDatabase,
-    val gateway: DropboxGateway = DropboxGateway(context),
+    private val gateway: DropboxGateway = DropboxGateway(context),
 ) {
     private val prefs = context.applicationContext.getSharedPreferences("nd_german_sync", Context.MODE_PRIVATE)
     private val syncMutex = Mutex()
+
+    fun configured() = gateway.configured()
+    fun startAuthentication() = gateway.startAuthentication()
+    fun finishAuthenticationIfAvailable() = gateway.finishAuthenticationIfAvailable()
 
     fun initialState(): SyncState = SyncState(
         connected = gateway.authenticated(),

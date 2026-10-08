@@ -1,5 +1,6 @@
 package com.ndgerman.android.ui
 
+import android.app.Activity
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
@@ -70,6 +71,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.ndgerman.android.BuildConfig
 import com.ndgerman.android.data.DictionaryEntry
 import com.ndgerman.android.grammar.AdjectiveRow
 import com.ndgerman.android.grammar.GrammarTables
@@ -90,8 +92,10 @@ private val tabs = listOf(
 @Composable
 fun GermanApp(viewModel: GermanViewModel) {
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val monetization by viewModel.monetizationState.collectAsStateWithLifecycle()
     val context = LocalContext.current
     var selectedTab by remember { mutableStateOf(0) }
+    var monetizationMenu by remember { mutableStateOf(false) }
     var adjectivePrefill by remember { mutableStateOf("") }
     var syncDialog by remember { mutableStateOf(false) }
     var addDialog by remember { mutableStateOf(false) }
@@ -122,25 +126,25 @@ fun GermanApp(viewModel: GermanViewModel) {
         )
     }
 
-    if (syncDialog) {
+    if (!BuildConfig.PLAY_DISTRIBUTION && syncDialog) {
         SyncDialog(
             state = state.sync,
-            configured = viewModel.dropboxConfigured,
+            configured = viewModel.remoteSyncConfigured,
             onDismiss = { syncDialog = false },
-            onConnect = viewModel::startDropboxAuthentication,
+            onConnect = viewModel::startRemoteAuthentication,
             onPull = {
                 if (state.sync.pendingLocalChanges) discardPullConfirm = true
                 else viewModel.pullRemote(false)
             },
             onPush = viewModel::pushRemote,
-            onDisconnect = viewModel::disconnectDropbox,
+            onDisconnect = viewModel::disconnectRemoteSync,
         )
     }
-    if (discardPullConfirm) {
+    if (!BuildConfig.PLAY_DISTRIBUTION && discardPullConfirm) {
         AlertDialog(
             onDismissRequest = { discardPullConfirm = false },
             title = { Text("Discard local edits?") },
-            text = { Text("Pulling now will replace the Android database with the current desktop/Dropbox database. Pending Android-only edits will be lost.") },
+            text = { Text("Pulling now will replace the Android database with the current desktop/private sync database. Pending Android-only edits will be lost.") },
             confirmButton = {
                 TextButton(onClick = { discardPullConfirm = false; viewModel.pullRemote(true) }) { Text("Discard & Pull") }
             },
@@ -169,7 +173,7 @@ fun GermanApp(viewModel: GermanViewModel) {
         AlertDialog(
             onDismissRequest = { deleting = null },
             title = { Text("Delete ${entry.headword}?") },
-            text = { Text("This removes the entry from the shared SQLite dictionary. If Dropbox is connected, the change is synced to the desktop database too.") },
+            text = { Text(if (BuildConfig.PLAY_DISTRIBUTION) "This removes the entry from this device." else "This removes the entry from the shared SQLite dictionary. If private sync is connected, the change is synced to the desktop database too.") },
             confirmButton = {
                 TextButton(onClick = { viewModel.deleteEntry(entry.index) { deleting = null } }) { Text("Delete") }
             },
@@ -190,17 +194,65 @@ fun GermanApp(viewModel: GermanViewModel) {
                         }
                         Spacer(Modifier.width(10.dp))
                         Column(Modifier.weight(1f)) {
-                            Text("ND Deutsch", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                            Text(if (BuildConfig.PLAY_DISTRIBUTION) "German Learning" else "ND Deutsch", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                             Text(
-                                if (state.ready) "${state.databaseCount} entries · ${state.sync.message}" else state.status,
+                                if (state.ready) {
+                                    if (BuildConfig.PLAY_DISTRIBUTION) "${state.databaseCount} entries"
+                                    else "${state.databaseCount} entries · ${state.sync.message}"
+                                } else state.status,
                                 style = MaterialTheme.typography.labelSmall,
                                 maxLines = 1,
                                 overflow = TextOverflow.Ellipsis,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                             )
                         }
-                        IconButton(onClick = { syncDialog = true }) {
-                            Icon(if (state.sync.connected) Icons.Default.Cloud else Icons.Default.CloudOff, contentDescription = "Dictionary sync")
+                        if (!BuildConfig.PLAY_DISTRIBUTION) {
+                            IconButton(onClick = { syncDialog = true }) {
+                                Icon(if (state.sync.connected) Icons.Default.Cloud else Icons.Default.CloudOff, contentDescription = "Dictionary sync")
+                            }
+                        }
+                        if (monetization.playDistribution) {
+                            Box {
+                                IconButton(onClick = { monetizationMenu = true }) {
+                                    Icon(Icons.Default.MoreVert, contentDescription = "App options")
+                                }
+                                DropdownMenu(
+                                    expanded = monetizationMenu,
+                                    onDismissRequest = { monetizationMenu = false },
+                                ) {
+                                    if (monetization.adFree) {
+                                        DropdownMenuItem(
+                                            text = { Text("Ad-free active") },
+                                            onClick = {},
+                                            enabled = false,
+                                        )
+                                    } else {
+                                        DropdownMenuItem(
+                                            text = {
+                                                Text(
+                                                    buildString {
+                                                        append("Remove ads")
+                                                        monetization.removeAdsPrice?.let { append(" · $it") }
+                                                    }
+                                                )
+                                            },
+                                            onClick = {
+                                                monetizationMenu = false
+                                                (context as? Activity)?.let(viewModel::purchaseRemoveAds)
+                                            },
+                                        )
+                                    }
+                                    if (monetization.privacyOptionsRequired) {
+                                        DropdownMenuItem(
+                                            text = { Text("Privacy options") },
+                                            onClick = {
+                                                monetizationMenu = false
+                                                (context as? Activity)?.let(viewModel::showPrivacyOptions)
+                                            },
+                                        )
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -223,6 +275,11 @@ fun GermanApp(viewModel: GermanViewModel) {
         floatingActionButton = {
             if (selectedTab == 0) {
                 ExtendedFloatingActionButton(onClick = { addDialog = true }, icon = { Icon(Icons.Default.Add, null) }, text = { Text("Add entry") })
+            }
+        },
+        bottomBar = {
+            if (monetization.showAds) {
+                MonetizationBanner(BuildConfig.ADMOB_BANNER_ID)
             }
         },
     ) { padding ->
@@ -684,7 +741,7 @@ private fun SyncDialog(
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(if (state.connected) Icons.Default.Cloud else Icons.Default.CloudOff, null)
                     Spacer(Modifier.width(8.dp))
-                    Text(if (state.connected) "Dropbox connected" else "Dropbox not connected", fontWeight = FontWeight.Bold)
+                    Text(if (state.connected) "Private sync connected" else "Private sync not connected", fontWeight = FontWeight.Bold)
                 }
                 Text(state.message)
                 Text("Remote: /repo/data/nd_german_project/dictionary.sqlite3", style = MaterialTheme.typography.bodySmall)
@@ -698,9 +755,9 @@ private fun SyncDialog(
                         FilledTonalButton(onClick = onPull, enabled = !state.busy) { Icon(Icons.Default.Refresh, null); Spacer(Modifier.width(5.dp)); Text("Pull") }
                         FilledTonalButton(onClick = onPush, enabled = !state.busy) { Icon(Icons.Default.Sync, null); Spacer(Modifier.width(5.dp)); Text("Push") }
                     }
-                    OutlinedButton(onClick = onDisconnect, enabled = !state.busy) { Text("Disconnect Dropbox") }
+                    OutlinedButton(onClick = onDisconnect, enabled = !state.busy) { Text("Disconnect private sync") }
                 } else {
-                    Button(onClick = onConnect, enabled = configured && !state.busy) { Text("Connect Dropbox") }
+                    Button(onClick = onConnect, enabled = configured && !state.busy) { Text("Connect private sync") }
                 }
             }
         },

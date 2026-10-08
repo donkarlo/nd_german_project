@@ -7,10 +7,14 @@
     <application
         android:name=".GermanApplication"
         android:allowBackup="true"
-        android:label="ND Deutsch"
+        android:label="${appLabel}"
         android:icon="@drawable/ic_launcher"
         android:roundIcon="@drawable/ic_launcher"
         android:theme="@style/Theme.NDGerman">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${adMobAppId}" />
 
         <activity
             android:name=".MainActivity"

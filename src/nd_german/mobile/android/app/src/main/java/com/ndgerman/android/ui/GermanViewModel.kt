@@ -1,5 +1,6 @@
 package com.ndgerman.android.ui
 
+import android.app.Activity
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -42,7 +43,10 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
     private val database = app.database
     private val grammar = app.grammar
     private val syncManager = app.syncManager
+    private val monetization = app.monetization
     private val prefs = app.getSharedPreferences("nd_german_ui", Context.MODE_PRIVATE)
+
+    val monetizationState = monetization.state
 
     private val _state = MutableStateFlow(
         GermanUiState(
@@ -55,7 +59,7 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
     private var searchJob: Job? = null
     private var autoSyncJob: Job? = null
 
-    val dropboxConfigured: Boolean get() = syncManager.gateway.configured()
+    val remoteSyncConfigured: Boolean get() = syncManager.configured()
 
     init {
         viewModelScope.launch {
@@ -66,7 +70,7 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
                     runCatching { syncManager.syncAutomatically() }
                         .getOrElse {
                             syncManager.initialState().copy(
-                                message = "Dropbox connected · automatic sync will retry",
+                                message = "Remote sync connected · automatic sync will retry",
                             )
                         }
                 } else {
@@ -125,7 +129,7 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
             .getOrElse { t ->
                 val fallback = syncManager.initialState().copy(
                     busy = false,
-                    message = "Dropbox sync retry pending",
+                    message = "Remote sync retry pending",
                 )
                 _state.update { it.copy(sync = fallback) }
                 if (showTransientErrors) showError(t)
@@ -282,13 +286,13 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
         }
     }
 
-    fun startDropboxAuthentication() {
-        runCatching { syncManager.gateway.startAuthentication() }.onFailure(::showError)
+    fun startRemoteAuthentication() {
+        runCatching { syncManager.startAuthentication() }.onFailure(::showError)
     }
 
-    fun finishDropboxAuthentication() {
+    fun finishRemoteAuthentication() {
         val finished =
-            runCatching { syncManager.gateway.finishAuthenticationIfAvailable() }.getOrDefault(false)
+            runCatching { syncManager.finishAuthenticationIfAvailable() }.getOrDefault(false)
         if (!finished) return
 
         viewModelScope.launch {
@@ -297,7 +301,7 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
                     sync = syncManager.initialState().copy(
                         connected = true,
                         busy = true,
-                        message = "Dropbox connected · starting automatic sync…",
+                        message = "Remote sync connected · starting automatic sync…",
                     )
                 )
             }
@@ -352,8 +356,16 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
         }
     }
 
-    fun disconnectDropbox() {
+    fun disconnectRemoteSync() {
         _state.update { it.copy(sync = syncManager.clearRevisionAfterSignOut()) }
+    }
+
+    fun purchaseRemoveAds(activity: Activity) {
+        monetization.purchaseRemoveAds(activity)
+    }
+
+    fun showPrivacyOptions(activity: Activity) {
+        monetization.showPrivacyOptions(activity)
     }
 
     fun setVerbQuery(value: String) {

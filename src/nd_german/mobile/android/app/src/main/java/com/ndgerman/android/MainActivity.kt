@@ -15,6 +15,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        (application as GermanApplication).monetization.start(this)
         setContent {
             NDGermanTheme { GermanApp(viewModel) }
         }
@@ -22,6 +23,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onResume() {
         super.onResume()
-        viewModel.finishDropboxAuthentication()
+        viewModel.finishRemoteAuthentication()
+        (application as GermanApplication).monetization.refreshPurchases()
     }
 }
