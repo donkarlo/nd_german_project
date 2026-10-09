@@ -5,6 +5,7 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import com.ndgerman.android.BuildConfig
 import com.ndgerman.android.GermanApplication
 import com.ndgerman.android.data.DictionaryEntry
 import com.ndgerman.android.data.SyncState
@@ -183,6 +184,7 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
     }
 
     fun saveEntry(index: Int?, raw: String, onDone: (() -> Unit)? = null) {
+        if (BuildConfig.PLAY_DISTRIBUTION) return
         viewModelScope.launch {
             _state.update { it.copy(busy = true, error = null) }
 
@@ -233,6 +235,7 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
     }
 
     fun deleteEntry(index: Int, onDone: (() -> Unit)? = null) {
+        if (BuildConfig.PLAY_DISTRIBUTION) return
         viewModelScope.launch {
             _state.update { it.copy(busy = true, error = null) }
 

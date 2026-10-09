@@ -151,7 +151,7 @@ fun GermanApp(viewModel: GermanViewModel) {
             dismissButton = { TextButton(onClick = { discardPullConfirm = false }) { Text("Cancel") } },
         )
     }
-    if (addDialog) {
+    if (!BuildConfig.PLAY_DISTRIBUTION && addDialog) {
         EntryEditorDialog(
             title = "Add dictionary entry",
             initial = "",
@@ -160,7 +160,7 @@ fun GermanApp(viewModel: GermanViewModel) {
             onSave = { raw -> viewModel.saveEntry(null, raw) { addDialog = false } },
         )
     }
-    editing?.let { entry ->
+    if (!BuildConfig.PLAY_DISTRIBUTION) editing?.let { entry ->
         EntryEditorDialog(
             title = "Edit ${entry.headword}",
             initial = entry.raw,
@@ -169,7 +169,7 @@ fun GermanApp(viewModel: GermanViewModel) {
             onSave = { raw -> viewModel.saveEntry(entry.index, raw) { editing = null } },
         )
     }
-    deleting?.let { entry ->
+    if (!BuildConfig.PLAY_DISTRIBUTION) deleting?.let { entry ->
         AlertDialog(
             onDismissRequest = { deleting = null },
             title = { Text("Delete ${entry.headword}?") },
@@ -273,7 +273,7 @@ fun GermanApp(viewModel: GermanViewModel) {
             }
         },
         floatingActionButton = {
-            if (selectedTab == 0) {
+            if (!BuildConfig.PLAY_DISTRIBUTION && selectedTab == 0) {
                 ExtendedFloatingActionButton(onClick = { addDialog = true }, icon = { Icon(Icons.Default.Add, null) }, text = { Text("Add entry") })
             }
         },
@@ -400,8 +400,10 @@ private fun DictionaryCard(
                     "adjective" -> FilledTonalButton(onClick = { onAdjective(entry) }) { Text("Endungen") }
                     "noun" -> FilledTonalButton(onClick = { onNoun(entry) }) { Text("Endungen") }
                 }
-                OutlinedButton(onClick = { onEdit(entry) }) { Icon(Icons.Default.Edit, null, Modifier.size(18.dp)); Spacer(Modifier.width(5.dp)); Text("Edit") }
-                OutlinedButton(onClick = { onDelete(entry) }) { Icon(Icons.Default.Delete, null, Modifier.size(18.dp)); Spacer(Modifier.width(5.dp)); Text("Delete") }
+                if (!BuildConfig.PLAY_DISTRIBUTION) {
+                    OutlinedButton(onClick = { onEdit(entry) }) { Icon(Icons.Default.Edit, null, Modifier.size(18.dp)); Spacer(Modifier.width(5.dp)); Text("Edit") }
+                    OutlinedButton(onClick = { onDelete(entry) }) { Icon(Icons.Default.Delete, null, Modifier.size(18.dp)); Spacer(Modifier.width(5.dp)); Text("Delete") }
+                }
             }
         }
     }
