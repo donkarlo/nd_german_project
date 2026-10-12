@@ -1,6 +1,8 @@
 package com.ndgerman.android.ui
 
 import android.app.Activity
+import android.content.ClipboardManager
+import android.content.Context
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
@@ -548,7 +550,7 @@ private fun PronounScreen() {
     selectorPairs += Triple("Typ", type, types) to { type = it }
     selectorPairs += Triple("Kasus", case, listOf("Alle") + GrammarTables.cases) to { case = it }
     if (type !in setOf("Personalpronomen", "Reflexivpronomen")) selectorPairs += Triple("Genus", gender, listOf("Alle") + GrammarTables.genders) to { gender = it }
-    if (type in setOf("Possessivartikel", "Possessivpronomen")) selectorPairs += Triple("Besitzer", owner, listOf("Alle") + GrammarTables.persons) to { owner = it }
+    if (type in setOf("Possessivartikel", "Possessivpronomen")) selectorPairs += Triple("Possessor", owner, listOf("Alle") + GrammarTables.persons) to { owner = it }
     GrammarTableScreen("Pronomen", "Alle Filter sind optional. Nicht anwendbare Kasus werden ausgelassen.", selectorPairs, rows)
 }
 
@@ -705,6 +707,11 @@ private fun EntryEditorDialog(
     onSave: (String) -> Unit,
 ) {
     var text by remember(initial) { mutableStateOf(initial) }
+    val context = LocalContext.current
+    fun pasteFromClipboard() {
+        val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        DictionaryEntryPaste.fromClip(clipboard.primaryClip)?.let { text = it }
+    }
     AlertDialog(
         onDismissRequest = { if (!busy) onDismiss() },
         title = { Text(title) },
@@ -714,14 +721,21 @@ private fun EntryEditorDialog(
                 Spacer(Modifier.height(8.dp))
                 OutlinedTextField(
                     value = text,
-                    onValueChange = { text = it },
+                    onValueChange = { text = DictionaryEntryPaste.restoreLines(it) },
                     modifier = Modifier.fillMaxWidth().height(330.dp),
                     label = { Text("Complete dictionary entry") },
                 )
             }
         },
         confirmButton = { Button(onClick = { onSave(text.trim()) }, enabled = text.isNotBlank() && !busy) { Text("Save") } },
-        dismissButton = { TextButton(onClick = onDismiss, enabled = !busy) { Text("Cancel") } },
+        dismissButton = {
+            Row {
+                if (initial.isBlank()) {
+                    TextButton(onClick = ::pasteFromClipboard, enabled = !busy) { Text("Paste clipboard") }
+                }
+                TextButton(onClick = onDismiss, enabled = !busy) { Text("Cancel") }
+            }
+        },
     )
 }
 

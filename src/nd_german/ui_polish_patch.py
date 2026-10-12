@@ -494,7 +494,7 @@ def _polish_controls(window) -> None:
         "Genus/Numerus:",
         "Typ:",
         "Person:",
-        "Besitzer/Subjekt:",
+        "Possessor/Subjekt:",
         "Bezugswort:",
         "Adjektiv:",
         "Begleiter/Artikel:",

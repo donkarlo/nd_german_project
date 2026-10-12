@@ -5,6 +5,7 @@ import androidx.sqlite.SQLiteConnection
 import androidx.sqlite.SQLiteStatement
 import androidx.sqlite.execSQL
 import androidx.sqlite.driver.bundled.BundledSQLiteDriver
+import com.ndgerman.android.BuildConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -222,7 +223,14 @@ class DictionaryDatabase(private val context: Context) {
         }
     }
 
+    private fun requirePrivateEdition() {
+        check(!BuildConfig.PLAY_DISTRIBUTION) {
+            "Public dictionary is read-only: adding, editing and deleting entries are disabled."
+        }
+    }
+
     suspend fun add(raw: String): DictionaryEntry = withContext(Dispatchers.IO) {
+        requirePrivateEdition()
         mutex.withLock {
             val p = DictionaryText.parse(raw)
             open().use { conn ->
@@ -240,6 +248,7 @@ class DictionaryDatabase(private val context: Context) {
     }
 
     suspend fun replace(index: Int, raw: String): DictionaryEntry = withContext(Dispatchers.IO) {
+        requirePrivateEdition()
         mutex.withLock {
             val p = DictionaryText.parse(raw)
             open().use { conn ->
@@ -267,6 +276,7 @@ class DictionaryDatabase(private val context: Context) {
     }
 
     suspend fun delete(index: Int) = withContext(Dispatchers.IO) {
+        requirePrivateEdition()
         mutex.withLock {
             open().use { conn ->
                 transaction(conn) {

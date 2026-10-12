@@ -11,7 +11,7 @@ from typing import Iterable
 import dictionary_core
 
 
-SCHEMA_VERSION = "2"
+SCHEMA_VERSION = "3"
 META_SCHEMA_KEY = "verb_rektion_schema_version"
 META_COUNT_KEY = "verb_rektion_migrated_entries"
 META_DIRTY_KEY = "verb_rektion_dirty"
@@ -78,6 +78,7 @@ ALT_PLACEHOLDER_CASE_RE = re.compile(
 )
 CLAUSE_RE = re.compile(r"\b(dass|ob|wenn|als|wie|warum|wer|was|wo|wann|w)-?Satz\b", re.IGNORECASE)
 INFINITIVE_RE = re.compile(r"\bzu\s*\+\s*Infinitiv\b|\bInfinitiv\s+mit\s+zu\b", re.IGNORECASE)
+INFINITIVE_WITHOUT_ZU_RE = re.compile(r"\bInfinitiv\s+ohne\s+zu\b", re.IGNORECASE)
 GRAMMAR_MARKER_RE = re.compile(
     r"\b(transitiv|intransitiv|reflexiv|trennbar|untrennbar|nicht\s+trennbar|verb)\b",
     re.IGNORECASE,
@@ -304,6 +305,12 @@ def _parse_pattern_text(text: str, *, first_line: str, headword: str, sense_labe
             ArgumentSpec("infinitive", placeholder="zu + Infinitiv", infinitive_marker="zu", required=not _inside_parentheses(cleaned, *match.span())),
         )
 
+    for match in INFINITIVE_WITHOUT_ZU_RE.finditer(cleaned):
+        _append_unique(
+            found, occupied, match.span(),
+            ArgumentSpec("infinitive", placeholder="Infinitiv ohne zu", infinitive_marker="ohne zu", required=not _inside_parentheses(cleaned, *match.span())),
+        )
+
     # Old compact notation, e.g. "mit + Dat." or "Akk. + um + Akk.".
     for match in PREP_CASE_RE.finditer(cleaned):
         code = _case_code(match.group("case"))
@@ -472,13 +479,20 @@ def _patterns_for_entry(raw: str, first_line: str, headword: str) -> list[Patter
     if migrated_legacy:
         return migrated_legacy
 
-    return [_parse_pattern_text("", first_line=first_line, headword=headword)]
+    # Intransitive verbs and entries without a verified governed complement
+    # have no Rektion line. Never invent a question-mark complement.
+    return []
 
 
 def _canonical_rektion_raw(raw: str, patterns: Iterable[PatternSpec]) -> str:
     lines = [line.rstrip() for line in raw.strip().splitlines()]
     lines = [line for line in lines if not REKTION_LINE_RE.match(line)]
-    patterns = [pattern for pattern in patterns if pattern.display.strip()]
+    patterns = [
+        pattern for pattern in patterns
+        if pattern.source != "unknown"
+        and pattern.display.strip()
+        and "?" not in pattern.display
+    ]
     if not patterns:
         return "\n".join(lines).strip()
 
@@ -720,7 +734,11 @@ def migrate_all(sqlite_path: Path, text_path: Path | None = None, *, force: bool
                 migrated += 1
                 if any(p.source == "unknown" or p.confidence < 0.5 for p in patterns):
                     unknown += 1
-                canonical = _canonical_rektion_raw(raw, patterns)
+                # Keep the user's complete, hand-formatted entry as-is when
+                # explicit Rektion lines already exist. Rebuilding the derived
+                # valency index must not reorder all dictionary fields.
+                has_explicit = any(REKTION_LINE_RE.match(line) for line in raw.splitlines())
+                canonical = raw if has_explicit else _canonical_rektion_raw(raw, patterns)
                 if canonical != raw:
                     changed_rows += 1
                     connection.execute(
@@ -768,7 +786,8 @@ def _sync_one(sqlite_path: Path, text_path: Path | None, entry_index: int) -> st
                 return raw
             patterns = _patterns_for_entry(raw, first_line, headword)
             _replace_valency(connection, entry_index=int(index), headword=headword, headword_norm=headword_norm, role=role, patterns=patterns)
-            canonical = _canonical_rektion_raw(raw, patterns)
+            has_explicit = any(REKTION_LINE_RE.match(line) for line in raw.splitlines())
+            canonical = raw if has_explicit else _canonical_rektion_raw(raw, patterns)
             if canonical != raw:
                 connection.execute(
                     "UPDATE entries SET raw=?, search_norm=? WHERE entry_index=?",

@@ -38,7 +38,6 @@ from PySide6.QtWidgets import (
     QPushButton,
     QTabWidget,
     QTextBrowser,
-    QTextEdit,
     QVBoxLayout,
     QWidget,
 )
@@ -50,6 +49,7 @@ from conjugation_core import (
     is_plausible_infinitive,
     normalize_verb,
 )
+from entry_paste import EntryPlainTextEdit
 from dictionary_core import DictionaryEntry, DictionaryIndex, DuplicateEntryError, parse_entry
 from grammar_core import (
     ADJECTIVE_AUTO,
@@ -189,8 +189,7 @@ class AddEntryDialog(QDialog):
         instruction.setWordWrap(True)
         layout.addWidget(instruction)
 
-        self.editor = QTextEdit(self)
-        self.editor.setAcceptRichText(False)
+        self.editor = EntryPlainTextEdit(self)
         self.editor.setPlaceholderText(
             "Example:\n\nder Begriff [bəˈɡʁɪf]: term\nBedeutung: ...\nex: ..."
         )
@@ -468,7 +467,7 @@ class DictionaryWindow(QMainWindow):
         self.pronoun_gender = self._make_combo(GENDERS, tab)
         controls = (
             ("Typ:", self.pronoun_type), ("Kasus:", self.pronoun_case),
-            ("Person:", self.pronoun_person), ("Besitzer/Subjekt:", self.pronoun_owner),
+            ("Person:", self.pronoun_person), ("Possessor/Subjekt:", self.pronoun_owner),
             ("Bezugswort:", self.pronoun_gender),
         )
         self.pronoun_labels = {}
@@ -505,7 +504,7 @@ class DictionaryWindow(QMainWindow):
         self.pronoun_person.setVisible(show_person)
         self.pronoun_labels["Person:"].setVisible(show_person)
         self.pronoun_owner.setVisible(show_owner)
-        self.pronoun_labels["Besitzer/Subjekt:"].setVisible(show_owner)
+        self.pronoun_labels["Possessor/Subjekt:"].setVisible(show_owner)
         self.pronoun_gender.setVisible(show_gender)
         self.pronoun_labels["Bezugswort:"].setVisible(show_gender)
 
@@ -534,7 +533,7 @@ class DictionaryWindow(QMainWindow):
                     for case in cases:
                         for gender in genders:
                             rows.append([owner, case, gender, form_builder(owner, case, gender)])
-                headers = ["Besitzer/Subjekt", "Kasus", "Genus/Numerus des Bezugsworts", "Form"]
+                headers = ["Possessor/Subjekt", "Kasus", "Genus/Numerus des Bezugsworts", "Form"]
             else:
                 for case in cases:
                     for gender in genders:
