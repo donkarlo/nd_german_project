@@ -551,12 +551,35 @@ def _field_score(
     return 0.0
 
 
+def _english_infinitive_score(entry, meaning: str) -> float:
+    """Treat English 'to + verb' as an infinitive request, not a German prefix."""
+    if entry.role != "verb" or not meaning:
+        return 0.0
+    english = next(
+        (line.partition(":")[2] for line in entry.raw.splitlines()[1:]
+         if line.casefold().startswith("english:")),
+        entry.translation,
+    )
+    for sense in english.replace("؛", ";").split(";"):
+        normalized = dictionary_core.normalize_text(sense)
+        if normalized.startswith("to "):
+            normalized = normalized[3:]
+        if normalized == meaning:
+            return 5500.0
+        if normalized.startswith(meaning + " "):
+            return 5150.0
+        if meaning in normalized.split():
+            return 4800.0
+    return 0.0
+
+
 def _rank_entry(
     entry,
     normalized_query: str,
     fuzzy_threshold: int,
     *,
     noun_preferred: bool = False,
+    english_infinitive: str = "",
 ) -> float:
     penglish_norm, persian_norm, english_norm = _extract_language_fields(entry)
 
@@ -598,6 +621,7 @@ def _rank_entry(
 
     return max(
         inflection_score,
+        _english_infinitive_score(entry, english_infinitive),
         _field_score(
             normalized_query,
             entry.lexeme_norm,
@@ -826,6 +850,13 @@ def _candidate_indices(normalized_query: str, candidate_limit: int) -> list[int]
 
 def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
     normalized_query = dictionary_core.normalize_text(query)
+    # English infinitives are commonly entered as 'to dive', 'to run', etc.
+    english_infinitive = (
+        normalized_query[3:]
+        if normalized_query.startswith("to ") and len(normalized_query) > 5
+        else ""
+    )
+    search_query = english_infinitive or normalized_query
     if not normalized_query:
         return [
             dictionary_core.SearchResult(entry, 0.0)
@@ -846,9 +877,9 @@ def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
             return []
 
     try:
-        compact_length = len(normalized_query.replace(" ", ""))
+        compact_length = len(search_query.replace(" ", ""))
         candidate_limit = 140 if compact_length < 3 else max(180, min(320, limit * 16))
-        indices = _candidate_indices(normalized_query, candidate_limit)
+        indices = _candidate_indices(search_query, candidate_limit)
         live_entries = _sync_live_candidate_entries(self, indices)
     except (sqlite3.Error, OSError, ValueError):
         if _FALLBACK_SEARCH is not None:
@@ -873,9 +904,10 @@ def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
             continue
         score = _rank_entry(
             entry,
-            normalized_query,
+            search_query,
             fuzzy_threshold,
             noun_preferred=noun_preferred,
+            english_infinitive=english_infinitive,
         )
         if score > 0:
             scored.append(dictionary_core.SearchResult(entry, score))

@@ -50,7 +50,9 @@ class DictionaryDatabase(private val context: Context) {
 
     suspend fun search(query: String, limit: Int = 20): List<DictionaryEntry> = withContext(Dispatchers.IO) {
         mutex.withLock {
-            val q = DictionaryText.normalize(query)
+            val normalizedQuery = DictionaryText.normalize(query)
+            val englishInfinitive = normalizedQuery.startsWith("to ") && normalizedQuery.length > 5
+            val q = if (englishInfinitive) normalizedQuery.removePrefix("to ") else normalizedQuery
             val nounPreferred =
                 query.trimStart()
                     .firstOrNull()
@@ -183,6 +185,7 @@ class DictionaryDatabase(private val context: Context) {
                             it,
                             inflectionStems,
                             nounPreferred,
+                            englishInfinitive,
                         ) to it
                     }
                     .filter { it.first > 0.0 }
@@ -367,6 +370,7 @@ class DictionaryDatabase(private val context: Context) {
         entry: DictionaryEntry,
         inflectionStems: List<String>,
         nounPreferred: Boolean,
+        englishInfinitive: Boolean,
     ): Double {
         val inflectionScore =
             if (
@@ -410,8 +414,20 @@ class DictionaryDatabase(private val context: Context) {
                 0.0
             }
 
+        val verbInfinitiveScore = if (englishInfinitive && entry.role == "verb") {
+            entry.english.split(';', '؛').maxOfOrNull { meaning ->
+                val sense = DictionaryText.normalize(meaning).removePrefix("to ")
+                when {
+                    sense == q -> 5500.0
+                    sense.startsWith("$q ") -> 5150.0
+                    q in sense.split(' ') -> 4800.0
+                    else -> 0.0
+                }
+            } ?: 0.0
+        } else 0.0
         return maxOf(
             inflectionScore,
+            verbInfinitiveScore,
             // Deliberate priority: German > Penglish > Persian > English.
             fieldScore(q, entry.lexemeNorm, 4000.0, 0.72),
             fieldScore(q, entry.headwordNorm, 3990.0, 0.72),

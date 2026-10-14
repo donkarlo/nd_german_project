@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <rect x="12" y="12" width="232" height="232" rx="46" fill="#f5f0ff"/>
-  <path d="M53 58h68c18 0 33 15 33 33v108c-8-8-19-12-31-12H53z" fill="#ffffff" stroke="#6048a8" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M203 58h-49v141c8-8 19-12 31-12h18z" fill="#efeaff" stroke="#6048a8" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M72 91h57M72 119h57M72 147h43" stroke="#6048a8" stroke-width="9" stroke-linecap="round"/>
-  <circle cx="183" cy="95" r="26" fill="#ffcf45"/>
-  <path d="M173 95h20M183 85v20" stroke="#6048a8" stroke-width="7" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <!-- Exact shapes and colors of Android res/drawable/ic_launcher.xml -->
+  <path fill="#5B3FA8" d="M18,12h72a12,12 0,0 1,12 12v60a12,12 0,0 1,-12 12h-72a12,12 0,0 1,-12 -12v-60a12,12 0,0 1,12 -12z"/>
+  <path fill="#FFFFFF" d="M27,37h19c13,0 21,7 21,17s-8,17 -21,17h-19zM38,47v14h7c6,0 10,-2 10,-7s-4,-7 -10,-7z"/>
+  <path fill="#FFFFFF" d="M70,37h23v10h-12v4h11v9h-11v4h12v10h-23z"/>
 </svg>

@@ -972,12 +972,12 @@ class DictionaryWindow(QMainWindow):
         if answer != QMessageBox.Yes:
             return
         try:
-            removed = self.index.delete_entry(self.database_path, entry_index)
+            self.index.delete_entry(self.database_path, entry_index)
         except (OSError, UnicodeError, ValueError, IndexError) as exc:
             QMessageBox.critical(self, "Could not delete entry", str(exc))
             return
+        # The confirmation before deletion remains; no redundant success popup.
         self.perform_search()
-        QMessageBox.information(self, "Entry deleted", f'Deleted “{removed.headword}”.')
 
     # ----------------------------- Conjugation tab -----------------------------
     def _load_conjugation_database(self) -> None:
@@ -1184,6 +1184,8 @@ def main() -> int:
 
     app = QApplication(sys.argv)
     app.setApplicationName("Deutsch Dictionary")
+    # Associate the Ubuntu window/dock with the launcher using our app icon.
+    app.setDesktopFileName("nd-german")
     window = DictionaryWindow(settings_path, settings)
     window.show()
     return app.exec()
