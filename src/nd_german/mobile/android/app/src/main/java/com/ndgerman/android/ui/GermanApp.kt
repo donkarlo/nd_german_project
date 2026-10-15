@@ -6,6 +6,7 @@ import android.content.Context
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -98,6 +100,7 @@ fun GermanApp(viewModel: GermanViewModel) {
     val context = LocalContext.current
     var selectedTab by remember { mutableStateOf(0) }
     var monetizationMenu by remember { mutableStateOf(false) }
+    var privacyPolicyOpen by remember { mutableStateOf(false) }
     var adjectivePrefill by remember { mutableStateOf("") }
     var syncDialog by remember { mutableStateOf(false) }
     var addDialog by remember { mutableStateOf(false) }
@@ -117,6 +120,33 @@ fun GermanApp(viewModel: GermanViewModel) {
 
     fun speak(text: String) {
         if (ttsReady) tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "nd-german-$text")
+    }
+
+    if (BuildConfig.PLAY_DISTRIBUTION && privacyPolicyOpen) {
+        AlertDialog(
+            onDismissRequest = { privacyPolicyOpen = false },
+            title = { Text("Privacy policy") },
+            text = {
+                Text(
+                    text = """NoonDreams German Learning
+Contact: contact@noondreams.com
+
+The dictionary and grammar tools work offline. Dictionary searches, search history and app preferences are stored on your device. This public version does not synchronize with Dropbox or require an account.
+
+When advertising is enabled, Google AdMob and its partners may process data including device or advertising identifiers, IP address, diagnostics and ad interactions to provide, protect and measure ads. Where required, the app asks for advertising consent through Google's consent platform. You may change available privacy choices using "Privacy options" in the app menu.
+
+If you purchase the optional remove-ads upgrade, Google Play handles the payment; the app checks purchase entitlement.
+
+Text-to-speech uses the Android speech engine selected on your device, which is subject to that provider's privacy terms.
+
+To request information, contact contact@noondreams.com. An extended policy will be published on noondreams.com.""",
+                    modifier = Modifier.heightIn(max = 440.dp).verticalScroll(rememberScrollState()),
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = { privacyPolicyOpen = false }) { Text("Close") }
+            },
+        )
     }
 
     state.error?.let { error ->
@@ -222,7 +252,13 @@ fun GermanApp(viewModel: GermanViewModel) {
                                     expanded = monetizationMenu,
                                     onDismissRequest = { monetizationMenu = false },
                                 ) {
-                                    if (monetization.adFree) {
+                                    if (!BuildConfig.ADMOB_CONFIGURED) {
+                                        DropdownMenuItem(
+                                            text = { Text("Ads not configured") },
+                                            onClick = {},
+                                            enabled = false,
+                                        )
+                                    } else if (monetization.adFree) {
                                         DropdownMenuItem(
                                             text = { Text("Ad-free active") },
                                             onClick = {},
@@ -242,8 +278,16 @@ fun GermanApp(viewModel: GermanViewModel) {
                                                 monetizationMenu = false
                                                 (context as? Activity)?.let(viewModel::purchaseRemoveAds)
                                             },
+                                            enabled = monetization.billingReady && monetization.removeAdsPrice != null,
                                         )
                                     }
+                                    DropdownMenuItem(
+                                        text = { Text("Privacy policy") },
+                                        onClick = {
+                                            monetizationMenu = false
+                                            privacyPolicyOpen = true
+                                        },
+                                    )
                                     if (monetization.privacyOptionsRequired) {
                                         DropdownMenuItem(
                                             text = { Text("Privacy options") },

@@ -4,3 +4,13 @@ sdk.dir=/home/donkarlo/Android/Sdk
 # Create a dedicated Dropbox API app for ND German Android and paste its App Key here.
 # A dedicated key avoids OAuth redirect collisions with the ND Planning Android app.
 ND_GERMAN_DROPBOX_APP_KEY=YOUR_DROPBOX_APP_KEY
+
+
+# Play build only: create a Google AdMob app + Banner Ad Unit first.
+# Omit both values to disable ALL ad requests in preview Play builds.
+# Do not use Google test IDs for an actual production release.
+# ND_GERMAN_ADMOB_APP_ID=ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY
+# ND_GERMAN_ADMOB_BANNER_ID=ca-app-pub-XXXXXXXXXXXXXXXX/ZZZZZZZZZZ
+#
+# Signing secrets are intentionally outside the repo at:
+# ~/.config/nd_german_play/upload-signing.properties

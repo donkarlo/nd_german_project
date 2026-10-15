@@ -4,3 +4,6 @@ local.properties
 **/build/
 *.iml
 .DS_Store
+
+# Kotlin compiler cache
+.kotlin/

@@ -33,7 +33,7 @@ data class MonetizationState(
     val message: String? = null,
 ) {
     val showAds: Boolean
-        get() = playDistribution && !adFree && canRequestAds
+        get() = playDistribution && BuildConfig.ADMOB_CONFIGURED && !adFree && canRequestAds
 }
 
 class MonetizationManager(context: Context) {
@@ -77,7 +77,7 @@ class MonetizationManager(context: Context) {
         }
 
     fun start(activity: Activity) {
-        if (!BuildConfig.PLAY_DISTRIBUTION) return
+        if (!BuildConfig.PLAY_DISTRIBUTION || !BuildConfig.ADMOB_CONFIGURED) return
         startBilling()
         requestConsent(activity)
     }
@@ -214,7 +214,7 @@ class MonetizationManager(context: Context) {
     }
 
     fun purchaseRemoveAds(activity: Activity) {
-        if (!BuildConfig.PLAY_DISTRIBUTION || _state.value.adFree) return
+        if (!BuildConfig.PLAY_DISTRIBUTION || !BuildConfig.ADMOB_CONFIGURED || _state.value.adFree) return
 
         val client = billingClient
         val details = productDetails

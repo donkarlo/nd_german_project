@@ -10,14 +10,27 @@ val localProperties = Properties().apply {
     if (file.exists()) file.inputStream().use(::load)
 }
 val dropboxAppKey = localProperties.getProperty("ND_GERMAN_DROPBOX_APP_KEY", "")
-val admobAppId = localProperties.getProperty(
-    "ND_GERMAN_ADMOB_APP_ID",
-    "ca-app-pub-3940256099942544~3347511713",
-)
-val admobBannerId = localProperties.getProperty(
-    "ND_GERMAN_ADMOB_BANNER_ID",
-    "ca-app-pub-3940256099942544/6300978111",
-)
+// Sample IDs are only manifest placeholders for a local preview; no ads may load
+// until both real AdMob IDs have explicitly been configured.
+val configuredAdMobAppId = localProperties.getProperty("ND_GERMAN_ADMOB_APP_ID", "").trim()
+val configuredAdMobBannerId = localProperties.getProperty("ND_GERMAN_ADMOB_BANNER_ID", "").trim()
+val realAdMobIdsConfigured =
+    Regex("""ca-app-pub-\d{16}~\d{10}""").matches(configuredAdMobAppId) &&
+        Regex("""ca-app-pub-\d{16}/\d{10}""").matches(configuredAdMobBannerId) &&
+        !configuredAdMobAppId.startsWith("ca-app-pub-3940256099942544") &&
+        !configuredAdMobBannerId.startsWith("ca-app-pub-3940256099942544")
+val admobAppId =
+    if (realAdMobIdsConfigured) configuredAdMobAppId
+    else "ca-app-pub-3940256099942544~3347511713"
+val admobBannerId =
+    if (realAdMobIdsConfigured) configuredAdMobBannerId
+    else "ca-app-pub-3940256099942544/6300978111"
+
+// A dedicated upload certificate lives outside the repo/Dropbox; never check it in.
+val playSigningProperties = Properties().apply {
+    val config = file(System.getProperty("user.home") + "/.config/nd_german_play/upload-signing.properties")
+    if (config.isFile) config.inputStream().use(::load)
+}
 
 val generatedAssetsDir = layout.buildDirectory.dir("generated/ndGermanAssets")
 val syncSharedAssets = tasks.register<Sync>("syncSharedAssets") {
@@ -47,11 +60,23 @@ android {
 
         // Shared defaults.
         buildConfigField("boolean", "PLAY_DISTRIBUTION", "false")
+        buildConfigField("boolean", "ADMOB_CONFIGURED", realAdMobIdsConfigured.toString())
         buildConfigField("String", "ADMOB_BANNER_ID", "\"$admobBannerId\"")
         buildConfigField("String", "REMOVE_ADS_PRODUCT_ID", "\"remove_ads\"")
         manifestPlaceholders["dropboxKey"] = "missing_nd_german_dropbox_app_key"
         manifestPlaceholders["adMobAppId"] = admobAppId
         manifestPlaceholders["appLabel"] = "ND Deutsch"
+    }
+
+    signingConfigs {
+        create("playUpload") {
+            if (playSigningProperties.isNotEmpty()) {
+                storeFile = file(playSigningProperties.getProperty("storeFile"))
+                storePassword = playSigningProperties.getProperty("storePassword")
+                keyAlias = playSigningProperties.getProperty("keyAlias")
+                keyPassword = playSigningProperties.getProperty("keyPassword")
+            }
+        }
     }
 
     buildTypes {
@@ -63,9 +88,13 @@ android {
         }
 
         create("play") {
+            // This package name becomes permanent after uploading to Google Play.
             applicationIdSuffix = ".play"
-            isDebuggable = true
-            signingConfig = signingConfigs.getByName("debug")
+            isDebuggable = false
+            // Never ship an APK/AAB signed by Android's debug keystore.
+            signingConfig =
+                if (playSigningProperties.isNotEmpty()) signingConfigs.getByName("playUpload")
+                else null
 
             // Public build contains no Dropbox key and uses local-only storage.
             buildConfigField("boolean", "PLAY_DISTRIBUTION", "true")
