@@ -1,22 +1,35 @@
-# Android public Play build — verified
+# Android public Play build — verified 18 October 2026
 
-Built: 15 October 2026, on owner's Ubuntu laptop
-Gradle `./gradlew :app:bundlePlay :app:assemblePlay :app:assembleDebug --offline` — **SUCCESS**
+Public app: German Learning v0.1.0, application ID com.ndgerman.android.play, versionCode 1, Android minSdk 26 / targetSdk 37.
 
-- Signed Play AAB: `/home/donkarlo/Dropbox/repo/nd_german_project/src/nd_german/mobile/android/app/build/outputs/bundle/play/app-play.aab` — **35.2 MiB**, signature verified.
-- Test Play APK: `/home/donkarlo/Dropbox/repo/nd_german_project/src/nd_german/mobile/android/app/build/outputs/apk/play/app-play.apk` — **38.0 MiB**, signature verified.
-- Copies in Downloads: `/home/donkarlo/Downloads/NoonDreams-German-Learning-v0.1.0-play.aab` and `/home/donkarlo/Downloads/NoonDreams-German-Learning-v0.1.0-test.apk`.
-- Application ID: `com.ndgerman.android.play` (permanent after Play submission).
-- Version: 0.1.0; versionCode 1; min SDK 26; target SDK 37.
-- No debug flag; Play APK not debuggable.
-- Play bundle contains no Dropbox artifacts / OAuth component.
-- Bundled SQLite dictionary size, uncompressed: 72978432 bytes.
-- AdMob real IDs **NOT configured**; ad requests disabled.
-- Play in-app product `remove_ads` **not yet created/verified**; purchase action disabled until product has price.
-- AAB SHA256: `2fad237d3c5c359157878a3db48b0c63e99ebdc405e27f97f29b54d7f42320f6`.
-- Upload key cert SHA256: `e45b34b7c6dc8c7973c4a2d242f8227dd6e3c7e6f46f83a8a06c89eed7c0a633`.
-- Upload key and password files are locally under `~/.config/nd_german_play/`, not in git; make a secure offline backup.
+## Final signed build
+- AAB: /home/donkarlo/Downloads/NoonDreams-German-Learning-v0.1.0-play.aab
+- Public Play APK for local QA: /home/donkarlo/Downloads/NoonDreams-German-Learning-v0.1.0-test.apk
+- Preserved previous October 15 AAB: /home/donkarlo/Downloads/NoonDreams-German-Learning-v0.1.0-play-20261015.aab
+- Release bundle SHA256: f5acaa6ed39a07d3e45fbe6a8a0b0302fe43d5af89002e8a288fe68655c039ae
+- Signature: jarsigner -verify succeeded (expected self-signed upload certificate).
+- Build command: ./gradlew :app:lintPlay :app:assembleDebug :app:bundlePlay :app:assemblePlay --offline
+- Build: SUCCESS; Android Lint: 0 errors, 4 warnings, 1 hint.
 
-**Key note:** self-signed upload certificates are normal for Google Play App Signing. `jarsigner -verify` succeeded; `-strict` would warn about its lack of a CA chain.
+## Database / privacy validation
+- Bundled dictionary database: 15,145 entries; SQLite integrity_check: ok.
+- Database SHA256 inside the AAB exactly equals 2026-10-18 shared source: 61757ebf7bbb7847c1138081117f78da7eeb97f75480eec85a0184d539378eae
+- Manifest: public Play build contains no Dropbox OAuth activity/package visibility; private debug build retains Dropbox authorization.
+- No real AdMob IDs configured, so actual ad requests disabled by app logic.
+- Live remove_ads product remains unconfigured; paid purchase action disabled.
+- Review Google SDK manifest permissions and behavior before filing Play Console Data Safety answers.
 
-**Pending before production:** Google developer identity approval; real AdMob IDs + consent message; live privacy page on noondreams.com; Play listing images; completed Data Safety/Ads declarations; optional paid `remove_ads` product; real-device QA; closed testing 12 opted-in testers for at least 14 consecutive days; approval for production access.
+## Creative and metadata
+- assets/store_icon_512.png: 512x512 RGBA, 13,219 bytes.
+- assets/feature_graphic_1024x500.png: 1024x500 RGB, 77,573 bytes.
+- Store descriptions: STORE_LISTING.md
+- Publishable privacy policy: privacy_policy.html; WordPress page body: privacy_policy_wordpress.html
+- Tester invite and QA: CLOSED_TEST.md
+
+## Remaining before upload and launch
+- Developer identity and phone approval, then Create app in Play Console.
+- Public HTTPS privacy policy (candidate /privacy-policy/ currently returns 404).
+- 2+ **real** Android screenshots from public app; no connected ADB device or emulator AVD at build time. Use capture_store_screenshots.sh once authorized phone is connected.
+- Complete ads/Data Safety and all other App content questionnaires; install and manually test the public Play APK.
+- Closed test: 12 opted-in testers for 14 days, then request production access.
+- Python pytest suite was not executed; system Python reports 'No module named pytest'. This does not affect the successful Gradle build but remains an independent QA gap.

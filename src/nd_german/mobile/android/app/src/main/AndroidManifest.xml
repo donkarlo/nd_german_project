@@ -1,8 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
-    <queries>
-        <package android:name="com.dropbox.android" />
-    </queries>
+
 
     <application
         android:name=".GermanApplication"
@@ -26,21 +24,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.dropbox.core.android.AuthActivity"
-            android:exported="true"
-            android:configChanges="orientation|keyboard"
-            android:launchMode="singleTask">
-            <intent-filter>
-                <data android:scheme="db-${dropboxKey}" />
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+
     </application>
 </manifest>

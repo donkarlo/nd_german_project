@@ -1,16 +1,3 @@
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <queries>
-        <package
-            android:name="com.dropbox.android"
-            tools:node="remove" />
-    </queries>
-
-    <application android:label="${appLabel}">
-        <activity
-            android:name="com.dropbox.core.android.AuthActivity"
-            tools:node="remove" />
-    </application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="${appLabel}" />
 </manifest>
