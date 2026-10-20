@@ -400,9 +400,14 @@ def sqlite_add(self, _database_path, raw_entry: str):
                 connection.rollback()
                 raise
 
-        updated = list(self.entries)
-        updated.append(entry)
-        self.__init__(updated)
+        # Append incrementally: rebuilding the entire trigram index here costs
+        # O(N) per insertion and freezes the UI during large import sessions.
+        # The new row index is exactly the previous number of entries.
+        new_index = len(self.entries)
+        self.entries.append(entry)
+        self._duplicate_keys.add(entry.duplicate_key)
+        for trigram in entry.trigrams:
+            self._trigram_map.setdefault(trigram, set()).add(new_index)
 
     return entry
 
