@@ -18,7 +18,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src" / "nd_german"))
 import dictionary_core
-import sqlite_search_patch as backend
+import dictionary_storage as backend
+from dictionary_quality import DictionaryQuality
 
 DB = Path("/home/donkarlo/Dropbox/repo/data/nd_german_project/dictionary.sqlite3")
 
@@ -32,7 +33,15 @@ def main():
     if args.batch_size < 1 or args.batch_size > 1000:
         parser.error("--batch-size must be between 1 and 1000")
     blocks = [part.strip() for part in args.input.read_text(encoding="utf-8-sig").split("\n\n") if part.strip()]
-    parsed = [dictionary_core.parse_entry(part) for part in blocks]
+    quality = DictionaryQuality()
+    # Normalize safe grammatical typos before indexing. Do not overwrite
+    # intended user translations with machine guesses.
+    parsed = [dictionary_core.parse_entry(quality.normalize(part)[0]) for part in blocks]
+    problems = [(ent.headword, quality.issues(ent.raw, ent.role)) for ent in parsed]
+    invalid = [(headword, issues) for headword, issues in problems if issues]
+    if invalid:
+        print(f"Rejected {len(invalid)} incomplete or malformed entries: {invalid[:10]}", file=sys.stderr)
+        return 2
     conn = sqlite3.connect(str(DB), timeout=30)
     conn.execute("PRAGMA busy_timeout=30000")
     conn.execute("PRAGMA synchronous=NORMAL")
@@ -76,4 +85,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

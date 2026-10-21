@@ -1,5 +1,5 @@
 import unittest
-import verb_rektion_patch as v
+import verb_valency as v
 
 class VerbRektionTests(unittest.TestCase):
     def test_no_invented_grammar(self):

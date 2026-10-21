@@ -149,24 +149,19 @@ def split_first_line(first_line: str) -> tuple[str, str]:
 
 
 def extract_headword(first_line: str) -> str:
-    left, _ = split_first_line(first_line)
-    left = IPA_RE.sub("", left)
-    left = PAREN_RE.sub("", left)
-    # Remove frequent grammatical labels that may follow a bare headword.
-    # Article-led nouns such as "das Verb", "das Adverb" or
-    # "die Präposition" must keep the grammatical term as part of the noun.
-    article_led_noun = bool(
-        re.match(r"^(?:der|die|das|ein|eine)\s+", left, flags=re.IGNORECASE)
-    )
-    if not article_led_noun:
-        left = re.sub(
-            r"\s+(?:trennbar|untrennbar|nicht trennbar|transitiv|intransitiv|reflexiv|"
-            r"regelmäßig|unregelmäßig|stark|schwach|adjektiv|adverb|pronom|"
-            r"konjunktion|präposition|substantiv|verb)(?:\s.*)?$",
-            "",
-            left,
-            flags=re.IGNORECASE,
-        )
+    """Read a headword without treating IPA/grammar colons as separators."""
+    cleaned = IPA_RE.sub("", first_line)
+    cleaned = PAREN_RE.sub("", cleaned)
+    left = cleaned.split(":", 1)[0].strip()
+    article_led = bool(re.match(r"^(?:der|die|das|ein|eine)\s+", left, re.I))
+    if not article_led:
+        left = re.split(
+            r"\s+(?=(?:nicht trennbar|trennbar|untrennbar|transitiv|"
+            r"intransitiv|reflexiv|regelmäßig|unregelmäßig|stark|schwach|"
+            r"adjektiv|adverb|pronom|konjunktion|präposition|"
+            r"substantiv|verb)\b)",
+            left, maxsplit=1, flags=re.I,
+        )[0]
     return WHITESPACE_RE.sub(" ", left).strip(" -")
 
 
@@ -322,6 +317,25 @@ class DictionaryIndex:
         text = database_path.read_text(encoding="utf-8")
         entries = [parse_entry(raw) for raw in split_entries(text)]
         return cls(entries)
+
+    def replace_cached_entry(self, index: int, entry: DictionaryEntry) -> None:
+        """Replace one parsed entry without rebuilding the complete search index."""
+        old = self.entries[index]
+        old_key = old.duplicate_key
+        new_key = entry.duplicate_key
+        self.entries[index] = entry
+        if old_key != new_key:
+            if not any(e.duplicate_key == old_key for e in self.entries):
+                self._duplicate_keys.discard(old_key)
+            self._duplicate_keys.add(new_key)
+        for trigram in old.trigrams - entry.trigrams:
+            postings = self._trigram_map.get(trigram)
+            if postings is not None:
+                postings.discard(index)
+                if not postings:
+                    del self._trigram_map[trigram]
+        for trigram in entry.trigrams - old.trigrams:
+            self._trigram_map.setdefault(trigram, set()).add(index)
 
     def contains_duplicate(self, entry: DictionaryEntry) -> bool:
         return entry.duplicate_key in self._duplicate_keys

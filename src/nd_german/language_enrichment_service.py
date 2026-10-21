@@ -10,7 +10,7 @@ from pathlib import Path
 
 import dictionary_core
 import language_enrichment as legacy
-import language_patch_v3 as previous
+import language_translation as previous
 
 clean_german_word = previous.clean_german_word
 language_values = previous.language_values

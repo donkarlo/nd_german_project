@@ -22,6 +22,14 @@ class ConjugationTests(unittest.TestCase):
         self.assertLessEqual(len(self.database.records), 2000)
         self.assertGreaterEqual(len(self.database.records), 150)
 
+    def test_native_passive_sections(self) -> None:
+        normal = self.conjugator.conjugate("machen")
+        section = "PASSIV (VORGANGSPASSIV · falls möglich)"
+        self.assertEqual(len(normal.sections[section]), 6)
+        self.assertEqual(dict(normal.sections[section])["Präsens"][0], "werde gemacht von mir")
+        reflexive = self.conjugator.conjugate("sich waschen")
+        self.assertNotIn(section, reflexive.sections)
+
     def test_haben(self) -> None:
         result = self.conjugator.conjugate("haben")
         self.assertEqual(self.card(result, "INDIKATIV", "Präsens")[1], "du hast")

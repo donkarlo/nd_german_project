@@ -1,11 +1,37 @@
 from __future__ import annotations
 
 import html
+from pathlib import Path
 
 import app_base as base
+from PySide6.QtGui import QColor
+from PySide6.QtCore import Qt, QSettings
+from PySide6.QtWidgets import QTabBar, QLabel
 
 
 GRAMMAR_CSS = ""
+
+
+PERSISTENCE_DIR = Path("/home/donkarlo/Dropbox/repo/data/nd_german_project")
+WINDOW_STATE_PATH = PERSISTENCE_DIR / "window_state.ini"
+
+
+def _window_settings() -> QSettings:
+    PERSISTENCE_DIR.mkdir(parents=True, exist_ok=True)
+    return QSettings(str(WINDOW_STATE_PATH), QSettings.Format.IniFormat)
+
+
+def _restore_window_geometry(window) -> None:
+    settings = _window_settings()
+    geometry = settings.value("main_window/geometry")
+    if geometry is not None:
+        window.restoreGeometry(geometry)
+
+
+def _save_window_geometry(window) -> None:
+    settings = _window_settings()
+    settings.setValue("main_window/geometry", window.saveGeometry())
+    settings.sync()
 
 
 GRAMMAR_QT_STYLESHEET = """
@@ -320,15 +346,13 @@ def _open_add_dialog(self) -> None:
     self.tabs.setCurrentIndex(0)
     self.search_box.setText(added.headword)
     self.perform_search()
-    legacy.QMessageBox.information(
-        self,
-        "Entry added",
-        f'Added “{added.headword}” ({added.role}) to the app.',
-    )
 
 
 def _polish_controls(window) -> None:
     legacy = base.legacy
+
+    # Add a small visual gap below the native title bar.
+    window.setContentsMargins(0, 7, 0, 0)
 
     for edit in window.findChildren(legacy.QLineEdit):
         edit.setMinimumHeight(38)
@@ -351,6 +375,95 @@ def _polish_controls(window) -> None:
 
     if hasattr(window, "add_button"):
         window.add_button.setMinimumHeight(38)
+
+    if hasattr(window, "tabs"):
+        window.tabs.setStyleSheet(
+            """
+            QTabWidget::pane {
+                border: 1px solid #b8c6d6;
+                border-top: 2px solid #315f88;
+                background: #ffffff;
+            }
+
+            QTabBar::tab {
+                min-height: 32px;
+                padding: 0px;
+                margin-right: 3px;
+                border: none;
+                background: transparent;
+            }
+            """
+        )
+
+        tab_bar = window.tabs.tabBar()
+        tab_bar.setExpanding(False)
+        tab_bar.setUsesScrollButtons(True)
+        tab_bar.setElideMode(Qt.TextElideMode.ElideNone)
+
+        tab_palette = {
+            "Dictionary": ("#dceaf8", "#315f88"),
+            "Conjugation": ("#eee6f7", "#6b3f7d"),
+            "Artikel": ("#fbe9dc", "#8a4f2f"),
+            "Pronomen": ("#e1f1e7", "#356b49"),
+            "Adjektivendungen": ("#f5ead3", "#8a6932"),
+            "Nomenendungen": ("#e8eef7", "#405f86"),
+        }
+        fallback_palette = ("#edf1f5", "#465665")
+
+        tab_labels = []
+        for index in range(window.tabs.count()):
+            title = window.tabs.tabText(index)
+            bg, fg = tab_palette.get(title, fallback_palette)
+
+            label = QLabel(title, tab_bar)
+            label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            label.setAttribute(
+                Qt.WidgetAttribute.WA_TransparentForMouseEvents, True
+            )
+
+            # Keep the original compact tab height and size width from text.
+            # This prevents long final tabs from overlapping each other.
+            label_font = label.font()
+            label_font.setBold(True)
+            label.setFont(label_font)
+            text_width = label.fontMetrics().horizontalAdvance(title)
+            label.setFixedWidth(text_width + 24)
+            label.setFixedHeight(32)
+            label.setContentsMargins(8, 0, 8, 0)
+
+            tab_bar.setTabButton(index, QTabBar.ButtonPosition.LeftSide, label)
+            tab_bar.setTabText(index, "")
+            tab_bar.setTabToolTip(index, title)
+            tab_labels.append((label, bg, fg))
+
+        def update_tab_colors(current_index: int) -> None:
+            for index, (label, bg, fg) in enumerate(tab_labels):
+                if index == current_index:
+                    label.setStyleSheet(
+                        "QLabel {"
+                        " background-color:#315f88;"
+                        " color:#ffffff;"
+                        " font-weight:800;"
+                        " border:1px solid #315f88;"
+                        " border-top-left-radius:7px;"
+                        " border-top-right-radius:7px;"
+                        "}"
+                    )
+                else:
+                    label.setStyleSheet(
+                        "QLabel {"
+                        f" background-color:{bg};"
+                        f" color:{fg};"
+                        " font-weight:700;"
+                        " border:1px solid #b9c7d6;"
+                        " border-bottom:none;"
+                        " border-top-left-radius:7px;"
+                        " border-top-right-radius:7px;"
+                        "}"
+                    )
+
+        window.tabs.currentChanged.connect(update_tab_colors)
+        update_tab_colors(window.tabs.currentIndex())
 
     if hasattr(window, "conjugation_results"):
         font = window.conjugation_results.font()
@@ -381,7 +494,7 @@ def _polish_controls(window) -> None:
         "Genus/Numerus:",
         "Typ:",
         "Person:",
-        "Besitzer/Subjekt:",
+        "Possessor/Subjekt:",
         "Bezugswort:",
         "Adjektiv:",
         "Begleiter/Artikel:",
@@ -402,12 +515,19 @@ def _install_runtime_patches() -> None:
         return
 
     original_init = cls.__init__
+    original_close_event = cls.closeEvent
 
     def polished_init(self, *args, **kwargs):
         original_init(self, *args, **kwargs)
         _polish_controls(self)
+        _restore_window_geometry(self)
+
+    def polished_close_event(self, event):
+        _save_window_geometry(self)
+        return original_close_event(self, event)
 
     cls.__init__ = polished_init
+    cls.closeEvent = polished_close_event
     cls.GRAMMAR_CSS = ""
     cls._table = staticmethod(_grammar_table)
     cls._format_conjugation_line = staticmethod(_format_conjugation_line)
@@ -419,16 +539,5 @@ def _install_runtime_patches() -> None:
 
 
 def install_ui_polish() -> None:
-    """Install after app_base's own monkey patches, but before the window is created."""
-    current_install = base.install
-    if getattr(current_install, "_nd_ui_polish_wrapper", False):
-        return
-
-    original_install = current_install
-
-    def install_then_polish() -> None:
-        original_install()
-        _install_runtime_patches()
-
-    install_then_polish._nd_ui_polish_wrapper = True
-    base.install = install_then_polish
+    """Register window enhancements without monkey-patching the installer."""
+    base.register_install_hook(_install_runtime_patches)

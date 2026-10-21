@@ -567,6 +567,25 @@ class GermanConjugator:
             return infinitive[:-3] + "tuend"
         return infinitive + "d"
 
+    @staticmethod
+    def _passive_sections(participle: str) -> list[tuple[str, list[str]]]:
+        """Build the six passive tenses directly as part of conjugation."""
+        agents = ("mir", "dir", "ihm/ihr/ihm", "uns", "euch", "Ihnen")
+        werden = ("werde", "wirst", "wird", "werden", "werdet", "werden")
+        wurden = ("wurde", "wurdest", "wurde", "wurden", "wurdet", "wurden")
+        sein = ("bin", "bist", "ist", "sind", "seid", "sind")
+        waren = ("war", "warst", "war", "waren", "wart", "waren")
+        def lines(forms, tail):
+            return [f"{finite} {tail} von {agent}" for finite, agent in zip(forms, agents)]
+        return [
+            ("Präsens", lines(werden, participle)),
+            ("Präteritum", lines(wurden, participle)),
+            ("Perfekt", lines(sein, f"{participle} worden")),
+            ("Plusquamperfekt", lines(waren, f"{participle} worden")),
+            ("Futur I", lines(werden, f"{participle} werden")),
+            ("Futur II", lines(werden, f"{participle} worden sein")),
+        ]
+
     def conjugate(self, raw_infinitive: str) -> ConjugationResult:
         entered_infinitive, reflexive = normalize_verb(raw_infinitive)
         if not is_plausible_infinitive(entered_infinitive):
@@ -675,6 +694,14 @@ class GermanConjugator:
             perfect_inf = perfect_tail
             perfect_zu = f"{participle} zu {auxiliary}"
 
+        sections = {
+            "INDIKATIV": indicative,
+            "KONJUNKTIV I": konjunktiv_i,
+            "KONJUNKTIV II": konjunktiv_ii,
+        }
+        if not reflexive:
+            sections["PASSIV (VORGANGSPASSIV · falls möglich)"] = self._passive_sections(participle)
+
         return ConjugationResult(
             infinitive=("sich " if reflexive else "") + infinitive,
             reflexive=reflexive,
@@ -682,11 +709,7 @@ class GermanConjugator:
             auxiliary=auxiliary,
             participle=participle,
             note=note,
-            sections={
-                "INDIKATIV": indicative,
-                "KONJUNKTIV I": konjunktiv_i,
-                "KONJUNKTIV II": konjunktiv_ii,
-            },
+            sections=sections,
             imperatives=imperatives,
             participles=[("Präsens", participle_i), ("Perfekt", participle_ii)],
             infinitives=[

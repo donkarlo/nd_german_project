@@ -8,7 +8,7 @@ from urllib.parse import quote, unquote
 import app_base as base
 import dictionary_core
 import language_enrichment as enrichment
-import language_patch_v4 as patch
+import language_enrichment_service as patch
 import noun_core
 
 FIELD_RE = re.compile(r"^([^:]{1,48}):\s*(.*)$")

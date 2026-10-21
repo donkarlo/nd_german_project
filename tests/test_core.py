@@ -105,6 +105,16 @@ die Größe: size
             german_inflection_stems("Häuser"),
         )
 
+    def test_incremental_replacement_updates_search_index(self):
+        from dictionary_core import DictionaryIndex, parse_entry
+        old = parse_entry("abholen (Verb): pick up\nEnglish: pick up")
+        changed = parse_entry("abholen (Verb): collect\nEnglish: collect")
+        index = DictionaryIndex([old])
+        index.replace_cached_entry(0, changed)
+        self.assertEqual(index.entries[0].translation, "collect")
+        self.assertTrue(index.contains_duplicate(changed))
+        self.assertIn(0, index._candidate_indices("collect"))
+
     def test_duplicate_prevention_and_append(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "app.txt"

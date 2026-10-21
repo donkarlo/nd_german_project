@@ -116,7 +116,7 @@ def _patterns_from_verwendung(
 
             sense_label = _sense_from_pattern(pattern)
             if sense_label and getattr(pattern, "sense_label", None) != sense_label:
-                # PatternSpec is a frozen dataclass in verb_rektion_patch, so
+                # PatternSpec is a frozen dataclass in verb_valency, so
                 # create a fresh object instead of mutating it.
                 pattern = type(pattern)(
                     arguments=pattern.arguments,

@@ -10,21 +10,19 @@ import language_application as application
 from language_application import *  # noqa: F401,F403
 
 try:
-    import sqlite_search_patch as sqlite_search
-    import verb_rektion_patch
-    from full_entry_rektion_patch import install as install_full_entry_rektion
-    from passive_patch import install_passive_conjugation
-    from search_history_patch import install as install_search_history
-    from ui_polish_patch import install_ui_polish
-    from verb_rektion_patch import install as install_verb_rektion
+    import dictionary_storage as sqlite_search
+    import verb_valency
+    from entry_valency_editor import install as install_full_entry_rektion
+    from search_history import install as install_search_history
+    from window_ui import install_ui_polish
+    from verb_valency import install as install_verb_rektion
 except ImportError:
-    from . import sqlite_search_patch as sqlite_search
-    from . import verb_rektion_patch
-    from .full_entry_rektion_patch import install as install_full_entry_rektion
-    from .passive_patch import install_passive_conjugation
-    from .search_history_patch import install as install_search_history
-    from .ui_polish_patch import install_ui_polish
-    from .verb_rektion_patch import install as install_verb_rektion
+    from . import dictionary_storage as sqlite_search
+    from . import verb_valency
+    from .entry_valency_editor import install as install_full_entry_rektion
+    from .search_history import install as install_search_history
+    from .window_ui import install_ui_polish
+    from .verb_valency import install as install_verb_rektion
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -56,56 +54,45 @@ def _ensure_project_settings_argument() -> None:
         sys.argv[1:1] = ["--settings", str(SETTINGS_PATH)]
 
 
-def _install_headword_colon_fix() -> None:
-    """Ignore colons inside IPA/grammar metadata when extracting a dictionary headword."""
-
-    def extract_headword(first_line: str) -> str:
-        cleaned = dictionary_core.IPA_RE.sub("", first_line)
-        cleaned = dictionary_core.PAREN_RE.sub("", cleaned)
-        left = cleaned.split(":", 1)[0].strip()
-        left = re.split(
-            r"\s+(?=(?:nicht trennbar|trennbar|untrennbar|transitiv|intransitiv|"
-            r"reflexiv|regelmäßig|unregelmäßig|stark|schwach|adjektiv|adverb|"
-            r"pronom|konjunktion|präposition|substantiv|verb)\b)",
-            left,
-            maxsplit=1,
-            flags=re.IGNORECASE,
-        )[0]
-        return dictionary_core.WHITESPACE_RE.sub(" ", left).strip(" -")
-
-    dictionary_core.extract_headword = extract_headword
 
 
 application.base.language_icon = _project_language_icon
 
 
+class GermanDictionaryApplication:
+    """Composition root for dictionary storage, grammar and Qt features.
+
+    Dependencies are configured once, with SQLite as the authoritative store.
+    Legacy feature adapters are isolated behind this application boundary.
+    """
+
+    def configure(self) -> None:
+        _ensure_project_settings_argument()
+        sqlite_search.install(
+            application,
+            application.base,
+            source_path=TEXT_DATABASE_PATH,
+            sqlite_path=SQLITE_DATABASE_PATH,
+        )
+        install_ui_polish()
+        install_search_history()
+        install_full_entry_rektion(verb_valency)
+        install_verb_rektion(
+            application,
+            application.base,
+            sqlite_search,
+            sqlite_path=SQLITE_DATABASE_PATH,
+            text_path=None,
+        )
+        application.base.language_icon = _project_language_icon
+
+    def run(self) -> int:
+        self.configure()
+        return application.main()
+
+
 def main() -> int:
-    _ensure_project_settings_argument()
-    _install_headword_colon_fix()
-
-    sqlite_search.install(
-        application,
-        application.base,
-        source_path=TEXT_DATABASE_PATH,
-        sqlite_path=SQLITE_DATABASE_PATH,
-    )
-    install_passive_conjugation()
-    install_ui_polish()
-    install_search_history()
-
-    # Keep one paste-ready complete-entry editor. Rektion is parsed from the entry
-    # itself; the normalized SQLite valency model and styled result rendering stay active.
-    install_full_entry_rektion(verb_rektion_patch)
-    install_verb_rektion(
-        application,
-        application.base,
-        sqlite_search,
-        sqlite_path=SQLITE_DATABASE_PATH,
-        text_path=None,  # SQLite-only runtime; text export is manual.
-    )
-
-    application.base.language_icon = _project_language_icon
-    return application.main()
+    return GermanDictionaryApplication().run()
 
 
 if __name__ == "__main__":

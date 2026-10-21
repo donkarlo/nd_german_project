@@ -8,6 +8,7 @@ from contextlib import contextmanager
 from pathlib import Path
 
 import dictionary_core
+from dictionary_quality import DictionaryQuality
 
 
 _LOCK = threading.RLock()
@@ -277,15 +278,18 @@ def _import_text_database(source_path: Path) -> None:
 
 
 def ensure_primary_database() -> None:
-    """Migrate once from the text database, then make SQLite authoritative."""
+    """Use SQLite as the source of truth; text is only a one-time bootstrap."""
     global _FTS5, _ENABLED
 
     source_path, sqlite_path = _require_paths()
-    if not source_path.is_file():
-        raise FileNotFoundError(f"Dictionary source not found: {source_path}")
 
     with _LOCK:
         if not sqlite_path.exists():
+            if not source_path.is_file():
+                raise FileNotFoundError(
+                    f"Dictionary SQLite database and bootstrap text are missing: "
+                    f"{sqlite_path} / {source_path}"
+                )
             _import_text_database(source_path)
             return
 
@@ -298,8 +302,12 @@ def ensure_primary_database() -> None:
                 _ENABLED = True
                 return
 
-            # Upgrade the previous hybrid SQLite cache. If the text source changed
-            # after that cache was built, import it once before switching authority.
+            if not source_path.is_file():
+                raise FileNotFoundError(
+                    "SQLite exists but is not marked primary, and the one-time "
+                    f"migration source is missing: {source_path}"
+                )
+
             cached_signature = _stored_source_signature(connection)
             current_signature = _source_signature(source_path)
             needs_import = cached_signature != current_signature
@@ -316,9 +324,8 @@ def ensure_primary_database() -> None:
 
         _ENABLED = True
 
-
 def _export_text_mirror() -> None:
-    """Keep woerterbuch.txt as a readable backup/export, not as the live database."""
+    """Manual text export helper; never called by normal application writes."""
     source_path, _ = _require_paths()
 
     with _connection() as connection:
@@ -374,7 +381,7 @@ def sqlite_from_file(cls, _path):
 
 def sqlite_add(self, _database_path, raw_entry: str):
     ensure_primary_database()
-    entry = dictionary_core.parse_entry(raw_entry)
+    entry = dictionary_core.parse_entry(DictionaryQuality().normalize(raw_entry)[0])
 
     with _LOCK:
         with _connection(write=True) as connection:
@@ -394,10 +401,14 @@ def sqlite_add(self, _database_path, raw_entry: str):
                 connection.rollback()
                 raise
 
-        updated = list(self.entries)
-        updated.append(entry)
-        self.__init__(updated)
-        _export_text_mirror()
+        # Append incrementally: rebuilding the entire trigram index here costs
+        # O(N) per insertion and freezes the UI during large import sessions.
+        # The new row index is exactly the previous number of entries.
+        new_index = len(self.entries)
+        self.entries.append(entry)
+        self._duplicate_keys.add(entry.duplicate_key)
+        for trigram in entry.trigrams:
+            self._trigram_map.setdefault(trigram, set()).add(new_index)
 
     return entry
 
@@ -407,7 +418,7 @@ def sqlite_replace(self, _database_path, entry_index: int, raw_entry: str):
     if not 0 <= entry_index < len(self.entries):
         raise IndexError("Dictionary entry no longer exists.")
 
-    replacement = dictionary_core.parse_entry(raw_entry)
+    replacement = dictionary_core.parse_entry(DictionaryQuality().normalize(raw_entry)[0])
 
     with _LOCK:
         with _connection(write=True) as connection:
@@ -434,7 +445,6 @@ def sqlite_replace(self, _database_path, entry_index: int, raw_entry: str):
         updated = list(self.entries)
         updated[entry_index] = replacement
         self.__init__(updated)
-        _export_text_mirror()
 
     return replacement
 
@@ -482,7 +492,6 @@ def sqlite_delete(self, _database_path, entry_index: int):
         updated = list(self.entries)
         del updated[entry_index]
         self.__init__(updated)
-        _export_text_mirror()
 
     return removed
 
@@ -493,15 +502,221 @@ def _fts_expression(normalized_query: str) -> str:
     return " AND ".join(f'"{token}"*' for token in escaped)
 
 
+def _extract_language_fields(entry) -> tuple[str, str, str]:
+    english = ""
+    persian = ""
+    penglish = ""
+
+    for line in entry.raw.splitlines()[1:]:
+        label, separator, value = line.partition(":")
+        if not separator:
+            continue
+        key = label.strip().casefold()
+        value = value.strip()
+        if key == "english" and not english:
+            english = value
+        elif key == "persian" and not persian:
+            persian = value
+        elif key == "penglish" and not penglish:
+            penglish = value
+
+    if not english:
+        english = entry.translation
+
+    return (
+        dictionary_core.normalize_text(penglish),
+        dictionary_core.normalize_text(persian),
+        dictionary_core.normalize_text(english),
+    )
+
+
+def _field_score(
+    query: str,
+    value: str,
+    *,
+    base: float,
+    fuzzy_cutoff: float | None,
+) -> float:
+    if not value:
+        return 0.0
+
+    if value == query:
+        return base + 400.0
+    if value.startswith(query):
+        return base + 320.0 - min(40.0, float(len(value) - len(query)))
+    if query in value.split():
+        return base + 260.0
+    if query in value:
+        return base + 220.0
+
+    if fuzzy_cutoff is not None and len(query.replace(" ", "")) >= 3:
+        similarity = dictionary_core._similarity(query, value)
+        if similarity >= fuzzy_cutoff:
+            return base + similarity
+
+    return 0.0
+
+
+def _english_infinitive_score(entry, meaning: str) -> float:
+    """Treat English 'to + verb' as an infinitive request, not a German prefix."""
+    if entry.role != "verb" or not meaning:
+        return 0.0
+    english = next(
+        (line.partition(":")[2] for line in entry.raw.splitlines()[1:]
+         if line.casefold().startswith("english:")),
+        entry.translation,
+    )
+    for sense in english.replace("؛", ";").split(";"):
+        normalized = dictionary_core.normalize_text(sense)
+        if normalized.startswith("to "):
+            normalized = normalized[3:]
+        if normalized == meaning:
+            return 5500.0
+        if normalized.startswith(meaning + " "):
+            return 5150.0
+        if meaning in normalized.split():
+            return 4800.0
+    return 0.0
+
+
+def _rank_entry(
+    entry,
+    normalized_query: str,
+    fuzzy_threshold: int,
+    *,
+    noun_preferred: bool = False,
+    english_infinitive: str = "",
+) -> float:
+    penglish_norm, persian_norm, english_norm = _extract_language_fields(entry)
+
+    inflection_score = 0.0
+    if entry.role in {"noun", "adjective", "participle", "unknown"}:
+        role_penalty = (
+            {
+                "noun": 0.0,
+                "adjective": 18.0,
+                "participle": 18.0,
+                "unknown": 20.0,
+            }
+            if noun_preferred
+            else {
+                "noun": 22.0,
+                "adjective": 0.0,
+                "participle": 8.0,
+                "unknown": 6.0,
+            }
+        )[entry.role]
+        for position, stem in enumerate(
+            dictionary_core.german_inflection_stems(normalized_query)
+        ):
+            if entry.lexeme_norm == stem:
+                inflection_score = max(
+                    inflection_score,
+                    4350.0
+                    - role_penalty
+                    - min(30.0, float(position * 3)),
+                )
+
+    # Search priority is deliberate:
+    # German > Penglish > Persian > English.
+    # Fuzzy matching uses stricter cutoffs than the legacy global threshold so
+    # "behörd"/"behrde" finds "Behörde" without weak cross-language false positives.
+    german_cutoff = max(72.0, float(fuzzy_threshold))
+    penglish_cutoff = max(74.0, float(fuzzy_threshold))
+    english_cutoff = max(78.0, float(fuzzy_threshold))
+
+    return max(
+        inflection_score,
+        _english_infinitive_score(entry, english_infinitive),
+        _field_score(
+            normalized_query,
+            entry.lexeme_norm,
+            base=4000.0,
+            fuzzy_cutoff=german_cutoff,
+        ),
+        _field_score(
+            normalized_query,
+            entry.headword_norm,
+            base=3990.0,
+            fuzzy_cutoff=german_cutoff,
+        ),
+        _field_score(
+            normalized_query,
+            penglish_norm,
+            base=3000.0,
+            fuzzy_cutoff=penglish_cutoff,
+        ),
+        _field_score(
+            normalized_query,
+            persian_norm,
+            base=2000.0,
+            fuzzy_cutoff=None,
+        ),
+        _field_score(
+            normalized_query,
+            english_norm,
+            base=1000.0,
+            fuzzy_cutoff=english_cutoff,
+        ),
+    )
+
+
+def _sync_live_candidate_entries(dictionary_index, indices: list[int]) -> dict[int, object]:
+    if not indices:
+        return {}
+
+    unique_indices = list(dict.fromkeys(int(index) for index in indices))
+    placeholders = ",".join("?" for _ in unique_indices)
+
+    with _connection() as connection:
+        count_row = connection.execute("SELECT COUNT(*) FROM entries").fetchone()
+        database_count = int(count_row[0]) if count_row is not None else 0
+        rows = connection.execute(
+            f"SELECT entry_index, raw FROM entries WHERE entry_index IN ({placeholders})",
+            tuple(unique_indices),
+        ).fetchall()
+
+    # Android/Dropbox can replace the live SQLite file while the desktop app is
+    # open. If the number of rows changed, rebuild the in-memory index once.
+    if database_count != len(dictionary_index.entries):
+        refreshed = _load_entries_from_sqlite()
+        dictionary_index.__init__(refreshed)
+        return {
+            index: dictionary_index.entries[index]
+            for index in unique_indices
+            if 0 <= index < len(dictionary_index.entries)
+        }
+
+    live: dict[int, object] = {}
+    for raw_index, raw_value in rows:
+        index = int(raw_index)
+        entry = dictionary_core.parse_entry(str(raw_value))
+        if 0 <= index < len(dictionary_index.entries):
+            # Keep edit/delete IDs aligned with the authoritative SQLite row.
+            dictionary_index.entries[index] = entry
+        live[index] = entry
+
+    return live
+
+
 def _candidate_indices(normalized_query: str, candidate_limit: int) -> list[int]:
     q = normalized_query
     upper = q + "\uffff"
     candidates: list[int] = []
     seen: set[int] = set()
 
+    def append_rows(rows) -> None:
+        for (index,) in rows:
+            index = int(index)
+            if index in seen:
+                continue
+            seen.add(index)
+            candidates.append(index)
+            if len(candidates) >= candidate_limit:
+                break
+
     with _connection() as connection:
-        # Equality/prefix matching is index-backed. The old instr(search_norm)
-        # full-table scan is intentionally gone from the keystroke path.
+        # Fast exact/prefix candidates for German headwords and first-line English.
         rows = connection.execute(
             """
             SELECT entry_index
@@ -545,12 +760,27 @@ def _candidate_indices(normalized_query: str, candidate_limit: int) -> list[int]
                 candidate_limit,
             ),
         )
-        for (index,) in rows:
-            index = int(index)
-            if index not in seen:
-                seen.add(index)
-                candidates.append(index)
+        append_rows(rows)
 
+        inflection_stems = dictionary_core.german_inflection_stems(q)
+        if inflection_stems and len(candidates) < candidate_limit:
+            placeholders = ",".join("?" for _ in inflection_stems)
+            remaining = max(1, candidate_limit - len(candidates))
+            rows = connection.execute(
+                f"""
+                SELECT entry_index
+                FROM entries
+                WHERE role IN ('noun','adjective','participle','unknown')
+                  AND lexeme_norm IN ({placeholders})
+                LIMIT ?
+                """,
+                (*inflection_stems, remaining),
+            )
+            append_rows(rows)
+
+        # Full-token/prefix search over the complete entry supplies candidates for
+        # Penglish, Persian and explicit English fields. Final ranking below decides
+        # field priority; FTS order itself is not trusted.
         if _FTS5 and len(candidates) < candidate_limit:
             expression = _fts_expression(q)
             if expression:
@@ -565,22 +795,42 @@ def _candidate_indices(normalized_query: str, candidate_limit: int) -> list[int]
                         """,
                         (expression, candidate_limit),
                     )
-                    for (index,) in rows:
-                        index = int(index)
-                        if index not in seen:
-                            seen.add(index)
-                            candidates.append(index)
-                            if len(candidates) >= candidate_limit:
-                                break
+                    append_rows(rows)
                 except sqlite3.OperationalError:
                     pass
 
-        # Preserve typo tolerance, but only score a bounded, index-backed group.
         compact_length = len(q.replace(" ", ""))
-        if compact_length >= 3 and len(candidates) < min(70, candidate_limit):
+
+        # A relaxed first-token FTS prefix lets small internal typos still obtain
+        # candidates for Penglish/English without an expensive full-table scan.
+        if _FTS5 and compact_length >= 4 and len(candidates) < candidate_limit:
+            first_token = next((token for token in q.split() if token), "")
+            relaxed = first_token[: min(4, len(first_token))]
+            if len(relaxed) >= 3:
+                escaped = relaxed.replace('"', '""')
+                try:
+                    rows = connection.execute(
+                        """
+                        SELECT rowid
+                        FROM entries_fts
+                        WHERE entries_fts MATCH ?
+                        ORDER BY bm25(entries_fts)
+                        LIMIT ?
+                        """,
+                        (f'"{escaped}"*', min(180, candidate_limit)),
+                    )
+                    append_rows(rows)
+                except sqlite3.OperationalError:
+                    pass
+
+        # German typo tolerance: bounded by first normalized character and length.
+        # Always reserve remaining candidate capacity for this path so FTS results
+        # cannot crowd out a near-spelling headword such as Behörde.
+        if compact_length >= 3 and len(candidates) < candidate_limit:
             first = q[:1]
             first_upper = first + "\uffff"
             qlen = len(q)
+            remaining = max(1, candidate_limit - len(candidates))
             rows = connection.execute(
                 """
                 SELECT entry_index
@@ -596,22 +846,23 @@ def _candidate_indices(normalized_query: str, candidate_limit: int) -> list[int]
                     max(1, qlen - 4),
                     qlen + 8,
                     qlen,
-                    min(220, candidate_limit),
+                    min(220, remaining),
                 ),
             )
-            for (index,) in rows:
-                index = int(index)
-                if index not in seen:
-                    seen.add(index)
-                    candidates.append(index)
-                    if len(candidates) >= candidate_limit:
-                        break
+            append_rows(rows)
 
     return candidates
 
 
 def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
     normalized_query = dictionary_core.normalize_text(query)
+    # English infinitives are commonly entered as 'to dive', 'to run', etc.
+    english_infinitive = (
+        normalized_query[3:]
+        if normalized_query.startswith("to ") and len(normalized_query) > 5
+        else ""
+    )
+    search_query = english_infinitive or normalized_query
     if not normalized_query:
         return [
             dictionary_core.SearchResult(entry, 0.0)
@@ -632,10 +883,11 @@ def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
             return []
 
     try:
-        compact_length = len(normalized_query.replace(" ", ""))
-        candidate_limit = 120 if compact_length < 3 else max(150, min(260, limit * 12))
-        indices = _candidate_indices(normalized_query, candidate_limit)
-    except (sqlite3.Error, OSError):
+        compact_length = len(search_query.replace(" ", ""))
+        candidate_limit = 140 if compact_length < 3 else max(180, min(320, limit * 16))
+        indices = _candidate_indices(search_query, candidate_limit)
+        live_entries = _sync_live_candidate_entries(self, indices)
+    except (sqlite3.Error, OSError, ValueError):
         if _FALLBACK_SEARCH is not None:
             return _FALLBACK_SEARCH(
                 self,
@@ -645,35 +897,31 @@ def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
             )
         return []
 
-    persian_query = any("\u0600" <= char <= "\u06ff" for char in query)
+    stripped_query = query.lstrip()
+    noun_preferred = bool(
+        stripped_query
+        and stripped_query[0].isupper()
+    )
+
     scored: list = []
-
     for index in indices:
-        if not 0 <= index < len(self.entries):
+        entry = live_entries.get(index)
+        if entry is None:
             continue
-
-        entry = self.entries[index]
-        score = self._exact_score(entry, normalized_query)
-
-        if score <= 0 and not persian_query and compact_length >= 3:
-            head_score = max(
-                dictionary_core._similarity(normalized_query, entry.headword_norm),
-                dictionary_core._similarity(normalized_query, entry.lexeme_norm),
-            )
-            translation_score = dictionary_core._similarity(
-                normalized_query,
-                entry.translation_norm,
-            )
-            fuzzy_score = max(head_score * 1.25, translation_score * 1.08)
-            if fuzzy_score >= fuzzy_threshold:
-                score = 500.0 + fuzzy_score
-
+        score = _rank_entry(
+            entry,
+            search_query,
+            fuzzy_threshold,
+            noun_preferred=noun_preferred,
+            english_infinitive=english_infinitive,
+        )
         if score > 0:
             scored.append(dictionary_core.SearchResult(entry, score))
 
     scored.sort(
         key=lambda result: (
             -result.score,
+            len(result.entry.lexeme_norm),
             result.entry.headword_norm,
             result.entry.first_line,
         )
@@ -682,7 +930,7 @@ def sqlite_search(self, query: str, limit: int = 20, fuzzy_threshold: int = 58):
 
 
 def _sqlite_generate_missing_meanings(application, window) -> None:
-    """Run the existing enrichment logic against SQLite, then export the text mirror."""
+    """Run the existing enrichment logic directly against SQLite."""
     patch = application.patch
     legacy = application.enrichment
     source_path, _ = _require_paths()
@@ -803,7 +1051,6 @@ def _sqlite_generate_missing_meanings(application, window) -> None:
                         except Exception:
                             connection.rollback()
                             raise
-                    _export_text_mirror()
 
                 window._meaning_generation_revision = (
                     getattr(window, "_meaning_generation_revision", 0) + 1
@@ -846,7 +1093,7 @@ def install(application, base, *, source_path: Path, sqlite_path: Path) -> None:
         # if migration cannot complete.
         return
 
-    # SQLite is now the source of truth. The text file is only an exported mirror.
+    # SQLite is the source of truth. The text file is bootstrap/manual export only.
     dictionary_core.DictionaryIndex.from_file = classmethod(sqlite_from_file)
     base.ORIGINAL_ADD = sqlite_add
     base.ORIGINAL_REPLACE = sqlite_replace

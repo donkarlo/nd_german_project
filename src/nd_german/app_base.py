@@ -150,12 +150,23 @@ def window_init(original):
     return init
 
 
+_install_hooks = []
+
+
+def register_install_hook(callback) -> None:
+    """Register a post-initialization feature without replacing install()."""
+    if callback not in _install_hooks:
+        _install_hooks.append(callback)
+
+
 def install() -> None:
     dictionary_core.parse_entry = enhanced_parse_entry; legacy.parse_entry = enhanced_parse_entry
     dictionary_core.DictionaryIndex.add_entry = locked_add; dictionary_core.DictionaryIndex.replace_entry = locked_replace; dictionary_core.DictionaryIndex.delete_entry = locked_delete
     legacy.DictionaryWindow._render_results = render_results
     legacy.DictionaryWindow._open_dictionary_link = link_handler(legacy.DictionaryWindow._open_dictionary_link)
     legacy.DictionaryWindow.__init__ = window_init(legacy.DictionaryWindow.__init__)
+    for callback in tuple(_install_hooks):
+        callback()
 
 
 def main() -> int:

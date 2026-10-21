@@ -793,7 +793,13 @@ def _sync_one(sqlite_path: Path, text_path: Path | None, entry_index: int) -> st
                     "UPDATE entries SET raw=?, search_norm=? WHERE entry_index=?",
                     (canonical, dictionary_core.normalize_text(canonical), int(index)),
                 )
-                _refresh_fts(connection)
+                if connection.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='entries_fts'").fetchone():
+                    connection.execute("DELETE FROM entries_fts WHERE rowid=?", (int(index),))
+                    connection.execute(
+                        "INSERT INTO entries_fts(rowid,headword_norm,lexeme_norm,translation_norm,search_norm) "
+                        "SELECT entry_index,headword_norm,lexeme_norm,translation_norm,search_norm "
+                        "FROM entries WHERE entry_index=?", (int(index),)
+                    )
             connection.execute("INSERT OR REPLACE INTO meta(key,value) VALUES (?,?)", (META_DIRTY_KEY, "0"))
             connection.commit()
         except Exception:
@@ -955,7 +961,7 @@ def install(application, base, sqlite_backend, *, sqlite_path: Path, text_path: 
             canonical = _sync_one(sqlite_path, text_path, index)
             if canonical:
                 parsed = dictionary_core.parse_entry(canonical)
-                updated = list(self.entries); updated[index] = parsed; self.__init__(updated)
+                self.replace_cached_entry(index, parsed)
                 return parsed
             return result
 
@@ -967,7 +973,7 @@ def install(application, base, sqlite_backend, *, sqlite_path: Path, text_path: 
             canonical = _sync_one(sqlite_path, text_path, entry_index)
             if canonical:
                 parsed = dictionary_core.parse_entry(canonical)
-                updated = list(self.entries); updated[entry_index] = parsed; self.__init__(updated)
+                self.replace_cached_entry(entry_index, parsed)
                 return parsed
             return result
 
@@ -986,14 +992,5 @@ def install(application, base, sqlite_backend, *, sqlite_path: Path, text_path: 
         base.ORIGINAL_DELETE = delete
 
     _patch_detail_renderer(application)
-    current_install = base.install
-    if not getattr(current_install, "_nd_verb_rektion_wrapper_v2", False):
-        original_install = current_install
-
-        def install_then_rektion_ui() -> None:
-            original_install()
-            _patch_add_dialog(base)
-
-        install_then_rektion_ui._nd_verb_rektion_wrapper_v2 = True
-        base.install = install_then_rektion_ui
+    base.register_install_hook(lambda: _patch_add_dialog(base))
     return stats
