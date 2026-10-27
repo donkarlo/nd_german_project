@@ -29,7 +29,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PERSISTENCE_DIR = Path("/home/donkarlo/Dropbox/repo/data/nd_german_project")
 LEGACY_SETTINGS_PATH = PROJECT_ROOT / "settings.yaml"
 SETTINGS_PATH = PERSISTENCE_DIR / "settings.yaml"
-TEXT_DATABASE_PATH = PROJECT_ROOT / "data" / "woerterbuch.txt"
+TEXT_DATABASE_PATH = PERSISTENCE_DIR / "legacy_import_disabled.txt"
 SQLITE_DATABASE_PATH = PERSISTENCE_DIR / "dictionary.sqlite3"
 
 

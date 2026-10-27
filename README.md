@@ -69,22 +69,20 @@ python -m pip install -r requirements.txt
 ./run.sh
 ```
 
-`run.sh` calls `configure.py`, which writes the bundled irregular-verb path and,
-when a local `woerterbuch.txt` exists, its path into `settings.yaml`. If the
-dictionary is stored elsewhere, the already configured path is preserved.
+`run.sh` uses the SQLite database at `/home/donkarlo/Dropbox/repo/data/nd_german_project/dictionary.sqlite3` as the primary store. No text dictionary is required. `configure.py` retains any valid configured SQLite path.
 
 You can also override either database temporarily:
 
 ```bash
 python3 app.py \
-  --database /absolute/path/to/woerterbuch.txt \
+  --database /absolute/path/to/dictionary.sqlite3 \
   --irregular-verbs /absolute/path/to/irregular_verbs.yaml
 ```
 
 ## YAML settings
 
 ```yaml
-database_path: /absolute/path/to/woerterbuch.txt
+database_path: /absolute/path/to/dictionary.sqlite3
 irregular_verbs_path: /absolute/path/to/irregular_verbs.yaml
 max_results: 20
 fuzzy_threshold: 58

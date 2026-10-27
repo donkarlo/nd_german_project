@@ -1,4 +1,4 @@
-database_path: /home/donkarlo/Dropbox/repo/nd_german_project/data/woerterbuch.txt
+database_path: /home/donkarlo/Dropbox/repo/data/nd_german_project/dictionary.sqlite3
 irregular_verbs_path: /home/donkarlo/Dropbox/repo/nd_german_project/data/irregular_verbs.yaml
 irregular_adjectives_path: /home/donkarlo/Dropbox/repo/nd_german_project/data/irregular_adjectives.yaml
 irregular_nouns_path: /home/donkarlo/Dropbox/repo/nd_german_project/data/irregular_nouns.yaml

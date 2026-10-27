@@ -5,7 +5,7 @@ import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 settings_path = PROJECT_ROOT / "settings.yaml"
-bundled_database_path = (PROJECT_ROOT / "data" / "woerterbuch.txt").resolve()
+bundled_database_path = Path("/home/donkarlo/Dropbox/repo/data/nd_german_project/dictionary.sqlite3")
 bundled_irregular_verbs_path = (PROJECT_ROOT / "data" / "irregular_verbs.yaml").resolve()
 bundled_irregular_adjectives_path = (PROJECT_ROOT / "data" / "irregular_adjectives.yaml").resolve()
 bundled_irregular_nouns_path = (PROJECT_ROOT / "data" / "irregular_nouns.yaml").resolve()

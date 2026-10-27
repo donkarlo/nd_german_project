@@ -77,7 +77,7 @@ from pronunciation_core import (
 
 APP_DIR = Path(__file__).resolve().parent
 DEFAULT_SETTINGS = {
-    "database_path": str(APP_DIR / "data" / "woerterbuch.txt"),
+    "database_path": str(Path("/home/donkarlo/Dropbox/repo/data/nd_german_project/dictionary.sqlite3")),
     "irregular_verbs_path": str(APP_DIR / "data" / "irregular_verbs.yaml"),
     "irregular_adjectives_path": str(APP_DIR / "data" / "irregular_adjectives.yaml"),
     "max_results": 20,
@@ -663,7 +663,7 @@ class DictionaryWindow(QMainWindow):
         self.index = None
         message = (
             f"The configured database does not exist:\n{self.database_path}\n\n"
-            "Choose the uploaded woerterbuch.txt file or edit settings.yaml."
+            "Configure the SQLite dictionary.sqlite3 in settings.yaml."
         )
         answer = QMessageBox.question(
             self,

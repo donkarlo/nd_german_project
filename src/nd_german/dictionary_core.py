@@ -186,7 +186,7 @@ def detect_role(first_line: str, headword: str) -> str:
         return "adjective"
     if "partizip" in line:
         return "participle"
-    if "phrase" in line or "redewendung" in line:
+    if re.search(r"\b(?:phrase|redewendung)\b", line):
         return "phrase"
     if "interjektion" in line:
         return "interjection"
