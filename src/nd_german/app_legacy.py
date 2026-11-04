@@ -297,6 +297,9 @@ class DictionaryWindow(QMainWindow):
 
         self.search_box.textChanged.connect(self._schedule_search)
         self.search_box.returnPressed.connect(self.perform_search)
+        for field in self.language_search_boxes.values():
+            field.textChanged.connect(lambda _value, current=field: self._language_search_changed(current))
+            field.returnPressed.connect(self.perform_search)
         self.add_button.clicked.connect(self.open_add_dialog)
         self.results.anchorClicked.connect(self._open_dictionary_link)
         self.conjugation_search_box.textChanged.connect(self._schedule_conjugation_search)
@@ -335,6 +338,19 @@ class DictionaryWindow(QMainWindow):
         self.add_button.setAccessibleName("Add app entry")
         top.addWidget(self.add_button)
         outer.addLayout(top)
+
+        language_row = QHBoxLayout()
+        language_row.setSpacing(5)
+        self.language_search_boxes = {}
+        for language in ("German", "Persian", "Penglish", "English"):
+            field = QLineEdit(tab)
+            field.setPlaceholderText(language)
+            field.setAccessibleName(f"{language} only dictionary search")
+            field.setClearButtonEnabled(True)
+            field.setMinimumWidth(0)
+            language_row.addWidget(field, 1)
+            self.language_search_boxes[language.lower()] = field
+        outer.addLayout(language_row)
 
         self.results = QTextBrowser(tab)
         self.results.setOpenExternalLinks(False)
@@ -695,21 +711,67 @@ class DictionaryWindow(QMainWindow):
         self._load_database()
 
     def _schedule_search(self) -> None:
+        if self.search_box.text():
+            for field in self.language_search_boxes.values():
+                field.blockSignals(True)
+                field.clear()
+                field.blockSignals(False)
+        self.search_timer.start()
+
+    def _language_search_changed(self, current: QLineEdit) -> None:
+        if current.text():
+            self.search_box.blockSignals(True)
+            self.search_box.clear()
+            self.search_box.blockSignals(False)
+            for field in self.language_search_boxes.values():
+                if field is not current:
+                    field.blockSignals(True)
+                    field.clear()
+                    field.blockSignals(False)
         self.search_timer.start()
 
     def perform_search(self) -> None:
         if self.index is None:
             return
-        query = self.search_box.text()
-        matches = self.index.search(
-            query,
-            limit=int(self.settings["max_results"]),
-            fuzzy_threshold=int(self.settings["fuzzy_threshold"]),
+        active = next(
+            ((language, field.text()) for language, field in self.language_search_boxes.items() if field.text().strip()),
+            None,
         )
-        self._render_results([match.entry for match in matches])
+        query = active[1] if active else self.search_box.text()
+        if active:
+            from dictionary_core import normalize_text
+            import re
+            q = normalize_text(query)
+            language = active[0]
+            def value_for(entry):
+                if language == "german":
+                    return entry.headword_norm
+                label = language.capitalize()
+                found = re.search(r"(?im)^" + label + r":\s*(.*)$", entry.raw)
+                return normalize_text(found.group(1)) if found else (
+                    entry.translation_norm if language == "english" else ""
+                )
+            found = []
+            for entry in self.index.entries:
+                value = value_for(entry)
+                if q and q in value:
+                    rank = 0 if value == q else 1 if value.startswith(q) else 2
+                    found.append((rank, len(value), entry))
+            found.sort(key=lambda item: (item[0], item[1], item[2].headword_norm))
+            entries = [item[2] for item in found[:int(self.settings["max_results"])]]
+            count = len(entries)
+        else:
+            matches = self.index.search(
+                query,
+                limit=int(self.settings["max_results"]),
+                fuzzy_threshold=int(self.settings["fuzzy_threshold"]),
+            )
+            entries = [match.entry for match in matches]
+            count = len(matches)
+        self._render_results(entries)
         if query.strip():
             self.status.setText(
-                f"{len(matches)} result(s) for “{query}” — {len(self.index.entries):,} entries indexed"
+                f"{count} result(s) for “{query}” — {len(self.index.entries):,} entries indexed"
             )
         else:
             self.status.setText(

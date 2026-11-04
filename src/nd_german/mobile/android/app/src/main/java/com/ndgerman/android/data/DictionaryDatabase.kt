@@ -200,6 +200,38 @@ class DictionaryDatabase(private val context: Context) {
         }
     }
 
+    /** Match only the requested language, never a translation or another field. */
+    suspend fun searchLanguage(query: String, language: String, limit: Int = 20): List<DictionaryEntry> = withContext(Dispatchers.IO) {
+        mutex.withLock {
+            val q = DictionaryText.normalize(query)
+            if (q.isBlank()) return@withLock emptyList()
+            open().use { conn ->
+                val candidates = if (language == "german") {
+                    selectEntries(conn, "SELECT ${columns()} FROM entries WHERE headword_norm LIKE ? OR lexeme_norm LIKE ?") {
+                        it.bindText(1, "%$q%"); it.bindText(2, "%$q%")
+                    }
+                } else {
+                    // The raw field is only a candidate filter; exact field restriction is below.
+                    selectEntries(conn, "SELECT ${columns()} FROM entries WHERE raw LIKE ?") {
+                        it.bindText(1, "%${query.trim()}%")
+                    }
+                }
+                candidates.mapNotNull { entry ->
+                    val value = when (language) {
+                        "german" -> DictionaryText.normalize(entry.headword)
+                        "persian" -> DictionaryText.normalize(entry.persian)
+                        "penglish" -> DictionaryText.normalize(entry.penglish)
+                        "english" -> DictionaryText.normalize(entry.english)
+                        else -> ""
+                    }
+                    val pos = value.indexOf(q)
+                    if (pos < 0) null else Triple(if (value == q) 0 else if (pos == 0) 1 else 2, value.length, entry)
+                }.sortedWith(compareBy<Triple<Int, Int, DictionaryEntry>> { it.first }.thenBy { it.second }.thenBy { it.third.headwordNorm })
+                    .take(limit).map { it.third }
+            }
+        }
+    }
+
     suspend fun entry(index: Int): DictionaryEntry? = withContext(Dispatchers.IO) {
         mutex.withLock {
             open().use { conn ->

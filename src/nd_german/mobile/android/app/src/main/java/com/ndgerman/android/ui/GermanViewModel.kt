@@ -28,6 +28,8 @@ data class GermanUiState(
     val busy: Boolean = false,
     val databaseCount: Int = 0,
     val query: String = "",
+    val languageQueries: Map<String, String> = emptyMap(),
+    val activeLanguage: String? = null,
     val results: List<DictionaryEntry> = emptyList(),
     val searchHistory: List<String> = emptyList(),
     val status: String = "Loading dictionary…",
@@ -101,7 +103,9 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
         statusOverride: String? = null,
     ) {
         val count = database.count()
-        val results = database.search(_state.value.query)
+        val language = _state.value.activeLanguage
+        val results = if (language == null) database.search(_state.value.query)
+            else database.searchLanguage(_state.value.languageQueries[language].orEmpty(), language)
         _state.update {
             it.copy(
                 ready = true,
@@ -139,7 +143,23 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
     }
 
     fun setQuery(value: String) {
-        _state.update { it.copy(query = value, error = null) }
+        _state.update { it.copy(query = value, languageQueries = emptyMap(), activeLanguage = null, error = null) }
+        searchJob?.cancel()
+        searchJob = viewModelScope.launch {
+            delay(80)
+            performSearch(recordHistory = false)
+        }
+    }
+
+    fun setLanguageQuery(language: String, value: String) {
+        _state.update {
+            it.copy(
+                query = "",
+                languageQueries = if (value.isBlank()) emptyMap() else mapOf(language to value),
+                activeLanguage = if (value.isBlank()) null else language,
+                error = null,
+            )
+        }
         searchJob?.cancel()
         searchJob = viewModelScope.launch {
             delay(80)
@@ -148,15 +168,16 @@ class GermanViewModel(private val app: GermanApplication) : ViewModel() {
     }
 
     fun chooseHistory(value: String) {
-        _state.update { it.copy(query = value) }
+        _state.update { it.copy(query = value, activeLanguage = null, languageQueries = emptyMap()) }
         performSearch(recordHistory = true)
     }
 
     fun performSearch(recordHistory: Boolean = true) {
         searchJob?.cancel()
         viewModelScope.launch {
-            val query = _state.value.query.trim()
-            runCatching { database.search(query) }
+            val language = _state.value.activeLanguage
+            val query = (if (language == null) _state.value.query else _state.value.languageQueries[language].orEmpty()).trim()
+            runCatching { if (language == null) database.search(query) else database.searchLanguage(query, language) }
                 .onSuccess { results ->
                     if (recordHistory && query.isNotBlank()) addHistory(query)
                     _state.update {

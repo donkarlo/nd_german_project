@@ -334,6 +334,7 @@ To request information, contact contact@noondreams.com. An extended policy will 
                 0 -> DictionaryScreen(
                     state = state,
                     onQuery = viewModel::setQuery,
+                    onLanguageQuery = viewModel::setLanguageQuery,
                     onSearch = { viewModel.performSearch(true) },
                     onHistory = viewModel::chooseHistory,
                     onSpeak = ::speak,
@@ -360,6 +361,7 @@ To request information, contact contact@noondreams.com. An extended policy will 
 private fun DictionaryScreen(
     state: GermanUiState,
     onQuery: (String) -> Unit,
+    onLanguageQuery: (String, String) -> Unit,
     onSearch: () -> Unit,
     onHistory: (String) -> Unit,
     onSpeak: (String) -> Unit,
@@ -384,6 +386,22 @@ private fun DictionaryScreen(
                 }
             },
         )
+        Row(
+            Modifier.fillMaxWidth().padding(horizontal = 12.dp),
+            horizontalArrangement = Arrangement.spacedBy(4.dp),
+        ) {
+            listOf("German", "Persian", "Penglish", "English").forEach { language ->
+                val key = language.lowercase(Locale.ROOT)
+                OutlinedTextField(
+                    value = state.languageQueries[key].orEmpty(),
+                    onValueChange = { onLanguageQuery(key, it) },
+                    modifier = Modifier.weight(1f),
+                    singleLine = true,
+                    placeholder = { Text(language, style = MaterialTheme.typography.labelSmall, maxLines = 1) },
+                    textStyle = MaterialTheme.typography.bodySmall,
+                )
+            }
+        }
         if (state.searchHistory.isNotEmpty()) {
             LazyRow(contentPadding = PaddingValues(horizontal = 12.dp), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 items(state.searchHistory) { item -> AssistChip(onClick = { onHistory(item) }, label = { Text(item, maxLines = 1) }) }
