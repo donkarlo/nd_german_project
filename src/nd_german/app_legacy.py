@@ -50,6 +50,7 @@ from conjugation_core import (
     normalize_verb,
 )
 from entry_paste import EntryPlainTextEdit
+from keyboard_language import DictionaryKeyboardController
 from dictionary_core import DictionaryEntry, DictionaryIndex, DuplicateEntryError, parse_entry
 from grammar_core import (
     ADJECTIVE_AUTO,
@@ -342,12 +343,14 @@ class DictionaryWindow(QMainWindow):
         language_row = QHBoxLayout()
         language_row.setSpacing(5)
         self.language_search_boxes = {}
+        self.dictionary_keyboard = DictionaryKeyboardController(tab)
         for language in ("German", "Persian", "Penglish", "English"):
             field = QLineEdit(tab)
             field.setPlaceholderText(language)
             field.setAccessibleName(f"{language} only dictionary search")
             field.setClearButtonEnabled(True)
             field.setMinimumWidth(0)
+            self.dictionary_keyboard.watch(field, language)
             language_row.addWidget(field, 1)
             self.language_search_boxes[language.lower()] = field
         outer.addLayout(language_row)

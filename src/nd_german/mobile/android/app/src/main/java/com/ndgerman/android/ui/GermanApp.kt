@@ -25,6 +25,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowForward
@@ -71,8 +72,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.intl.Locale as ComposeLocale
+import androidx.compose.ui.text.intl.LocaleList
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.ndgerman.android.BuildConfig
@@ -82,6 +86,17 @@ import com.ndgerman.android.grammar.GrammarTables
 import com.ndgerman.android.grammar.NounResult
 import com.ndgerman.android.grammar.TenseCard
 import java.util.Locale
+
+// Ask multilingual keyboards to use the German Latin layout everywhere except Persian.
+// Android lets the IME choose whether to honor these hints; it cannot force a keyboard.
+private val latinDictionaryKeyboard = KeyboardOptions(
+    keyboardType = KeyboardType.Text,
+    hintLocales = LocaleList(ComposeLocale("de-AT")),
+)
+private val persianDictionaryKeyboard = KeyboardOptions(
+    keyboardType = KeyboardType.Text,
+    hintLocales = LocaleList(ComposeLocale("fa-IR")),
+)
 
 private data class AppTab(val title: String, val short: String)
 private val tabs = listOf(
@@ -397,6 +412,7 @@ private fun DictionaryScreen(
                     onValueChange = { onLanguageQuery(key, it) },
                     modifier = Modifier.weight(1f),
                     singleLine = true,
+                    keyboardOptions = if (key == "persian") persianDictionaryKeyboard else latinDictionaryKeyboard,
                     placeholder = { Text(language, style = MaterialTheme.typography.labelSmall, maxLines = 1) },
                     textStyle = MaterialTheme.typography.bodySmall,
                 )
